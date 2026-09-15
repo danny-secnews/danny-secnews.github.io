@@ -8,6 +8,7 @@ import re
 import ssl
 import urllib.error
 import urllib.request
+from urllib.parse import urljoin
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree as ET
@@ -77,8 +78,11 @@ def parse_date(value: str | None) -> datetime | None:
         try:
             dt = datetime.fromisoformat(candidate) if fmt is None else datetime.strptime(value, fmt)
             if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=KST)           
-            if ":" not in value and (dt.hour, dt.minute, dt.second) == (0,0,0):
+                dt = dt.replace(tzinfo=KST)
+            # Date-only values (e.g. KISA's "2026-09-14") parse to midnight, which
+            # pushes yesterday's notices outside the lookback window. Treat them as
+            # end of day instead.
+            if ":" not in value and (dt.hour, dt.minute, dt.second) == (0, 0, 0):
                 dt = dt.replace(hour=23, minute=59)
             return dt.astimezone(KST)
         except Exception:  # noqa: BLE001
@@ -174,6 +178,65 @@ def parse_feed(raw: bytes, source: str) -> list[dict]:
     return entries
 
 
+# Titles that are attachments or navigation, not articles.
+BOARD_NOISE = ("첨부", "다운로드", "미리보기", "바로가기", "이전", "다음", "목록", "hwp", "pdf")
+BOARD_LINK_RE = re.compile(
+    r"<a\s[^>]*?href=[\"']([^\"']*?nttId=(\d+)[^\"']*)[\"'][^>]*>(.*?)</a>", re.S | re.I
+)
+BOARD_DATE_RE = re.compile(r"(20\d{2})[.\-/]\s?(\d{1,2})[.\-/]\s?(\d{1,2})")
+
+
+def parse_board(raw: bytes, base_url: str, source: str) -> list[dict]:
+    """Parse a standard Korean government bulletin board (eGovFrame style).
+
+    Looks for article links carrying an nttId and a nearby YYYY-MM-DD date.
+    Returns [] and logs when the layout does not match, so the run continues.
+    """
+    text = to_text(raw)
+    if not text:
+        print(f"  [!] decode failed: {source}")
+        return []
+
+    found: dict[str, dict] = {}
+    for m in BOARD_LINK_RE.finditer(text):
+        href, ntt_id, inner = m.group(1), m.group(2), m.group(3)
+        title = clean_text(inner, 200)
+        # Drop "new post" badges that render as a leading token (N, NEW, 새글).
+        title = re.sub(r"^(?:N|NEW|새글|신규)\s+", "", title, flags=re.I)
+        if len(title) < 4 or any(n in title.lower() for n in BOARD_NOISE):
+            continue
+        if href.lower().startswith("javascript"):
+            continue
+        link = urljoin(base_url, html.unescape(href))
+
+        # Date usually follows the title cell; fall back to the text before it.
+        after = text[m.end(): m.end() + 800]
+        before = text[max(0, m.start() - 400): m.start()]
+        dm = BOARD_DATE_RE.search(after) or BOARD_DATE_RE.search(before)
+        published = None
+        if dm:
+            try:
+                published = datetime(int(dm[1]), int(dm[2]), int(dm[3]), 23, 59, tzinfo=KST)
+            except ValueError:
+                published = None
+
+        # Keep the longest title per article id (title link beats icon links).
+        prev = found.get(ntt_id)
+        if prev is None or len(title) > len(prev["title"]):
+            found[ntt_id] = {
+                "title": title,
+                "link": link,
+                "summary": "",
+                "source": source,
+                "published": published.isoformat() if published else None,
+                "published_dt": published,
+            }
+
+    if not found:
+        print(f"  [!] board parse: no article links found ({source}) - layout may differ")
+    return list(found.values())
+
+
 def normalize_title(title: str) -> str:
     return re.sub(r"[^0-9a-z가-힣]", "", title.lower())[:60]
 
@@ -200,13 +263,21 @@ def collect(config: dict, now: datetime | None = None) -> dict:
 
     for category in config["categories"]:
         items: list[dict] = []
-        required = [k.lower() for k in categoty.get("require_keywords",[])]
+        # Optional per-category topic filter: an item must match at least one.
+        required = [k.lower() for k in category.get("require_keywords", [])]
         for feed in category["feeds"]:
             print(f"  · {category['name']} / {feed['name']}")
             raw = fetch(feed["url"])
             if not raw:
                 continue
-            for entry in parse_feed(raw, feed["name"]):
+            if feed.get("type") == "board":
+                entries = parse_board(raw, feed["url"], feed["name"])
+            else:
+                entries = parse_feed(raw, feed["name"])
+            # A source that is on-topic by definition (e.g. the regulator's own
+            # press releases) can skip the category keyword filter.
+            feed_required = [] if feed.get("bypass_filter") else required
+            for entry in entries:
                 key = normalize_title(entry["title"])
                 if not key or key in seen:
                     continue
@@ -217,6 +288,10 @@ def collect(config: dict, now: datetime | None = None) -> dict:
                     entry["published"] = now.isoformat()
                     dt = now
                 blob = f"{entry['title']} {entry['summary']}".lower()
+                # Rejected items are not marked as seen, so a later category
+                # can still pick them up.
+                if feed_required and not any(k in blob for k in feed_required):
+                    continue
                 seen.add(key)
                 entry["highlight"] = any(k in blob for k in keywords)
                 entry["cves"] = extract_cves(entry["title"], entry["summary"])
