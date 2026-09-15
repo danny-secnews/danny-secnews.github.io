@@ -77,7 +77,9 @@ def parse_date(value: str | None) -> datetime | None:
         try:
             dt = datetime.fromisoformat(candidate) if fmt is None else datetime.strptime(value, fmt)
             if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=KST)
+                dt = dt.replace(tzinfo=KST)           
+            if ":" not in value and (dt.hour, dt.minute, dt.second) == (0,0,0):
+                dt = dt.replace(hour=23, minute=59)
             return dt.astimezone(KST)
         except Exception:  # noqa: BLE001
             continue
