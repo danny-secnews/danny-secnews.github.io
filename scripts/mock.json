@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-09-15T08:40:00+09:00",
+  "date": "2026-09-15",
+  "total": 9,
+  "categories": [
+    {"id":"kisa","name":"KISA 보안공지·취약점","emoji":"🚨","items":[
+      {"title":"Apache Tomcat 보안 업데이트 권고","link":"https://knvd.krcert.or.kr/","summary":"Apache 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트를 발표. 영향받는 버전 사용자는 최신 버전으로 업데이트 권고.","source":"KISA 보호나라 보안공지","published":"2026-09-15T07:10:00+09:00","highlight":true,"cves":["CVE-2026-53404","CVE-2026-53434","CVE-2026-55276"]},
+      {"title":"Linux Kernel Improper Initialization 취약점 보안 업데이트 권고","link":"https://knvd.krcert.or.kr/","summary":"Linux 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트를 발표. 영향받는 버전 사용자는 해결 방안에 따라 업데이트 권고.","source":"KISA 보호나라 보안공지","published":"2026-09-15T06:40:00+09:00","highlight":false,"cves":["CVE-2026-43503"]}
+    ]},
+    {"id":"domestic","name":"국내 보안뉴스","emoji":"🇰🇷","items":[
+      {"title":"토스페이먼츠 가맹점 노려… 국내 금융권 공급망 공격 위기 부각","link":"https://www.boannews.com/","summary":"전자지급결제대행(PG)사의 가맹점을 통한 공격이 이어지며 공급망 전반의 점검 필요성이 제기되고 있다.","source":"보안뉴스","published":"2026-09-14T15:50:00+09:00","highlight":true,"cves":[]},
+      {"title":"CU편의점 택배 운영사 BGF네트웍스, 신원 미상 해외 공격으로 고객 개인정보 유출 확인","link":"https://www.dailysecu.com/","summary":"웹 취약점을 이용한 비인가 외부 침입으로 이름·휴대폰번호·이메일주소·주소·성별·ID 및 비밀번호가 유출된 것으로 확인.","source":"데일리시큐","published":"2026-09-14T11:20:00+09:00","highlight":true,"cves":[]},
+      {"title":"패스트캠퍼스, GitHub 마스터 계정 키 불일치로 침해 사고 공지","link":"https://www.dailysecu.com/","summary":"사용 중인 GitHub 서비스의 마스터 계정 키가 불법 취득되어 서비스 침입이 이루어진 것으로 파악.","source":"데일리시큐","published":"2026-09-14T09:05:00+09:00","highlight":false,"cves":[]}
+    ]},
+    {"id":"global","name":"해외 주요 이슈","emoji":"🌐","items":[
+      {"title":"CISA adds actively exploited flaw to Known Exploited Vulnerabilities catalog","link":"https://www.cisa.gov/","summary":"Federal agencies are required to apply mitigations by the stated due date.","source":"CISA Advisories","published":"2026-09-14T22:30:00+09:00","highlight":true,"cves":["CVE-2026-23111"]},
+      {"title":"New ransomware campaign targets exposed backup appliances","link":"https://www.bleepingcomputer.com/","summary":"Threat actors are abusing internet-facing management interfaces to deploy encryptors across enterprise networks.","source":"BleepingComputer","published":"2026-09-14T19:05:00+09:00","highlight":true,"cves":[]}
+    ]},
+    {"id":"privacy","name":"개인정보보호·규제 동향","emoji":"🛡️","items":[
+      {"title":"개인정보위, 쿠팡 및 계열사의 개인정보 유출 및 침해 제재처분 의결","link":"https://www.pipc.go.kr/","summary":"안전조치 의무 위반 및 법적 근거 없는 개인정보 수집 등에 대하여 과징금 및 과태료 부과와 함께 시정명령·공표 명령을 의결.","source":"개인정보보호위원회 보도자료","published":"2026-09-11T11:00:00+09:00","highlight":true,"cves":[]},
+      {"title":"개인정보 유출 사전예방·피해구제 강화를 위한 개인정보 보호법·시행령·고시 개정","link":"https://www.pipc.go.kr/","summary":"개인정보 보호책임자(CPO) 자격·책임 강화, 의사회 의결·개인정보 신고 의무 등 국민 일상생활과 밀접한 분야에서 대규모 개인정보 유출 사고 대응 강화.","source":"개인정보보호위원회 보도자료","published":"2026-09-10T14:00:00+09:00","highlight":false,"cves":[]}
+    ]}
+  ]
+}

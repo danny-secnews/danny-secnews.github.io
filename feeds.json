@@ -1,0 +1,89 @@
+{
+  "site": {
+    "title": "오늘의 보안이슈",
+    "subtitle": "매일 아침 정리하는 국내외 보안·개인정보보호 동향",
+    "author": "Danny Kim",
+    "base_url": "https://danny-secnews.github.io",
+    "lookback_hours": 30,
+    "max_items_per_category": 12
+  },
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "feeds": [
+        {
+          "name": "KISA 보호나라 보안공지",
+          "url": "https://knvd.krcert.or.kr/rss/securityNotice.do"
+        },
+        {
+          "name": "KISA 보호나라 보안정보",
+          "url": "https://knvd.krcert.or.kr/rss/securityInfo.do"
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "feeds": [
+        {
+          "name": "보안뉴스",
+          "url": "https://www.boannews.com/media/news_rss.xml"
+        },
+        {
+          "name": "데일리시큐",
+          "url": "https://www.dailysecu.com/rss/allArticle.xml"
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "feeds": [
+        {
+          "name": "The Hacker News",
+          "url": "https://feeds.feedburner.com/TheHackersNews"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/feed/"
+        },
+        {
+          "name": "CISA Advisories",
+          "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml"
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호·규제 동향",
+      "emoji": "🛡️",
+      "feeds": [
+        {
+          "name": "개인정보보호위원회 보도자료",
+          "url": "https://www.pipc.go.kr/rss/news.xml"
+        }
+      ]
+    }
+  ],
+  "highlight_keywords": [
+    "유출",
+    "침해",
+    "랜섬웨어",
+    "제로데이",
+    "긴급",
+    "zero-day",
+    "ransomware",
+    "breach",
+    "과징금",
+    "제재",
+    "개인정보보호법",
+    "CVE-",
+    "actively exploited",
+    "공급망",
+    "supply chain"
+  ]
+}
