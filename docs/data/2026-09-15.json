@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-09-15T13:10:04.628210+09:00",
+  "date": "2026-09-15",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호·규제 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "수원시, 8개 기업·기관과 손잡고 ‘실물 AI 스마트도시’ 조성",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145842",
+          "summary": "수원특례시(시장 이재준)가 ‘거점형 스마트도시 조성사업’ 참여기관과 업무협약(MOU)을 체결하고, ‘실물 인공지능 기반 스마트도시 수원’ 조성을 위한 첫발을 내디뎠다.수원시는 14일 시청 중회의실에서 거점형 스마트도시 조성사업 협력체에 참여하는 8개 기업·기관과 협약을 체결하고 협력을 약속했다. 협력체는 현대자동차, 기아, 한전KDN, 가온로보틱스, 콜로세움코퍼레이션, 씨엘모빌리티, 영국씨앤…",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-09-15T09:56:04+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "영암군, 데이터·디지털 기반 스마트도시 정책으로 국토부 장관상",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145841",
+          "summary": "전남광주통합특별시 영암군(군수 우승희)이 ‘2026 대한민국 도시대상’ 우수정책 부문에서 국토교통부 장관상(기관표창)을 받았다.영암군은 부산 벡스코에서 열린 ‘2026 월드스마트시티 엑스포’에서 국토교통부와 국토연구원이 주관한 대한민국 도시대상 스마트도시 정책 분야 우수 지자체로 선정돼 장관상을 수상했다.대한민국 도시대상은 전국 지방자치단체를 대상으로 도시의 지속가능성과 생활 여건 개선을 위…",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-09-15T09:55:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "로봇청소기 쓰는 우리 집 정보, 서버에 안 남는다... 개인정보위 “관리 양호”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145825",
+          "summary": "개인정보보호위원회가 국내 주요 5개 브랜드 로봇청소기의 개인정보 처리 실태를 점검한 결과, 기기가 수집하는 영상과 음성 및 지도 정보 등이 전반적으로 안전하게 관리되고 있다고 14일 밝혔다. 이번 점검 대상은 로보락, 삼성전자, LG전자, 에코백스, 샤오미 등 5개 사가 판매하는 최신 모델이다. 개인정보위는 이들 기기의 카메라와 마이크 및 센서를 통해 수집되는 생활 공간 정보의 전송과 저장…",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-09-14T11:29:14+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "상주시, AI·드론 활용 스마트 산불 감시체계 구축 본격화",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145813",
+          "summary": "경상북도 상주시(시장 안재민)는 10일 시청 대회의실에서 ‘AI 기반 스마트 산불예방 드론 감시체계 구축사업’ 중간보고회를 개최했다.이날 보고회에는 안재민 상주시장을 비롯해 상주시의회, 경상북도, 관계 지방자치단체 및 사업 수행기관 관계자 등 30여명이 참석했으며, 사업 추진상황 보고와 질의응답, 의견 수렴 순으로 진행됐다.상주시는 2025년 12월부터 2027년 5월까지 18개월간 민간위탁…",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-09-14T10:05:34+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "해남군, 드론·AI CCTV 연계 ‘움직이는 통합관제’로 행안부 장려상",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145815",
+          "summary": "전남광주통합광역시 해남군(군수 명현관)이 행정안전부가 주최한 ‘2026년 CCTV 통합관제센터 우수사례 경진대회’에서 드론과 AI 지능형 CCTV를 연계한 현장 중심 관제 모델을 선보여 장려상을 수상했다.이 대회는 전국 지방자치단체의 우수한 CCTV 통합관제 사례를 발굴하고, 혁신적 안전관리 사례를 공유·확산하기 위해 마련됐다. 해남군은 전국 27개 지자체와 경쟁한 가운데 상위 7개 지자체에…",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-09-14T10:04:51+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "앱 180만개 통째로 뜯어 봤다... 해커, 클로드로 개발자가 흘린 인증 정보 쓸어담아",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145845",
+          "summary": "해커 그룹 샤이니헌터스(ShinyHunters) 생태계와 연결된 범죄자들이 클로드를 이용해 안드로이드 앱 180만개를 내려받고 분석해 앱 안에 담겨 있던 자격 증명을 긁어냈다.앤트로픽이 최근 발표한 위협 인텔리전스 보고서에서 밝힌 내용이다. 노출된 모바일 앱 자격 증명이 인공지능(AI)을 낀 작업 공정을 거쳐 기업 침해의 초기 진입로로 악용될 수 있다는 점을 보여 준 사례다.공격자들은 프랑스…",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-09-15T09:54:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[김혁준의 실전형 K-시큐리티] 보이지 않는 위협, ‘선제적 방어’로 전환해야",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145829",
+          "summary": "사이버 공격으로 홈페이지가 몇 시간 동안 멈추는 것과 국방·방산 첨단기술이나 통신 인증정보가 수년간 조용히 유출되는 것은 피해의 차원이 다르다. 전자는 피해가 즉시 드러나고 복구 시점도 어느 정도 예측할 수 있다. 반면 후자는 오랫동안 피해 사실조차 드러나지 않으며, 뒤늦게 발견하더라도 이미 유출된 정보와 무너진 신뢰를 되돌리기 어렵다. 국가가 관리해야 할 사이버 위험의 무게중심은 이미 가시…",
+          "source": "보안뉴스 전체",
+          "published": "2026-09-15T08:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "78리서치랩, KCSCON 2026서 AI 기반 BAS 공개…최신 취약점·악성코드 공격 시나리오 자동 생성",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208469",
+          "summary": "생성형 AI가 사이버 공격의 속도와 자동화 수준을 끌어올리면서 기업 보안 체계도 ‘보안 솔루션을 갖추고 있는가’에서 ‘실제 공격을 제대로 막을 수 있는가’를 지속적으로 검증하는 방향으로 전환되고 있다.78리서치랩(대표 김경동)은 지난 9월 8일 서울 세종대학교 컨벤션센터에서 열린 ‘2026 대한민국 사이버 보안 컨퍼런스(KCSCON 2026)’에서 AI 기반 BAS(Breach & Attac…",
+          "source": "데일리시큐",
+          "published": "2026-09-15T01:57:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한매에스티, KCSCON 2026서 체인가드 공개…오픈소스 취약점 사전 차단 전략 강조",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208468",
+          "summary": "소프트웨어 개발 과정에서 오픈소스 사용이 빠르게 늘면서 기업의 보안 과제도 달라지고 있다. 이미 애플리케이션에 들어간 취약점을 찾아 패치하는 방식에서 한발 더 나아가, 처음부터 알려진 취약점이 최대한 제거된 소프트웨어 구성요소를 사용하는 방식이 새로운 공급망 보안 전략으로 부상하고 있다.정보보안 솔루션 전문기업 한매에스티(대표 이필주)는 지난 9월 8일 서울 세종대학교 컨벤션센터에서 데일리시…",
+          "source": "데일리시큐",
+          "published": "2026-09-15T01:26:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "지란지교소프트 ‘오피스키퍼 EP’, 프롬프트·이메일 본문까지 실시간 민감정보 통제",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208462",
+          "summary": "기업 업무 환경에 생성형 AI 활용이 빠르게 확산되면서 기존 파일 중심의 정보유출방지(DLP) 체계만으로는 보호하기 어려운 새로운 데이터 경로가 생겨나고 있다. 직원이 챗GPT 등 생성형 AI 서비스의 프롬프트 창에 내부 정보를 직접 입력하거나 이메일 본문에 민감정보를 작성해 전송하는 경우가 대표적이다.지란지교소프트(대표 박승애, 유병완)는 이러한 업무환경 변화에 대응해 통합 PC 보안 솔루…",
+          "source": "데일리시큐",
+          "published": "2026-09-15T00:44:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "엘세븐시큐리티, 이미지 속 개인정보까지 잡는다…AI OCR 기반 차단·마스킹 기술 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208458",
+          "summary": "기업과 공공기관이 보유한 개인정보가 문서와 이미지, PDF, 스캔 파일 등 다양한 형태로 쌓이면서 기존 텍스트 기반 개인정보 탐지만으로는 유출 위험을 충분히 관리하기 어려워지고 있다.특히 신분증이나 신청서, 증명서 등을 이미지로 저장하거나 문서 안에 이미지 형태로 삽입할 경우 일반적인 문자열 검색 방식으로는 주민등록번호나 연락처 등 개인정보를 찾아내지 못할 가능성이 있다.AI·OCR 기반 개…",
+          "source": "데일리시큐",
+          "published": "2026-09-15T00:21:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“하나의 계정 노출이 기업 전체 위협으로”…스텔스몰, KCSCON 2026서 계정유출 인텔리전스 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208452",
+          "summary": "AI 기반 딥웹·다크웹 위협 인텔리전스 기업 스텔스몰 인텔리전스(StealthMole Intelligence Pte. Ltd., 이하 스텔스몰)가 국내 기업을 겨냥한 랜섬웨어와 계정 탈취 공격에 대응하기 위한 계정유출 인텔리전스 전략을 강화하고 있다.스텔스몰은 9월 8일 서울 세종대학교 컨벤션센터에서 열린 ‘2026 대한민국 사이버 보안 컨퍼런스(KCSCON 2026)’에 참가해 자사의 딥웹…",
+          "source": "데일리시큐",
+          "published": "2026-09-14T23:10:47+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "굿모닝아이텍, 시큐리티스코어카드 기반 TPRM 강화…협력사 사이버 위험 상시 관리",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208450",
+          "summary": "IT 인프라·클라우드·정보보안 전문기업 굿모닝아이텍㈜(대표 이주찬)이 협력사와 공급망에서 발생할 수 있는 사이버 위험을 지속적으로 관리하는 제3자 리스크 관리(TPRM) 사업 강화에 나서고 있다.굿모닝아이텍은 지난 9월 8일 서울 세종대학교 컨벤션센터에서 열린 ‘2026 대한민국 사이버 보안 컨퍼런스(KCSCON 2026)’에서 글로벌 사이버보안 평가 플랫폼인 시큐리티스코어카드(Securit…",
+          "source": "데일리시큐",
+          "published": "2026-09-14T22:38:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "급증하는 의료기관 사이버 위협...포티넷, 병원 OT 및 AI 보안 해법 제시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208442",
+          "summary": "포티넷코리아가 병원정보보안협회와 함께 오는 16일 대한상공회의소에서 '병원 OT 보안 및 AI 위협 대응 포럼'을 공동 개최한다.이번 포럼은 한국사회보장정보원, 법무법인 율촌, 김앤장 법률사무소 등 공공·의료·법조계가 함께 참여해 종합적인 보안 대책을 논의한다.한국사회보장정보원에 따르면 국내 의료기관 침해 사고는 2020년 18건에서 2024년 71건으로 약 4배 증가했다. 2024년 상급종…",
+          "source": "데일리시큐",
+          "published": "2026-09-14T16:31:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "채용 플랫폼 레쥬메나인 개인정보 유출... 원인은 ‘서버 권한 검증 누락’",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145832",
+          "summary": "채용 플랫폼 레쥬메나인(Resume9)에서 서버 기능의 권한 검증 누락으로 회원 개인정보가 유출되는 사고가 발생했다. 회사는 비밀번호와 결제 및 계좌 정보 등 민감한 금융 데이터는 유출 범위에 포함되지 않은 것으로 확인했다고 밝혔다.레쥬메나인 공지에 따르면 이번 무단 접속은 2026년 8월 19일(02:14~02:39)과 9월 7일(07:29~07:55) 두 차례에 걸쳐 이뤄졌다. 로그인 및…",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-09-14T15:12:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“대형병원 침해 시도만 年 5만7000건”... 포티넷, 의료기관 특화 OT·AI 보안 포럼 개최",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145826",
+          "summary": "포티넷코리아가 병원정보보안협회와 함께 16일 대한상공회의소에서 ‘병원 OT 보안 및 AI 위협 대응 포럼’을 공동 개최한다고 14일 밝혔다. 포티넷과 병원정보보안협회를 비롯해 한국사회보장정보원, 법무법인 율촌, 김앤장 법률사무소 등 의료와 공공 및 법조계 전문가들이 연사로 참여해 보안 해법을 모색한다.한국사회보장정보원에 따르면 국내 의료기관 침해 사고는 2020년 18건에서 2024년 71건…",
+          "source": "보안뉴스 전체",
+          "published": "2026-09-14T13:47:16+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "체크포인트 VPN 취약점 두 건에... 네덜란드 사이버 당국, “공격 임박” 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145822",
+          "summary": "네덜란드 국가사이버보안센터(NCSC)가 체크포인트 VPN의 치명적 결함 두 건을 두고 곧 실제 공격이 시작될 것이라고 경고했다. 다만 공개된 개념증명(PoC) 코드는 아직 보고되지 않았다.NCSC는 최근 이 취약점의 악용 가능성과 파급 효과를 모두 높게 본다며, 공격 시도가 머지않아 나타날 것으로 예상한다고 밝혔다.두 결함은 모두 인증서 처리 과정과 연관돼 있다. ‘CVE-2026-85102…",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-09-14T13:05:17+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-85102"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Japan's Digital Agency says VPN flaw exposed 246,000 personnel records",
+          "link": "https://www.bleepingcomputer.com/news/security/japans-digital-agency-says-vpn-flaw-exposed-246-000-personnel-records/",
+          "summary": "Japan's Digital Agency has discovered a data breach that may have exposed around 246,000 record rows containing personal information of government employees. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-15T05:36:02+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Webinar: How malicious OAuth apps can lead to Google Workspace breaches",
+          "link": "https://www.bleepingcomputer.com/news/security/webinar-how-malicious-oauth-apps-can-lead-to-google-workspace-breaches/",
+          "summary": "Attackers can combine social engineering with malicious OAuth applications to gain access to Google Workspace data without relying solely on stolen passwords. This webinar examines two attacks to show how these breaches…",
+          "source": "BleepingComputer",
+          "published": "2026-09-14T21:15:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Revolut discloses data breach exposing financial info, passports",
+          "link": "https://www.bleepingcomputer.com/news/security/revolut-discloses-data-breach-exposing-financial-info-passports/",
+          "summary": "Fintech company Revolut has disclosed a data breach after sharing data from an undisclosed number of customers with a threat actor impersonating a government agency. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-14T17:48:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Microsoft releases emergency Windows updates to fix RDS failures",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-windows-updates-to-fix-rds-failures/",
+          "summary": "Microsoft has released emergency out-of-band Windows updates to fix Remote Desktop Services failures caused by this month's security updates, along with Hyper-V and USB audio problems on some Windows versions. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-15T05:52:18+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Homebrew 7.0.0 gets built-in GUI, better security controls",
+          "link": "https://www.bleepingcomputer.com/news/security/homebrew-700-gets-built-in-gui-better-security-controls/",
+          "summary": "Homebrew package manager version 7.0.0 has been released with a built-in vulnerability scanner, stronger security controls, and the full release of its native BrewUI graphical interface. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-15T04:51:04+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Twitch extension with 30K installs exposes users’ OAuth tokens",
+          "link": "https://www.bleepingcomputer.com/news/security/twitch-extension-with-30k-installs-exposes-users-oauth-tokens/",
+          "summary": "A browser extension called Twitch Enhanced Viewer | JeetBot, available in the official Chrome and Firefox stores, sends users' Twitch OAuth session tokens to a commercial bot service. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-15T04:03:51+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers hijack HBO Max Reddit account to push malware in ClickFix ads",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hbo-max-reddit-account-to-push-malware-in-clickfix-ads/",
+          "summary": "Hackers compromised HBO Max's official Reddit account and used it to push malicious ads that launched ClickFix attacks to infect Windows and macOS devices with information-stealing malware. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-15T03:34:16+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "New DDRop Attack Breaks Intel TDX and AMD SEV-SNP Confidential Computing",
+          "link": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
+          "summary": "Researchers have disclosed a new hardware attack, called DDRop, that breaks the memory protection in Intel and AMD confidential computing by silently dropping writes to a server's memory, so the processor keeps reading o…",
+          "source": "The Hacker News",
+          "published": "2026-09-15T03:02:13+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "3BB Attacker Used MeshCentral Backdoor for Root Access, Targeted Subscriber Credentials",
+          "link": "https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html",
+          "summary": "An attacker was operating inside the network of 3BB, one of Thailand's largest broadband providers, and maintained remote control of internal machines using a legitimate management tool called MeshCentral, threat intelli…",
+          "source": "The Hacker News",
+          "published": "2026-09-15T03:01:49+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Telegram Desktop Flaw Lets Hidden JavaScript Exfiltrate Messages From HTML Exports",
+          "link": "https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html",
+          "summary": "A flaw in Telegram Desktop let a bot's message plant hidden JavaScript inside chats that users exported to HTML files, security researchers at ExPatch said in a writeup published on September 12. In Telegram, the message…",
+          "source": "The Hacker News",
+          "published": "2026-09-15T02:58:16+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Red Heron Exploits Gitea RCE to Compromise 13 Organizations Across Six Countries",
+          "link": "https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html",
+          "summary": "A suspected Chinese threat actor tracked as Red Heron has been attributed to the rapid exploitation of a recently disclosed security vulnerability in Gitea to compromise internet-facing instances as part of a multi-natio…",
+          "source": "The Hacker News",
+          "published": "2026-09-15T01:56:30+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers target exposed Vite dev servers to steal AWS, Azure secrets",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-target-exposed-vite-dev-servers-to-steal-aws-azure-secrets/",
+          "summary": "A mass-scanning campaign targeting internet-exposed Vite development servers is attempting to steal cloud credentials and configurations from AWS and Azure deployments. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-15T01:15:58+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 29
+}
