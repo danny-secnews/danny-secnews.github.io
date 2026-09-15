@@ -13,9 +13,18 @@
       "name": "KISA 보안공지·취약점",
       "emoji": "🚨",
       "feeds": [
-        { "name": "KISA 보안공지", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000133" },
-        { "name": "KISA 취약점 정보", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000302" },
-        { "name": "KISA 보고서·가이드", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000127" }
+        {
+          "name": "KISA 보안공지",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000133"
+        },
+        {
+          "name": "KISA 취약점 정보",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000302"
+        },
+        {
+          "name": "KISA 보고서·가이드",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000127"
+        }
       ]
     },
     {
@@ -23,7 +32,10 @@
       "name": "개인정보보호·규제 동향",
       "emoji": "🛡️",
       "feeds": [
-        { "name": "보안뉴스 공공·정책", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/S1N3.xml" }
+        {
+          "name": "보안뉴스 공공·정책",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/S1N3.xml"
+        }
       ]
     },
     {
@@ -31,9 +43,18 @@
       "name": "국내 보안뉴스",
       "emoji": "🇰🇷",
       "feeds": [
-        { "name": "보안뉴스 사건·사고", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/S1N2.xml" },
-        { "name": "보안뉴스 전체", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/allArticle.xml" },
-        { "name": "데일리시큐", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.dailysecu.com/rss/allArticle.xml" }
+        {
+          "name": "보안뉴스 사건·사고",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/S1N2.xml"
+        },
+        {
+          "name": "보안뉴스 전체",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/allArticle.xml"
+        },
+        {
+          "name": "데일리시큐",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.dailysecu.com/rss/allArticle.xml"
+        }
       ]
     },
     {
@@ -41,14 +62,36 @@
       "name": "해외 주요 이슈",
       "emoji": "🌐",
       "feeds": [
-        { "name": "The Hacker News", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://feeds.feedburner.com/TheHackersNews" },
-        { "name": "BleepingComputer", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.bleepingcomputer.com/feed/" },
-        { "name": "CISA Advisories", "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.cisa.gov/cybersecurity-advisories/all.xml" }
+        {
+          "name": "The Hacker News",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://feeds.feedburner.com/TheHackersNews"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.bleepingcomputer.com/feed/"
+        },
+        {
+          "name": "CISA Advisories",
+          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.cisa.gov/cybersecurity-advisories/all.xml"
+        }
       ]
     }
   ],
   "highlight_keywords": [
-    "유출", "침해", "랜섬웨어", "제로데이", "긴급", "zero-day", "ransomware", "breach",
-    "과징금", "제재", "개인정보보호법", "CVE-", "actively exploited", "공급망", "supply chain"
+    "유출",
+    "침해",
+    "랜섬웨어",
+    "제로데이",
+    "긴급",
+    "zero-day",
+    "ransomware",
+    "breach",
+    "과징금",
+    "제재",
+    "개인정보보호법",
+    "CVE-",
+    "actively exploited",
+    "공급망",
+    "supply chain"
   ]
 }
