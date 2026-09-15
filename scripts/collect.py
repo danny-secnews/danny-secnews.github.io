@@ -91,15 +91,42 @@ def _first(node, names):
     return None
 
 
-def parse_feed(raw: bytes, source: str) -> list[dict]:
-    try:
-        root = ET.fromstring(raw)
-    except ET.ParseError:
+DECL_RE = re.compile(rb"<\?xml[^>]*?encoding\s*=\s*[\"']([A-Za-z0-9_.\-]+)[\"']")
+
+
+def to_text(raw: bytes) -> str | None:
+    # Decode bytes to str. Handles EUC-KR / CP949 used by Korean media sites.
+    # Python's XML parser (expat) supports only UTF-8, UTF-16, ISO-8859-1 and
+    # US-ASCII, so decode here and strip the XML declaration before parsing.
+    match = DECL_RE.search(raw[:300])
+    declared = match.group(1).decode("ascii", "ignore").lower() if match else None
+
+    candidates: list[str] = []
+    if declared:
+        candidates.append(declared)
+    for codec in ("utf-8", "cp949", "euc-kr", "latin-1"):
+        if codec not in candidates:
+            candidates.append(codec)
+
+    for codec in candidates:
         try:
-            root = ET.fromstring(raw.decode("utf-8", "ignore").encode("utf-8"))
-        except Exception:  # noqa: BLE001
-            print(f"  [!] XML 파싱 실패: {source}")
-            return []
+            text = raw.decode(codec)
+        except (UnicodeDecodeError, LookupError):
+            continue
+        return re.sub(r"^\s*<\?xml.*?\?>", "", text, count=1, flags=re.S).strip()
+    return None
+
+
+def parse_feed(raw: bytes, source: str) -> list[dict]:
+    text = to_text(raw)
+    if not text:
+        print(f"  [!] decode failed: {source}")
+        return []
+    try:
+        root = ET.fromstring(text)
+    except ET.ParseError as exc:
+        print(f"  [!] XML parse failed: {source} ({exc})")
+        return []
 
     entries: list[dict] = []
     nodes = [n for n in root.iter() if strip_ns(n.tag) in ("item", "entry")]
