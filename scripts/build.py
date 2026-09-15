@@ -170,16 +170,16 @@ def main() -> int:
         config = json.load(fp)
     site = config["site"]
     base = site["base_url"].rstrip("/")
-    # GitHub Actions에서 실행되면 저장소 정보로 base_url 자동 보정.
-    # feeds.json의 base_url이 커스텀 도메인이면(github.io가 없으면) 그대로 존중한다.
+    # On GitHub Actions, derive base_url from the repository name.
+    # A custom domain in feeds.json (no "github.io") is left untouched.
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     if repo and "github.io" in base:
         owner, name = repo.split("/", 1)
         owner = owner.lower()
         if name.lower() == f"{owner}.github.io":
-            base = f"https://{owner}.github.io"          # 루트 사이트 (경로 없음)
+            base = f"https://{owner}.github.io"          # root site (no path)
         else:
-            base = f"https://{owner}.github.io/{name}"   # 하위 경로 사이트
+            base = f"https://{owner}.github.io/{name}"   # project site
         print(f"    base_url 자동 설정: {base}")
 
     now = datetime.now(KST)
