@@ -18,10 +18,6 @@
           "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133"
         },
         {
-          "name": "KISA 취약점 정보",
-          "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000302"
-        },
-        {
           "name": "KISA 보고서·가이드",
           "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000127"
         }
@@ -55,7 +51,14 @@
           "name": "데일리시큐",
           "url": "https://www.dailysecu.com/rss/allArticle.xml"
         }
-      ]
+      ],
+      "scrapers":[
+        {
+          "name":"개인정보보호위원회 보도자료",
+          "url":"https://pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS074&mCode=C020010000",
+          "type":"pipc_press"
+        }
+      ]  
     },
     {
       "id": "global",
