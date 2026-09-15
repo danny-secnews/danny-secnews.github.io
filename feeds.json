@@ -3,7 +3,7 @@
     "title": "오늘의 보안이슈",
     "subtitle": "매일 아침 정리하는 국내외 보안·개인정보보호 동향",
     "author": "Danny Kim",
-    "base_url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://danny-secnews.github.io",
+    "base_url": "https://danny-secnews.github.io",
     "lookback_hours": 30,
     "max_items_per_category": 12
   },
@@ -15,15 +15,15 @@
       "feeds": [
         {
           "name": "KISA 보안공지",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000133"
+          "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133"
         },
         {
           "name": "KISA 취약점 정보",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000302"
+          "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000302"
         },
         {
           "name": "KISA 보고서·가이드",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boho.or.kr/kr/rss.do?bbsId=B0000127"
+          "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000127"
         }
       ]
     },
@@ -34,7 +34,7 @@
       "feeds": [
         {
           "name": "보안뉴스 공공·정책",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/S1N3.xml"
+          "url": "https://www.boannews.com/rss/S1N3.xml"
         }
       ]
     },
@@ -45,15 +45,15 @@
       "feeds": [
         {
           "name": "보안뉴스 사건·사고",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/S1N2.xml"
+          "url": "https://www.boannews.com/rss/S1N2.xml"
         },
         {
           "name": "보안뉴스 전체",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.boannews.com/rss/allArticle.xml"
+          "url": "https://www.boannews.com/rss/allArticle.xml"
         },
         {
           "name": "데일리시큐",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.dailysecu.com/rss/allArticle.xml"
+          "url": "https://www.dailysecu.com/rss/allArticle.xml"
         }
       ]
     },
@@ -64,15 +64,15 @@
       "feeds": [
         {
           "name": "The Hacker News",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://feeds.feedburner.com/TheHackersNews"
+          "url": "https://feeds.feedburner.com/TheHackersNews"
         },
         {
           "name": "BleepingComputer",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.bleepingcomputer.com/feed/"
+          "url": "https://www.bleepingcomputer.com/feed/"
         },
         {
           "name": "CISA Advisories",
-          "url": "MailScanner has detected a possible fraud attempt from "www.google.com" claiming to be https://www.cisa.gov/cybersecurity-advisories/all.xml"
+          "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml"
         }
       ]
     }
