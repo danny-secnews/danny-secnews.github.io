@@ -162,6 +162,10 @@ def build_rss(archive: list[dict], site: dict, base: str) -> None:
 
 
 def main() -> int:
+    # git does not track empty folders, so create output dirs every run.
+    for sub in ("data", "posts", "assets"):
+        os.makedirs(os.path.join(DOCS, sub), exist_ok=True)
+
     with open(os.path.join(ROOT, "feeds.json"), encoding="utf-8") as fp:
         config = json.load(fp)
     site = config["site"]
