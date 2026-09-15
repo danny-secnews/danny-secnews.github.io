@@ -13,12 +13,15 @@ from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree as ET
 
 KST = timezone(timedelta(hours=9))
-UA = "Mozilla/5.0 (compatible; BohoDailyBot/1.0; +https://github.com/)"
+UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+)
 TAG_RE = re.compile(r"<[^>]+>")
 WS_RE = re.compile(r"\s+")
 
 
-def fetch(url: str, timeout: int = 25, retries: int = 2) -> bytes | None:
+def fetch(url: str, timeout: int = 15, retries: int = 1) -> bytes | None:
     ctx = ssl.create_default_context()
     last = None
     for attempt in range(retries + 1):
@@ -28,6 +31,7 @@ def fetch(url: str, timeout: int = 25, retries: int = 2) -> bytes | None:
                 headers={
                     "User-Agent": UA,
                     "Accept": "application/rss+xml, application/xml, text/xml, */*",
+                    "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
                     "Accept-Encoding": "gzip",
                 },
             )
