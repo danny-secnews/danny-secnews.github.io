@@ -13,25 +13,39 @@
       "name": "KISA 보안공지·취약점",
       "emoji": "🚨",
       "feeds": [
-        {
-          "name": "KISA 보안공지",
-          "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133"
-        },
-        {
-          "name": "KISA 보고서·가이드",
-          "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000127"
-        }
+        { "name": "KISA 보안공지", "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133" },
+        { "name": "KISA 보고서·가이드", "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000127" }
       ]
     },
     {
       "id": "privacy",
       "name": "개인정보보호·규제 동향",
       "emoji": "🛡️",
+      "require_keywords": [
+        "개인정보",
+        "프라이버시",
+        "개인정보위",
+        "개인정보보호위",
+        "개인정보보호법",
+        "정보통신망법",
+        "신용정보법",
+        "위치정보",
+        "가명정보",
+        "마이데이터",
+        "과징금",
+        "시정명령",
+        "제재",
+        "CPO",
+        "영향평가",
+        "GDPR",
+        "privacy"
+      ],
       "feeds": [
-        {
-          "name": "보안뉴스 공공·정책",
-          "url": "https://www.boannews.com/rss/S1N3.xml"
-        }
+        { "name": "개인정보보호위원회 보도자료", "type": "board", "bypass_filter": true,
+          "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS074&mCode=C020010000" },
+        { "name": "보안뉴스 공공·정책", "url": "https://www.boannews.com/rss/S1N3.xml" },
+        { "name": "보안뉴스", "url": "https://www.boannews.com/rss/allArticle.xml" },
+        { "name": "데일리시큐", "url": "https://www.dailysecu.com/rss/allArticle.xml" }
       ]
     },
     {
@@ -39,44 +53,19 @@
       "name": "국내 보안뉴스",
       "emoji": "🇰🇷",
       "feeds": [
-        {
-          "name": "보안뉴스 사건·사고",
-          "url": "https://www.boannews.com/rss/S1N2.xml"
-        },
-        {
-          "name": "보안뉴스 전체",
-          "url": "https://www.boannews.com/rss/allArticle.xml"
-        },
-        {
-          "name": "데일리시큐",
-          "url": "https://www.dailysecu.com/rss/allArticle.xml"
-        }
-      ],
-      "scrapers":[
-        {
-          "name":"개인정보보호위원회 보도자료",
-          "url":"https://pipc.go.kr/np/cop/bbs/selectBoardList.do?bbsId=BS074&mCode=C020010000",
-          "type":"pipc_press"
-        }
-      ]  
+        { "name": "보안뉴스 사건·사고", "url": "https://www.boannews.com/rss/S1N2.xml" },
+        { "name": "보안뉴스", "url": "https://www.boannews.com/rss/allArticle.xml" },
+        { "name": "데일리시큐", "url": "https://www.dailysecu.com/rss/allArticle.xml" }
+      ]
     },
     {
       "id": "global",
       "name": "해외 주요 이슈",
       "emoji": "🌐",
       "feeds": [
-        {
-          "name": "The Hacker News",
-          "url": "https://feeds.feedburner.com/TheHackersNews"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/feed/"
-        },
-        {
-          "name": "CISA Advisories",
-          "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml"
-        }
+        { "name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews" },
+        { "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/" },
+        { "name": "CISA Advisories", "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml" }
       ]
     }
   ],
@@ -96,5 +85,3 @@
     "actively exploited",
     "공급망",
     "supply chain"
-  ]
-}
