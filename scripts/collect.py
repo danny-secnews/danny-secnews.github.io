@@ -200,6 +200,7 @@ def collect(config: dict, now: datetime | None = None) -> dict:
 
     for category in config["categories"]:
         items: list[dict] = []
+        required = [k.lower() for k in categoty.get("require_keywords",[])]
         for feed in category["feeds"]:
             print(f"  · {category['name']} / {feed['name']}")
             raw = fetch(feed["url"])
