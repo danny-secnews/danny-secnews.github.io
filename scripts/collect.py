@@ -216,8 +216,8 @@ def collect(config: dict, now: datetime | None = None) -> dict:
                 if dt is None:
                     entry["published"] = now.isoformat()
                     dt = now
-                seen.add(key)
                 blob = f"{entry['title']} {entry['summary']}".lower()
+                seen.add(key)
                 entry["highlight"] = any(k in blob for k in keywords)
                 entry["cves"] = extract_cves(entry["title"], entry["summary"])
                 entry["sort_key"] = dt.isoformat()
