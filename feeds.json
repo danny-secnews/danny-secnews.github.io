@@ -19,7 +19,7 @@
     },
     {
       "id": "privacy",
-      "name": "개인정보보호·규제 동향",
+      "name": "개인정보보호 동향",
       "emoji": "🛡️",
       "require_keywords": [
         "개인정보",
