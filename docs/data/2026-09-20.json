@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-09-20T08:46:23.912557+09:00",
+  "date": "2026-09-20",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": []
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "‘플러그인4셸’…AI 코딩 에이전트 플러그인 검증 허점에 제로클릭 원격코드실행 위험",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208552",
+          "summary": "주요 AI 코딩 에이전트의 플러그인 설치·업데이트 과정에서 검증된 코드와 실제 실행되는 코드가 달라질 수 있는 공급망 취약점이 공개됐다.AI 보안업체 에어 시큐리티(AIR Security)는 앤스로픽의 클로드 코드(Claude Code), 오픈AI 코덱스(Codex), 깃허브 코파일럿(GitHub Copilot), 구글 제미나이 CLI(Gemini CLI)에 영향을 주는 취약점을 발견하고 이…",
+          "source": "데일리시큐",
+          "published": "2026-09-19T21:44:06+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "체크포인트 보안관리 서버 치명적 RCE…인증 없이 루트 권한 코드 실행 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208551",
+          "summary": "기업의 방화벽 정책과 관리자 접근, 보안로그를 중앙에서 관리하는 체크포인트 보안관리 서버에서 인증 없이 원격코드실행(RCE)이 가능한 치명적 취약점이 공개돼 신속한 패치가 요구된다.체크포인트는 9월 16일 보안관리 서버(Security Management Server)와 로그 서버(Log Server)에 영향을 미치는 CVE-2026-91843을 공개하고 긴급 보안 업데이트를 권고했다. 취약…",
+          "source": "데일리시큐",
+          "published": "2026-09-19T21:07:57+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-91843"
+          ]
+        },
+        {
+          "title": "[데일리시큐 웨비나] “EDR이 놓친 브라우저가 새로운 공격 표면”…아카마이, ‘Browser EDR’로 제로트러스트 확장",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208554",
+          "summary": "기업의 핵심 업무가 네트워크와 로컬 애플리케이션에서 웹·SaaS·생성형 AI를 사용하는 브라우저 중심으로 이동하면서 기존 EDR(Endpoint Detection and Response)이 충분히 관찰하기 어려운 새로운 보안 사각지대가 커지고 있다.데일리시큐는 9월 17일 아카마이 코리아와 함께 ‘EDR이 보지 못하는 브라우저 위협, 어떻게 막을 것인가’를 주제로 온라인 웨비나를 개최했다.…",
+          "source": "데일리시큐",
+          "published": "2026-09-19T22:12:53+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "AI가 취약점 공격 개발 가속…오픈AI 직원 챗GPT·코덱스 계정까지 탈취",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208553",
+          "summary": "AI를 이용해 이미지 처리 라이브러리의 메모리 취약점을 실제 원격코드실행 공격으로 발전시키고, 이를 오픈AI의 인증 시스템 문제와 연계해 직원의 챗GPT와 코덱스 계정까지 탈취한 보안 연구 결과가 공개됐다.보안업체 핵트론(Hacktron) 연구진은 앤트로픽 클로드 오퍼스 5를 활용해 오픈AI 커뮤니티 포럼에서 코드 실행 권한을 확보한 뒤 오픈AI 직원 계정과 내부 코드 저장소까지 접근 가능한…",
+          "source": "데일리시큐",
+          "published": "2026-09-19T21:52:44+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[이혁중 CISO 칼럼] IoT/OT 보안2-이미 현실 세계를 흔들고 있는 사이버 공격",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208550",
+          "summary": "글로벌 사고 사례와 산업별 대응 전략지난 회에서는 OT/IoT 보안이 왜 사이버보안의 새로운 전선이 되었는지 살펴보았다. IoT는 수많은 기기와 서비스를 연결하고, OT는 공장과 도시, 발전소와 교통망 같은 물리적 인프라를 운영한다. 의료장비, 로봇, 자동차, 드론, 스마트빌딩, 스마트시티까지 연결 대상은 계속 확대되고 있다.이제 보안은 데이터를 보호하는 것을 넘어 생산라인, 도시 기능, 교…",
+          "source": "데일리시큐",
+          "published": "2026-09-19T20:58:27+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제39화 '신선한 재고'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208549",
+          "summary": "데일리시큐는 7월부터 장삼봉 작가(필명)의 정보보안 소설《로그아웃되지 않는 밤》을 매주 4편씩 연재한다. 화려한 디지털 서비스 뒤에서 보이지 않는 위협과 맞서는 보안 담당자들의 현실과 고뇌, 성장을 생생하게 담았다. 수많은 오탐 속에 숨은 단 하나의 진짜 공격을 추적하는 이들의 잠들지 못하는 밤이 시작된다. -다크웹 장터- 도윤에게는 한 달에 한 번, 마음이 가장 무거워지는 날이 있었다. 다…",
+          "source": "데일리시큐",
+          "published": "2026-09-19T20:38:54+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "성현시스템 ‘AF2100’, SBS ‘재벌X형사2’서 지문·BLE 출입통제 기술 선봬",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145955",
+          "summary": "SBS 드라마 ‘재벌X형사2’의 주요 배경인 강하경찰서에 성현시스템의 지문리더기 ‘AF2100’이 등장해 눈길을 끌고 있다. 경찰서와 같은 보안이 중요한 공간에 실제 출입통제 리더기가 설치되면서 드라마의 현실감을 높이는 동시에, 현장에서 활용되는 보안 기술을 자연스럽게 보여주고 있다.AF2100은 기존 지문인식 기반 출입통제 리더기에 BLE(Bluetooth Low Energy) 모바일 인증…",
+          "source": "보안뉴스",
+          "published": "2026-09-19T18:56:38+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "티피링크, IFA 2026서 Wi-Fi 8·스마트홈 기술 인정받아 3개 제품 혁신상",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145954",
+          "summary": "글로벌 네트워킹 및 스마트홈 선도 기업 티피링크(TP-Link)는 독일 베를린에서 열린 유럽 최대 가전 전시회 ‘IFA 2026’에서 Archer 8 Ultra, Deco 8 Ultra, Tapo T150 등 총 3개 제품이 ‘IFA Innovation Awards 2026’ 스마트홈 부문에 선정됐다고 밝혔다.IFA 혁신상은 2025년 신설된 부문으로, 기술 및 업계 전문가로 구성된 독립 심…",
+          "source": "보안뉴스",
+          "published": "2026-09-19T18:55:55+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "제미나이도 보안테스트 중 외부기관 해킹",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145959",
+          "summary": "구글의 AI 모델 ‘제미나이’도 보안 테스트 중 외부기관 해킹을 일으킨 것으로 나타났다.18일(현지시간) 월스트리트저널에 따르면, 제미나이는 지난 5월 보안 평가 업체 이레귤러가 진행한 사이버 보안 시험 도중 외부 기업 3곳의 시스템에 무단 접근했다. 제미나이가 외부 기업 시스템에 임의로 침투한 사실이 확인된 첫 사례다.WSJ이 관련 문의를 하기 전까지 구글은 이 사실을 공지하지 않았다고 이…",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-09-19T15:43:45+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“앤트로픽 클로드로 오픈AI 해킹 성공”... 포상금 900만원",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145958",
+          "summary": "앤트로픽의 AI 모델인 클로드를 활용해 오픈AI 해킹 시도에 성공한 사례가 나왔다. 이를 시도한 연구원들은 오픈AI에 제보해 900만원의 포상금을 받았다.AI 보안 연구업체 해크트론은 자사 연구원들이 ‘클로드 오퍼스5’ 모델로 오픈AI 직원들의 AI 챗봇 챗GPT와 코딩도구 코덱스 계정을 제어하는 데 성공했다고 18일(현지시간) 밝혔다.이들은 오픈AI의 도움말 게시판의 취약점을 통해 서버에…",
+          "source": "보안뉴스",
+          "published": "2026-09-19T12:19:14+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“AI 허위보고서로 미-중 전쟁날뻔”... 미군, 중국선박 나포하려다 직전 중단",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145957",
+          "summary": "미군이 AI의 허위 보고서를 근거로 중동 해역에서 중국 선박을 나포하려다 작전 실행 직전 중단하는 아찔한 일이 발생했다.18일(현지시간) CNN의 보도에 따르면, 이란과의 전쟁이 한창이던 올해 봄 “중동 해역의 중국 선박이 핵무기 프로그램 부품을 운반 중”이라는 내용의, 특수작전사령부 소속 분석관이 작성한 정보 보고서가 미군 전반에 회람됐다.이에 미군은 곧바로 선박 차단 계획에 착수, 무장…",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-09-19T11:15:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[배종찬의 보안 빅데이터] 가족마저 손쉽게 속아 넘어가는 ‘AI 딥페이크’",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145951",
+          "summary": "인공지능(AI) 기술의 급격한 발전은 인간의 삶을 비약적으로 편리하게 만들어주었으나, 동시에 ‘AI 딥페이크’라는 미지의 공포를 우리의 일상 속으로 깊숙이 끌어들였다. AI 딥페이크는 인공지능(Artificial Intelligence)과 딥러닝(Deep Learning), 그리고 가짜를 의미하는 페이크(Fake)의 합성어로, 고도화된 딥러닝 알고리즘을 활용하여 사람의 얼굴, 목소리, 체형…",
+          "source": "보안뉴스",
+          "published": "2026-09-19T10:52:42+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "ShinyHunters hacks Clop leak site, threatens to extort ransomware gang",
+          "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacks-clop-leak-site-threatens-to-extort-ransomware-gang/",
+          "summary": "The ShinyHunters extortion gang breached the Clop (aka Cl0p) ransomware operation's data leak site, defacing the Tor site and allegedly stealing server data and the private keys for its onion service. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-19T22:48:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Identity Visibility in 2026: The Foundation of Identity Security",
+          "link": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
+          "summary": "Identity visibility is a starting point for modern identity security, because stolen and misused credentials are among the most frequently reported initial access vectors in breach research, including Verizon's annual Da…",
+          "source": "The Hacker News",
+          "published": "2026-09-19T22:28:41+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
+          "link": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
+          "summary": "A critical vulnerability impacting Orkes Conductor is being actively exploited in the wild, according to Fortinet. The vulnerability in question is CVE-2026-58138 (CVSS v3.1 score: 9.8/CVSS v4 score: 9.3), which relates…",
+          "source": "The Hacker News",
+          "published": "2026-09-19T17:18:54+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-58138"
+          ]
+        },
+        {
+          "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
+          "link": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+          "summary": "Three researchers at the security firm Hacktron used Anthropic's Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository. T…",
+          "source": "The Hacker News",
+          "published": "2026-09-20T03:36:53+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "BragJack attacks hijack AI browser agents through malicious extensions",
+          "link": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
+          "summary": "BragJack, a proof-of-concept attack from Forever Security's Gal Weizman, hijacks the AI assistants in Chrome, Edge, Opera Neon, Perplexity Comet, and Claude in Chrome using one malicious extension. The Prompt Forcing tec…",
+          "source": "BleepingComputer",
+          "published": "2026-09-19T23:56:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "North Korean WaterPlum hackers infected 30,000 devices worldwide",
+          "link": "https://www.bleepingcomputer.com/news/security/north-korean-waterplum-hackers-infected-30-000-devices-worldwide/",
+          "summary": "A joint law enforcement advisory warns that the North Korean hacking group WaterPlum compromised at least 30,000 devices worldwide from December 2025 through July 2026 and transferred more than $10.7 million in stolen cr…",
+          "source": "BleepingComputer",
+          "published": "2026-09-19T23:05:15+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
+          "link": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html",
+          "summary": "A new CVE drops. Your scanner finds it. The severity score looks ugly. But that still does not answer the question that matters: Can it actually be exploited in your environment? Mythos-class AI is compressing the time b…",
+          "source": "The Hacker News",
+          "published": "2026-09-19T22:28:48+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Viral AI actress' hotline face-scans every caller, watches their mood",
+          "link": "https://www.bleepingcomputer.com/news/security/viral-ai-actress-hotline-face-scans-every-caller-watches-their-mood/",
+          "summary": "AI actress Tilly Norwood went viral after glitching into Chinese on Piers Morgan Uncensored last night. Her \"Talking Tilly\" video call service face-scans every caller for an 18+ age check, senses callers' moods during ca…",
+          "source": "BleepingComputer",
+          "published": "2026-09-19T20:38:20+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "SolarWinds Patches ARM Hard-Coded Key Flaw Enabling Unauthenticated RCE",
+          "link": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
+          "summary": "SolarWinds has released security updates to address a high-severity flaw in Access Rights Manager (ARM) that, if successfully exploited, could lead to an unauthenticated remote code execution vulnerability. The vulnerabi…",
+          "source": "The Hacker News",
+          "published": "2026-09-19T18:31:17+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Google Gemini Broke Into Real Company Systems After Security Test Domain Mix-Up",
+          "link": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html",
+          "summary": "Google's Gemini model has become the latest artificial intelligence (AI) system to access the internet and break into other companies during a cybersecurity evaluation. The development was first reported by The Wall Stre…",
+          "source": "The Hacker News",
+          "published": "2026-09-19T16:51:34+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "CrowdSec Says TanStack npm Attack Led to Copy of 170 Private GitHub Repositories",
+          "link": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+          "summary": "An attacker copied about 170 of CrowdSec's private GitHub repositories on May 22 using the account of an employee who had just left, CrowdSec said on September 18. The French security company had kept his GitHub access o…",
+          "source": "The Hacker News",
+          "published": "2026-09-19T16:14:54+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+          "link": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+          "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added three security flaws impacting the Linux kernel to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitatio…",
+          "source": "The Hacker News",
+          "published": "2026-09-19T15:24:10+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 24
+}
