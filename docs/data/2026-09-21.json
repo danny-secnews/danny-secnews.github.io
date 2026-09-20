@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-09-21T08:46:17.342928+09:00",
+  "date": "2026-09-21",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "남성 패션 플랫폼 ‘룩핀’, 개인정보 유출 공지...이메일·비밀번호 해시 등",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145962",
+          "summary": "남성 패션 플랫폼 ‘룩핀’ 운영사 레벨13에서 이용자들에게 개인정보 유출을 공지했다. 이메일과 비밀번호 해시 등이 유출됐다는 내용이다. 데이터 분석 도구인 ‘메타베이스’의 보안 취약점을 악용한 공격이라는 게 회사 측 분석이다.20일 룩핀이 이용자들에게 이메일로 발송한 공지문에 따르면 회사는 지난 16일 오후 3시쯤 미확인 계정을 발견하고 오후 5시30분쯤 관련 시스템의 접근을 차단했다.안내된…",
+          "source": "보안뉴스",
+          "published": "2026-09-20T15:21:58+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "CISA, 실제 악용 중인 리눅스 커널 취약점 3종 긴급 경고",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208559",
+          "summary": "미국 사이버보안·인프라보안국(CISA)이 리눅스 커널에서 발견된 취약점 3종이 실제 사이버공격에 악용되고 있다며 긴급 대응을 요구했다.CISA는 최근 CVE-2025-39682, CVE-2026-53266, CVE-2025-39964​를 ‘알려진 악용 취약점(Known Exploited Vulnerabilities, KEV)’ 카탈로그에 추가했다. KEV 등재는 단순히 공격 가능성이 있는 취…",
+          "source": "데일리시큐",
+          "published": "2026-09-20T21:43:15+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2025-39682",
+            "CVE-2026-53266",
+            "CVE-2025-39964"
+          ]
+        },
+        {
+          "title": "탠스택 npm 공급망 공격 후폭풍…크라우드섹 비공개 깃허브 저장소 170개 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208557",
+          "summary": "지난 5월 발생한 탠스택 npm 공급망 공격의 피해가 보안업체 크라우드섹의 비공개 소스코드 유출로까지 이어진 사실이 뒤늦게 확인됐다. 악성 오픈소스 패키지 하나가 개발자 PC의 인증정보를 탈취하고, 남아 있던 깃허브 접근권한을 통해 기업 내부 소스코드까지 유출시킨 연쇄 공급망 공격 사례다.크라우드섹은 9월 18일 공개한 최종 사고 분석에서 공격자가 지난 5월 22일 약 9분 동안 퇴직 개발자…",
+          "source": "데일리시큐",
+          "published": "2026-09-20T21:31:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제40화 '신선한 재고'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208563",
+          "summary": "데일리시큐는 7월부터 장삼봉 작가(필명)의 정보보안 소설《로그아웃되지 않는 밤》을 매주 4편씩 연재한다. 화려한 디지털 서비스 뒤에서 보이지 않는 위협과 맞서는 보안 담당자들의 현실과 고뇌, 성장을 생생하게 담았다. 수많은 오탐 속에 숨은 단 하나의 진짜 공격을 추적하는 이들의 잠들지 못하는 밤이 시작된다. -한 명이 아니다-마케팅 사원의 계정을 잠그고 나서, 도윤은 한 가지가 걸렸다. 한…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[김승주 교수 칼럼] 공공기관의 시스템은 모두 국가안보 시스템인가",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208562",
+          "summary": "사이버보안 정책을 논의하다 보면 흔히 나타나는 문제가 하나 있다. 국가안보와 직접 관련된 시스템과 일반적인 공공기관의 정보시스템이 거의 동일하게 취급되는 것이다. 정부기관이 사용하는 시스템이니 국가적으로 중요하고, 국가적으로 중요하니 높은 수준의 보안이 필요하며, 높은 수준의 보안이 필요하니 인터넷에서 격리하고 외부 클라우드나 외산 인공지능(AI)의 이용도 제한해야 한다는 논리다. 하지만 여…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "KISA, ‘AI 위협탐지·대응’ 실무과정 교육생 모집…4주간 집중 교육",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208561",
+          "summary": "한국인터넷진흥원(KISA)이 주관하고 아울네스트가 운영하는 ‘AI 위협탐지·대응’ 실무과정이 강남과 마곡에서 교육생을 모집한다. 이번 과정은 AI를 보안에 활용하는 ‘AI for Security’와 AI 시스템 자체를 보호하는 ‘Security for AI’를 함께 다루는 4주, 총 160시간 규모의 오프라인 교육이다. 강남 교육장 40명, 마곡 교육장 30명을 모집한다.교육에서는 시스템·네…",
+          "source": "데일리시큐",
+          "published": "2026-09-20T22:19:44+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "앤트로픽 “AI, 공격 보조 넘어 오케스트레이터로”…샤이니헌터스 계열도 악용",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208560",
+          "summary": "생성형 AI가 사이버공격자의 단순한 코드 작성 보조도구를 넘어 공격 전 과정을 연결하고 자동화하는 ‘오케스트레이터’로 진화하고 있다는 분석이 나왔다.앤트로픽은 9월 10일 공개한 ‘AI 악용 탐지 및 대응: 2026년 9월’ 위협 인텔리전스 보고서에서 2025년 12월부터 올해 8월까지 자사 AI 모델 ‘클로드’를 악용한 사이버공격 사례를 분석했다.조사 대상에는 국가배후로 의심되는 조직과 금…",
+          "source": "데일리시큐",
+          "published": "2026-09-20T21:51:28+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "‘브랙잭’…악성 확장프로그램 하나로 브라우저 AI 에이전트 장악 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208558",
+          "summary": "브라우저에 탑재되는 AI 에이전트가 확대되는 가운데, 악성 확장프로그램 하나만으로 AI 기능이 가진 브라우저 권한을 악용할 수 있다는 보안 연구가 공개됐다.보안업체 포에버 시큐리티 연구진은 9월 16일 구글 크롬의 제미나이 라이브, 퍼플렉시티 코멧, 마이크로소프트 엣지, 오페라 네온, 클로드 인 크롬 등 크로미움 기반 5개 환경을 대상으로 한 공격 연구 ‘브랙잭(BragJack)’을 공개했다…",
+          "source": "데일리시큐",
+          "published": "2026-09-20T21:38:18+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "북한 해킹그룹 워터플럼, 100여 개국 3만대 감염…개발자 노렸다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208556",
+          "summary": "북한과 연계된 해킹그룹 ‘워터플럼(WaterPlum)’이 가짜 채용면접과 코딩테스트를 이용해 전 세계 개발자들을 공격하고 최소 3만대의 PC를 감염시킨 것으로 나타났다.미국 FBI와 일본 경찰청·국가사이버통괄실, 호주 사이버보안센터(ACSC), 독일 정보기관 등은 9월 18일 워터플럼에 대한 공동 사이버보안 경보를 발표했다. 워터플럼은 보안업계에서 ‘컨테이저스 인터뷰(Contagious In…",
+          "source": "데일리시큐",
+          "published": "2026-09-20T21:21:21+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“연체자도 피싱·스팸 차단”... 과기부-통신3사, 추석맞아 사이버 민생범죄 예방",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145963",
+          "summary": "과학기술정보통신부(부총리 겸 장관 배경훈)는 추석을 맞아 통신 3사 및 플랫폼 기업과 함께 등 사이버 민생범죄 예방에 나선다. 사이버 위협 모니터링을 강화하고, 통신비 연체자도 본인확인 및 피싱·스팸 차단 기능은 차질없이 사용할 수 있게 했다.과기정통부는 한국인터넷진흥원(KISA)과 함께 통신·교통·여행·택배·쇼핑몰 등 명절 이용이 많은 생활 밀접 서비스에 대한 사이버 위협 모니터링을 강화한…",
+          "source": "보안뉴스",
+          "published": "2026-09-20T18:04:46+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "KISA, 인터넷 주소 자원 관리 실태 점검 통과... 라우팅 보안 시험장 개방",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145961",
+          "summary": "한국인터넷진흥원(KISA, 원장 이상중)은 아·태지역 인터넷 주소 관리 기구(APNIC, Asia-Pacific Network Information Centre) ‘인터넷 주소 자원 관리 실태 점검'을 통과했다고 20일 밝혔다.이에 따라 우리나라 인터넷 주소 자원 관리 역량을 국제적으로 인정받았다는 게 KISA 측 설명이다. KISA는 정확한 주소관리 체계를 바탕으로 라우팅 보안 시험장도 개…",
+          "source": "보안뉴스",
+          "published": "2026-09-20T14:50:45+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“로그 들여다보는 시대는 갔다”... 국제 사이버 훈련에서 맹활약한 자율형 AI",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145960",
+          "summary": "“사이버 공격은 날로 지능화되는데, 사람이 일일이 로그를 들여다보며 대응하는 기존 방식은 이미 한계에 이르렀습니다. 이제 방어의 유일한 해법은 인공지능(AI)을 통한 전 과정의 완전 자동화뿐입니다.”서울 코엑스에서 개최된 글로벌 사이버 안보 행사 CSK 2026의 부대행사로 열린 국제 사이버 훈련 ‘APEX(Allied Power Exercise) 2026’은 세계 보안 전문가들에게 큰 충격…",
+          "source": "보안뉴스",
+          "published": "2026-09-20T12:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“국가 R&D 과제에 AI 쓰려면 투명하고 안전하게”... 정부, 국가연구개발 AI 연구윤리 가이드",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145950",
+          "summary": "국가 연구개발에 참여한 연구자는 AI를 연구에 활용할 때 AI 생성물의 오류나 출처 진위 등을 검증해야 한다. 활용한 AI의 모델과 버전 등을 투명하게 공개하고, AI 도구는 허가한 보안 환경 안에서만 써야 한다. 과학기술정보통신부는 국가과학기술자문회의 운영위원회 심의·의결을 거쳐 이같은 내용의 ‘국가연구개발 AI 연구윤리 가이드’를 확정했다고 20일 밝혔다. 부정확한 정보 생성, 기존 자료…",
+          "source": "보안뉴스",
+          "published": "2026-09-20T12:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Malicious npm packages evade install-script defenses at runtime",
+          "link": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/",
+          "summary": "An ongoing npm malware campaign involving the 'indexed-btree' package shows how threat actors bypass supply chain defenses by hiding malicious code in a package's normal runtime behavior rather than in installation scrip…",
+          "source": "BleepingComputer",
+          "published": "2026-09-20T23:11:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Researchers escape OpenAI Codex sandbox to run commands on host",
+          "link": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/",
+          "summary": "Researchers escaped OpenAI's Codex sandbox two ways, one running commands on a developer's machine from its most locked-down mode. OpenAI has patched both. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-20T21:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
+          "link": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+          "summary": "Three researchers at the security firm Hacktron used Anthropic's Claude Opus 5 to chain two flaws and take over the ChatGPT and Codex accounts of several OpenAI employees, then reach an internal OpenAI code repository. T…",
+          "source": "The Hacker News",
+          "published": "2026-09-20T03:36:53+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 16
+}
