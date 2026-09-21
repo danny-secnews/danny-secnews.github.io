@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KISA 보호나라 보안공지 주간 리포트 (2026.09.14 ~ 09.20)</title></head>
+<body style="margin:0;padding:0;background:#F5F5F4;font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">보안공지 5건 중 4건 악용 확인 — Cisco 2건·Check Point 즉시, 리눅스 커널 3건 KEV 기한 오늘(9/21).</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F5F5F4;"><tr><td align="center" style="padding:20px 6px;">
+<table role="presentation" width="760" cellpadding="0" cellspacing="0" style="max-width:760px;width:100%;background:#FFFFFF;border:1px solid #D1D5DB;">
+
+<tr><td style="background:#1E3A5F;color:#FFFFFF;padding:22px 26px;">
+  <div style="font-size:12px;letter-spacing:.5px;opacity:.86;">정보보호 참고자료 · 주간 배포용</div>
+  <div style="font-size:21px;font-weight:700;margin-top:7px;">KISA 보호나라 보안공지 주간 리포트</div>
+  <div style="font-size:13px;margin-top:8px;opacity:.92;line-height:1.65;">대상 기간: 2026.09.14(월) ~ 09.20(일) &nbsp;|&nbsp; 발행: 2026.09.21(월)</div>
+</td></tr>
+
+<tr><td style="padding:22px 26px 4px;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">1. 한눈에 보기</h2>
+  <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    대상 기간에 보호나라 보안공지 <b>7건(#2538~#2544)</b>이 게시됐고, 같은 기간 CISA 악용 확인 목록(KEV)에 <b>7건</b>이 신규 등재됐습니다.
+    이 가운데 추석 관련 일반 주의 공지 2건은 특정 제품·버전을 지정하지 않아 제외했고, Cisco 2건은 두 수집원에 중복돼 한 건으로 묶었습니다.
+    결과적으로 이번 호 점검 대상은 <b>9건</b>이며 <b>이 중 8건은 실제 악용이 확인</b>됐습니다.
+  </p>
+  <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    가장 급한 것은 <b>Cisco 두 건</b>입니다. Cisco ISE·ISE-PIC(CVE-2026-76460, CVSS 10.0)와 Cisco Secure Email Gateway(CVE-2026-76461, CVSS 9.8)는
+    모두 Cisco PSIRT가 실제 악용을 확인했고, 인증 없이 root 권한 명령 실행까지 이어집니다.
+    <b style="color:#9B1C1C;">KEV 기준 연방기관 조치 기한(9/19 · 9/17)은 이미 지났습니다.</b>
+  </p>
+  <div style="margin:0 0 11px;padding:11px 13px;background:#F3F6FA;border-left:3px solid #1E3A5F;font-size:13.5px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>리눅스 커널 3건 — KEV 조치 기한이 오늘(9/21)입니다.</b><br>
+    CISA가 9/18 리눅스 커널 취약점 3건(CVE-2025-39682 · CVE-2025-39964 · CVE-2026-53266)을 KEV에 등재했습니다.
+    보호나라 공지 대상은 아니지만 악용이 확인된 건이고, 사내 리눅스 서버와 컨테이너 호스트가 모두 해당할 수 있습니다.
+  </div>
+  <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    9/18에 올라온 공지 2건이 이번 호에 새로 들어왔습니다. <b>#2543(Check Point 6건)</b>과 <b>#2544(Cisco 2건)</b>입니다.
+    Check Point 6건 중 CVE-2026-16232(SmartConsole 인증 우회)는 이미 7/22 KEV에 등재되고 공개 PoC가 나온 건으로,
+    7월 패치를 적용하지 않은 관리 서버는 <b>두 달째 노출된 상태</b>입니다.
+  </p>
+  <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    <b>침해 흔적 확인이 이번 주에 특히 중요합니다.</b> Cisco 두 건의 벤더 권고는 공격자가 root 권한을 얻으면 로그와 침해 지표를 지우거나 숨길 수 있다고 명시하고,
+    장비 내부 로그만 보지 말고 네트워크·방화벽 등 외부 로그를 교차 확인하라고 권고합니다.
+    제시된 탐지 예시도 벤더가 스스로 <i>non-exhaustive</i>라고 적고 있어, 결과가 비어 있다고 해서 침해가 없다고 볼 수 없습니다.
+  </p>
+  <p style="margin:0 0 4px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    지난 호 수록분 중 Fortinet(CVE-2025-25249)은 이번 주에 확인된 신규 사실만 정리했고, GitLab(CVE-2026-85706)은 신규 사실이 없어 조치 현황만 추적합니다.
+  </p>
+</td></tr>
+
+<tr><td style="padding:18px 26px 6px;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">2. 우선순위</h2>
+  <table role="presentation" width="100%" cellpadding="7" cellspacing="0" style="border-collapse:collapse;font-size:12.5px;color:#1F2937;">
+    <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">대상</th><th style="border:1px solid #D1D5DB;text-align:left;">핵심 취약점 · 영향 대상</th><th style="border:1px solid #D1D5DB;text-align:center;">위험도 · 악용</th><th style="border:1px solid #D1D5DB;text-align:center;">기한</th></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Cisco ISE · ISE-PIC</b><br><span style="color:#6B7280;">KISA #2544 · KEV 9/16</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-76460</b><br><span style="color:#6B7280;">API 인증 제어 미흡 → 인증 우회</span><br><span style="color:#6B7280;">▸ ISE · ISE-PIC 3.1~3.5 (3.0은 지원 종료)</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 10.0</span><br><b>● 악용 확인 · KEV 9/16</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">즉시</b></td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Cisco Secure Email Gateway</b><br><span style="color:#6B7280;">KISA #2544 · KEV 9/14</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-76461</b><br><span style="color:#6B7280;">메일 파싱 SQL 인젝션 → root 명령 실행</span><br><span style="color:#6B7280;">▸ AsyncOS 기반 SEG (물리·가상 모두)</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 9.8</span><br><b>● 악용 확인 · KEV 9/14</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">즉시</b></td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Check Point 제품군</b><br><span style="color:#6B7280;">KISA #2543</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-16232 외 5건</b><br><span style="color:#6B7280;">SmartConsole 인증 우회 · 관리서버/게이트웨이 RCE</span><br><span style="color:#6B7280;">▸ Security Management · Gateway · Spark</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 9.1~9.8</span><br><b>● 악용 확인 · KEV 7/22 (16232 1건)</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">즉시</b><br><span style="color:#6B7280;">16232 우선</span></td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Gitea</b><br><span style="color:#6B7280;">KISA #2540 · KEV 8/25</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-60004</b><br><span style="color:#6B7280;">코드 인젝션 → Git 훅 실행</span><br><span style="color:#6B7280;">▸ 자체 운영 Gitea · 1.17 이상 1.27.1 미만</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 9.8</span><br><b>● 악용 확인 · KEV 8/25 · KISA 피해 발생 중</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">즉시</b></td></tr>
+    <tr style="background:#F3F6FA;"><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>리눅스 커널 3건</b><br><span style="color:#6B7280;">KEV 9/18</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2025-39682 · CVE-2025-39964 · CVE-2026-53266</b><br><span style="color:#6B7280;">TLS 수신 · AF_ALG 경쟁 조건 · ebtables SNAT OOB 쓰기</span><br><span style="color:#6B7280;">▸ 리눅스 서버 · 컨테이너 호스트</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">높음~긴급</b><br><span style="color:#6B7280;">출처별 5.5~9.8</span><br><b>● 악용 확인 · KEV 9/18</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">오늘 9/21</b><br><span style="color:#6B7280;">KEV 기한</span></td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Acronis Backup 플러그인</b><br><span style="color:#6B7280;">KEV 9/16</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-87886</b><br><span style="color:#6B7280;">기본 권한 설정 오류</span><br><span style="color:#6B7280;">▸ cPanel·Plesk·DirectAdmin 연동 백업(Linux)</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">높음</b><br><span style="color:#6B7280;">CVSS 7.8</span><br><b>● 악용 확인 · KEV 9/16</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">해당 시 즉시</b></td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Google Pixel</b><br><span style="color:#6B7280;">KEV 9/16</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-58704</b><br><span style="color:#6B7280;">셀룰러 모뎀 권한 부여 오류</span><br><span style="color:#6B7280;">▸ 업무용 Pixel 단말</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">높음</b><br><span style="color:#6B7280;">CVSS 8.8</span><br><b>◎ 악용 정황 · KEV 9/16 (벤더는 '정황')</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">이번 주</b></td></tr>
+    <tr style="background:#F3F4F6;"><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Fortinet <span style="color:#6B7280;font-weight:400;">(지난 호 수록)</span></b><br><span style="color:#6B7280;">KISA #2539 · KEV 9/9</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2025-25249</b><br><span style="color:#6B7280;">신규 사실 4건만 게재</span><br><span style="color:#6B7280;">▸ FortiOS · FortiSwitchManager + RUGGEDCOM APE1808</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">긴급</b><br><span style="color:#6B7280;">출처별 7.4~9.8</span><br><b>● 악용 확인 · KEV 9/9</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">조치 유지</b></td></tr>
+    <tr style="background:#F3F4F6;"><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>GitLab <span style="color:#6B7280;font-weight:400;">(지난 호 수록)</span></b><br><span style="color:#6B7280;">KISA #2538 · KEV 9/11</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-85706</b><br><span style="color:#6B7280;">신규 사실 없음 — 조치 현황만 추적</span><br><span style="color:#6B7280;">▸ 자체 운영 GitLab CE/EE</span></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">긴급</b><br><span style="color:#6B7280;">CVSS 10.0</span><br><b>● 악용 확인 · KEV 9/11</b></td><td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="">조치 현황 확인</b></td></tr>
+    </table>
+  <p style="margin:9px 0 0;font-size:11.5px;line-height:1.7;color:#6B7280;word-break:keep-all;">
+    ※ 권고 기한은 우선순위 예시입니다. 실제 일정은 자산 중요도·인터넷 노출 여부·변경관리 정책에 따라 조정하십시오.
+    악용 여부는 CISA KEV 등재와 벤더 공지를 근거로 하며 각 항목의 출처를 상세에 적었습니다.
+    KEV 기한은 미국 연방기관 기준으로, 사내 기한이 아니라 우선순위 참고값입니다.
+  </p>
+</td></tr>
+
+<tr><td style="padding:20px 26px 4px;border-top:1px solid #D1D5DB;">
+  <h2 style="margin:0 0 4px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">3. 공지별 조치 방법과 조치 확인 방법</h2>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-1. Cisco Identity Services Engine · ISE-PIC — CVE-2026-76460</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 10.0 · 악용 확인 &nbsp;|&nbsp; KISA #2544(9/18 게시) · KEV 등재 9/16</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      API 엔드포인트의 인증 제어가 충분하지 않아, 인증 없는 원격 공격자가 조작한 요청 하나로 웹 기반 관리 인터페이스를 우회하고 장비에 접근할 수 있습니다.
+      CVSS 10.0(AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H)으로, <b>구성과 무관하게 ISE와 ISE-PIC 전체가 영향</b>을 받습니다.<br>
+      Cisco PSIRT는 실제 악용을 확인했습니다 — “The Cisco PSIRT is aware of active exploitation of this vulnerability.”
+      CISA는 9/16 KEV에 등재했고 연방기관 기한은 9/19로 이미 지났습니다. 악용에 성공하면 root 권한 명령 실행까지 이어질 수 있습니다.<br>
+      벤더 권고 제목은 “Cisco Identity Services Engine Authentication Bypass Vulnerability”, KEV 등재명은 “Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability”로 표기가 다르지만 <b>같은 CVE</b>입니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · 해결 패치 적용 — <b>3.1 Patch 12 / 3.2 Patch 11 / 3.3 Patch 12 / 3.4 Patch 7 / 3.5 Patch 4</b> (KISA #2544 표와 벤더 권고 일치)<br>
+      · <b>3.0 계열은 지원 종료</b> — 벤더: “Cisco ISE Software Release 3.0 has reached End of Software Maintenance. Customers are advised to migrate to a supported release that includes the fix.”<br>
+      · <b>우회책은 없습니다.</b> 패치 전 완화책으로 벤더는 iACL 적용을 제시합니다 — 필요한 관리·제어 트래픽만 해당 장비로 허용. 완화책은 패치를 대체하지 않습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① 설치 버전 — CLI <code style="word-break:break-all;">show version</code>(“Displays software version and installation information for the system”) 또는 GUI <i>About ISE and Server</i>. 설치된 패치 목록은 Open API의 Patch and Hot Patch(“listing all the installed patches”).<br>
+      ② 실행 상태 기준 확인 — <b>[미확인]</b> 조회한 공식 문서에서 패치 적용 뒤 실행 상태 기준 확인 방법을 찾지 못했습니다.<br>
+      ③ 재시작 필요 여부 — <b>[미확인]</b> 패치 설치 시 서비스 재시작 여부를 조회 문서에서 찾지 못했습니다.<br>
+      ④ 분산 배포 전 노드 — 적용·확인 절차는 <b>[미확인]</b>. 다만 침해 흔적 확인은 벤더가 전 노드 수행을 명시하고 있습니다(아래).<br>
+      <span style="color:#6B7280;">②③④는 공식 문서로 확인하지 못했습니다. 패치 적용 후 Cisco TAC 또는 배포 담당 파트너를 통해 확인 절차를 받아 보완해 주십시오.</span>
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      아래는 모두 Cisco 권고 원문의 지시입니다.<br>
+      · <code style="word-break:break-all;">access.log</code>에서 의심 사용자명을 확인합니다 — “To confirm any attempted exploitation of this vulnerability, review the access.log and look for suspicious usernames.”<br>
+      · <b>분산 배포면 각 노드의 로그를 확인</b>합니다 — “If the device is part of a distributed deployment, review the logs of each node.”<br>
+      · 벤더가 제시한 탐지 예시(벤더 표기: <i>non-exhaustive</i>):<br>
+      &nbsp;&nbsp;<code style="word-break:break-all;">admin#show logging application ise-kong/access.log | include dummyuser</code><br>
+      · 추가 access.log는 support bundle을 <i>include debug logs</i> 선택 + shared key encryption으로 수집한 뒤 복호화해 <code style="word-break:break-all;">./ise/logs/apigateway/access.log..gz</code>에서 확인합니다.<br>
+      · “The presence of any entry in the output may indicate malicious activity. <b>This should be done on every node in the deployment.</b>”<br>
+      · 악성 활동이 의심되면 — “it is strongly recommended to re-image the affected nodes and restore from configuration backup if needed.”<br>
+      · root 권한 획득 시 — “evidence of exploitation and indicators of compromise may be removed or hidden by the threat actors.”<br>
+      · 외부 로그 교차 확인 — “Cisco strongly recommends that administrators cross-check the network logs and the firewall logs outside of the impacted device…”<br>
+      <b>확인 결과가 비어 있어도 침해가 없다는 뜻은 아닙니다.</b>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      Cisco 보안권고 cisco-sa-ISE-ABP-VNSW7Tn5(버전 1.0, 2026-09-16 공개) · CISA KEV(dateAdded 2026-09-16) · KISA 보호나라 보안공지 #2544(2026-09-18) · Cisco ISE 3.4 릴리스 노트 · Cisco ISE CLI 레퍼런스 가이드 · Cisco ISE Open API 문서
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-2. Cisco Secure Email Gateway (AsyncOS) — CVE-2026-76461</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.8 · 악용 확인 &nbsp;|&nbsp; KISA #2544(9/18 게시) · KEV 등재 9/14</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      메일 파싱 로직의 입력 검증이 불충분해, <b>조작한 메일을 보내는 것만으로</b> 인증 없이 임의 SQL 문이 실행되고 하부 운영체제에서 root 권한 명령 실행까지 이어집니다(CVSS 9.8).
+      물리·가상 장비 모두, 구성과 무관하게 영향을 받습니다.<br>
+      Cisco PSIRT — “In September 2026, the Cisco PSIRT became aware of active exploitation of this vulnerability.”
+      KEV 9/14 등재, 연방기관 기한 9/17로 이미 지났습니다. 권고는 9/17 버전 1.1에서 클러스터 관련 설명이 추가됐습니다.<br>
+      벤더가 영향 없음을 확인한 제품: Secure Email and Web Manager, Secure Web Appliance.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · 트레인별 첫 수정 릴리스 이상으로 업그레이드 — <b>15.5 이하 → 15.5.5-014 / 16.0 → 16.0.4-302 / 16.5 → 16.5.0-780</b><br>
+      · 벤더 권장 — “Cisco strongly recommends that customers migrate to Release 16.5.0-780.”<br>
+      · <b>우회책은 없습니다</b> — “There are no workarounds that address this vulnerability.”
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① 설치 버전 — 웹 UI <i>Monitor &gt; System Overview</i> 또는 CLI <code style="word-break:break-all;">version</code>.<br>
+      ② 실행 버전 — CLI <code style="word-break:break-all;">version</code>(“Display AsyncOS version and build information”) 또는 API <code style="word-break:break-all;">GET /api/v2.0/health/system_status</code>의 <code style="word-break:break-all;">version_details[].operating_system</code>.
+      업그레이드 후 재부팅이 필수이므로 <b>재부팅을 마친 뒤 확인한 값만 조치 완료 근거로 사용</b>합니다.<br>
+      ③ 재부팅 — <b>필수</b>. “you must reboot the email gateway after upgrading”(AsyncOS 15.5.5 릴리스 노트).<br>
+      ④ 클러스터 — 장비별로 개별 업그레이드합니다(<code style="word-break:break-all;">clusterconfig disconnect</code> → upgrade → resume, 전부 끝난 뒤 <code style="word-break:break-all;">clusterconfig reconnect</code>).
+      벤더: “A cluster must consist entirely of machines running the same version of AsyncOS.” 확인은 각 장비에서 CLI <code style="word-break:break-all;">version</code>.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      아래는 모두 Cisco 권고 원문의 지시입니다.<br>
+      · <code style="word-break:break-all;">mail_logs</code>에서 의심스러운 SQL 문을 확인합니다 — “To confirm any attempted exploitation of this vulnerability, review the mail_logs and look for suspicious SQL statements.”<br>
+      · <b>클러스터면 각 장비의 로그를 확인</b>합니다 — “If the device is part of a cluster, review the logs of each cluster device.”<br>
+      · 벤더가 제시한 탐지 예시(벤더 표기: <i>non-exhaustive</i>):<br>
+      &nbsp;&nbsp;<code style="word-break:break-all;">cisco-esa&gt; grep -i "COPY.*TO PROGRAM" [IronPort Text Mail Logs Log name - Default: mail_logs]</code><br>
+      · “The presence of any entry in the output may indicate malicious activity.”<br>
+      · root 권한 획득 시 — “evidence of exploitation and indicators of compromise may be removed or hidden by the threat actors.”<br>
+      · 외부 로그 교차 확인 — “Cisco strongly recommends that administrators cross-check the network logs and the firewall logs outside of the impacted device…”<br><br>
+      <b>침해가 의심될 때 벤더 권고(Recommendations 절)</b><br>
+      · 물리 장비 — Cisco TAC에 문의하도록 권고합니다.<br>
+      · 가상 장비 — 포렌식 데이터를 보존한 뒤 “Deploy a new virtual machine running one of the fixed software releases” · “Rebuild the product configuration” · 자격증명 갱신을 권고합니다.<br>
+      · 클러스터 — “SSH key pairs are used for authentication purposes between cluster members. Upon successful exploitation of this vulnerability, private SSH keys used for this communication could be accessed on a compromised appliance.”
+      따라서 “Cisco strongly recommends restoring to a secure configuration each member of a cluster that contains at least one compromised appliance.”<br>
+      · 복구가 불가능하면 — “If restoring the appliance is not possible, Cisco recommends contacting the Cisco TAC for further support.”<br>
+      · Cisco Secure Email Cloud 사용 환경은 Cisco가 자체 위협 인텔리전스 조사를 수행했다고 밝혔습니다.<br>
+      <b>확인 결과가 비어 있어도 침해가 없다는 뜻은 아닙니다.</b>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      Cisco 보안권고 cisco-sa-esa-inj-2bLVGmhX(버전 1.1, 2026-09-17 갱신 / 2026-09-14 최초 공개) · CISA KEV(dateAdded 2026-09-14) · KISA 보호나라 보안공지 #2544(2026-09-18) · AsyncOS 15.5.5 릴리스 노트 · Secure Email CLI 레퍼런스·관리자 가이드·API 가이드
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-3. Check Point 제품군 6건 — CVE-2026-16232 외 5건</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.1~9.8 · 1건 악용 확인 &nbsp;|&nbsp; KISA #2543(9/18 게시)</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      KISA가 9/18에 Check Point 취약점 6건을 한 번에 공지했습니다. 이 중 <b>CVE-2026-16232(SmartConsole 인증 우회)</b>는 2026-07-22에 이미 KEV에 등재됐고 벤더가 악용을 확인한 건입니다.
+      7월 패치를 적용하지 않은 관리 서버는 <b>두 달째 노출된 상태</b>이며, 보안업체가 공개한 PoC도 존재합니다.
+    </td></tr>
+    <tr><td colspan="2" style="padding:0 6px 8px;">
+      <table role="presentation" width="100%" cellpadding="5" cellspacing="0" style="border-collapse:collapse;font-size:12.3px;color:#1F2937;">
+        <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">CVE</th><th style="border:1px solid #D1D5DB;text-align:left;">내용</th><th style="border:1px solid #D1D5DB;text-align:center;">CVSS</th><th style="border:1px solid #D1D5DB;text-align:center;">악용 여부</th></tr>
+        <tr><td style="border:1px solid #D1D5DB;"><b>CVE-2026-16232</b></td><td style="border:1px solid #D1D5DB;word-break:keep-all;">SmartConsole 로그인 과정 인증 우회 → 애플리케이션 로그인 토큰 획득, <b>전체 관리자 권한</b>으로 인증. 보안 정책·설정 변경 가능. 원격 악용에는 관리 서버 IP로의 인터넷 접근과 Trusted Clients를 제한하지 않은 구성이 필요합니다.</td><td style="border:1px solid #D1D5DB;text-align:center;">9.8 (NVD)<br>9.3 (CNA, v4.0)</td><td style="border:1px solid #D1D5DB;text-align:center;"><b>● 악용 확인</b><br><span style="color:#6B7280;">KEV 7/22</span></td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">CVE-2026-91843</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">인증 전 로그인 과정의 스택 오버플로 → 원격에서 root 권한 임의 코드 실행.</td><td style="border:1px solid #D1D5DB;text-align:center;">9.8 (CNA)</td><td style="border:1px solid #D1D5DB;text-align:center;">○ 미확인<br><span style="color:#6B7280;">KEV 미등재</span></td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">CVE-2026-85103</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">VPN 인증서 ASN.1 디코딩의 힙 버퍼 오버플로 → 인증 없는 원격 코드 실행(Quantum Security Management·Gateway).</td><td style="border:1px solid #D1D5DB;text-align:center;">9.8 (CNA)</td><td style="border:1px solid #D1D5DB;text-align:center;">○ 미확인<br><span style="color:#6B7280;">KEV 미등재</span></td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">CVE-2026-85102</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">VPN 협상 중 인증서 신뢰 검증 미흡 → 게이트웨이에서 인증 없는 원격 코드 실행.</td><td style="border:1px solid #D1D5DB;text-align:center;">9.8 (CNA)</td><td style="border:1px solid #D1D5DB;text-align:center;">○ 미확인<br><span style="color:#6B7280;">KEV 미등재</span></td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">CVE-2026-62144</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">관리 서버 인증 우회 → 관리 서버에서 관리 명령 실행. 관리 대상 게이트웨이까지 명령 실행이 가능할 수 있습니다.</td><td style="border:1px solid #D1D5DB;text-align:center;">9.1 (CNA)</td><td style="border:1px solid #D1D5DB;text-align:center;">○ 미확인<br><span style="color:#6B7280;">KEV 미등재</span></td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">CVE-2026-18574</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">관리 서버·MDS 인증 우회 → 임의 명령 실행, 관리 체계 전체 장악 가능. 벤더: “Check Point discovered this issue internally and has no indication of active exploitation.”</td><td style="border:1px solid #D1D5DB;text-align:center;">9.3 (CNA, v4.0)</td><td style="border:1px solid #D1D5DB;text-align:center;">○ 미확인<br><span style="color:#6B7280;">KEV 미등재</span></td></tr>
+      </table>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      KISA #2543 표 기준, 계열별 최소 해결 버전입니다. 가운데 열의 값과 오른쪽 CVE는 <b>순서대로 대응</b>합니다.<br>
+      <b>LivePatch와 Jumbo Hotfix는 서로 다른 적용 수단입니다.</b> 표에 따르면 CVE-2026-91843은 LivePatch로, 나머지 5건(16232 · 62144 · 18574 · 85103 · 85102)은 Jumbo Hotfix Take 상향으로 해결됩니다.
+      따라서 한 계열에서 6건을 모두 덮으려면 <b>두 값을 모두 충족</b>해야 하며, Jumbo Hotfix Take만 올려서는 CVE-2026-91843이 해소되지 않습니다.
+      Jumbo Hotfix는 계열별 가장 높은 Take(R82.10 → 44 / R82 → 126 / R81.20 → 166)까지 올리면 해당 5건이 함께 덮입니다.
+    </td></tr>
+    <tr><td colspan="2" style="padding:0 6px 8px;">
+      <table role="presentation" width="100%" cellpadding="5" cellspacing="0" style="border-collapse:collapse;font-size:12.3px;color:#1F2937;">
+        <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">계열</th><th style="border:1px solid #D1D5DB;text-align:left;">표에 나타난 최소 해결 버전</th><th style="border:1px solid #D1D5DB;text-align:left;">해당 CVE</th></tr>
+        <tr><td style="border:1px solid #D1D5DB;">R82.20</td><td style="border:1px solid #D1D5DB;">LivePatch Take 29 이상</td><td style="border:1px solid #D1D5DB;">CVE-2026-91843</td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">R82.10</td><td style="border:1px solid #D1D5DB;">LivePatch Take 28 이상 · Jumbo Hotfix Take 36 / 40 / 44 이상</td><td style="border:1px solid #D1D5DB;">91843 / 16232·62144 / 18574 / 85103·85102</td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">R82</td><td style="border:1px solid #D1D5DB;">LivePatch Take 28 이상 · Jumbo Hotfix Take 118 / 122 / 126 이상</td><td style="border:1px solid #D1D5DB;">91843 / 16232·62144 / 18574 / 85103·85102</td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">R81.20</td><td style="border:1px solid #D1D5DB;">LivePatch Take 28 이상 · Jumbo Hotfix Take 158 / 161 / 166 이상</td><td style="border:1px solid #D1D5DB;">91843 / 16232·62144 / 18574 / 85103·85102</td></tr>
+        <tr><td style="border:1px solid #D1D5DB;">Spark Firewall</td><td style="border:1px solid #D1D5DB;">R82.00.10 Build 2325 이상 · R81.10.17 Build 4968 이상 <b>[미확인]</b></td><td style="border:1px solid #D1D5DB;">CVE-2026-85103 · CVE-2026-85102</td></tr>
+      </table>
+      <p style="margin:7px 0 0;font-size:12px;color:#6B7280;line-height:1.7;word-break:keep-all;">
+        Spark Firewall 행은 KISA #2543 표에서 <b>영향받는 버전과 해결 버전이 같은 문자열</b>(R82.00.10 Build 2325 / R81.10.17 Build 4968)로 표기돼 있습니다.
+        경계(이상·미만) 해석이 확정되지 않아 [미확인]으로 두었습니다. Spark 장비를 운영 중이면 Check Point 해당 sk 문서를 직접 확인하십시오.
+      </p>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — Check Point 지원 문서(sk1000155 등)가 자동 조회를 차단해 원문을 확인하지 못했습니다.
+      설치된 Jumbo Hotfix / LivePatch Take를 확인하는 공식 절차를 확인하지 못했으므로 명령을 싣지 않습니다.
+      Check Point 지원 포털에서 해당 sk 문서를 열람해 확인 절차를 보완해 주십시오.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>CVE-2026-16232에 한해</b> 벤더가 확인 방법을 제시합니다(sk185169).<br>
+      · SmartConsole <i>Audit Logs View</i>에서 <b>“Authentication method: application token”</b>이 기록된 감사 로그를 확인합니다.<br>
+      · 벤더가 공개한 공격자 IP — <code style="word-break:break-all;">151.241.99.207</code>, <code style="word-break:break-all;">151.241.99.233</code>, <code style="word-break:break-all;">158.62.198.182</code>, <code style="word-break:break-all;">192.142.10.99</code>, <code style="word-break:break-all;">139.28.37.250</code>. sk185169은 이 다섯 IP를 출발지·목적지로 함께 매칭하는 SmartConsole 쿼리를 제공합니다.<br>
+      · 벤더 진술 — “Check Point is aware that this vulnerability is being exploited, impacting a very small number of customers.”<br>
+      · 나머지 5건의 벤더 IoC는 <b>[미확인]</b>입니다.<br>
+      <b>확인 결과가 비어 있어도 침해가 없다는 뜻은 아닙니다.</b> 공개 PoC가 있는 건이므로 미패치 기간의 관리 서버 접근 기록과 정책·설정 변경 이력을 함께 확인하십시오.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      KISA 보호나라 보안공지 #2543(2026-09-18) · Check Point 지원 문서 sk185169 · NVD CVE 레코드 6건 · CISA KEV(CVE-2026-16232, dateAdded 2026-07-22) · Check Point sk1000155 · sk185152 · sk185222 · sk1000118 · sk1000117 (미열람 — 자동 조회 차단)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-4. Gitea — CVE-2026-60004</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.8 · 악용 확인 &nbsp;|&nbsp; KISA #2540(9/15 게시) · KEV 등재 8/25</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      같은 패치를 두 번 제출하면 add/add 충돌이 발생하고, 그 과정에서 <code style="word-break:break-all;">hooks/post-index-change</code>에 실행 가능한 항목이 만들어져 인덱스 조작 시 Git 훅으로 실행됩니다(CVSS 9.8).
+      벤더 설명 — “With default open registration enabled, unauthenticated users can gain necessary write access by registering and creating a repository.”
+      즉 <b>공개 회원가입이 켜져 있으면 인증 없는 사용자도 악용 경로에 닿습니다.</b><br>
+      KISA #2540 — “최근 해당 취약점으로 인한 공격 및 피해가 발생 중입니다.” CISA KEV에는 2026-08-25 등재됐습니다.<br>
+      영향 버전: <b>1.17 이상 1.27.1 미만</b> / 해결 버전: <b>1.27.1</b> (조사 시점 최신 안정 버전은 1.27.3).
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · <b>1.27.1 이상으로 업그레이드</b>합니다. 벤더: “This release addresses the following security vulnerabilities. Please upgrade as soon as possible.”<br>
+      · 벤더 우회책은 없습니다 — 권고와 1.27.1 릴리스 글 모두 업그레이드만 안내합니다.<br>
+      · 비공식 완화(공식 권고 아님) — 공개 회원가입 비활성화: <code style="word-break:break-all;">[service] DISABLE_REGISTRATION = true</code>. 설정 문서 설명은 “Disable registration, after which only admin can create accounts for users.”입니다.
+      이는 ‘가입 후 저장소 생성’ 경로만 줄이며, <b>패치를 대체하지 않고</b> 이미 쓰기 권한이 있는 계정의 악용은 막지 못합니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① 설치 버전 — <code style="word-break:break-all;">gitea --version</code>(CLI 문서: “--version, -v: Show version and exit.”) 출력이 1.27.1 이상인지 확인합니다.<br>
+      ② 실행 버전 — 동작 중인 서버에 <code style="word-break:break-all;">GET /version</code>(API 문서: “Returns the version of the Gitea application”)을 호출해 응답 값이 1.27.1 이상인지 확인합니다.<br>
+      ③ 재시작 — <b>필요</b>합니다. 업그레이드 문서: 인스턴스 정지 → 데이터 백업 → 바이너리 교체 → 인스턴스 시작. Docker는 새 이미지로 컨테이너를 재기동합니다.<br>
+      ④ 다중 인스턴스 — <b>[미확인]</b> CLI·업그레이드 가이드·API 문서에 다중 인스턴스 확인 절차가 없습니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>벤더가 제공하는 공식 확인 방법이 없습니다</b>(GHSA-rcr6-4jqh-j84m, 1.27.1 릴리스 글 모두). 공식 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      공격 원리에서 도출한 점검 착안점(<b>벤더 IoC 아님</b>) — 패치 적용 전 기간의 <code style="word-break:break-all;">diffpatch</code> API 호출 이력, 특히 <b>같은 패치를 반복 제출한 기록</b>을 웹·리버스 프록시 로그에서 확인합니다.
+      벤더가 로그 문자열이나 명령을 제공하지 않아 구체적인 명령은 싣지 않습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      GitHub Security Advisory GHSA-rcr6-4jqh-j84m(2026-07-28 공개) · Gitea 1.27.1 릴리스 공지 · Gitea CLI·업그레이드·API·설정 문서 · CISA KEV(dateAdded 2026-08-25) · KISA 보호나라 보안공지 #2540(2026-09-15)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;background:#F3F6FA;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-5. 리눅스 커널 3건 — CVE-2025-39682 · CVE-2025-39964 · CVE-2026-53266</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;">악용 확인 &nbsp;|&nbsp; KEV 등재 9/18 · <b style="color:#9B1C1C;">KEV 조치 기한 오늘 9/21(월)</b> · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      CISA가 9/18 리눅스 커널 취약점 3건을 KEV에 등재했습니다(연방기관 기한 2026-09-21).
+      보호나라 공지에는 없지만 악용이 확인된 건이라 함께 싣습니다. 세 건 모두 KEV의 <code style="word-break:break-all;">knownRansomwareCampaignUse</code>는 Unknown입니다.
+    </td></tr>
+    <tr><td colspan="2" style="padding:0 6px 8px;">
+      <table role="presentation" width="100%" cellpadding="5" cellspacing="0" style="border-collapse:collapse;font-size:12.3px;color:#1F2937;">
+        <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">CVE</th><th style="border:1px solid #D1D5DB;text-align:left;">내용 (KEV·NVD 설명 기준)</th><th style="border:1px solid #D1D5DB;text-align:center;">CVSS</th><th style="border:1px solid #D1D5DB;text-align:left;">영향 범위 (업스트림 kernel.org 기준)</th></tr>
+        <tr><td style="border:1px solid #D1D5DB;"><b>CVE-2025-39682</b><br><span style="color:#6B7280;">TLS 수신 경로</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;">rx_list에서 꺼낸 <b>길이 0 레코드</b>가 recvmsg()의 레코드 타입 처리를 우회합니다. KEV 등재명: Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability.</td><td style="border:1px solid #D1D5DB;text-align:center;">7.1 NVD(AV:L)<br>9.8 CNA(AV:N)</td><td style="border:1px solid #D1D5DB;font-size:11.5px;">6.0 ≤ v &lt; 6.1.149<br>6.2 ≤ v &lt; 6.6.103<br>6.7 ≤ v &lt; 6.12.44<br>6.13 ≤ v &lt; 6.16.4<br>6.17-rc1 · rc2</td></tr>
+        <tr><td style="border:1px solid #D1D5DB;"><b>CVE-2025-39964</b><br><span style="color:#6B7280;">crypto / AF_ALG</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;">같은 AF_ALG 소켓에 <b>동시 쓰기</b>가 허용돼 데이터가 예측 불가능하게 섞이고 소켓 내부 상태에 불일치가 생깁니다. KEV 등재명: Linux Kernel Race Condition Vulnerability.</td><td style="border:1px solid #D1D5DB;text-align:center;">5.5 NVD(AV:L)<br>7.8 CNA</td><td style="border:1px solid #D1D5DB;font-size:11.5px;">2.6.38 ≤ v &lt; 5.10.245<br>5.11 ≤ v &lt; 5.15.194<br>5.16 ≤ v &lt; 6.1.154<br>6.2 ≤ v &lt; 6.6.108<br>6.7 ≤ v &lt; 6.12.49<br>6.13 ≤ v &lt; 6.16.9<br>6.17-rc1~rc6</td></tr>
+        <tr><td style="border:1px solid #D1D5DB;"><b>CVE-2026-53266</b><br><span style="color:#6B7280;">netfilter bridge / ebtables</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;">ebtables SNAT 타깃의 <b>ARP sender hardware address 재작성</b>이, splice로 들여온 파일 페이지를 기반으로 하는 비선형 소켓 버퍼 조각에 직접 쓰기를 수행합니다. KEV 등재명: Linux Kernel Out-of-Bounds Write Vulnerability.</td><td style="border:1px solid #D1D5DB;text-align:center;">8.8 CNA<br><span style="color:#6B7280;">NVD Primary 없음</span></td><td style="border:1px solid #D1D5DB;font-size:11.5px;">5.4.73 ≤ v &lt; 5.5<br>5.8.17 ≤ v &lt; 5.9<br>5.9.2 ≤ v &lt; 5.10.259<br>5.11 ≤ v &lt; 5.15.210<br>5.16 ≤ v &lt; 6.1.176<br>6.2 ≤ v &lt; 6.6.143<br>6.7 ≤ v &lt; 6.12.94<br>6.13 ≤ v &lt; 6.18.36<br>6.19 ≤ v &lt; 7.0.13<br>7.1-rc1~rc6</td></tr>
+      </table>
+      <p style="margin:7px 0 0;font-size:12px;color:#6B7280;line-height:1.7;word-break:keep-all;">
+        <b>CVSS가 출처마다 다릅니다.</b> NVD Primary(nvd@nist.gov)와 커널 CNA의 점수·벡터가 서로 달라 공격 경로(AV:L 로컬 / AV:N 네트워크) 판단이 갈립니다.
+        어느 한쪽으로 단정하지 않고 두 값을 모두 적었습니다. 우선순위를 정할 때는 <b>KEV 등재(악용 확인)</b>를 기준으로 보시는 편이 안전합니다.
+      </p>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · <b>배포판 벤더가 제공하는 최신 커널로 업데이트한 뒤 재부팅</b>합니다. CISA 요구 조치 — “Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 … Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable.”<br>
+      · 위 영향 범위는 <b>업스트림(kernel.org) 기준</b>입니다. 배포판 커널은 백포트가 적용되므로 <b>업스트림 버전 번호만으로 해당 여부를 판단하지 마십시오.</b>
+      배포판별 해결 커널 버전은 이번 조사에서 확인하지 않아 <b>[미확인]</b>입니다 — RHEL·Ubuntu 등 각 배포판의 CVE 페이지를 확인하십시오.<br>
+      · <b>컨테이너는 호스트 커널을 공유</b>하므로 노드(호스트) 커널을 업데이트합니다. 다수 사용자가 접속하는 서버와 컨테이너 호스트를 먼저 처리합니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      · 동작 중인 커널을 확인합니다 — <code style="word-break:break-all;">uname -r</code>(리눅스 표준 명령, 벤더 IoC 아님). <b>설치만 하고 재부팅하지 않으면 구버전 커널이 계속 동작합니다.</b><br>
+      · 배포판별 CVE 적용 여부 확인 도구(예: 배포판 제공 CVE 점검 명령)는 이번 조사에서 이 3건에 대한 배포판 공지를 확인하지 않아 <b>[미확인]</b>입니다.
+    </td></tr>
+    <tr style="background:#FFFFFF;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      KEV 등재(악용 확인) 건이지만, CISA·NVD·커널 커밋 어디에도 침해 확인 방법이나 IoC가 제시돼 있지 않습니다 — <b>[미확인]</b>. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      세 건 모두 권한 상승·메모리 손상 계열이므로, 패치 전 기간에 <b>예상치 못한 권한 상승, 커널 관련 비정상 종료, 알 수 없는 로컬 계정 활동</b>이 있었는지 기존 로그로 확인하십시오(벤더 IoC 아님).
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CISA KEV(catalogVersion 2026.09.18, dateReleased 2026-09-18T19:00:05.0974Z, count 1716 — dateAdded 2026-09-18 3건) · NVD CVE 레코드 3건 · kernel.org stable 수정 커밋
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-6. Acronis Backup 플러그인 · 확장 — CVE-2026-87886</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;">높음 · CVSS 7.8 · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/16 · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      cPanel &amp; WHM 플러그인 / Plesk 확장 / DirectAdmin 플러그인(Linux)의 <b>기본 권한 설정 오류</b>입니다.
+      KEV 등재명은 “Acronis Backup Incorrect Default Permissions Vulnerability”, dateAdded 2026-09-16, 연방기관 기한 9/19(경과).<br>
+      <b>벤더 권고 원문을 확인하지 못했습니다.</b> Acronis 권고 SEC-10986 페이지가 JavaScript 렌더링을 요구해 열람하지 못했습니다.
+      아래 버전 값은 <b>CVE 레코드(CNA: Acronis) 기준</b>이며, 벤더 원문 확인 전까지 우회책·조치 확인 명령·IoC는 싣지 않습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · cPanel &amp; WHM 플러그인 — <b>1.9.3.1021 이상</b> (1.9.3.1021 미만 영향)<br>
+      · Plesk 확장 — <b>1.8.11.638 이상</b> (1.8.11.638 미만 영향)<br>
+      · DirectAdmin 플러그인 — <b>1.2.3.238 이상</b> (1.2.3.238 미만 영향)<br>
+      · 권고 강도(벤더 표현)는 <b>[미확인]</b> — 원문 미확인.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 원문을 확인하지 못해 버전 확인 절차를 싣지 않습니다.
+      호스팅 패널의 플러그인·확장 관리 화면에서 설치 버전을 확인한 뒤, Acronis 지원 문서로 교차 확인해 주십시오.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 IoC와 확인 방법을 확인하지 못했습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.
+      KEV 등재 건이므로 패치 전 기간의 <b>백업 파일·권한 변경 이력</b>을 함께 확인하십시오.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CVE 레코드 CNA(Acronis, datePublished 2026-09-17T22:57:18Z) · CISA KEV(dateAdded 2026-09-16) · Acronis 보안권고 SEC-10986(미열람 — JavaScript 필요)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-7. Google Pixel (셀룰러 모뎀) — CVE-2026-58704</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;">높음 · CVSS 8.8 · 악용 정황 &nbsp;|&nbsp; KEV 등재 9/16 · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      Pixel 셀룰러 모뎀 관련 부적절한 권한 부여 취약점입니다. Pixel 9월 보안 게시판(2026-09-15)의 심각도는 High이고,
+      CVSS 8.8(AV:A — 인접 네트워크)은 CVE 레코드의 CISA-ADP 값입니다. Google은 벤더 CVSS를 기재하지 않았습니다.<br>
+      <b>벤더 표현은 ‘정황’입니다</b> — “There are indications that CVE-2026-58704 may be under <b>limited, targeted exploitation</b>.”
+      CISA KEV에는 9/16 등재(“Google Pixel Improper Authorization Vulnerability”)됐습니다. 두 표현의 강도 차이를 그대로 옮깁니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · <b>보안 패치 수준 2026-09-05 이상</b>으로 업데이트한 뒤 재시작합니다.
+      게시판: “For Google devices, security patch levels of 2026-09-05 or later address all issues in this bulletin and all issues in the September 2026 Android Security Bulletin.”<br>
+      · 공식 우회책은 <b>[미확인]</b> — 게시판에 Pixel 우회책 기재가 없습니다. 완화책이 없다고 단정하지는 않습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① 설치 수준 — 설정 &gt; 휴대전화 정보 &gt; Android 버전 &gt; <i>Android security update</i> 날짜를 확인합니다.<br>
+      ② 실행 기준 확인 — <b>[미확인]</b> 문서는 “The installed updates become active the next time that you restart your device.”만 명시합니다.
+      설정 화면 값이 활성 수준인지 설치 수준인지 서술이 없어, <b>재시작 뒤 확인</b>합니다.<br>
+      ③ 재시작 — <b>필요</b>합니다(위 문장).<br>
+      ④ 다수 단말 일괄 확인 — <b>[미확인]</b> Android Management API의 <code style="word-break:break-all;">Device.softwareInfo</code>가 있으나 보안 패치 수준 필드명을 조회 범위에서 확인하지 못했습니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — Pixel 게시판과 Android 도움말에 침해 확인 방법이 없습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      Pixel Update Bulletin — September 2026(2026-09-15 공개) · CISA KEV(dateAdded 2026-09-16) · CVE 레코드 CISA-ADP 평가 · Android 도움말 · Android Management API 문서
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;background:#F3F4F6;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-8. Fortinet FortiOS · FortiSwitchManager — CVE-2025-25249 <span style="font-size:12.5px;font-weight:400;color:#6B7280;">(지난 호 수록 · 신규 사실만)</span></h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>긴급</b> · 악용 확인 &nbsp;|&nbsp; KISA #2539(9/14 게시) · KEV 등재 9/9</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">신규 사실</td><td style="word-break:keep-all;">
+      지난 호에 이미 실은 건이라 전체를 다시 싣지 않고, 이번 조사에서 확인된 <b>신규 사실 4가지</b>만 정리합니다. 조치 자체는 지난 호와 동일합니다.<br><br>
+      <b>① 추가 영향 제품 — Siemens RUGGEDCOM APE1808.</b> Fortinet NGFW를 탑재한 제품으로 같은 취약점에 해당합니다.
+      Siemens 권고 SSA-864900: “Update Fortigate NGFW to V7.4.9 or later following the secure update recommendation procedure.”
+      (SSA-864900은 2025-05-13 최초 공개, V1.7(2026-02-10)에서 CVE-2025-25249가 추가됐고 최종 갱신 2026-08-11.)<br><br>
+      <b>② FortiSASE는 고객 조치 불필요.</b> CVE 레코드 CNA 기재 — “Fortinet remediated this issue in FortiSASE version 25.2.c and hence customers do not need to perform any action.”(25.1.b도 동일 문장). 벤더 권고 원문은 확인하지 못했으므로 이 값은 CVE 레코드 기준입니다.<br><br>
+      <b>③ FortiOS 6.4 계열 개별 패치는 없습니다.</b> docs.fortinet.com의 FortiOS 6.4 버전 목록 최고값이 6.4.16이고(‘6.4.17’ 문자열 없음, 2회 확인), CVE 레코드 solutions에도 6.4 해결 버전이 없습니다.
+      KISA #2539 표도 ‘해결 버전으로 마이그레이션’입니다. → <b>6.4 사용 환경은 지원되는 상위 버전으로 이전</b>해야 합니다.<br><br>
+      <b>④ 영향 버전 표기가 출처마다 다릅니다.</b> CVE 레코드의 구조화 필드(7.6.0~7.6.2 이하 등, 7.0·6.4 없음), 같은 레코드의 설명문(7.6.0 through 7.6.3 등, 7.0·6.4 포함), KISA #2539 표(7.6.0 이상 7.6.4 미만 등)가 서로 다릅니다.
+      어느 한쪽으로 단정하지 않고 세 값을 모두 기록했습니다. 실제 판단은 벤더 권고 원문 확인 후에 하십시오.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      지난 호 조치를 그대로 유지합니다 — <b>FortiOS 7.0.18 / 7.2.12 / 7.4.9 / 7.6.4 이상</b>, <b>FortiSwitchManager 7.0.6 / 7.2.7 이상</b>.
+      FortiOS 6.4는 위 ③에 따라 상위 버전으로 이전. RUGGEDCOM APE1808은 Siemens 절차에 따라 Fortigate NGFW V7.4.9 이상.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — FortiGuard 권고 FG-IR-25-084 원문이 봇 확인 화면으로 열리지 않아 이번 호에서는 벤더 기준 확인 명령을 싣지 않습니다.
+      지난 호에 실은 확인 방법을 그대로 사용하시되, 벤더 원문 확인 후 보완이 필요합니다.
+    </td></tr>
+    <tr style="background:#FFFFFF;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      벤더 원문 미확인으로 벤더 IoC는 <b>[미확인]</b>입니다. KEV 등재(9/9) 건이므로 패치와 별도로 패치 전 기간의 침해 흔적 점검은 계속 필요합니다 —
+      지난 호에 안내한 일반 점검 항목(모르는 관리자 계정, 설정 변경 이력, 낯선 VPN 세션·외부 연결)을 유지하십시오. <b>이는 벤더 IoC가 아닙니다.</b>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      KISA 보호나라 보안공지 #2539(2026-09-14) · CVE 레코드 CNA(Fortinet) · Siemens 보안권고 SSA-864900 · docs.fortinet.com FortiOS 6.4 문서 · CISA KEV(dateAdded 2026-09-09) · FortiGuard FG-IR-25-084(미열람 — 봇 확인 화면)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 16px;border-top:1px dashed #D1D5DB;background:#F3F4F6;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-9. GitLab CE/EE — CVE-2026-85706 <span style="font-size:12.5px;font-weight:400;color:#6B7280;">(지난 호 수록 · 조치 현황 추적)</span></h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>긴급</b> · CVSS 10.0 · 악용 확인 &nbsp;|&nbsp; KISA #2538(9/14 게시) · KEV 등재 9/11</div>
+  <p style="margin:0 0 8px;font-size:13px;line-height:1.72;color:#1F2937;word-break:keep-all;">
+    이번 조사에서 신규 사실이 확인되지 않아 재수록하지 않고 <b>조치 현황만 추적</b>합니다.
+    신규 악용 정보 · 신규 IoC · 신규 완화책 · 해결 버전 변경 · 추가 영향 제품 · 신규 벤더 탐지 방법 — <b>모두 없음</b>.
+    공격 캠페인 변화는 <b>[미확인]</b>입니다.
+  </p>
+  <p style="margin:0 0 8px;font-size:13px;line-height:1.72;color:#1F2937;word-break:keep-all;">
+    GitLab 19.3.2 패치 릴리스 권고에 갱신 표기가 없고, CVE 레코드 dateUpdated는 2026-09-12, KEV 등재일은 9/11 그대로입니다.
+  </p>
+  <p style="margin:0;font-size:13px;line-height:1.72;color:#1F2937;word-break:keep-all;">
+    아직 적용하지 않은 인스턴스는 지난 호 조치를 그대로 수행하십시오 — <b>19.3.2 / 19.2.6 / 19.1.8 이상</b>으로 업그레이드.
+  </p>
+  <p style="margin:8px 0 0;font-size:12px;color:#6B7280;word-break:keep-all;">
+    출처 — GitLab 19.3.2 패치 릴리스 권고 · CVE 레코드 · CISA KEV(dateAdded 2026-09-11) · KISA 보호나라 보안공지 #2538(2026-09-14)
+  </p>
+</td></tr>
+
+<tr><td style="padding:20px 26px 6px;border-top:1px solid #D1D5DB;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">4. 대상별 이번 주 권고 조치</h2>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="border-collapse:collapse;font-size:12.8px;color:#1F2937;">
+    <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">대상</th><th style="border:1px solid #D1D5DB;text-align:left;">할 일</th><th style="border:1px solid #D1D5DB;text-align:center;">기한</th></tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;"><b>네트워크 · 보안 장비 운영</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">Cisco ISE·ISE-PIC 해결 패치 적용(3.1 P12 / 3.2 P11 / 3.3 P12 / 3.4 P7 / 3.5 P4), 패치 전에는 iACL 완화책 적용.
+      Cisco Secure Email Gateway 15.5.5-014 · 16.0.4-302 · 16.5.0-780 이상으로 업그레이드 후 <b>재부팅</b>.
+      Check Point 관리 서버·게이트웨이의 Jumbo Hotfix / LivePatch Take 확인 후 상향.
+      세 건 모두 <b>침해 흔적 확인을 전 노드·전 클러스터 장비에 수행</b>.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;"><b>즉시</b></td>
+    </tr>
+    <tr style="background:#F3F6FA;">
+      <td style="border:1px solid #D1D5DB;"><b>서버 운영 (리눅스)</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">리눅스 커널 3건 — 배포판 벤더가 제공하는 최신 커널 설치 후 <b>재부팅</b>.
+      다수 사용자 접속 서버와 컨테이너 호스트부터 처리. 재부팅 후 <code style="word-break:break-all;">uname -r</code>로 동작 중인 커널 확인.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;"><b style="color:#9B1C1C;">오늘 9/21</b><br><span style="color:#6B7280;">KEV 기한</span></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;"><b>개발 · DevOps</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">자체 운영 <b>Gitea</b>를 1.27.1 이상으로 업그레이드하고 재기동 후 <code style="word-break:break-all;">GET /version</code>으로 확인. 공개 회원가입 설정 상태도 함께 점검.
+      <b>GitLab</b>은 지난 호 조치(19.3.2 / 19.2.6 / 19.1.8 이상) 적용 여부를 재확인.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;"><b>호스팅 · 백업 운영</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">Acronis Backup 플러그인·확장 버전 확인 — cPanel &amp; WHM 1.9.3.1021 / Plesk 1.8.11.638 / DirectAdmin 1.2.3.238 이상.
+      cPanel·Plesk·DirectAdmin 연동 백업을 쓰는 경우에만 해당.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;">해당 시 즉시</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;"><b>정보보호 담당</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">Cisco 두 건의 침해 흔적 확인 결과 취합, <b>네트워크·방화벽 등 외부 로그 교차 확인</b>을 인프라 담당에 요청.
+      이번 호의 [미확인] 항목(Check Point 확인 절차, Acronis·Fortinet 벤더 원문, Cisco ISE 조치 확인 ②③④) 원문 확보.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;">이번 주</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;"><b>사업 · PM · 서비스 운영</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">납품·운영 중인 시스템에 Cisco ISE / Cisco SEG / Check Point / Gitea / Fortinet 사용 여부를 파악하고 고객사 담당자에게 조치 필요성을 공유.
+      공공 고객은 KEV 기한이 참고 기준이 될 수 있음.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;">이번 주</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;"><b>전 직원 (모바일)</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">업무용 Pixel 단말은 설정 &gt; 휴대전화 정보에서 Android 보안 업데이트가 <b>2026-09-05 이상</b>인지 확인하고, 업데이트 후 반드시 재시작.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;">이번 주</td>
+    </tr>
+  </table>
+
+  <div style="margin:14px 0 0;padding:12px 14px;background:#F3F6FA;border-left:3px solid #1E3A5F;">
+    <div style="font-size:13.5px;font-weight:700;color:#1E3A5F;margin-bottom:7px;">조치 확인의 공통 원칙</div>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">① ‘설치했다’가 아니라 <b>재부팅·재시작 후 실제 동작 중인 버전</b>을 확인합니다. 이번 호의 Cisco SEG·리눅스 커널·Gitea·Pixel이 모두 여기에 해당합니다.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">② <b>클러스터·분산 배포·다중 노드는 노드마다</b> 확인합니다. Cisco 두 건은 벤더가 명시적으로 요구합니다 — SEG “review the logs of each cluster device”, ISE “This should be done on every node in the deployment”.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">③ 침해 흔적 확인 결과가 비어 있어도 <b>‘침해 없음’으로 결론 내리지 않습니다.</b> 벤더가 탐지 예시를 <i>non-exhaustive</i>로 표기했고, 공격자가 root 권한을 얻으면 증거와 침해 지표를 삭제·은폐할 수 있습니다.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">④ 장비 내부 로그만 보지 말고 <b>외부 로그를 교차 확인</b>합니다. Cisco 두 건 모두 네트워크 로그와 방화벽 로그를 장비 외부에서 대조하도록 권고하며, ISE 권고는 외부 IP로의 예기치 않은 업로드와 악성 IP로부터의 다운로드를 예로 듭니다.</p>
+    <p style="margin:0;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">⑤ 침해가 의심되면 <b>패치만으로 끝내지 않습니다.</b> Cisco ISE는 영향 노드 재이미징 후 구성 백업 복원, Cisco SEG 가상 장비는 수정 릴리스로 새 VM 배포·구성 재구축·자격증명 갱신, 물리 장비와 복구 불가 시에는 Cisco TAC 문의를 권고합니다.</p>
+  </div>
+</td></tr>
+
+<tr><td style="padding:20px 26px 6px;border-top:1px solid #D1D5DB;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">5. 집계 기준과 참고 사항</h2>
+
+  <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>집계 기준</b> — KISA는 게시판 게시일, CISA KEV는 <code style="word-break:break-all;">dateAdded</code> 기준입니다. 대상 기간은 2026-09-14 00:00 ~ 09-20 24:00(KST)입니다.
+    기간 내 KISA 공지 7건(#2538~#2544), KEV 신규 등재 7건이며 CVE 중복 2건(CVE-2026-76460 · CVE-2026-76461 — KISA #2544 ↔ KEV)을 하나로 묶었습니다.
+    9/19~9/20에는 신규 보호나라 공지와 KEV 등재가 모두 없었습니다(9/21 재확인, 보호나라 최상단 #2544 · KEV catalogVersion 2026.09.18).
+  </p>
+
+  <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>리포트에서 제외한 공지 2건</b> — #2541(추석 명절 대비 기업 보안점검·모니터링 강화), #2542(추석 명절 연휴기간 스미싱·피싱 등 사이버사기 주의).
+    특정 제품·버전·CVE를 지정하지 않은 일반 점검·주의 공지여서 기술 조치 항목으로 다루지 않았습니다. 원문은 보호나라에서 확인하실 수 있습니다.
+  </p>
+
+  <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>수집 경로</b> — CISA KEV는 공식 데이터(cisagov/kev-data, catalogVersion 2026.09.18 · count 1716)를 사용했습니다.
+    벤더 원문 중 열람하지 못한 것은 FortiGuard FG-IR-25-084(봇 확인 화면), Acronis SEC-10986(JavaScript 필요), Check Point sk1000155 외 4건(자동 조회 차단)입니다.
+    <b>확인하지 못한 명령·설정·침해 지표는 추측해서 싣지 않았고 [미확인]으로 남겼습니다.</b>
+  </p>
+
+  <table role="presentation" width="100%" cellpadding="5" cellspacing="0" style="border-collapse:collapse;font-size:12.3px;color:#1F2937;margin-top:12px;">
+    <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">남아 있는 [미확인] 항목</th><th style="border:1px solid #D1D5DB;text-align:left;">내용</th><th style="border:1px solid #D1D5DB;text-align:left;">확인 경로</th></tr>
+    <tr><td style="border:1px solid #D1D5DB;">Check Point 조치 확인</td><td style="border:1px solid #D1D5DB;">설치된 Jumbo Hotfix / LivePatch Take 확인 절차</td><td style="border:1px solid #D1D5DB;">Check Point 지원 포털 sk 문서</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">Check Point Spark</td><td style="border:1px solid #D1D5DB;">표의 영향 버전과 해결 버전이 같은 문자열 — 경계 해석</td><td style="border:1px solid #D1D5DB;">sk1000118 · sk1000117</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">Cisco ISE 조치 확인</td><td style="border:1px solid #D1D5DB;">실행 상태 기준 확인 · 패치 시 재시작 여부 · 분산 배포 전 노드 절차</td><td style="border:1px solid #D1D5DB;">Cisco TAC 또는 배포 파트너</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">Acronis</td><td style="border:1px solid #D1D5DB;">권고 SEC-10986 원문 — 판본·우회책·조치 확인·IoC·악용 진술</td><td style="border:1px solid #D1D5DB;">브라우저로 직접 열람</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">Fortinet</td><td style="border:1px solid #D1D5DB;">권고 FG-IR-25-084 원문 — 판본·조치 확인·IoC / 영향 버전 출처 충돌</td><td style="border:1px solid #D1D5DB;">브라우저로 직접 열람</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">Google Pixel</td><td style="border:1px solid #D1D5DB;">활성 보안 패치 수준 확인 방법 · 다수 단말 일괄 확인 필드 · 공식 완화책 유무</td><td style="border:1px solid #D1D5DB;">Android Management API 문서</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">Gitea</td><td style="border:1px solid #D1D5DB;">다중 인스턴스 확인 절차</td><td style="border:1px solid #D1D5DB;">Gitea 공식 문서</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">GitLab</td><td style="border:1px solid #D1D5DB;">공격 캠페인 변화</td><td style="border:1px solid #D1D5DB;">GitLab 보안 릴리스</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">리눅스 커널 3건</td><td style="border:1px solid #D1D5DB;">배포판별 해결 커널 버전 · 침해 확인 방법(IoC 미제공)</td><td style="border:1px solid #D1D5DB;">각 배포판 CVE 페이지</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;">최신 안정 버전</td><td style="border:1px solid #D1D5DB;">Cisco SEG·ISE, Pixel, Acronis, Fortinet의 조사 시점 최신 안정 버전</td><td style="border:1px solid #D1D5DB;">각 벤더 릴리스 노트</td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:16px 26px 20px;background:#F3F4F6;border-top:1px solid #D1D5DB;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.75;color:#6B7280;word-break:keep-all;">
+    <b>이번 호 출처</b> — KISA 보호나라 보안공지 #2538~#2544 · CISA KEV(catalogVersion 2026.09.18) ·
+    Cisco 보안권고 cisco-sa-ISE-ABP-VNSW7Tn5 · cisco-sa-esa-inj-2bLVGmhX · Check Point sk185169 ·
+    GitHub Security Advisory GHSA-rcr6-4jqh-j84m · Gitea 릴리스·문서 · Pixel Update Bulletin(2026년 9월) ·
+    Siemens SSA-864900 · NVD CVE 레코드 · CVE 레코드(CNA: Cisco · Acronis · Fortinet · Check Point · kernel.org) ·
+    Cisco·Gitea·Android 공식 제품 문서.
+  </p>
+  <p style="margin:0;font-size:12px;line-height:1.75;color:#6B7280;word-break:keep-all;">
+    본 리포트는 보호나라 공지와 CISA 악용 확인 목록을 기준으로 조치·확인 방법을 보강한 참고자료입니다.
+    실제 적용 전 벤더 공식 문서와 각 조직의 변경관리 절차를 따르십시오.<br>
+    문의: KISA 사이버민원센터 국번없이 118
+  </p>
+</td></tr>
+
+</table>
+</td></tr></table>
+</body></html>
