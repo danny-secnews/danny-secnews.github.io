@@ -1,0 +1,305 @@
+{
+  "generated_at": "2026-09-22T08:46:51.512213+09:00",
+  "date": "2026-09-22",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "Linux 커널 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72195",
+          "summary": "",
+          "source": "KISA 보안공지",
+          "published": "2026-09-21T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "[한국정보공학기술사 보안을 論하다–48] 왜 개인정보 유출사고는 반복되는가?",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145977",
+          "summary": "보안 기술은 매년 진화하고 있다. 인공지능 기반 탐지(SIEM, Security Information and Event Management), 확장형 탐지·대응(XDR, Extended Detection and Response), 보안 오케스트레이션·자동화 대응(SOAR, Security Orchestration, Automation, and Response), 클라우드 네이티브 애플리케이션…",
+          "source": "보안뉴스",
+          "published": "2026-09-21T16:31:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "정부인사 발령(개인정보보호위원회) N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12524",
+          "summary": "",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-09-21T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "인공지능(AI)시대의 데이터 혁신 활용 거점 ‘개인정보 이노베이션 존’ 추가 지정 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12520",
+          "summary": "",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-09-21T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "AI스페라 강병탁 대표 “바이브 코딩 확산, 공공서비스 보안 점검 병행해야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208571",
+          "summary": "생성형 AI와 ‘바이브 코딩(Vibe Coding)’을 활용한 공공서비스 개발이 확대되는 가운데, 개발 속도와 함께 권한 관리와 개인정보 노출, API 보안 등을 지속적으로 점검해야 한다는 지적이 나왔다.AI 기반 사이버 위협 인텔리전스 기업 AI스페라(AI SPERA) 강병탁 대표는 행정안전부가 개최한 ‘제43회 지역정보화(지방정부 AI) 우수사례 발표대회’에서 ‘바이브 코딩으로 만드는 공…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:38:52+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[인사] 개인정보보호위원회",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145975",
+          "summary": "◇ 위촉△위원 권건보△위원 김광수△위원 윤영미",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-09-21T15:24:57+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "금융권 SW 취약점 공동 대응체계 본격 가동…178개 금융사 참여",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208564",
+          "summary": "금융회사가 공통으로 사용하는 상용 소프트웨어와 오픈소스의 취약점을 공동으로 찾아 패치하고 금융회사 조치까지 연계하는 금융권 소프트웨어(SW) 공급망 보안 대응체계가 본격 가동되고 있다.금융보안원(원장 박상원)은 지난 2월 6일부터 운영 중인 ‘금융권 SW공급망보안 플랫폼’에 현재 178개 금융회사가 참여하고 있다고 밝혔다.이 플랫폼은 화이트해커의 취약점 발굴→금융보안원의 검증→SW 개발사의…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:15:08+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "배터리 산업 미래전략 한자리에… ‘BATTERY KOREA 2026’ 개최",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145973",
+          "summary": "글로벌 배터리산업의 경쟁축이 생산능력 확대를 넘어 차세대 기술과 안전, 공급망, 탄소관리, 자원순환으로 빠르게 넓어지는 가운데 국내 배터리산업의 미래 전략을 모색하는 자리가 마련됐다.국내외 이차전지 산업의 트렌드와 미래 전략을 공유하는 ‘배터리코리아(BATTERY KOREA) 2026 : 이차전지 소재·부품·장비·리사이클링 컨퍼런스’가 21일 서울 코엑스 그랜드볼룸에서 개최됐다.올해 BA는…",
+          "source": "보안뉴스",
+          "published": "2026-09-21T14:28:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융권 취약점 공동 대응체계, 단일 플랫폼에서 ‘발견-패치-조치’ 원샷",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145970",
+          "summary": "금융보안원은 금융사와 화이트해커, SW 개발사가 참여하는 ‘금융권 SW공급망보안 플랫폼’을 통해 SW 취약점 공동 대응체계를 본격적으로 가동한다고 21일 밝혔다.금융권 SW공급망보안 플랫폼은 지난 2월부터 화이트해커의 취약점 발굴과 금융보안원의 검증, 개발사의 패치 개발, 금융회사의 조치로 이어지는 전 과정을 하나로 연계했다. 현재 178개 금융사가 참여해 SW 공급망 보안 위협에 대한 체계…",
+          "source": "보안뉴스",
+          "published": "2026-09-21T09:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "韓 선박, 해킹에 멈췄다... 선박 보안 경각심↑",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145979",
+          "summary": "한국 선박이 해킹으로 통신이 멈추고 운항이 중단됐다. 미국 국가기관 조사까지 이뤄지면서 선박 보안에 대한 경각심이 확산되고 있다. 전세계 물류의 80%가 바다에서 이뤄지는 만큼 선박 보안은 국가에 중대한 영향을 미친다. 이번 사태를 무겁게 받아들여야 한다는 게 중론이다.최근 외신 등에 따르면 미국 해안경비대가 지난 8월 멕시코만을 지나던 유조선에 직접 승선해 사이버공격 정황을 조사한 사실을…",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-09-21T19:30:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "인스피언, 상반기 EDI 매출 22억원…지난해 연간의 74% 달성",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208572",
+          "summary": "인스피언(대표 최정규)의 전자문서교환(EDI) 사업이 신규 구축과 기존 고객의 서비스 이용 확대에 힘입어 성장세를 보이고 있다.인스피언은 2026년 상반기 EDI 사업 매출이 약 22억1000만원을 기록해 지난해 연간 매출 약 30억원의 74% 수준을 달성했다고 21일 밝혔다. 전체 매출에서 EDI 사업이 차지하는 비중도 지난해 15.0%에서 올해 상반기 25.3%로 확대됐다.신규 구축 수주…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:41:11+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "카스퍼스키, ‘넥스트 옵티멈’ 보안 모듈 강화…중소기업 보안 확장성 높여",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208570",
+          "summary": "카스퍼스키(한국지사장 이효은)가 중소·중견기업(SMB)이 기존 보안 인프라를 크게 변경하지 않고 필요한 보안 기능을 단계적으로 추가할 수 있도록 ‘카스퍼스키 넥스트 옵티멈(Kaspersky Next Optimum)’의 보안 모듈을 강화했다고 21일 밝혔다.이번 업데이트의 핵심은 기업이 현재 사용 중인 기술 스택을 유지하면서 필요한 보안 영역만 선택적으로 확장할 수 있도록 한 것이다. 카스퍼스…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:34:47+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "안랩, 인도네시아 사이버보안 시장 공략 강화…‘인도섹 2026’ 참가",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208569",
+          "summary": "안랩(대표 강석균)이 인도네시아 현지 보안 전시회에 참가하며 동남아시아 사이버보안 시장 공략을 확대하고 있다.안랩은 지난 9월 15일부터 16일까지 인도네시아 자카르타에서 열린 사이버보안 전시회 ‘인도섹 2026(Indosec 2026)’에 참가해 자사의 주요 AI 기반 보안 플랫폼과 솔루션을 소개했다고 21일 밝혔다.안랩은 지난해에 이어 2년 연속 인도섹에 참가했다. 이번 행사에서는 통합…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:32:22+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "스틸리언 자율형 AI 보안 에이전트, 국제 사이버훈련 ‘APEX 2026’ 1위",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208568",
+          "summary": "스틸리언(대표 박찬암)이 핵심 시스템 개발에 참여한 자율형 AI 보안 에이전트가 국제 사이버훈련 ‘APEX 2026’에서 1위를 기록했다.APEX(Allied Power Exercise)는 국가정보원과 NATO 사이버방위협력센터(CCDCOE), 국방부 등이 협력해 진행하는 국제 사이버훈련이다. 2024년 시작돼 올해로 3회째를 맞았으며, 이번 훈련에는 미국을 비롯한 NATO 회원국과 인도·태…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:30:14+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "아이씨티케이, PQC 적용 확대…PUF 기반 하드웨어 신뢰점까지 강화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208567",
+          "summary": "양자보안 팹리스 기업 아이씨티케이(ICTK, 대표 이정원)가 양자내성암호(PQC) 적용 범위를 소프트웨어와 통신 계층을 넘어 하드웨어 신뢰점(HRoT)까지 확대하고 있다.아이씨티케이는 미국 국립표준기술연구소(NIST)의 표준 PQC 알고리즘인 ML-KEM(FIPS-203)과 ML-DSA(FIPS-204)를 보안칩 G5N·G5Q, 보안 솔루션 qTrustNet, PQC 키관리시스템(KMS) 및…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:27:13+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "태니엄, 앤트로픽 ‘프로젝트 글래스윙’ 참여…AI로 코드 취약점 선제 탐지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208566",
+          "summary": "자율형 IT 기업 태니엄(Tanium)이 앤트로픽(Anthropic)의 사이버보안 프로젝트인 ‘프로젝트 글래스윙(Project Glasswing)’에 참여해 프론티어 AI를 활용한 소프트웨어 취약점 탐지와 대응 기술을 시험한다.태니엄은 21일 프로젝트 글래스윙을 통해 앤트로픽의 ‘클로드 미토스 5(Claude Mythos 5)’를 자사 프로덕션 코드베이스에 직접 적용하고 있다고 밝혔다.이번…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:24:51+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "포티넷 포티엔드포인트, AV-컴패러티브스 EPR 테스트서 ‘인증 리더’ 획득",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208565",
+          "summary": "포티넷의 통합 엔드포인트 보안 솔루션 ‘포티엔드포인트 with EDR(FortiEndpoint with EDR)’이 AV-컴패러티브스의 ‘2026 엔드포인트 방어 및 대응(EPR) 테스트’에서 ‘인증 리더(Certified Leader)’ 등급을 획득했다.포티넷은 지난해 포티EDR로 해당 테스트 인증을 받은 데 이어 올해 포티엔드포인트 with EDR로 다시 인증을 획득했다.이번 테스트는 1…",
+          "source": "데일리시큐",
+          "published": "2026-09-21T17:17:55+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "포티넷 포티엔드포인트, ‘AV-컴패러티브스 EPR 테스트 2026’ 서 ‘인증 리더’ 획득",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145978",
+          "summary": "글로벌 네트워크 보안 융합 솔루션 리더 포티넷(CEO 켄 지)이 AV-컴패러티브스(AV-Comparatives)의 ‘2026 엔드포인트 방어 및 대응(EPR) 테스트’에서 ‘인증 리더’(Certified Leader)를 획득했다고 밝혔다.포티넷은 2025년 포티EDR(FortiEDR)로 AV-컴패러티브스 EPR 테스트 인증을 받은 데 이어, 2026년에는 포티엔드포인트 with EDR(For…",
+          "source": "보안뉴스",
+          "published": "2026-09-21T16:45:23+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
+          "link": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+          "summary": "Ecommerce platform BigCommerce has alerted multiple merchants to data breaches after attackers compromised credentials for third-party Ribon applications and used them to inject malicious scripts into online stores. [...…",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T06:18:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
+          "link": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html",
+          "summary": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based \"much smaller organization\" in the information technology (IT) services industry, once again highlighting how the…",
+          "source": "The Hacker News",
+          "published": "2026-09-21T15:06:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA alerts of active exploitation of three Linux kernel flaws",
+          "link": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
+          "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that hackers are exploiting three Linux kernel vulnerabilities, one of them rated critical. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T05:12:17+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "WordPress Click2Shell flaw lets hackers execute PHP on the server",
+          "link": "https://www.bleepingcomputer.com/news/security/wordpress-click2shell-flaw-lets-hackers-execute-php-on-the-server/",
+          "summary": "Technical details and a proof-of-concept exploit have been published for a new WordPress cross-site request forgery (CSRF) vulnerability dubbed 'Click2Shell' that affects the platform's Core component. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T03:23:11+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft to retire Microsoft 365 Companion apps in December",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-retire-microsoft-365-companion-apps-in-december/",
+          "summary": "Microsoft will retire the Calendar, People, and Files Microsoft 365 companion apps on December 16 and has asked admins to remove them from managed devices. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T02:54:49+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Fake LastPass Authenticator Installer Abuses Microsoft-Signed Driver to Kill Antivirus and EDR",
+          "link": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
+          "summary": "A fake LastPass Authenticator installer offered on GitHub installs a Windows kernel driver that shuts off antivirus and other security software before a password stealer runs if a victim downloads and runs it, researcher…",
+          "source": "The Hacker News",
+          "published": "2026-09-22T02:31:01+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
+          "link": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
+          "summary": "The North Korean threat actors behind the Contagious Interview campaign have compromised at least 30,000 devices located in more than 100 countries and siphoned funds or account credentials from over 7,000 cryptocurrency…",
+          "source": "The Hacker News",
+          "published": "2026-09-22T02:19:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Google Fined €403 Million Over GDPR Violations Tied to Location Data",
+          "link": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
+          "summary": "Google has been fined €403 million for breaking the EU's data protection law, the GDPR, in the way three of its features handled people's location data from May 2018 to February 2020. Ireland's Data Protection Commission…",
+          "source": "The Hacker News",
+          "published": "2026-09-22T01:57:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Google fined €403 million over location data privacy violations",
+          "link": "https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/",
+          "summary": "Ireland's Data Protection Commission (DPC) has fined Google €403 million ($463M) for multiple GDPR violations related to processing users' location data. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T00:41:22+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft fixes broken Excel copy and paste for all Office users",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-excel-copy-and-paste-for-all-office-users/",
+          "summary": "Microsoft has fixed a known issue that causes copy-and-paste failures for Excel users after installing the September 2026 security updates. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-21T23:42:37+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "⚡ Weekly Recap: Cisco 0-Day, AI Agent RCE, ClickFix Attacks, ClickFix Surge, and Browser Hijacks",
+          "link": "https://thehackernews.com/2026/09/weekly-recap-cisco-0-day-ai-agent-rce.html",
+          "summary": "A browser. A plugin. A package. A login screen. Normal stuff. That is basically the problem this week. The trouble keeps showing up inside things people already trust: code that takes a bad turn, old payloads coming back…",
+          "source": "The Hacker News",
+          "published": "2026-09-21T23:24:13+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "TASK#STOMP PowerShell Backdoor Steals Documents, Wi-Fi Passwords, and Clipboard Data",
+          "link": "https://thehackernews.com/2026/09/taskstomp-powershell-backdoor-steals.html",
+          "summary": "Cybersecurity researchers have disclosed details of a new campaign dubbed TASK#STOMP that delivers a PowerShell backdoor designed to harvest sensitive data from compromised hosts. The backdoor \"automatically harvests and…",
+          "source": "The Hacker News",
+          "published": "2026-09-21T23:15:40+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 30
+}
