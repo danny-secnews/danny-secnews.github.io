@@ -1,0 +1,313 @@
+{
+  "generated_at": "2026-09-23T08:46:12.786253+09:00",
+  "date": "2026-09-23",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "WordPress 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72196",
+          "summary": "",
+          "source": "KISA 보안공지",
+          "published": "2026-09-22T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "[단독] 룩핀 개인정보 유출 데이터, 다크웹서 판매 정황…해커 “270만 고객·1100만 주문정보 확보” ...룩핀 \"해킹 인정\"",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208585",
+          "summary": "국내 남성 패션 플랫폼 ‘룩핀(LOOKPIN)’에서 발생한 개인정보 유출 사고와 관련해, 룩핀에서 탈취했다고 주장하는 대규모 고객 데이터가 다크웹 해킹 포럼에서 판매되고 있는 정황이 확인됐다.데일리시큐가 확인한 다크웹 게시물에는 ‘SELLING KR | lookpin.co.kr 2.7M customers 11M orders’라는 제목과 함께 룩핀 데이터베이스에서 탈취했다는 개인정보 및 데이터…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T19:44:38+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“직접 들은 목소리도 가짜”... 이스트시큐리티, 명절 노린 AI 피싱 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145993",
+          "summary": "이스트시큐리티가 추석 연휴를 앞두고 AI 기술을 악용한 신종 명절 사기 4대 유형을 발표하며 주의를 당부했다.최근 유행하는 사칭 유형은 △몇 초 음성으로 완성되는 딥보이스·딥페이크 영상통화 사기 △문법 오류가 사라진 AI 생성 맞춤형 피싱 △뱅킹·메신저·SNS를 한 번에 터는 올인원 계정 탈취 △잇따른 개인정보 유출 사고와 결합한 초정밀 사칭 등이 있다. 이 수법들은 피해자가 본인이 직접 확…",
+          "source": "보안뉴스",
+          "published": "2026-09-22T13:20:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "네이버클라우드, DB·서버 접근제어 통합 보안 서비스 출시... “개인정보보호법 부담 낮춰”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145990",
+          "summary": "네이버클라우드(대표 김유원)가 기업의 데이터베이스(DB)와 서버에 대한 접근을 통제하고 작업 이력을 자동으로 기록·관리하는 통합 보안 서비스 'DB & 서버 액세스 컨트롤’(DSAC)'을 출시했다고 22일 밝혔다.이 제품을 통해 국내 기업들은 개인정보보호법 등 관련 규제를 더 간편하게 준수하고, 외부 보안 솔루션 도입에 따른 높은 비용과 복잡한 구축 부담을 크게 줄일 수 있을 것이라는 게 회…",
+          "source": "보안뉴스",
+          "published": "2026-09-22T09:59:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "파수 AI, 국정원 CSK 2026에서 AI 보안 전략 제시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145987",
+          "summary": "AI 활용이 급속도로 확산되면서 기업 기밀과 개인정보 유출 위협이 주요 보안 과제로 떠오른 가운데, 파수 AI(대표 조규곤)가 ‘사이버 서밋 코리아 2026’(CSK 2026)’에 참가해 AI 보안 플랫폼을 앞세운 대응 전략을 공개했다.CSK는 국제사회와 함께 사이버 위협에 공동 대응하려는 목적으로 국가정보원이 국가보안기술연구소와 공동으로 개최하는 글로벌 사이버 안보 행사다. 16일부터 18…",
+          "source": "보안뉴스",
+          "published": "2026-09-22T09:30:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "추석 피싱 주의보... “링크 클릭 후 권한 허용이 가장 치명적”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146005",
+          "summary": "추석 명절을 앞두고 택배 배송 조회나 결제 내역 확인 등을 위장한 피싱 문자가 기승을 부리고 있다. 특히 문자에 포함된 악성 링크를 무심코 클릭할 경우 스마트폰 내 개인정보 탈취는 물론, 발신 전화를 범죄자에게 연결하는 ‘전화 가로채기’ 등 심각한 2차 피해로 이어질 수 있어 주의가 요구된다.에버스핀은 자사의 악성앱 탐지 솔루션 ‘페이크파인더’(FakeFinder)를 통해 국내 주요 금융사에…",
+          "source": "보안뉴스",
+          "published": "2026-09-22T17:50:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "디링크 DIR-822A 공유기 ‘CVSS 10.0’ 제로데이…패치 없이 PoC 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208587",
+          "summary": "디링크(D-Link)의 DIR-822A 무선 공유기에서 공격자가 인증 없이 원격으로 악성 코드를 실행할 가능성이 있는 최고 위험도의 보안 취약점이 발견됐다. 취약점을 이용하는 개념증명(PoC) 코드까지 공개된 가운데 아직 공식 패치가 제공되지 않아 해당 제품 사용자들의 주의가 요구된다.디링크가 9월 18일 공개한 보안 공지에 따르면 문제의 취약점은 CVE-2026-86296으로, DIR-82…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T22:07:42+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-86296"
+          ]
+        },
+        {
+          "title": "수산아이앤티, ‘ePrism SSL VA’ 국정원 보안기능확인서 획득",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208576",
+          "summary": "수산아이앤티(대표 정은아)는 SSL 가시화 솔루션 ‘ePrism SSL VA’가 국가정보원 보안기능확인서를 획득했다고 22일 밝혔다.SSL 가시화 제품은 지난 2월 개정된 ‘국가용 보안요구사항 V3.0’부터 보안기능확인서 발급 대상에 포함됐다.SSL 가시화 솔루션은 HTTPS 등 SSL/TLS로 암호화된 네트워크 트래픽을 복호화해 방화벽, 침입방지시스템(IPS), 안티바이러스, 데이터유출방지…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T17:59:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제41화 '사라지는 검'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208586",
+          "summary": "데일리시큐는 7월부터 장삼봉 작가(필명)의 정보보안 소설《로그아웃되지 않는 밤》을 매주 4편씩 연재한다. 화려한 디지털 서비스 뒤에서 보이지 않는 위협과 맞서는 보안 담당자들의 현실과 고뇌, 성장을 생생하게 담았다. 수많은 오탐 속에 숨은 단 하나의 진짜 공격을 추적하는 이들의 잠들지 못하는 밤이 시작된다. -빈털터리-이번엔 조용히 시작됐다. 디도스처럼 요란하지 않았다. 그저 어느 날부터,…",
+          "source": "데일리시큐",
+          "published": "2026-09-23T08:10:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "워드프레스 ‘Click2Shell’ 취약점 공개, 7.1.1 즉시 업데이트 권고",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208588",
+          "summary": "세계적으로 널리 사용되는 콘텐츠관리시스템(CMS) 워드프레스(WordPress)에서 관리자에게 조작된 링크를 클릭하도록 유도해 서버에서 임의의 PHP 코드를 실행할 수 있는 취약점이 공개됐다.‘Click2Shell’로 명명된 이번 취약점은 워드프레스 코어의 테마 미리보기 기능을 악용하는 공격 체인이다. 공격자가 워드프레스 계정이나 관리자 권한을 보유하지 않아도 공격을 준비할 수 있지만, 실제…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T22:14:27+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[단독] 울산 산업제어시스템 접근권한 다크웹서 판매 정황…해커 “PLC 태그 인증 없이 Read/Write 가능” 주장",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208584",
+          "summary": "국내 산업현장에 설치된 것으로 추정되는 산업제어시스템(ICS)의 접근권한을 판매한다는 게시물이 해외 다크웹 포럼에서 확인됐다.판매자는 대상이 울산 지역 산업망에 연결된 로크웰오토메이션(Rockwell Automation) CompactLogix 계열 PLC(Programmable Logic Controller)라고 주장했으며, 장비 내부의 제어 태그에 인증 없이 읽기·쓰기(Read/Write…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T19:24:37+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "쿼리파이, NIPA GPU 지원사업 통해 다국어 DLP 모델 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208583",
+          "summary": "쿼리파이(QueryPie)가 한국정보통신산업진흥원(NIPA)이 주관한 첨단 GPU 지원사업을 통해 학습한 다국어 DLP(Data Loss Prevention) AI 모델을 허깅페이스(Hugging Face)에 공개했다고 밝혔다.이번 연구는 한국어·영어·일본어의 민감정보 데이터를 정제·확장하고 여러 AI 모델을 반복 학습·비교해 기업 환경에서 활용할 수 있는 민감정보 탐지 기술을 개발하는 데…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T18:23:08+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "SDT, 아이온큐와 아태지역 전략적 파트너십…‘슈페리온 256’ 국내 첫 도입",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208582",
+          "summary": "양자기술 전문기업 SDT(대표 윤지원)가 아이온큐(IonQ)와 전략적 파트너십을 체결하고 아시아·태평양 및 일본(APJ) 지역에서 양자컴퓨팅 시스템 제조와 시스템 통합 협력을 확대한다고 22일 밝혔다.이번 협력에 따라 아이온큐는 최신 양자컴퓨터 ‘슈페리온 256(Superion 256)’과 실리콘 공극(SiV) 양자 메모리 모듈을 SDT에 공급한다. 슈페리온 256과 SiV 양자 메모리가 국…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T18:19:22+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "추석 연휴 ‘AI 사기 주의보’…얼굴·목소리도 못 믿는다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208581",
+          "summary": "추석 연휴를 앞두고 인공지능(AI)을 악용한 딥보이스와 딥페이크, 맞춤형 피싱 등 신종 사기에 대한 주의가 요구된다. 음성이나 영상통화만으로 상대방의 신원을 확인하는 기존 방식도 더 이상 안전하지 않다는 지적이다.이스트소프트의 보안 전문 자회사 이스트시큐리티(대표 정상원)는 추석 연휴를 앞두고 AI 기술을 악용한 명절 사기 4대 유형을 공개하고 이용자들의 주의를 당부했다.주요 유형은 ▲짧은…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T18:12:20+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "코헤시티 조사, 한국 기업 78% ‘업무 연속성보다 시스템 복원 우선’",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208580",
+          "summary": "국내 기업 상당수가 사이버 복구 계획을 수립하면서 실제 비즈니스 운영 유지보다 시스템을 기술적으로 복원하는 데 초점을 맞추고 있는 것으로 나타났다. 특히 복구 과정에서도 핵심 업무를 지속할 수 있는지 실제 테스트까지 완료한 기업은 15%에 불과했다.AI 기반 데이터 보안 기업 코헤시티(Cohesity)는 22일 ‘코헤시티 글로벌 사이버 레질리언스 보고서’를 발표하고 이 같은 조사 결과를 공개…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T18:10:46+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "지멘스, 10월 ‘AEC 2026’ 개최…산업 AI 실행·확장 전략 제시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208579",
+          "summary": "지멘스가 산업 현장에서 AI를 실제 업무 실행 단계까지 확장하기 위한 전략과 플랫폼을 소개한다.지멘스는 오는 10월 13일 서울 조선 팰리스 강남에서 ‘에이전틱 엔터프라이즈 커넥트(Agentic Enterprise Connect, AEC) 2026’을 개최한다고 22일 밝혔다.이번 행사는 ‘Beyond Intelligence, Toward Action: Intelligence Center X…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T18:06:56+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "보안특파모 로드맵은?... ‘오퍼스4.5’ 방어 수준 및 ‘GLM5.3’ 공격 수준 목표",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146008",
+          "summary": "“해외 모델로 지킬 수 없는 대한민국을 보안 특화 독자 AI 모델로 지키겠습니다.”‘미토스 충격’으로 시급성이 부각된 국가 사이버 안보 역량 내재화를 위한 ‘사이버보안 특화 AI 파운데이션 모델 개발’ 사업 10개월의 여정이 시작됐다. ‘오퍼스4.5’ 방어 수준 및 ‘GLM5.3’ 공격 수준으로 개발 후, ‘소버린AI 보안 서비스’를 글로벌로 전파한다는 목표다. 개발 사업에 선정된 네이버클라…",
+          "source": "보안뉴스",
+          "published": "2026-09-22T18:05:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "GA 11개사 금융보안원 신규 가입…GA 사원사 25개사로 확대",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208578",
+          "summary": "금융보안원(원장 박상원)은 법인보험대리점(GA) 11개사가 신규 사원으로 가입하면서 전체 사원사가 기존 222개사에서 233개사로 확대됐다고 22일 밝혔다.이번에 가입한 GA는 삼성화재금융서비스, 아너스금융서비스, 엠금융서비스, 영진에셋, 지에이스타금융서비스, 토스인슈어런스, 사랑모아금융서비스, 스카이블루에셋, 아이에프씨그룹, 아이에프에이, 에이비에이금융서비스 등 11개사다.지난해 초대형 G…",
+          "source": "데일리시큐",
+          "published": "2026-09-22T18:04:59+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Sweden fines Miljödata $183,000 over breach affecting 2.2 million",
+          "link": "https://www.bleepingcomputer.com/news/security/sweden-fines-milj-data-183-000-over-breach-affecting-22-million/",
+          "summary": "Sweden's data privacy regulator, IMY, has imposed a $183,000 (SEK 1.8 million) fine on IT systems provider Miljödata for inadequate security measures leading to a breach in August 2025 affecting 2.2 million people. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T06:40:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ShinyHunters claims FBI hack, data theft in PeopleSoft zero-day breach",
+          "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/",
+          "summary": "The ShinyHunters extortion gang claims it breached FBI systems using a new Oracle PeopleSoft zero-day vulnerability, gaining access to internal services and stealing sensitive data on employees and job applicants. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T04:13:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Check Point Warns of Management Server Zero-Day Exploited in Targeted Attacks",
+          "link": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
+          "summary": "Attackers exploited a previously unknown flaw in Check Point's Security Management Server in a handful of targeted attacks on July 23, the company said. The flaw, CVE-2026-93616, allows an attacker who can access the ser…",
+          "source": "The Hacker News",
+          "published": "2026-09-23T03:29:39+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-93616"
+          ]
+        },
+        {
+          "title": "Check Point warns of Management Server zero-day exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-management-server-zero-day-exploited-in-attacks/",
+          "summary": "Check Point Software released emergency hotfixes to address a critical Security Management Server vulnerability that could let attackers run arbitrary scripts. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T01:32:47+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Researcher Drops BigDiskBuster Zero-Day PoC That Blocks Microsoft Defender Updates",
+          "link": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
+          "summary": "A zero-day proof-of-concept tool that stops Microsoft Defender from installing platform and signature updates by filling all available disk space was published on GitHub on September 19. The tool, called BigDiskBuster, h…",
+          "source": "The Hacker News",
+          "published": "2026-09-23T01:14:04+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Webinar tomorrow: Inside real-world Google Workspace breaches",
+          "link": "https://www.bleepingcomputer.com/news/security/webinar-tomorrow-inside-real-world-google-workspace-breaches/",
+          "summary": "Tomorrow's webinar examines real Google Workspace breaches involving social engineering and malicious OAuth applications, from initial access through the critical first hours of incident response. Learn which security co…",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T21:57:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "D-Link warns of max severity zero-day bug in DIR-822A routers",
+          "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-max-severity-zero-day-bug-in-dir-822a-routers/",
+          "summary": "D-Link warned customers of a maximum-severity vulnerability (CVE-2026-86296) with public proof-of-concept (PoC) exploit code and no patch, affecting legacy DIR-822A dual-band Wi-Fi routers. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T21:48:06+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-86296"
+          ]
+        },
+        {
+          "title": "New CVSS 10.0 VeloCloud Orchestrator Flaw Actively Exploited in Certificate-Based Setups",
+          "link": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
+          "summary": "Attackers are exploiting a new flaw in on-premises VeloCloud Orchestrator (VCO), the server that manages the Edge devices in a VeloCloud SD-WAN, Arista said on September 22. The flaw, tracked as CVE-2026-93952, may allow…",
+          "source": "The Hacker News",
+          "published": "2026-09-22T21:29:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-93952"
+          ]
+        },
+        {
+          "title": "New Windows Defender zero-day blocks Microsoft antivirus updates",
+          "link": "https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/",
+          "summary": "Over the weekend, security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) released another Microsoft Defender zero-day exploit that blocks antivirus updates. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T18:55:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
+          "link": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+          "summary": "Ecommerce platform BigCommerce has alerted multiple merchants to data breaches after attackers compromised credentials for third-party Ribon applications and used them to inject malicious scripts into online stores. [...…",
+          "source": "BleepingComputer",
+          "published": "2026-09-22T06:18:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Rogue external MFA providers can steal passwords during logins",
+          "link": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+          "summary": "Security researchers developed an attack that lets hackers with privileged access register a rogue external MFA provider that steals users' passwords during legitimate login attempts. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T06:45:45+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Chinese hackers exploit WordPress, Zyxel flaws to steal govt data",
+          "link": "https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-multiple-technologies-to-steal-govt-data/",
+          "summary": "A Chinese-speaking threat actor has been exploiting vulnerabilities in ZyXEL GS1900 Smart Managed Switches and WordPress to steal sensitive data from 996 devices and more than 18,500 records stored in backend databases.…",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T05:35:24+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 30
+}
