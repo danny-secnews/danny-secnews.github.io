@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-09-24T08:46:37.073758+09:00",
+  "date": "2026-09-24",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "Check Point 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72198",
+          "summary": "",
+          "source": "KISA 보안공지",
+          "published": "2026-09-23T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "WordPress 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72197",
+          "summary": "",
+          "source": "KISA 보안공지",
+          "published": "2026-09-23T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "가비아, 외부 공격으로 고객 2,998명 개인정보 유출…KISA·개인정보위 신고",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208592",
+          "summary": "도메인·호스팅·클라우드 서비스를 제공하는 가비아에서 외부 공격으로 고객 2,998명의 개인정보가 유출되는 사고가 발생했다.가비아는 23일 개인정보 유출 사실 안내를 통해 지난 21일 외부 공격자의 비인가 접근으로 일부 고객의 개인정보가 외부로 유출된 사실을 확인했다고 밝혔다. 23일 오후 3시 기준 확인된 유출 고객은 2,998명이며, 유출된 정보는 성명, 아이디, 이메일 주소, 휴대전화번호…",
+          "source": "데일리시큐",
+          "published": "2026-09-23T19:39:40+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 포스코, 삼성, 현대 연구원 개인정보 유출 정황... “한국재료부식학회 침해” 주장",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146014",
+          "summary": "포스코, 삼성, 현대 등 주요 기업들과 한국원자력연구원 등 주요 연구기관에 소속된 개인들의 정보를 판매한다고 주장하는 글이 다크포럼스에 게시됐다. 샘플 데이터에는 해당 기관 소속자들 실명이 노출돼 있다. 23일 현재 다크웹에는 한국재료부식학회로부터 탈취한 데이터라고 주장하는 게시물이 공개돼 있다. 18일에 업로드된 이 글에는 국내 주요 기업, 대학, 연구기관의 이름들이 나열돼 있다. 하지만…",
+          "source": "보안뉴스",
+          "published": "2026-09-23T10:50:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "청년인턴의 시선으로, 개인정보 정책을 더 가깝게! N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12526",
+          "summary": "",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-09-23T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "F5 BIG-IP APM 제로데이 실제 공격…인증 없이 원격코드 실행",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208595",
+          "summary": "F5의 BIG-IP Access Policy Manager(APM)에서 인증 없이 원격 코드 실행이 가능한 치명적 제로데이 취약점이 발견돼 실제 공격에 악용되고 있다. F5가 긴급 핫픽스를 공개했으며 미국과 유럽, 캐나다 보안 당국도 즉각적인 대응을 권고했다.취약점은 CVE-2026-94127로, 메모리의 힙 영역을 잘못 처리하는 힙 기반 버퍼 오버플로 문제다. CVSS v3.1 기준 위험도…",
+          "source": "데일리시큐",
+          "published": "2026-09-24T08:14:25+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-94127"
+          ]
+        },
+        {
+          "title": "해킹조직 샤이니헌터스 “FBI 해킹해 2~3TB 탈취”…FBI “관련 주장 조사 중”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208593",
+          "summary": "해킹·갈취 조직 샤이니헌터스(ShinyHunters)가 미국 연방수사국(FBI)의 채용 시스템을 해킹하고 현직·전직 직원과 입사 지원자 관련 데이터 2~3TB를 탈취했다고 주장했다. 다만 FBI는 현재 관련 주장을 조사하고 있다고 밝혔으며, 실제 침해 범위와 데이터 유출 규모는 독립적으로 확인되지 않았다.샤이니헌터스는 FBI 채용 사이트인 FBIjobs.gov의 지원자 시스템에서 오라클 피플…",
+          "source": "데일리시큐",
+          "published": "2026-09-23T19:52:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 9월 다크웹에 국내 금융·중고차 금융 데이터 판매 잇따라…해커, 고객정보 2만8000건·300GB·1TB 주장",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208590",
+          "summary": "9월 들어 다크웹 포럼에서 국내 금융 및 중고차 금융 서비스와 관련된 것으로 주장하는 데이터 판매 게시물이 잇따라 발견됐다. 게시자는 OO오토리스할부, OOO캐피탈, OO캐피탈 등을 출처로 지목하며 각각 수만 건에서 최대 1TB 규모의 데이터를 확보했다고 주장했다.다만 현재 공개된 게시물만으로 실제 해당 기업 시스템이 침해됐는지, 판매자가 제시한 데이터가 해당 기업에서 직접 유출된 것인지까지…",
+          "source": "데일리시큐",
+          "published": "2026-09-23T13:55:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "명절 노리는 AI 해킹... 금보원, 연휴 사이버 위협 비상대응 체계 가동",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146032",
+          "summary": "금융보안원이 추석 연휴 기간 AI를 악용한 사이버 위협에 대비해 통합보안관제를 강화하고 비상대응 체계를 가동한다고 23일 밝혔다.최근 AI를 악용한 사이버 공격이 정교해지고 외부에 노출된 정보를 활용한 보안 취약점 공격이 늘어남에 따라 침해사고 예방과 신속한 조치를 취하기 위한 선제적 조치다. 연휴 동안 사이버 위기경보는 ‘관심’ 단계가 유지되지만 금융보안원은 이를 ‘주의’ 단계에 준하는 수…",
+          "source": "보안뉴스",
+          "published": "2026-09-23T13:21:40+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“AI 시대 데이터 보안 강화”... 이테크시스템-엑사그리드 총판 계약 체결",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146023",
+          "summary": "이테크시스템이 엑사그리드와 국내 총판 계약을 체결했다고 23일 밝혔다. 양사는 이번 협약을 통해 국내 데이터 보호 및 백업 스토리지 시장 공략을 강화할 방침이다.최근 산업계 전반에 걸쳐 AI 전환이 가속화되며 데이터의 중요성이 한층 더 커졌다. 이를 노리는 랜섬웨어 공격은 단순 운영 시스템 마비를 넘어 백업 데이터를 노려 데이터 복구 체계 구축이 필수적이다. 또, 보호해야 할 데이터가 증가함…",
+          "source": "보안뉴스",
+          "published": "2026-09-23T11:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제42화 '사라지는 검'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208594",
+          "summary": "데일리시큐는 7월부터 장삼봉 작가(필명)의 정보보안 소설《로그아웃되지 않는 밤》을 매주 4편씩 연재한다. 화려한 디지털 서비스 뒤에서 보이지 않는 위협과 맞서는 보안 담당자들의 현실과 고뇌, 성장을 생생하게 담았다. 수많은 오탐 속에 숨은 단 하나의 진짜 공격을 추적하는 이들의 잠들지 못하는 밤이 시작된다. -끼워 맞추기- 다음 날, 세아는 대응에 본격적으로 뛰어들었다. 도윤이 기술로 막는다…",
+          "source": "데일리시큐",
+          "published": "2026-09-24T07:41:22+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[김승주 교수 칼럼] 국가 사이버복원력, 어디서부터 시작해야 하나",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208591",
+          "summary": "최근 AI로 인한 해킹 위협이 고조되면서 '사이버복원력(Cyber Resilience)'이라는 말이 자주 등장한다. 정부 정책과 각종 보고서에서도 사이버복원력 강화가 중요한 목표로 제시되고 있다. 그런데 이 말을 사용하는 사람들의 이야기를 자세히 들어보면 한 가지 의문이 생긴다. 우리가 말하는 사이버복원력이 정확히 무엇인가?우리나라에서는 사이버복원력을 주로 \"사이버공격이나 장애가 발생했을 때…",
+          "source": "데일리시큐",
+          "published": "2026-09-24T07:40:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "이노뎁 AI 스마트관제 적용한 창녕군, 관제 효율 10배 높여 ‘대한민국 지식대상’ 우수상",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146022",
+          "summary": "AI 영상관제 플랫폼 전문기업 이노뎁(대표이사 이성진)의 AI 스마트관제 기술을 적용한 창녕군은 행정안전부 주관 ‘제15회 대한민국 지식대상’에서 우수상(행정안전부 장관상)을 수상하는 쾌거를 달성했다. 특히 경남도 내 유일이자 창녕군 최초 수상으로, 이노뎁의 AI 스마트관제 기술을 통한 업무 혁신의 우수성을 입증했다.창녕군이 제시한 ‘AI 기반 지능형 CCTV 스마트관제 고도화를 통한 군민…",
+          "source": "보안뉴스",
+          "published": "2026-09-23T15:25:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[2026 네트워크·보안 스위치 제품&솔루션 리포트] “포장 안 된 땅 위에 건물만 올릴 것인가?” 산업용 네트워크·보안 스위치의 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=145980",
+          "summary": "산업 현장의 데이터 트래픽이 폭발적으로 늘면서 인프라의 ‘혈관’ 역할을 하는 산업용 네트워크·보안 스위치의 중요성이 그 어느 때보다 강조되고 있다. 하지만 현장의 현실은 다르다. 실제 발주 단계에서 스위치는 카메라나 NVR 등 주연급 장비에 밀려 매번 후순위 예산으로 취급되기 일쑤다. 문제는 항상 장애가 터진 후에 드러난다. 스위치 한 대의 셧다운은 곧 현장 전체 단말의 마비로 직결되며, 그…",
+          "source": "보안뉴스",
+          "published": "2026-09-23T13:40:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "스텔스몰·지란지교에스앤씨, ‘제22회 OSINT 인텔리전스 전문가 과정’ 개최",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208589",
+          "summary": "사이버 위협 인텔리전스 기업 스텔스몰(StealthMole, 대표 허영일)이 지란지교에스앤씨와 공동으로 오는 11월 10일부터 12일까지 3일간 ‘제22회 OSINT 인텔리전스 전문가 과정’을 개최한다.이번 교육은 정부기관과 민간기업 보안 실무자, 사이버범죄 수사기관 관계자 등을 대상으로 진행되며 공개정보정보(OSINT) 수집·분석부터 다크웹 위협정보 분석, 생성형 AI와 대형언어모델(LLM…",
+          "source": "데일리시큐",
+          "published": "2026-09-23T11:48:48+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"전통시장 QR 찍었더니 해커 통장으로?\"… 명절 대목 노린 '물리적 큐싱' 주의보",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146029",
+          "summary": "전통시장 및 로컬 매장의 비대면 간편결제(QR 결제)가 보편화됨에 따라, 물리적 표면에 악성 코드를 덧붙여 결제 대금을 편취하는 '물리적 큐싱(Physical Qshing)' 범죄가 확산되고 있다. 공격자들은 매장의 혼잡한 틈을 타 아크릴 결제 안내판 상단에 정교하게 제작된 사기 계좌 연동 QR 스티커를 부착하는 수법을 사용한다.소비자가 이를 촬영할 경우 육안 검증 없이 피싱 결제 웹페이지로…",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-09-23T11:17:49+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "ZKTeco, 정밀한 금속 탐지 및 스마트 관리 기능 갖춘 ‘ZK-D4330’ 출시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146025",
+          "summary": "글로벌 보안 솔루션 전문기업 ZKTeco가 보안검색 환경의 효율성과 편의성을 높인 스마트 문형 금속 탐지기 ‘ZK-D4330’을 선보였다. ZK-D4330은 출입자가 게이트를 통과하는 과정에서 금속성 물체를 탐지해 보안검색을 지원하는 문형 금속 탐지기로, 공공시설과 관공서, 교육시설, 기업, 산업시설, 행사장 등 보안검색이 필요한 다양한 현장에 적용할 수 있는 제품이다.ZK-D4330은 최대…",
+          "source": "보안뉴스",
+          "published": "2026-09-23T10:59:30+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
+          "link": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+          "summary": "Cybersecurity company Check Point has confirmed active exploitation of CVE-2026-85102, a pre-authentication remote code execution (RCE) vulnerability in the VPN certificate-handling functionality of its Security Gateway…",
+          "source": "BleepingComputer",
+          "published": "2026-09-24T04:53:54+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-85102"
+          ]
+        },
+        {
+          "title": "Hackers start exploiting critical WordPress flaw for code execution",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-wordpress-flaw-for-code-execution/",
+          "summary": "Threat actors have moved from probing WordPress sites vulnerable to CVE-2026-87902 to exploiting the flaw to write files to disk that execute shell commands when accessed. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-24T03:31:22+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-87902"
+          ]
+        },
+        {
+          "title": "InfraTrust report warns network management systems under attack",
+          "link": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-network-management-systems-under-attack/",
+          "summary": "Attackers are increasingly targeting the management systems used to control enterprise infrastructure, with several critical vulnerabilities actively exploited before or shortly after vendors disclosed them. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T23:35:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Arista patches actively exploited VeloCloud Orchestrator zero-day",
+          "link": "https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/",
+          "summary": "Arista Networks has released security patches for a zero-day flaw that is being actively exploited and affects VeloCloud Orchestrator (VCO) On-Prem deployments. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T21:29:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Exploit Released for Unpatched Ubuntu Linux Flaw Enabling Host-Root Container Escape",
+          "link": "https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html",
+          "summary": "A use-after-free in the Linux kernel's AF_UNIX socket subsystem can be used to escape a container and gain root on the host, security firm DepthFirst said in research published September 22. The flaw, tracked as CVE-2026…",
+          "source": "The Hacker News",
+          "published": "2026-09-23T20:12:18+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+          "link": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+          "summary": "Attackers are exploiting a critical flaw in F5 BIG-IP Access Policy Manager (APM) that lets them run code on a BIG-IP system without logging in, F5 says. The flaw, CVE-2026-94127, affects only systems in which APM serves…",
+          "source": "The Hacker News",
+          "published": "2026-09-23T17:29:48+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-94127"
+          ]
+        },
+        {
+          "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain to Deploy CLEANGULP Malware",
+          "link": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+          "summary": "A Chinese threat actor codenamed UTA0565 has been observed exploiting the recently disclosed Google Chrome-Microsoft Windows exploit chain as zero-days through fake websites. The attacks, detected on September 3 and 4, 2…",
+          "source": "The Hacker News",
+          "published": "2026-09-23T17:29:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ryuk ransomware member sentenced to 24 months in prison",
+          "link": "https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/",
+          "summary": "An Armenian man was sentenced to 24 months in prison and 3 years of supervised release for hacking U.S. companies and encrypting their systems in Ryuk ransomware attacks. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T17:20:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/",
+          "summary": "F5 has released security updates to address a critical BIG-IP APM zero-day vulnerability being exploited in remote code execution attacks. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T16:17:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ShinyHunters Claims FBI Breach, Says It Stole Data on Agents and Job Applicants",
+          "link": "https://thehackernews.com/2026/09/shinyhunters-claims-fbi-breach-says-it.html",
+          "summary": "The cyber extortion group known as ShinyHunters on Tuesday claimed it had breached the U.S. Federal Bureau of Investigation and stolen data belonging to current and former employees at the agency. \"We have compromised th…",
+          "source": "The Hacker News",
+          "published": "2026-09-23T14:30:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Sweden fines Miljödata $183,000 over breach affecting 2.2 million",
+          "link": "https://www.bleepingcomputer.com/news/security/sweden-fines-milj-data-183-000-over-breach-affecting-22-million/",
+          "summary": "Sweden's data privacy regulator, IMY, has imposed a $183,000 (SEK 1.8 million) fine on IT systems provider Miljödata for inadequate security measures leading to a breach in August 2025 affecting 2.2 million people. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T06:40:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ShinyHunters claims FBI hack, data theft in PeopleSoft zero-day breach",
+          "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-fbi-hack-data-theft-in-peoplesoft-zero-day-breach/",
+          "summary": "The ShinyHunters extortion gang claims it breached FBI systems using a new Oracle PeopleSoft zero-day vulnerability, gaining access to internal services and stealing sensitive data on employees and job applicants. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-23T04:13:29+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 29
+}
