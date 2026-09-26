@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-09-27T08:47:12.091118+09:00",
+  "date": "2026-09-27",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "해커 표적 된 라디오 방송... 극동방송 후원 시스템 해킹 피해",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146045",
+          "summary": "극동방송이 후원자 관리 시스템에 침해 정황을 확인하고 개인정보 유출 피해 예방을 위한 긴급 대응에 나섰다. 극동방송은 개신교계 선교 라디오 방송국으로, 일반적 뉴스나 예능 같은 기능 없이 선교 사역에 주력하고 있는 특수방송사다.극동방송에 따르면, 23일 오후 5시경 후원자 관리 시스템에 외부의 권한 없는 접근이 발생한 정황이 최초 확인됐다. 극동방송은 즉시 사실관계 조사에 착수, 비정상적 접…",
+          "source": "보안뉴스",
+          "published": "2026-09-26T17:29:15+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "﻿[Global Security TOP 100] 윤경구 파수AI CTO “안전한 AX 지원... 에이전틱 AI 플랫폼으로 시장 선도”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146018",
+          "summary": "﻿파수AI는 본격적인 생성형 AI 시대를 맞아 AI와 데이터, 보안 영역에서 독자적인 가치를 제공하며 글로벌 AI 기업으로 도약하고 있다. 윤경구 파수AI CTO는 “에이전틱 AX 플랫폼인 ‘엘름’(Ellm)을 중심으로 포트폴리오를 확장하고 있으며, 수많은 고객 데이터를 보호하며 쌓아온 문서 이해도를 바탕으로 실용적이고 통합적인 대안을 제시하겠다”고 밝혔다.Q. 파수AI와 주요 사업에 대한…",
+          "source": "보안뉴스",
+          "published": "2026-09-26T11:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "보조배터리, 기내 안전의 가장 약한 고리",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146043",
+          "summary": "추석 연휴인 9월 24일, 인천공항에서 다낭으로 출발하려던 여객기의 승객 가방에서 불이 났다. 발화 원인은 조사 결과를 기다려야 하지만, 비행기 안에서 리튬 배터리가 연기를 뿜는 일이 더는 드문 뉴스가 아니라는 사실은 분명하다.올해만 해도 1월 중국 싼야에서 청주로 오던 항공기에서 가방 속 보조배터리 연기로 승무원 3명이 병원에 실려갔고, 7월에는 인천을 떠나 필리핀 칼리보로 가던 항공기에서…",
+          "source": "보안뉴스",
+          "published": "2026-09-26T10:21:23+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "ShinyHunters uses WAF bypass trick in Oracle PeopleSoft attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+          "summary": "The ShinyHunters extortion gang is using a URL-encoding trick to bypass web application firewall rules that mitigate the Oracle PeopleSoft CVE-2026-35273 flaw, allowing the threat actors to resume widespread exploitation…",
+          "source": "BleepingComputer",
+          "published": "2026-09-27T04:03:34+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-35273"
+          ]
+        },
+        {
+          "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+          "link": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+          "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Microsoft SharePoint and Mikrotik RouterOS to its Known Exploited Vulnerabilities (KEV) catalog, citing eviden…",
+          "source": "The Hacker News",
+          "published": "2026-09-26T17:49:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Kiteworks urges 6-hour server shutdown over potential zero-day attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
+          "summary": "Secure file-sharing software company Kiteworks is urging customers worldwide to temporarily shut down their servers on Saturday for a six-hour window after receiving threat intelligence warning of a potentially imminent…",
+          "source": "BleepingComputer",
+          "published": "2026-09-26T06:41:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ShinyHunters hacked Clop leak site using Grav CMS path traversal flaw",
+          "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
+          "summary": "The Clop ransomware gang has moved its data leak site to a new Tor address after confirming its previous server was compromised and defaced through an unpatched Grav CMS flaw that BleepingComputer has learned is an unaut…",
+          "source": "BleepingComputer",
+          "published": "2026-09-26T05:57:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+          "link": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+          "summary": "The Psychedelic Stealer malware distributed via compromised Ukrainian websites using ClickFix-style Cloudflare verification checks is part of a wider malware-as-a-service (MaaS) platform called Lunex. The new findings co…",
+          "source": "The Hacker News",
+          "published": "2026-09-27T03:22:52+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Claude Opus 5.5 uses 95% fewer em dashes, but its answers are getting longer",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-opus-55-uses-95-percent-fewer-em-dashes-but-its-answers-are-getting-longer/",
+          "summary": "Anthropic's Claude Opus 5.5 appears to be changing how it writes, with new analysis showing fewer obvious AI writing patterns, shorter sentences, and simpler wording compared with Opus 5. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-27T01:26:58+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft pauses KB5002907 update after Office license deactivations",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-kb5002907-update-paused-after-office-license-deactivations/",
+          "summary": "Microsoft has paused the rollout of the KB5002907 Microsoft 365 update after users report that it deactivated, or in some cases completely removed, perpetual Office 2016 and Office 2019 installations. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-27T00:50:38+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "GitHub Actions re-enabled with Mini Shai-Hulud payload still active",
+          "link": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
+          "summary": "Two third-party GitHub Actions previously compromised in a Mini Shai-Hulud campaign were re-enabled by their maintainer and remained accessible for more than a week despite still pointing to malicious code. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-26T23:19:46+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI's AI agents accidentally uploaded user-provided images to third-party sites",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-ai-agents-accidentally-uploaded-user-provided-images-to-third-party-sites/",
+          "summary": "OpenAI says its AI agents uploaded user-provided images to third-party image-hosting services while carrying out research and evaluation tasks. [...]",
+          "source": "BleepingComputer",
+          "published": "2026-09-26T21:28:41+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
+          "link": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+          "summary": "Google is warning of renewed mass exploitation of a known security vulnerability in Oracle PeopleSoft as part of a campaign targeting multiple sectors globally. The ShinyHunters-linked activity involves the weaponization…",
+          "source": "The Hacker News",
+          "published": "2026-09-26T20:46:40+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Zero Trust for AI Agents Starts With Fixing Zero Visibility",
+          "link": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
+          "summary": "The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much producti…",
+          "source": "The Hacker News",
+          "published": "2026-09-26T19:30:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
+          "link": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
+          "summary": "Details have emerged about a high-severity security flaw in the Elementor Website Builder WordPress plugin that could be exploited by an unauthenticated attacker to create rogue administrator accounts and take control of…",
+          "source": "The Hacker News",
+          "published": "2026-09-26T18:55:22+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 15
+}
