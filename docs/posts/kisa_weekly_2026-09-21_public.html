@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KISA 보호나라 보안공지 주간 리포트 (2026.09.21 ~ 09.27)</title></head>
+<body style="margin:0;padding:0;background:#F5F5F4;font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">KEV 10건 신규 — WordPress·F5·WSO2 인증 없이 장악, Check Point 지난 호 1건 악용 확인으로 변경.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F5F5F4;"><tr><td align="center" style="padding:20px 6px;">
+<table role="presentation" width="760" cellpadding="0" cellspacing="0" style="max-width:760px;width:100%;background:#FFFFFF;border:1px solid #D1D5DB;">
+
+<tr><td style="background:#1E3A5F;color:#FFFFFF;padding:22px 26px;">
+  <div style="font-size:12px;letter-spacing:.5px;opacity:.86;">정보보호 참고자료 · 주간 배포용</div>
+  <div style="font-size:21px;font-weight:700;margin-top:7px;">KISA 보호나라 보안공지 주간 리포트</div>
+  <div style="font-size:13px;margin-top:8px;opacity:.92;line-height:1.65;">대상 기간: 2026.09.21(월) ~ 09.27(일) &nbsp;|&nbsp; 발행: 2026.09.28(월)</div>
+</td></tr>
+
+<tr><td style="padding:22px 26px 4px;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">1. 한눈에 보기</h2>
+  <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    대상 기간에 보호나라 보안공지 <b>4건(#2545~#2548)</b>이 게시됐고, 같은 기간 CISA 악용 확인 목록(KEV)에 <b>10건</b>이 신규 등재됐습니다.
+    중복 2건을 제외하면 점검 대상은 <b>12건</b>이며, 이 중 2건은 지난 호 수록분이라 <b>이번 호 신규는 10건</b>입니다.
+    이번 주는 <b>보호나라 공지보다 KEV 쪽이 훨씬 무겁습니다</b> — 신규 10건 중 8건이 KEV에서만 확인됐습니다.
+  </p>
+  <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    <b>인증 없이 시스템을 장악할 수 있는 건이 세 개</b> 겹쳤습니다.
+    <b>WordPress(CVE-2026-87902, CVSS 9.2)</b>는 4.7 이후 거의 모든 버전이 대상이고,
+    <b>F5 BIG-IP APM(CVE-2026-94127, CVSS 9.8)</b>은 제로데이로 악용된 뒤 패치됐으며,
+    <b>WSO2 API Manager(CVE-2026-5430, CVSS 10.0)</b>는 JWT 인증 우회로 관리자 계정까지 탈취됩니다.
+    세 건 모두 KEV 연방기관 기한이 이미 지났습니다.
+  </p>
+  <div style="margin:0 0 11px;padding:11px 13px;background:#F3F6FA;border-left:3px solid #1E3A5F;font-size:13.5px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>지난 호 항목 하나의 상태가 바뀌었습니다.</b><br>
+    지난 호 Check Point 6건 중 <b>CVE-2026-85102</b>(VPN 인증서 신뢰 검증 미흡)는 그때 ‘악용 미확인 · KEV 미등재’로 적었는데,
+    <b>9/22 KEV에 등재</b>되어 악용 확인으로 바뀌었습니다. Check Point 장비를 운영 중이라면 이 건의 우선순위를 올려 주십시오.
+  </div>
+  <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    보호나라 공지 4건은 Linux 커널(#2545), WordPress 2건(#2546·#2547), Check Point(#2548)입니다.
+    이 중 <b>Linux 커널 #2545는 지난 호에 이미 실은 3건</b>(CVE-2025-39682 · CVE-2025-39964 · CVE-2026-53266)을 보호나라가 뒤늦게 게시한 것이어서, 내용을 반복하지 않고 조치 현황만 추적합니다.
+  </p>
+  <p style="margin:0 0 4px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
+    <b>네트워크·보안 장비 쪽 비중이 큽니다.</b> F5, Check Point, Arista VeloCloud, MikroTik RouterOS, Zyxel 스위치까지 다섯 계열이 한 주에 몰렸습니다.
+    경계 구간 장비는 장악당하면 내부 전체가 노출되므로, 사용 여부 확인을 먼저 해 주시기 바랍니다.
+  </p>
+</td></tr>
+
+<tr><td style="padding:18px 26px 6px;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">2. 우선순위</h2>
+  <table role="presentation" width="100%" cellpadding="7" cellspacing="0" style="border-collapse:collapse;font-size:12.5px;color:#1F2937;">
+    <tr style="background:#F3F4F6;">
+      <th style="border:1px solid #D1D5DB;text-align:left;">대상</th>
+      <th style="border:1px solid #D1D5DB;text-align:left;">핵심 취약점 · 영향 대상</th>
+      <th style="border:1px solid #D1D5DB;text-align:center;">위험도 · 악용</th>
+      <th style="border:1px solid #D1D5DB;text-align:center;">기한</th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>WordPress</b><br><span style="color:#6B7280;">KISA #2547 · KEV 9/25</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-87902</b><br><span style="color:#6B7280;">인증 없는 경로 조작 → 조건부 원격 코드 실행</span><br><span style="color:#6B7280;">▸ WordPress 4.7.0 ~ 7.1.1 (사실상 전 버전)</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 9.2</span><br><b>● 악용 확인 · KEV 9/25</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>F5 BIG-IP APM</b><br><span style="color:#6B7280;">KEV 9/22</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-94127</b><br><span style="color:#6B7280;">힙 버퍼 오버플로 → 인증 없는 원격 코드 실행</span><br><span style="color:#6B7280;">▸ APM 액세스 정책 + OAuth 프로필 구성 시</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 9.8</span><br><b>● 악용 확인 · KEV 9/22</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>WSO2 API Manager 외</b><br><span style="color:#6B7280;">KEV 9/24</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-5430</b><br><span style="color:#6B7280;">JWT 인증 우회 → 관리자 계정 탈취</span><br><span style="color:#6B7280;">▸ API Manager 4.1.0~4.6.0 · Control Plane · Traffic Manager · Universal Gateway</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 10.0</span><br><b>● 악용 확인 · KEV 9/24</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Check Point 관리 서버</b><br><span style="color:#6B7280;">KISA #2548 · KEV 9/22</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-93616 · CVE-2026-85102</b><br><span style="color:#6B7280;">경로 조작 / VPN 인증서 신뢰 검증 미흡</span><br><span style="color:#6B7280;">▸ Security Management · MDS · Log Server · SmartEvent · Gateway</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 9.8 (85102, CNA)</span><br><b>● 악용 확인 · KEV 9/22</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Arista VeloCloud Orchestrator</b><br><span style="color:#6B7280;">KEV 9/22</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-93952</b><br><span style="color:#6B7280;">입력값 검증 미흡</span><br><span style="color:#6B7280;">▸ SD-WAN 오케스트레이터</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS [미확인]</span><br><b>● 악용 확인 · KEV 9/22</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>MikroTik RouterOS</b><br><span style="color:#6B7280;">KEV 9/25</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-67279</b><br><span style="color:#6B7280;">동작 흐름 강제 미흡</span><br><span style="color:#6B7280;">▸ RouterOS 전반 · SSH 외부 노출 시 위험</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS [미확인]</span><br><b>● 악용 확인 · KEV 9/25</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">즉시</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Microsoft SharePoint Server</b><br><span style="color:#6B7280;">KEV 9/25</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-65660</b><br><span style="color:#6B7280;">코드 인젝션 → 인증 후 원격 코드 실행</span><br><span style="color:#6B7280;">▸ SharePoint 2016 · 2019 · Subscription Edition</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS 8.8 (NVD)</span><br><b>● 악용 확인 · KEV 9/25</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">즉시</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Adobe Commerce · Magento</b><br><span style="color:#6B7280;">KEV 9/24</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-71362</b><br><span style="color:#6B7280;">권한 검증 오류 · 계정·상호작용 불필요</span><br><span style="color:#6B7280;">▸ Adobe Commerce · Magento</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS [미확인]</span><br><b>● 악용 확인 · KEV 9/24</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">해당 시 즉시</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Zyxel GS1900 스위치</b><br><span style="color:#6B7280;">KEV 9/21</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-7273</b><br><span style="color:#6B7280;">스택 버퍼 오버플로</span><br><span style="color:#6B7280;">▸ GS1900 시리즈 스위치</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS [미확인]</span><br><b>● 악용 확인 · KEV 9/21</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">해당 시 즉시</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>WordPress</b><br><span style="color:#6B7280;">KISA #2546</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-60137</b><br><span style="color:#6B7280;">WP_Query SQL 인젝션</span><br><span style="color:#6B7280;">▸ 6.8.0~6.8.5 · 6.9.0~6.9.4 · 7.0.0~7.0.1</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>보통</b><br><span style="color:#6B7280;">벤더 Moderate</span><br>○ 보고 없음</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">이번 주</td>
+    </tr>
+    <tr style="background:#F3F4F6;">
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">Linux 커널 <span style="color:#6B7280;">(지난 호 수록)</span><br><span style="color:#6B7280;">KISA #2545 · KEV 9/18</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">CVE-2025-39682 · CVE-2025-39964 · CVE-2026-53266<br><span style="color:#6B7280;">보호나라 뒤늦은 게시 — 신규 사실 없음</span><br><span style="color:#6B7280;">▸ 리눅스 서버 · 컨테이너 호스트</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음~긴급</b><br><span style="color:#6B7280;">출처별 5.5~9.8</span><br><b>● 악용 확인 · KEV 9/18</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">조치 현황 확인<br><span style="color:#6B7280;">기한 9/21 경과</span></td>
+    </tr>
+  </table>
+  <p style="margin:9px 0 0;font-size:11.5px;line-height:1.7;color:#6B7280;word-break:keep-all;">
+    ※ 권고 기한은 우선순위 예시입니다. 실제 일정은 자산 중요도·인터넷 노출 여부·변경관리 정책에 따라 조정하십시오.
+    악용 여부는 CISA KEV 등재와 벤더 공지를 근거로 하며 각 항목의 출처를 상세에 적었습니다.
+    KEV 기한은 미국 연방기관 기준으로, 사내 기한이 아니라 우선순위 참고값입니다.
+  </p>
+</td></tr>
+
+<tr><td style="padding:20px 26px 4px;border-top:1px solid #D1D5DB;">
+  <h2 style="margin:0 0 4px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">3. 공지별 조치 방법과 조치 확인 방법</h2>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-1. WordPress — CVE-2026-87902</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.2 · 악용 확인 &nbsp;|&nbsp; KISA #2547(9/23 게시) · KEV 등재 9/25(기한 9/28)</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      페이지 템플릿을 찾는 <code style="word-break:break-all;">get_page_template()</code> 처리에 경로 조작이 가능해,
+      <b>인증 없는 공격자가 활성 테마 디렉터리 밖의 임의의 읽기 가능한 <code style="word-break:break-all;">.php</code> 파일을 포함시킬 수 있습니다.</b>
+      서버 구성과 테마 조건이 맞으면 <b>원격 코드 실행</b>으로 이어집니다(벤더 표현: conditional RCE).<br>
+      CVSS <b>9.2</b> · <code style="word-break:break-all;">CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N</code> (출처: WordPress 보안권고) · CWE-98<br>
+      <b>영향 범위가 이번 주에서 가장 넓습니다.</b> 4.7.0부터 7.1.1까지 25개 브랜치가 모두 대상입니다.
+      CISA는 9/25 KEV에 등재했고 연방기관 기한은 9/28입니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      사용 중인 브랜치의 수정 버전 이상으로 업데이트합니다. 벤더가 <b>25개 브랜치 전부에 패치를 내놓았습니다.</b><br>
+      <span style="color:#6B7280;">4.7.37 · 4.8.32 · 4.9.33 · 5.0.29 · 5.1.26 · 5.2.28 · 5.3.25 · 5.4.23 · 5.5.22 · 5.6.21 · 5.7.19 · 5.8.17 · 5.9.18 ·
+      6.0.16 · 6.1.14 · 6.2.13 · 6.3.12 · 6.4.12 · 6.5.12 · 6.6.9 · 6.7.9 · 6.8.10 · 6.9.9 · 7.0.6 · <b>7.1.2</b></span><br>
+      벤더 권고에 <b>우회책 기재가 없습니다.</b><br>
+      <span style="font-size:12px;color:#6B7280;">※ 보호나라 #2547 표에서는 영향 범위 상한이 7.1.2로 취득됐으나, 벤더 권고는 영향 <b>7.1.1까지</b>·해결 <b>7.1.2</b>로 기재하고 있어 같은 값이 양쪽에 나타납니다. 위 버전은 <b>벤더 공식 권고를 기준</b>으로 적었습니다. 어느 쪽이 옳은지는 단정하지 않습니다.</span>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① 관리자 화면 <i>알림판 &gt; 업데이트</i> 또는 <i>도구 &gt; 사이트 건강 &gt; 정보</i>에서 WordPress 버전이 해당 브랜치의 수정 버전 이상인지 확인합니다.<br>
+      ② <b>자동 업데이트가 켜져 있어도 메이저 브랜치는 자동으로 올라가지 않을 수 있으므로</b> 실제 버전 값을 직접 확인합니다.<br>
+      ③ 다중 사이트(멀티사이트)·다수 인스턴스는 <b>사이트별로 각각</b> 확인합니다.<br>
+      ④ <span style="color:#6B7280;">[미확인]</span> WP-CLI 등 명령행 확인 절차는 이번 조사에서 공식 문서로 확인하지 않아 싣지 않습니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>벤더가 공식 확인 방법이나 침해 지표를 제공하지 않습니다.</b> 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.
+      확인되지 않은 지표를 만들어 싣지 않았습니다.<br>
+      공격 원리에서 도출한 점검 착안점(<b>벤더 IoC 아님</b>) — 이 취약점은 <b>활성 테마 밖의 <code style="word-break:break-all;">.php</code> 파일을 템플릿으로 포함시키는 방식</b>입니다.
+      따라서 패치 전 기간의 웹 접근 로그에서 <b>템플릿·페이지 파라미터에 경로 조작 문자열이 섞인 요청</b>이 있었는지,
+      업로드 디렉터리 등에 <b>등록한 적 없는 <code style="word-break:break-all;">.php</code> 파일</b>이 생겼는지 확인합니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      WordPress 보안권고 GHSA-7hp8-65ch-5whp (2026-09-22 공개) · CISA KEV(dateAdded 2026-09-25) · KISA 보호나라 보안공지 #2547 (2026-09-23)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-2. F5 BIG-IP APM — CVE-2026-94127</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.8 · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/22(기한 9/25) · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      BIG-IP APM의 힙 버퍼 오버플로로 <b>인증 없는 원격 공격자가 코드를 실행</b>할 수 있습니다. 제로데이로 악용된 뒤 패치됐습니다.<br>
+      CVSS <b>9.8</b>(v3.1).<br>
+      <b>중요 — 기본 구성에서는 노출되지 않습니다.</b> 가상 서버에 <b>APM 액세스 정책과 OAuth 프로필이 함께 구성된 경우</b>에만 악용 가능합니다.
+      따라서 BIG-IP를 쓰더라도 OAuth를 쓰지 않으면 해당하지 않을 수 있으나, <b>구성 여부를 실제로 확인해야</b> 판단할 수 있습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      F5가 제공한 엔지니어링 핫픽스를 적용합니다.<br>
+      · BIG-IP 21.1.0 → <b>Hotfix-BIGIP-21.1.0.2.0.30.22-ENG</b><br>
+      · BIG-IP 17.5.0 → <b>Hotfix-BIGIP-17.5.1.9.0.160.12-ENG</b><br>
+      · BIG-IP 17.1.0 → <b>Hotfix-BIGIP-17.1.3.5.0.41.14-ENG</b><br>
+      즉시 패치가 어려우면 <b>F5 지원에서 iRule 기반 우회책</b>을 제공합니다. 우회책은 패치를 대체하지 않습니다.<br>
+      <span style="font-size:12px;color:#6B7280;">※ F5 공식 문서(K000162605)가 자동 조회로 열리지 않아, 위 값은 <b>보안업체 분석 자료 기준</b>입니다. 적용 전 F5 지원 문서를 직접 확인해 주십시오.</span>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① <b>먼저 해당 여부부터</b> — 가상 서버 목록에서 <b>APM 액세스 정책과 OAuth 프로필이 동시에 적용된 가상 서버</b>가 있는지 확인합니다. 없으면 이 건은 해당하지 않습니다.<br>
+      ② 설치된 핫픽스 빌드가 위 값과 일치하는지 확인합니다.<br>
+      ③ 고가용성(HA) 구성이면 <b>양쪽 장비 모두</b> 확인합니다.<br>
+      ④ <span style="color:#6B7280;">[미확인]</span> 버전·핫픽스 확인용 정확한 명령이나 콘솔 경로를 공식 문서로 확인하지 못해 싣지 않습니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 공식 침해 지표를 확인하지 못했습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      제로데이로 악용된 건이므로, 해당 구성이 있었다면 <b>패치 전 기간의 APM·OAuth 관련 로그와 장비발 외부 통신</b>을 함께 확인하시기 바랍니다(벤더 IoC 아님).
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CISA KEV(dateAdded 2026-09-22) · F5 보안문서 K000162605(미열람 — 페이지 로딩 실패) · Rapid7 분석 · The Hacker News · CSO Online
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-3. WSO2 API Manager 외 — CVE-2026-5430</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 10.0 · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/24(기한 9/27) · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      벤더 설명 — “JWT authentication can be bypassed when a token is signed using an unsupported algorithm, allowing unauthorized access.”
+      <b>지원하지 않는 알고리즘으로 서명한 토큰을 그대로 받아들여 인증이 우회</b>됩니다.
+      벤더는 <b>관리자 계정 탈취와 전체 계정 장악</b>까지 가능하다고 적고 있습니다.<br>
+      CVSS <b>10.0</b>(단일 테넌트 환경 9.8), 인증 불필요(PR:N).<br>
+      보안업체 허니팟에서 <b>9/13부터 악용 시도</b>가 관측됐고, CISA가 9/24 KEV에 등재했습니다.
+      공공·금융·통신 분야에서 널리 쓰이는 제품이라 <b>납품·운영 시스템에 포함돼 있는지 확인이 필요</b>합니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      영향 제품·버전 — API Manager <b>4.1.0 / 4.2.0 / 4.3.0 / 4.4.0 / 4.5.0 / 4.6.0</b>, API Control Plane <b>4.5.0 / 4.6.0</b>,
+      Traffic Manager <b>4.5.0 / 4.6.0</b>, Universal Gateway <b>4.5.0 / 4.6.0</b><br>
+      · 지원 계약이 있는 환경 — <b>WSO2 Updates로 지정 업데이트 레벨을 적용</b>합니다. 제품·버전별로 요구 레벨이 다릅니다(Update 21 ~ 257 범위).<br>
+      · 오픈소스 사용 환경 — 공개된 수정본을 적용하거나 영향받지 않는 버전으로 올립니다.<br>
+      벤더 권고에 <b>우회책 기재가 없습니다.</b>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① 제품별 <b>적용된 업데이트 레벨</b>이 권고가 지정한 값 이상인지 확인합니다. <b>제품 버전만으로는 판별되지 않습니다.</b><br>
+      ② 게이트웨이·컨트롤 플레인 등 <b>구성요소를 각각</b> 확인합니다. 한 구성요소만 올리면 경로가 남습니다.<br>
+      ③ <span style="color:#6B7280;">[미확인]</span> 업데이트 레벨 확인용 정확한 명령·화면 경로는 공식 문서로 확인하지 못해 싣지 않습니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>벤더가 공식 확인 방법이나 IoC를 제공하지 않습니다.</b> 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      공격 원리에서 도출한 점검 착안점(<b>벤더 IoC 아님</b>) — 인증 우회가 성립하면 <b>정상 발급 이력이 없는 토큰으로 성공한 인증</b>이 남습니다.
+      패치 전 기간(특히 <b>9/13 이후</b>)의 인증 성공 로그에서 발급 이력과 대조되지 않는 접근, 관리자 권한 API 호출, 새로 생긴 계정·토큰을 확인하시기 바랍니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      WSO2 보안권고 WSO2-2026-5328 · CISA KEV(dateAdded 2026-09-24) · BleepingComputer · watchTowr 관측 보고
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;background:#F3F6FA;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-4. Check Point — CVE-2026-93616 · CVE-2026-85102</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · 악용 확인 &nbsp;|&nbsp; KISA #2548(9/23 게시) · KEV 등재 9/22(기한 9/25)</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      이번 주 Check Point 항목은 두 갈래입니다.<br><br>
+      <b>① CVE-2026-93616 — 신규 (KISA #2548 · KEV 9/22)</b><br>
+      경로 조작(Path Traversal) 취약점으로, <b>Security Management Server · Multi-Domain Security Management Server · Log Server · Multi-Domain Log Server · SmartEvent</b>가 영향을 받습니다.
+      관리 계층을 직접 겨냥하는 건입니다.<br><br>
+      <b>② CVE-2026-85102 — 지난 호 수록분의 상태 변화</b><br>
+      VPN 협상 중 인증서 신뢰 검증이 미흡해 <b>게이트웨이에서 인증 없는 원격 코드 실행</b>이 가능한 건으로, 지난 호(보호나라 #2543)에 이미 실었습니다.
+      그때는 <b>‘악용 미확인 · KEV 미등재’</b>로 적었으나 <b>9/22 KEV에 등재되어 악용 확인으로 바뀌었습니다.</b> CVSS 9.8(CNA).
+      지난 호에서 이 건을 후순위로 두었다면 <b>지금 순위를 올려야 합니다.</b>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      <b>CVE-2026-93616</b> — 보호나라 #2548 표 기준 계열별 수정 사항입니다.<br>
+      · R82.20 → <b>Security Hotfix</b> 적용<br>
+      · R82.10 → <b>Jumbo Hotfix Take 45 이상</b><br>
+      · R82 · R81.20 → 계열별 지정 Hotfix / Jumbo Hotfix Take 적용<br>
+      <span style="color:#6B7280;">R82·R81.20의 정확한 Take 값은 <b>[미확인]</b>입니다. Check Point 지원 문서 sk1000171이 자동 조회를 차단해 원문을 확인하지 못했습니다. 보호나라 #2548 표 또는 sk1000171을 직접 확인해 주십시오.</span><br><br>
+      <b>CVE-2026-85102</b> — 지난 호에 실은 값을 그대로 적용합니다.
+      계열별 <b>Jumbo Hotfix Take</b>(R82.10 → 44 / R82 → 126 / R81.20 → 166 이상)와 Spark Firewall 항목이 해당합니다.
+      지난 호에 적은 대로 <b>LivePatch와 Jumbo Hotfix는 서로 다른 적용 수단</b>이므로 두 값을 모두 충족해야 합니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 설치된 Hotfix / Jumbo Hotfix Take를 확인하는 공식 절차를 이번에도 확인하지 못했습니다(지난 호에서 이월).
+      확인되지 않은 명령을 싣지 않습니다. Check Point 지원 포털에서 해당 sk 문서를 열람해 확인 절차를 보완해 주십시오.<br>
+      다만 <b>관리 서버와 게이트웨이는 별개로 확인</b>해야 합니다. 93616은 관리 계층, 85102는 게이트웨이 계층입니다.
+    </td></tr>
+    <tr style="background:#FFFFFF;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      두 건 모두 <b>벤더 IoC를 확인하지 못했습니다 — [미확인]</b>. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      지난 호에 실은 <b>CVE-2026-16232용 확인 방법은 그대로 유효</b>합니다 — SmartConsole <i>Audit Logs View</i>에서 “Authentication method: application token” 기록 확인,
+      벤더가 공개한 공격자 IP 5개 대조(sk185169). Check Point 관리 서버를 운영 중이면 이 점검을 아직 하지 않았을 경우 함께 수행하시기 바랍니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      KISA 보호나라 보안공지 #2548 (2026-09-23) · CISA KEV(dateAdded 2026-09-22, CVE-2026-93616 · CVE-2026-85102) · Check Point sk1000171 (미열람 — 자동 조회 차단) · 지난 호 수록분(보호나라 #2543)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-5. Arista VeloCloud Orchestrator — CVE-2026-93952</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/22(기한 9/25) · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      KEV 등재명은 “Arista VeloCloud Orchestrator Improper Input Validation Vulnerability”(CWE-20)입니다.
+      VeloCloud Orchestrator는 <b>SD-WAN 전체를 제어하는 관리 중추</b>라, 장악되면 연결된 모든 지점 장비가 영향권에 들어갑니다.<br>
+      <b>[미확인]</b> — 벤더 공식 권고 원문을 이번 조사에서 확인하지 못해 <b>CVSS 수치, 영향 버전, 해결 버전, 인증 필요 여부</b>를 확정하지 못했습니다.
+      확인되지 않은 값을 추정해 싣지 않았습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 해결 버전을 확정하지 못했습니다. VeloCloud Orchestrator를 운영 중이라면
+      <b>Arista 보안 권고 페이지에서 CVE-2026-93952의 영향 버전과 수정 릴리스를 직접 확인</b>해 적용하시기 바랍니다.<br>
+      KEV 등재 건이므로 확인 자체를 미루지 마십시오. 연방기관 기한은 9/25로 이미 지났습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 원문 미확인으로 확인 절차를 싣지 않습니다.
+      관리 콘솔에서 Orchestrator 버전을 확인한 뒤 벤더 권고의 수정 릴리스와 대조해 주십시오.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 IoC를 확인하지 못했습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.
+      관리 중추 장비이므로, 운영 중이라면 <b>패치 전 기간의 관리자 로그인 이력과 구성 변경 이력</b>을 함께 확인하시기 바랍니다(벤더 IoC 아님).
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CISA KEV(dateAdded 2026-09-22, CWE-20) · Arista 보안 권고(미확인 — 원문 미열람)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-6. MikroTik RouterOS — CVE-2026-67279</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/25(기한 9/28) · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      KEV 등재명은 “MikroTik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability”(CWE-841)입니다.<br>
+      <b>이 건은 단독 취약점이 아니라 공격 연쇄의 일부로 보는 것이 적절합니다.</b>
+      2026년 9월 RouterOS에서 <b>여섯 건</b>의 취약점이 함께 공개됐고, 이를 엮은 공격 연쇄(공개 명칭 ‘MikroTrick’)로
+      <b>SSH가 외부에 노출된 장비를 인증 없이 완전히 장악</b>할 수 있다고 보고됐습니다. 실제 공격은 <b>9월 2일부터</b> 확인됐습니다.<br>
+      <span style="color:#6B7280;">[미확인]</span> CVE-2026-67279 자체의 CVSS와 개별 영향 버전은 확정하지 못했습니다.
+      공개 자료가 함께 공개된 다른 CVE(CVE-2026-67276 · CVE-2026-86060 · CVE-2026-67277)를 중심으로 기술하고 있어, 이 CVE 단독 값은 분리해 확인하지 못했습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · 공개된 수정 버전은 <b>7.25beta3 · 7.24.2 · 7.23.4 · 6.49.21</b>입니다. 사용 중인 계열에 맞는 버전 이상으로 올립니다.<br>
+      · <b>SSH를 외부에 노출하지 마십시오.</b> 공격 연쇄의 전제가 SSH 외부 접근이므로, 관리 접근을 내부망·VPN으로 제한하는 것만으로 노출을 크게 줄일 수 있습니다.<br>
+      <span style="font-size:12px;color:#6B7280;">※ 위 수정 버전은 CERT Polska 공개 자료 기준이며, CVE-2026-67279 단독의 수정 버전으로 벤더가 명시한 값인지는 <b>[미확인]</b>입니다.</span>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① RouterOS 버전이 위 수정 버전 이상인지 확인합니다.<br>
+      ② <b>SSH·WebFig 등 관리 서비스가 외부에서 접근 가능한지</b>를 실제로 외부에서 확인합니다. 설정값만 보지 말고 도달 여부를 확인하십시오.<br>
+      ③ <span style="color:#6B7280;">[미확인]</span> 버전 확인용 정확한 명령은 벤더 문서로 확인하지 않아 싣지 않습니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      CERT Polska가 <b>RouterOS 공격 연쇄에 대한 침해 지표</b>를 공개했습니다.
+      <b>CVE-2026-67279 단독의 벤더 IoC가 아니라 공격 연쇄 기준 지표</b>임을 감안해 주십시오.<br>
+      · 로그에 <code style="word-break:break-all;">login failure for user -2</code> 형태의 기록<br>
+      · <b><code style="word-break:break-all;">ops</code> 계정</b> 등 생성한 적 없는 사용자<br>
+      · 공격 출발지 IP — <code style="word-break:break-all;">82.192.72.4</code>, <code style="word-break:break-all;">103.102.31.18</code><br>
+      · 등록한 적 없는 스크립트, 스케줄러 작업, 프록시 서버, 터널 구성<br>
+      확인 결과가 비어 있어도 침해가 없다는 뜻은 아닙니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CISA KEV(dateAdded 2026-09-25, CWE-841) · CERT Polska 공개 자료(2026-09) · MikroTik 보안 권고(CVE-2026-67279 단독 원문 미확인)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-7. Microsoft SharePoint Server — CVE-2026-65660</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · CVSS 8.8(NVD) · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/25(기한 9/28) · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      ToolPane 구성요소가 Register 지시문을 재구성할 때 따옴표를 이스케이프하지 않아, <b>임의의 .NET 클래스를 등록해 코드를 실행</b>할 수 있습니다.<br>
+      <b>인증이 필요합니다</b> — 낮은 권한이어도 되지만 인증된 접근이 전제입니다. 다만 별도의 인증 우회와 엮이면 인증 전 실행으로 확대될 수 있고,
+      익명 페이지 접근을 허용한 구성은 그 위험이 더 큽니다.<br>
+      <b>분류가 도중에 바뀐 건입니다.</b> Microsoft는 처음 스푸핑(중간 등급)으로 분류했다가 이후 원격 코드 실행으로 정정했고, NVD는 <b>8.8</b>로 평가합니다.
+      9/22 기술 상세가 공개된 뒤 <b>9/24 악용 시도, 9/25 웹셸 생성 시도</b>가 관측됐고, Microsoft가 9/25 악용을 확인했습니다. CISA는 같은 날 KEV에 등재했습니다.<br>
+      영향: <b>SharePoint Server 2016 · 2019 · Subscription Edition</b>.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      <b>2026년 8월 정기 보안 업데이트로 이미 해결된 건입니다</b>(KB 5002893). 패치는 취약한 기능을 기본 비활성화합니다.<br>
+      즉 <b>8월 패치를 적용했다면 이 건은 해소된 상태</b>이고, 아직 적용하지 않았다면 지금이 급합니다. 9월 정기 업데이트를 이미 적용했다면 함께 반영돼 있습니다.<br>
+      <span style="font-size:12px;color:#6B7280;">※ KB 번호는 SharePoint 버전마다 다를 수 있습니다. 위 값은 보안 매체가 제시한 값이며, 적용 전 MSRC 업데이트 가이드에서 사용 중인 버전의 KB를 확인해 주십시오.</span>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      ① SharePoint 서버의 <b>설치된 업데이트 이력에서 2026년 8월 이후 보안 업데이트 적용 여부</b>를 확인합니다.<br>
+      ② 팜(farm) 구성이면 <b>모든 서버에 적용됐는지 개별 확인</b>합니다. 일부 서버만 패치되면 경로가 남습니다.<br>
+      ③ 패치 적용 후 <b>구성 마법사 실행이 필요한지</b> 확인합니다 — SharePoint 업데이트는 파일 설치와 팜 업그레이드가 분리되어, 설치만으로 끝나지 않는 경우가 있습니다.<br>
+      ④ <span style="color:#6B7280;">[미확인]</span> 정확한 확인 명령과 빌드 기준값은 공식 문서로 확인하지 않아 싣지 않습니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>공식 침해 지표를 확인하지 못했습니다 — [미확인].</b> 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      다만 관측된 공격이 <b>웹셸 생성 시도</b>였다는 점은 공개 보고로 확인됩니다.
+      8월 패치를 늦게 적용했다면 <b>미패치 기간의 SharePoint 웹 디렉터리에 새로 생긴 파일</b>과 <b>ToolPane 관련 요청 로그</b>를 확인하시기 바랍니다(벤더 IoC 아님).
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CISA KEV(dateAdded 2026-09-25, CWE-94) · SecurityWeek · The Hacker News · BleepingComputer · MSRC 업데이트 가이드(개별 KB 미확인)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-8. Adobe Commerce · Magento — CVE-2026-71362</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/24(기한 9/27) · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      권한 검증 오류(Incorrect Authorization, CWE-863)입니다. 공격에 <b>기존 계정도, 관리자 권한도, 사용자 상호작용도 필요하지 않습니다.</b>
+      전자상거래 보안업체가 실제 악용을 관측했고 CISA가 9/24 KEV에 등재했습니다.<br>
+      <span style="color:#6B7280;">[미확인]</span> CVSS 수치와 구체적 영향 버전·해결 버전은 이번 조사에서 벤더 권고 원문으로 확인하지 못했습니다.<br>
+      <span style="font-size:12px;color:#6B7280;">참고: 가온아이 내부에 전자상거래 플랫폼을 운영할 가능성은 낮습니다. <b>고객사 납품·운영 시스템에 포함돼 있는지</b>만 확인하고, 없으면 넘어가셔도 됩니다.</span>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 해결 버전·핫픽스 식별자를 확정하지 못했습니다. 운영 중이라면 <b>Adobe 보안 공지에서 CVE-2026-71362의 수정 릴리스</b>를 직접 확인해 적용하시기 바랍니다.<br>
+      인증 없이 악용되는 건이므로 확인 자체를 미루지 마십시오.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 원문 미확인으로 확인 절차를 싣지 않습니다.
+      Adobe Commerce는 패치 적용 상태를 확인하는 도구(Quality Patches Tool)를 제공하므로, 벤더 문서에서 해당 패치 식별자를 확인한 뒤 적용 상태를 조회하시기 바랍니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 IoC를 확인하지 못했습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      권한 검증 오류 계열이므로, 패치 전 기간에 <b>권한 없이 성공한 관리 기능 호출</b>과 <b>새로 생긴 관리자 계정·토큰</b>이 있었는지 확인하시기 바랍니다(벤더 IoC 아님).
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CISA KEV(dateAdded 2026-09-24, CWE-863) · BleepingComputer · Sansec 관측 보고 · Adobe 보안 공지(원문 미열람)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-9. Zyxel GS1900 시리즈 스위치 — CVE-2026-7273</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · 악용 확인 &nbsp;|&nbsp; KEV 등재 9/21(기한 9/24) · 보호나라 공지 대상 아님</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      KEV 등재명은 “Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability”(CWE-121)입니다.
+      GS1900은 중소 규모 사무실·지점에서 널리 쓰이는 관리형 스위치 계열입니다.<br>
+      <span style="color:#6B7280;">[미확인]</span> 벤더 권고 원문을 확인하지 못해 <b>CVSS, 영향 모델·펌웨어 버전, 해결 버전, 인증 필요 여부</b>를 확정하지 못했습니다.
+      확인되지 않은 값을 추정해 싣지 않았습니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 해결 펌웨어를 확정하지 못했습니다. GS1900 계열을 운영 중이라면
+      <b>Zyxel 보안 권고에서 CVE-2026-7273의 영향 모델과 수정 펌웨어를 직접 확인</b>해 적용하시기 바랍니다.<br>
+      확인 전까지의 임시 조치로 <b>스위치 관리 인터페이스의 외부 노출을 차단</b>하고 관리 접근을 내부망으로 제한하시기 바랍니다(일반 원칙이며 벤더 권고가 아닙니다).
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 원문 미확인으로 확인 절차를 싣지 않습니다. 관리 화면에서 펌웨어 버전을 확인한 뒤 벤더 권고의 수정 버전과 대조해 주십시오.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>[미확인]</b> — 벤더 IoC를 확인하지 못했습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      CISA KEV(dateAdded 2026-09-21, CWE-121) · Zyxel 보안 권고(원문 미열람)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 4px;border-top:1px dashed #D1D5DB;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-10. WordPress — CVE-2026-60137</h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;">보통 · 벤더 Moderate · 보고 없음 &nbsp;|&nbsp; KISA #2546(9/22 게시) · KEV 미등재</div>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
+    <tr><td width="76" valign="top" style="color:#6B7280;font-weight:700;">상황</td><td style="word-break:keep-all;">
+      <code style="word-break:break-all;">WP_Query</code>의 <code style="word-break:break-all;">author__not_in</code> 파라미터 처리에서 SQL 인젝션이 가능합니다.
+      벤더 등급은 <b>Moderate</b>이고 CVSS는 권고에 기재되어 있지 않습니다.<br>
+      벤더는 <b>6.9 이상에서 REST API 배치 라우트 혼동 결함과 함께 엮이면 원격 코드 실행까지 이어질 수 있다</b>고 적고 있습니다. 단독으로는 등급이 높지 않으나 조합 조건이 붙는 건입니다.<br>
+      악용 보고는 확인되지 않았고 KEV에도 등재되지 않았습니다. 3-1의 CVE-2026-87902와는 <b>다른 건</b>이므로 두 건을 모두 확인해야 합니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치</td><td style="word-break:keep-all;">
+      · 6.8.0 ~ 6.8.5 → <b>6.8.6</b> &nbsp;·&nbsp; 6.9.0 ~ 6.9.4 → <b>6.9.5</b> &nbsp;·&nbsp; 7.0.0 ~ 7.0.1 → <b>7.0.2</b><br>
+      벤더 권고에 우회책 기재가 없습니다.<br>
+      <span style="font-size:12px;color:#6B7280;">※ 3-1의 CVE-2026-87902 수정 버전(6.8.10 · 6.9.9 · 7.0.6 등)이 더 높으므로, <b>두 건을 함께 해소하려면 3-1의 버전 기준을 따르는 편</b>이 간단합니다.</span>
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">조치 적용 확인</td><td style="word-break:keep-all;">
+      3-1과 동일합니다 — 관리자 화면에서 실제 버전 값을 확인하고, 멀티사이트·다수 인스턴스는 사이트별로 각각 확인합니다.
+    </td></tr>
+    <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;">침해 흔적 확인</td><td style="word-break:keep-all;">
+      <b>벤더가 공식 확인 방법을 제공하지 않습니다 — [미확인].</b> 악용 보고가 없는 건이지만, 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.
+    </td></tr>
+    <tr><td valign="top" style="color:#6B7280;font-weight:700;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
+      WordPress 보안권고 GHSA-fpp7-x2x2-2mjf · KISA 보호나라 보안공지 #2546 (2026-09-22)
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:14px 26px 16px;border-top:1px dashed #D1D5DB;background:#F3F4F6;">
+  <h3 style="margin:0 0 3px;font-size:15px;color:#1E3A5F;">3-11. Linux 커널 3건 <span style="font-size:12.5px;font-weight:400;color:#6B7280;">(지난 호 수록 · 조치 현황 추적)</span></h3>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;">악용 확인 &nbsp;|&nbsp; KISA #2545(9/21 게시) · KEV 등재 9/18 · 기한 9/21 경과</div>
+  <p style="margin:0 0 8px;font-size:13px;line-height:1.72;color:#1F2937;word-break:keep-all;">
+    보호나라 #2545(9/21)는 <b>지난 호에 이미 실은 세 건</b>(CVE-2025-39682 · CVE-2025-39964 · CVE-2026-53266)을 뒤늦게 게시한 것입니다.
+    신규 악용 정보 · 신규 IoC · 신규 완화책 · 해결 버전 변경 · 추가 영향 제품 — <b>모두 없습니다.</b> 내용을 반복하지 않고 조치 현황만 추적합니다.
+  </p>
+  <p style="margin:0 0 8px;font-size:13px;line-height:1.72;color:#1F2937;word-break:keep-all;">
+    다만 보호나라 표가 <b>브랜치별 해결 버전을 정리해 제공</b>한 점은 참고할 만합니다 —
+    CVE-2025-39682는 6.1.149 · 6.6.103 · 6.12.44 · 6.16.4 · 6.17,
+    CVE-2025-39964는 5.10.245 · 5.15.194 · 6.1.154 · 6.6.108 · 6.12.49 · 6.16.9 · 6.17,
+    CVE-2026-53266은 5.10.259 · 5.15.210 · 6.1.176 · 6.6.143 · 6.12.94 · 6.18.36 · 7.0.13 · 7.1 이상입니다.
+  </p>
+  <p style="margin:0 0 8px;font-size:13px;line-height:1.72;color:#1F2937;word-break:keep-all;">
+    <b>지난 호에 적은 주의점은 그대로 유효합니다.</b> 위 값은 업스트림(kernel.org) 기준이므로,
+    배포판 커널은 백포트가 적용되어 <b>업스트림 버전 번호만으로 해당 여부를 판단할 수 없습니다.</b>
+    배포판별 해결 커널 버전은 여전히 <b>[미확인]</b>이며, 각 배포판의 CVE 페이지를 확인해야 합니다.
+  </p>
+  <p style="margin:0;font-size:13px;line-height:1.72;color:#1F2937;word-break:keep-all;">
+    아직 적용하지 않았다면 <b>배포판 벤더가 제공하는 최신 커널로 업데이트한 뒤 재부팅</b>하고,
+    <code style="word-break:break-all;">uname -r</code>로 동작 중인 커널을 확인하십시오. KEV 연방기관 기한(9/21)은 이미 지났습니다.
+  </p>
+  <p style="margin:8px 0 0;font-size:12px;color:#6B7280;word-break:break-word;">
+    출처 — KISA 보호나라 보안공지 #2545 (2026-09-21) · CISA KEV(dateAdded 2026-09-18) · 지난 호 수록분
+  </p>
+</td></tr>
+
+<tr><td style="padding:20px 26px 6px;border-top:1px solid #D1D5DB;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">4. 대상별 이번 주 권고 조치</h2>
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="border-collapse:collapse;font-size:12.8px;color:#1F2937;">
+    <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">대상</th><th style="border:1px solid #D1D5DB;text-align:left;">할 일</th><th style="border:1px solid #D1D5DB;text-align:center;">기한</th></tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>네트워크 · 보안 장비 운영</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">
+      ① <b>F5 BIG-IP</b> — APM 액세스 정책과 OAuth 프로필이 함께 적용된 가상 서버가 있는지 먼저 확인. 있으면 지정 핫픽스 적용, HA는 양쪽 모두.<br>
+      ② <b>Check Point</b> — 관리 서버(93616)와 게이트웨이(85102)를 <b>따로</b> 확인. 85102는 지난 호 후순위였으나 악용 확인으로 바뀌었으므로 순위 상향.<br>
+      ③ <b>Arista VeloCloud Orchestrator</b> · <b>Zyxel GS1900</b> — 사용 여부 확인 후 벤더 권고에서 수정 버전 확인.<br>
+      ④ <b>MikroTik RouterOS</b> — 수정 버전 적용 및 <b>SSH 외부 노출 차단</b>, CERT Polska 침해 지표 대조.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>웹 · 애플리케이션 운영</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">
+      <b>WordPress 전수 점검</b> — 사내·고객사 운영 사이트를 목록화하고 각 브랜치 수정 버전 이상인지 확인.
+      CVE-2026-87902(인증 불필요)와 CVE-2026-60137(SQL 인젝션) <b>두 건</b>이며, 3-1의 상위 버전으로 올리면 함께 해소됩니다.
+      멀티사이트·다수 인스턴스는 사이트별로 확인.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>미들웨어 · API 운영</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">
+      <b>WSO2</b> 계열(API Manager · Control Plane · Traffic Manager · Universal Gateway) 사용 여부 확인 후 지정 업데이트 레벨 적용.
+      <b>제품 버전이 아니라 업데이트 레벨</b>로 판별하며, 구성요소를 각각 확인.
+      9/13 이후 인증 성공 로그에서 발급 이력과 대조되지 않는 접근을 점검.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>서버 운영 (Windows)</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">
+      <b>SharePoint Server</b>(2016 · 2019 · Subscription Edition) 운영 여부 확인.
+      <b>2026년 8월 이후 보안 업데이트 적용 여부</b>를 팜 내 모든 서버에서 확인하고, 필요 시 구성 마법사 실행까지 완료.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">즉시</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>서버 운영 (리눅스)</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">
+      지난 호 <b>리눅스 커널 3건</b> 조치 완료 여부 회신. 미적용 서버는 배포판 최신 커널 적용 후 재부팅, <code style="word-break:break-all;">uname -r</code>로 확인.
+      KEV 기한(9/21)은 이미 지났습니다.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">이번 주</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>정보보호 담당</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">
+      ① 이번 호 <b>[미확인] 항목의 벤더 원문 확보</b> — Check Point sk1000171, F5 K000162605, Arista·Zyxel·Adobe 권고.<br>
+      ② <b>인터넷 노출 자산 목록 확보</b> — 이번 호도 전 항목의 사내 운용 여부를 부서 회신에 의존했습니다.<br>
+      ③ <b>KEV 수집 경로 점검</b> — 이번 주 확인 과정에서 기존 참조 경로가 9일간 갱신되지 않은 것을 발견해 경로를 교체했습니다(5절 참조).</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">이번 주</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>사업 · PM · 서비스 운영</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;">
+      납품·운영 중인 시스템에 <b>WordPress · WSO2 · F5 BIG-IP · Check Point · SharePoint · Adobe Commerce · MikroTik · Zyxel</b> 사용 여부를 파악하고 고객사 담당자에게 공유.
+      <b>WSO2는 공공 부문 사용 사례가 많아 우선 확인</b>이 필요합니다. 공공 고객은 KEV 기한이 참고 기준이 될 수 있습니다.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;">이번 주</td>
+    </tr>
+  </table>
+
+  <div style="margin:14px 0 0;padding:12px 14px;background:#F3F6FA;border-left:3px solid #1E3A5F;">
+    <div style="font-size:13.5px;font-weight:700;color:#1E3A5F;margin-bottom:7px;">조치 확인의 공통 원칙</div>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">① ‘설치했다’가 아니라 <b>재부팅·재시작 후 실제 동작 중인 버전</b>을 확인합니다.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">② <b>클러스터·HA·팜·멀티사이트는 구성원마다</b> 확인합니다. 이번 호의 F5(HA), SharePoint(팜), WordPress(멀티사이트), WSO2(구성요소별)가 모두 해당합니다.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">③ <b>버전 번호만으로 판별되지 않는 제품</b>에 주의합니다 — WSO2는 업데이트 레벨, Check Point는 Hotfix Take, F5는 핫픽스 빌드, 리눅스 커널은 배포판 백포트 여부로 판단해야 합니다.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">④ <b>구성 조건이 붙는 건은 해당 여부부터</b> 확인합니다. F5는 APM 액세스 정책 + OAuth 프로필이 함께 있어야 노출되며, 없으면 해당하지 않습니다.</p>
+    <p style="margin:0;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">⑤ 침해 흔적 확인 결과가 비어 있어도 <b>‘침해 없음’으로 결론 내리지 않습니다.</b> 이번 호는 10건 중 <b>벤더 공식 침해 확인 방법이 있는 건이 하나도 없습니다.</b></p>
+  </div>
+</td></tr>
+
+<tr><td style="padding:20px 26px 6px;border-top:1px solid #D1D5DB;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">5. 집계 기준과 참고 사항</h2>
+
+  <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>집계 기준</b> — KISA는 게시판 게시일, CISA KEV는 <code style="word-break:break-all;">dateAdded</code> 기준입니다. 대상 기간은 2026-09-21 00:00 ~ 09-27 24:00(KST)입니다.
+    기간 내 KISA 공지 <b>4건(#2545~#2548)</b>, KEV 신규 등재 <b>10건</b>이며,
+    CVE 중복 2건(CVE-2026-93616 · CVE-2026-87902 — KISA ↔ KEV)을 하나로 묶어 점검 대상 12건, 이 중 지난 호 수록분 2건을 제외한 <b>신규 10건</b>을 본문에 실었습니다.
+    이번 주는 특정 제품·CVE에 연결되지 않는 <b>일반 공지가 없어 제외 항목이 없습니다.</b>
+  </p>
+
+  <div style="margin:0 0 9px;padding:11px 13px;background:#F3F6FA;border-left:3px solid #1E3A5F;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>수집 경로를 교체했습니다.</b> 지금까지 참조하던 KEV 공식 데이터 경로가 <b>9월 18일자(등재 1,716건)에서 9일간 갱신되지 않아</b>,
+    이번 주 등재분이 한 건도 보이지 않는 상태였습니다. 경로를 바꿔 재조회한 결과 <b>9월 25일자(1,726건)</b>를 확보했고, 증가분 10건이 이번 주 등재분과 정확히 일치했습니다.
+    기존 경로만 보았다면 이번 호의 신규 10건 중 8건을 놓칠 뻔했습니다. 다음 호부터는 <b>조회한 카탈로그 판본 날짜가 발행일에 가까운지</b>를 먼저 확인합니다.
+  </div>
+
+  <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>지난 호 대비 변경</b> — Check Point <b>CVE-2026-85102</b>의 악용 상태가 ‘미확인’에서 <b>‘악용 확인’</b>으로 바뀌었습니다(KEV 9/22 등재).
+    지난 호 기재가 그 시점 기준으로는 정확했으나, 현재 기준으로는 우선순위를 올려야 하는 건입니다.
+  </p>
+
+  <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>원문 표기 차이</b> — 보호나라 #2547(WordPress)의 영향 범위 상한과 벤더 권고의 해결 버전이 모두 7.1.2로 나타났습니다.
+    벤더 공식 권고(영향 7.1.1까지 · 해결 7.1.2)를 기준으로 적었으며, 어느 쪽이 옳은지는 단정하지 않고 차이가 있었다는 사실만 기록합니다.
+  </p>
+
+  <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+    <b>확인하지 못한 벤더 원문</b> — Check Point sk1000171(자동 조회 차단), F5 K000162605(페이지 로딩 실패), Arista·Zyxel·Adobe 보안 권고.
+    <b>확인하지 못한 버전·명령·침해 지표는 추측해서 싣지 않았고 [미확인]으로 남겼습니다.</b>
+  </p>
+
+  <table role="presentation" width="100%" cellpadding="6" cellspacing="0" style="border-collapse:collapse;font-size:12.3px;color:#1F2937;margin-top:12px;">
+    <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">남아 있는 [미확인] 항목</th><th style="border:1px solid #D1D5DB;text-align:left;">내용</th><th style="border:1px solid #D1D5DB;text-align:left;">확인 경로</th></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">Arista VeloCloud</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">CVSS · 영향/해결 버전 · 인증 필요 여부 · IoC</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">Arista 보안 권고</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">Zyxel GS1900</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">CVSS · 영향 모델/펌웨어 · 해결 버전 · IoC</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">Zyxel 보안 권고</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">Adobe Commerce</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">CVSS · 영향/해결 버전 · 패치 식별자</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">Adobe 보안 공지</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">Check Point</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">R82·R81.20의 93616 수정 Take 값 · Hotfix Take 확인 절차(지난 호 이월)</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">sk1000171 · 지원 포털</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">F5 BIG-IP</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">공식 권고 원문 · 버전/핫픽스 확인 절차 · IoC</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">K000162605</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">MikroTik</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">CVE-2026-67279 단독의 CVSS·영향 버전·수정 버전</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">MikroTik 보안 권고</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">WSO2</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">제품·버전별 요구 업데이트 레벨 상세 · 확인 절차</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">WSO2 Updates 문서</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">SharePoint</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">버전별 KB 번호 · 빌드 기준값</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">MSRC 업데이트 가이드</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">Citrix NetScaler</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">CVE-2026-88771 · CVE-2026-88772가 KEV 신규 등재로 보고되나 <b>조회한 공식 카탈로그(9/25자)에 없음</b> — 등재일 미확정</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">다음 호에서 재확인</td></tr>
+    <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">리눅스 커널 3건</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">배포판별 해결 커널 버전 · 침해 확인 방법(지난 호 이월)</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">각 배포판 CVE 페이지</td></tr>
+  </table>
+
+  <p style="margin:11px 0 0;font-size:12.5px;line-height:1.75;color:#6B7280;word-break:keep-all;">
+    ※ 대상 기간 마지막 이틀(9/26~9/27)은 조회한 KEV 카탈로그 판본(9/25자) 이후 구간이라, 해당 기간 신규 등재가 있었다면 이번 호에 반영되지 않았을 수 있습니다. 다음 호에서 재확인합니다.
+  </p>
+</td></tr>
+
+<tr><td style="padding:16px 26px 20px;background:#F3F4F6;border-top:1px solid #D1D5DB;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.75;color:#6B7280;word-break:break-word;">
+    <b>이번 호 출처</b> — KISA 보호나라 보안공지 #2545 · #2546 · #2547 · #2548 · CISA KEV(catalogVersion 2026.09.25, count 1726) ·
+    WordPress 보안권고 GHSA-7hp8-65ch-5whp · GHSA-fpp7-x2x2-2mjf · WSO2 보안권고 WSO2-2026-5328 ·
+    Check Point sk1000171(미열람) · F5 K000162605(미열람) · CERT Polska MikroTik RouterOS 공개 자료 ·
+    Rapid7 · SecurityWeek · BleepingComputer · The Hacker News · CSO Online · Sansec · watchTowr 관측 보고.
+  </p>
+  <p style="margin:0;font-size:12px;line-height:1.75;color:#6B7280;word-break:keep-all;">
+    본 리포트는 보호나라 공지와 CISA 악용 확인 목록을 기준으로 조치·확인 방법을 보강한 참고자료입니다.
+    실제 적용 전 벤더 공식 문서와 각 조직의 변경관리 절차를 따르십시오.<br>
+    문의: KISA 사이버민원센터 국번없이 118
+  </p>
+</td></tr>
+
+</table>
+</td></tr></table>
+</body></html>
