@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오늘의 보안이슈 — 2026년 9월 28일 연휴 통합판</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif; color: #19283a; background: #f3f6f9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f3f6f9; line-height: 1.68; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 18px 60px; }
+    header { padding: 36px 34px; border-radius: 18px; color: #fff; background: linear-gradient(135deg, #10283f, #164f75); box-shadow: 0 12px 28px rgba(16,40,63,.16); }
+    .brand { margin: 0; color: #9fd3ff; font-size: 14px; font-weight: 800; letter-spacing: .04em; }
+    h1 { margin: 7px 0 6px; font-size: 30px; line-height: 1.35; }
+    .meta { margin: 0; color: #d6e7f5; font-size: 14px; }
+    .scope { margin: 20px 0; padding: 18px 21px; border-left: 5px solid #2d82ce; border-radius: 10px; background: #e8f3ff; }
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 18px 0 24px; }
+    .metric { padding: 15px 12px; border: 1px solid #dfe7ef; border-radius: 12px; background: #fff; text-align: center; }
+    .metric b { display: block; color: #164f75; font-size: 22px; }
+    .metric span { color: #66778a; font-size: 12px; }
+    .brief { margin: 0 0 22px; padding: 22px 24px; border: 1px solid #d9e4ed; border-radius: 14px; background: #fff; }
+    .brief h2 { margin-top: 0; }
+    section { margin: 22px 0; padding: 22px 25px; border: 1px solid #dfe7ef; border-radius: 15px; background: #fff; }
+    section > h2 { margin: 0 0 16px; font-size: 21px; }
+    .count { display: inline-block; margin-left: 5px; padding: 2px 10px; border-radius: 99px; color: #315b7d; background: #e8f0f7; font-size: 13px; vertical-align: 2px; }
+    article { padding: 21px 0; border-top: 1px solid #e7edf2; }
+    article:first-of-type { padding-top: 0; border-top: 0; }
+    article:last-of-type { padding-bottom: 0; }
+    h3 { margin: 0 0 3px; color: #173f62; font-size: 18px; line-height: 1.5; }
+    .sub { margin-bottom: 9px; color: #758395; font-size: 13px; }
+    .tag { display: inline-block; margin: 0 5px 5px 0; padding: 2px 8px; border-radius: 5px; color: #a4412e; background: #ffebe6; font-size: 12px; font-weight: 800; }
+    .tag.kev { color: #7a5011; background: #fff2cc; }
+    .tag.watch { color: #5f4b8b; background: #eee9fb; }
+    .cve { display: inline-block; margin: 5px 5px 0 0; padding: 2px 7px; border-radius: 4px; color: #3e5366; background: #edf2f6; font: 12px ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .actions { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 9px; margin-top: 12px; }
+    .actions div { padding: 10px 11px; border-radius: 8px; background: #f6f8fa; font-size: 13px; }
+    .actions b { display: block; margin-bottom: 2px; color: #244b68; }
+    a { color: #136fb1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { padding: 10px; border: 1px solid #dfe7ef; vertical-align: top; text-align: left; }
+    th { background: #edf4fa; }
+    .priority { margin: 0; padding-left: 22px; }
+    .priority li { margin: 11px 0; }
+    .note { color: #5e6d7c; font-size: 13px; }
+    footer { padding: 10px 5px; color: #6c7c8d; font-size: 12px; }
+    @media (max-width: 680px) {
+      .wrap { padding: 14px 10px 40px; }
+      header { padding: 27px 22px; border-radius: 13px; }
+      h1 { font-size: 24px; }
+      .metrics { grid-template-columns: repeat(2, 1fr); }
+      section { padding: 19px 17px; }
+      .actions { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <p class="brand">오늘의 보안이슈</p>
+    <h1>2026년 9월 28일 (월) · 명절 연휴 통합판</h1>
+    <p class="meta">대상: 9월 24일~28일 발행분 · 사건 단위 중복 제거 및 후속 보도 병합</p>
+  </header>
+
+  <div class="scope">
+    5일치 리포트의 <strong>총 106건</strong>을 다시 검토했습니다. 같은 사건의 국내·해외 기사와 다음 날 후속 보도는 하나로 합치고, 홍보·행사·칼럼성 항목은 제외했습니다. 아래는 연휴 뒤 실제 업무에서 확인할 가치가 있는 <strong>핵심 사건군 16개</strong>입니다.
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><b>106건</b><span>원본 수집</span></div>
+    <div class="metric"><b>16개</b><span>핵심 사건군</span></div>
+    <div class="metric"><b>9개</b><span>긴급·패치 확인</span></div>
+    <div class="metric"><b>4개</b><span>개인정보·국내 동향</span></div>
+  </div>
+
+  <div class="brief">
+    <h2>한눈에 보는 연휴 핵심</h2>
+    <p><strong>경계장비와 외부 공개 시스템의 실제 악용 이슈가 집중됐습니다.</strong> Citrix NetScaler, F5 BIG-IP APM, Check Point VPN, WordPress, TeamCity, Roundcube, SharePoint·MikroTik·WSO2·Adobe Commerce, Oracle PeopleSoft까지 패치 여부를 자산 목록과 대조해야 합니다.</p>
+    <p>개발·클라우드 환경에서는 <strong>GitHub Actions 공급망 재노출, 인증 없는 Docker API 공격, 컨테이너 잔존 데이터의 테넌트 간 노출</strong>이 확인됐습니다. 국내에서는 가비아 고객정보 유출과 극동방송 후원자 관리시스템 침해가 주요 개인정보 사고입니다.</p>
+  </div>
+
+  <section>
+    <h2>🚨 긴급 패치·실제 악용 <span class="count">9</span></h2>
+
+    <article>
+      <h3>1. Citrix NetScaler RCE 제로데이 2종 실제 악용</h3>
+      <div class="sub">Citrix 공식 보안공지 · 09/27</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">실제 악용</span>
+      <p>NetScaler ADC·Gateway에서 인증 없이 명령 실행이 가능한 입력검증 취약점과, DTLS 구성에서 RCE 또는 서비스 거부로 이어질 수 있는 메모리 오버플로 취약점이 실제 공격에 악용됐다. Citrix는 지원 버전별 수정 릴리스를 배포했다.</p>
+      <div><span class="cve">CVE-2026-88771</span><span class="cve">CVE-2026-88772</span></div>
+      <div class="actions"><div><b>문제</b>인터넷 경계의 ADC·VPN 장비에서 원격 코드 실행 가능</div><div><b>조치</b>Citrix 공지의 지원 릴리스로 즉시 업그레이드</div><div><b>확인</b>NetScaler 자산·버전·DTLS 설정과 침해 흔적 확인</div></div>
+      <p class="note"><a href="https://support.citrix.com/external/article/CTX697096">Citrix CTX697096</a></p>
+    </article>
+
+    <article>
+      <h3>2. F5 BIG-IP APM 인증 전 RCE 실제 악용</h3>
+      <div class="sub">F5 공식 보안공지 · 09/22</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">CISA KEV</span>
+      <p>BIG-IP APM 액세스 정책과 OAuth 프로필이 구성된 가상 서버에서 힙 기반 버퍼 오버플로를 통해 인증 없이 원격 코드가 실행될 수 있다. F5는 실제 악용 사실을 확인했다.</p>
+      <div><span class="cve">CVE-2026-94127</span></div>
+      <div class="actions"><div><b>문제</b>인증 경계 장비의 제어권 탈취 가능</div><div><b>조치</b>F5 권고 버전·핫픽스 적용</div><div><b>확인</b>APM+OAuth 구성, 외부 노출, 비정상 TMM·접속 로그 점검</div></div>
+      <p class="note"><a href="https://my.f5.com/manage/s/article/K000162605">F5 K000162605</a> · <a href="https://www.dailysecu.com/news/articleView.html?idxno=208595">국내 보도</a></p>
+    </article>
+
+    <article>
+      <h3>3. Check Point VPN RCE 악용 및 관리서버 취약점</h3>
+      <div class="sub">Check Point·KISA · 09/23~09/24</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">실제 악용</span>
+      <p>Security Gateway의 VPN 인증서 처리에서 발생하는 인증 전 RCE 취약점은 실제 악용이 확인됐다. 별도로 Security Management·Multi-Domain Management·Log Server·SmartEvent의 관리 웹서비스에는 사전인증 경로순회 취약점이 공지됐으며, KISA도 국내 사용자에게 핫픽스 적용을 권고했다. 두 취약점은 서로 다른 경로이므로 각각 확인해야 한다.</p>
+      <div><span class="cve">CVE-2026-85102</span><span class="cve">CVE-2026-93616</span></div>
+      <div class="actions"><div><b>문제</b>VPN·관리서버 양쪽에서 원격 침해 가능</div><div><b>조치</b>제품군별 LivePatch/Jumbo Hotfix 적용</div><div><b>확인</b>Security Gateway와 관리서버를 별도 자산으로 대조</div></div>
+      <p class="note"><a href="https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-cve-2026-85102-and-a-management-pre-authentication-vulnerability-cve-2026-93616/">Check Point 공식 권고</a> · <a href="https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&amp;menuNo=205020&amp;nttId=72198">KISA 보안공지</a></p>
+    </article>
+
+    <article>
+      <h3>4. WordPress Core 파일 포함 취약점, 공개 직후 공격</h3>
+      <div class="sub">WordPress·KISA · 09/22~09/24</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">실제 공격</span>
+      <p>페이지 템플릿 경로 검증 문제로 인증되지 않은 공격자가 테마 디렉터리 밖의 로컬 PHP 파일을 포함할 수 있으며, 환경 조건이 맞으면 RCE로 이어질 수 있다. 공개 수시간 안에 파일 생성과 명령 실행 시도가 관측됐다. 7.1 계열은 7.1.2에서 수정됐고 구버전 분기에도 백포트가 제공됐다.</p>
+      <div><span class="cve">CVE-2026-87902</span></div>
+      <div class="actions"><div><b>문제</b>외부 공개 WordPress의 인증 전 침해 가능</div><div><b>조치</b>사용 분기별 KISA 표의 수정 버전 이상 적용</div><div><b>확인</b>웹셸·비정상 PHP 파일·관리자 계정·접속 로그 점검</div></div>
+      <p class="note"><a href="https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp">WordPress 공식 권고</a> · <a href="https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&amp;menuNo=205020&amp;nttId=72197">KISA 보안공지</a></p>
+    </article>
+
+    <article>
+      <h3>5. TeamCity 인증 우회 RCE, 랜섬웨어 공격에 악용</h3>
+      <div class="sub">JetBrains·CISA 후속 경고 · 09/24</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">랜섬웨어 악용</span>
+      <p>인증되지 않은 공격자가 TeamCity의 agent polling protocol을 통해 서버 프로세스 권한으로 운영체제 명령을 실행할 수 있다. TeamCity에는 소스·빌드 비밀정보·배포 자격증명이 모이므로 CI/CD 파이프라인까지 연쇄 침해될 수 있다.</p>
+      <div><span class="cve">CVE-2026-63077</span></div>
+      <div class="actions"><div><b>문제</b>빌드 서버·저장 자격증명·산출물 무결성 침해</div><div><b>조치</b>2025.11.7·2026.1.3 이상 또는 보안 패치 플러그인 적용</div><div><b>확인</b>인터넷 노출 TeamCity, 비정상 명령·빌드·토큰 사용 점검</div></div>
+      <p class="note"><a href="https://blog.jetbrains.com/teamcity/2026/07/cve-2026-63077/">JetBrains 공식 권고</a> · <a href="https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/">후속 보도</a></p>
+    </article>
+
+    <article>
+      <h3>6. CISA KEV 추가: WSO2·Adobe Commerce·SharePoint·MikroTik</h3>
+      <div class="sub">CISA KEV · 09/24~09/25</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">4종 실제 악용</span>
+      <p>WSO2 인증 우회, Adobe Commerce 권한검증 오류, SharePoint 코드 인젝션, MikroTik RouterOS 사전인증 SSH 워크플로 우회가 실제 악용 목록에 추가됐다. MikroTik 취약점은 별도의 argument injection 취약점과 결합해 인증 없이 관리 콘솔 장악으로 이어질 수 있다.</p>
+      <div><span class="cve">CVE-2026-5430</span><span class="cve">CVE-2026-71362</span><span class="cve">CVE-2026-65660</span><span class="cve">CVE-2026-67279</span><span class="cve">CVE-2026-86060</span></div>
+      <div class="actions"><div><b>문제</b>API·전자상거래·협업·라우터 경계에서 실제 공격</div><div><b>조치</b>제품 보유 여부 확인 후 제조사 업데이트·완화책 적용</div><div><b>확인</b>SBOM·자산목록·외부 노출 IP를 CVE별로 대조</div></div>
+      <p class="note"><a href="https://www.cisa.gov/news-events/alerts/2026/09/24/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA 9/24 경고</a> · <a href="https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2026-5328/">WSO2 공식 권고</a> · <a href="https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html">SharePoint·MikroTik 분석</a></p>
+    </article>
+
+    <article>
+      <h3>7. Oracle PeopleSoft, WAF 우회 후 대규모 재공격</h3>
+      <div class="sub">Google 위협분석 후속 · 09/26~09/27</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">실제 악용</span>
+      <p>ShinyHunters 연계 활동이 URL 인코딩 기법으로 기존 WAF 규칙을 우회해 알려진 PeopleSoft 취약점을 다시 대규모 악용하고 웹셸을 배포한 것으로 보고됐다. 방화벽 완화만 믿고 패치를 미룰 수 없는 사례다.</p>
+      <div><span class="cve">CVE-2026-35273</span></div>
+      <div class="actions"><div><b>문제</b>WAF 규칙 우회 후 인증 전 RCE·웹셸 배포</div><div><b>조치</b>Oracle 패치 적용, 완화책만 적용한 서버 재점검</div><div><b>확인</b>URL 이중 인코딩, 신규 JSP·웹셸, 비정상 SSH 이동 점검</div></div>
+      <p class="note"><a href="https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html">공격 분석</a></p>
+    </article>
+
+    <article>
+      <h3>8. Roundcube 사전인증 SQL Injection 실제 악용</h3>
+      <div class="sub">Canadian Centre for Cyber Security 경고 · 09/25</div>
+      <span class="tag">즉시 확인</span><span class="tag kev">실제 악용</span>
+      <p>Roundcube Webmail의 virtuser_query 플러그인에서 인증 전 SQL Injection이 가능하다. 1.6.16 미만의 1.6.x, 1.7.1 미만의 1.7.x가 영향을 받으며 메일 계정 자격증명과 저장 메시지가 노출될 수 있다.</p>
+      <div><span class="cve">CVE-2026-48842</span></div>
+      <div class="actions"><div><b>문제</b>웹메일 DB·계정정보 노출 가능</div><div><b>조치</b>1.6.16 또는 1.7.1 이상으로 업데이트</div><div><b>확인</b>Roundcube·플러그인 사용 여부와 웹·DB 로그 점검</div></div>
+      <p class="note"><a href="https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html">상세 분석</a></p>
+    </article>
+
+    <article>
+      <h3>9. Kiteworks, 잠재적 제로데이 공격 대비 긴급 중단 권고</h3>
+      <div class="sub">Kiteworks 고객 공지 관련 보도 · 09/25~09/26</div>
+      <span class="tag watch">후속 확인 필요</span>
+      <p>Kiteworks는 위협정보를 근거로 특정 6시간 동안 서버를 일시 중단하도록 전 세계 고객에게 안내했다. 당시 CVE나 패치는 공개되지 않았으므로, 현재 시점에는 사용 여부를 확인하고 제조사의 최신 후속 공지·침해지표·업데이트를 대조해야 한다.</p>
+      <div class="actions"><div><b>문제</b>상세 미공개 잠재적 제로데이 위협</div><div><b>조치</b>최신 제조사 공지와 지원 채널 확인</div><div><b>확인</b>Kiteworks 자산·버전·9/26 전후 이상접속 로그 확인</div></div>
+      <p class="note"><a href="https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/">관련 보도</a></p>
+    </article>
+  </section>
+
+  <section>
+    <h2>🧩 개발·클라우드·공급망 <span class="count">3</span></h2>
+
+    <article>
+      <h3>10. 침해된 GitHub Actions가 다시 활성화돼 악성 코드 재실행</h3>
+      <div class="sub">Mini Shai-Hulud 후속 · 09/25~09/26</div>
+      <span class="tag">공급망</span>
+      <p>과거 Mini Shai-Hulud 캠페인에서 침해된 제3자 GitHub Actions 두 개가 다시 활성화된 뒤에도 악성 코드를 가리킨 채 일주일 넘게 접근 가능했던 것으로 보도됐다. 워크플로에서 태그만 고정하면 저장소 재활성화·태그 변경을 막을 수 없다.</p>
+      <div class="actions"><div><b>문제</b>CI 러너의 토큰·클라우드 자격증명 탈취 가능</div><div><b>조치</b>제3자 Action을 검증된 commit SHA로 고정</div><div><b>확인</b>워크플로 의존성·OIDC·Secrets 사용 및 실행 이력 점검</div></div>
+      <p class="note"><a href="https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/">후속 보도</a></p>
+    </article>
+
+    <article>
+      <h3>11. Carbonato, 인증 없이 노출된 Docker에 AI Agent 설치</h3>
+      <div class="sub">ThreatDown 연구 · 09/22~09/25</div>
+      <span class="tag">클라우드</span><span class="tag">AI Agent</span>
+      <p>Carbonato 봇넷은 인증 없이 인터넷에 공개된 Docker daemon을 장악한 뒤 오픈소스 Hermes Agent를 설치해 사후 침해 작업에 사용한다. 핵심 원인은 AI 자체보다 원격 Docker API의 무인증 공개이며, AI API 키까지 주요 탈취 대상으로 삼는다.</p>
+      <div class="actions"><div><b>문제</b>Docker 호스트 root급 장악·비밀정보 탈취</div><div><b>조치</b>TCP 2375 외부 노출 차단, SSH 또는 상호 TLS 사용</div><div><b>확인</b>Docker API 노출, 특권 컨테이너, CARBONATO_API_KEY·GH0ST 흔적 점검</div></div>
+      <p class="note"><a href="https://www.threatdown.com/blog/carbonato/">ThreatDown 원문</a></p>
+    </article>
+
+    <article>
+      <h3>12. Cloudflare Containers, 다른 고객의 잔존 데이터 노출 가능</h3>
+      <div class="sub">Cloudflare 공식 사후분석 · 09/24</div>
+      <span class="tag">클라우드 격리</span>
+      <p>Cloudflare Containers와 이를 기반으로 하는 Sandboxes에서 새 컨테이너가 동일 물리 호스트의 이전 워크로드가 남긴 디스크 잔존 데이터를 읽을 수 있는 테넌트 간 격리 취약점이 수정됐다. Cloudflare는 조사 과정에서 2,700개의 외부 디렉터리 inode를 식별했다고 밝혔다.</p>
+      <div class="actions"><div><b>문제</b>멀티테넌트 컨테이너 간 잔존 데이터 노출</div><div><b>조치</b>서비스 제공자의 고객 안내·영향 범위 확인</div><div><b>확인</b>해당 서비스 사용 여부와 저장 비밀정보·이미지 재발급 필요성 검토</div></div>
+      <p class="note"><a href="https://blog.cloudflare.com/containers-cross-tenant-vulnerability/">Cloudflare 공식 사후분석</a></p>
+    </article>
+  </section>
+
+  <section>
+    <h2>🛡️ 개인정보·국내 동향 <span class="count">4</span></h2>
+
+    <article>
+      <h3>13. 가비아 고객 2,998명 개인정보 유출</h3>
+      <div class="sub">가비아 공지 관련 보도 · 09/23~09/24</div>
+      <span class="tag">개인정보</span>
+      <p>가비아는 일부 웹서비스 기능에 대한 외부 비인가 접근으로 2,998명의 이름·아이디·이메일·휴대전화번호 등이 유출됐다고 공지했다. 비밀번호는 유출 대상이 아니라고 밝혔으며, 조사 결과에 따라 범위가 달라질 수 있다.</p>
+      <div class="actions"><div><b>문제</b>그룹웨어·호스팅 계정 대상 후속 피싱 가능</div><div><b>조치</b>관련 임직원 대상 피싱 주의와 계정 보호 안내</div><div><b>확인</b>하이웍스·가비아 이용 여부와 동일 이메일 계정 이상징후 확인</div></div>
+      <p class="note"><a href="https://www.dailysecu.com/news/articleView.html?idxno=208592">데일리시큐</a> · <a href="https://www.boannews.com/news/articleView.html?idxno=146036">보안뉴스</a></p>
+    </article>
+
+    <article>
+      <h3>14. 극동방송 후원자 관리시스템 외부 침해 정황</h3>
+      <div class="sub">극동방송 공지 관련 보도 · 09/26</div>
+      <span class="tag">개인정보</span>
+      <p>극동방송은 9월 23일 후원자 관리시스템에서 권한 없는 접근 정황을 확인해 조사와 차단 조치에 착수했다고 밝혔다. 후원 시스템은 연락처와 후원·결제 연계정보를 다룰 수 있어 사고 범위와 통지 내용을 계속 확인할 필요가 있다.</p>
+      <div class="actions"><div><b>문제</b>후원자 데이터와 결제 연계정보의 노출 가능성</div><div><b>조치</b>사고 범위·통지·재발방지 조치 추적</div><div><b>확인</b>유사 후원·회원관리 위탁시스템의 계정·접근로그 점검</div></div>
+      <p class="note"><a href="https://www.boannews.com/news/articleView.html?idxno=146045">관련 보도</a></p>
+    </article>
+
+    <article>
+      <h3>15. 교육 분야 웹사이트 침해 증가 및 유출정보 삭제 지연</h3>
+      <div class="sub">국내 개인정보 동향 · 09/25</div>
+      <span class="tag">개인정보</span>
+      <p>학생·학부모 정보를 보유한 교육 사이트의 해킹 피해가 9월에 잇따랐고, 별도로 올해 1~7월 탐지된 개인정보 불법 판매·공유 게시물 8만9,209건 중 3,341건이 7월 기준 미삭제 상태라는 자료가 공개됐다. 미성년자 정보는 장기적 사칭·피싱 피해로 이어질 수 있다.</p>
+      <div class="actions"><div><b>문제</b>미성년자·학부모 정보의 장기 재유통 위험</div><div><b>조치</b>교육·예약·회원 사이트의 보유정보와 위탁자 점검</div><div><b>확인</b>삭제요청·모니터링·유출 대응 절차의 실효성 확인</div></div>
+      <p class="note"><a href="https://www.boannews.com/news/articleView.html?idxno=146041">교육업계 보도</a> · <a href="https://www.dailysecu.com/news/articleView.html?idxno=208603">불법유통 게시물 보도</a></p>
+    </article>
+
+    <article>
+      <h3>16. 국내 연구·금융 데이터 다크웹 판매 주장</h3>
+      <div class="sub">다크웹 모니터링 보도 · 09/23</div>
+      <span class="tag watch">사실관계 확인 중</span>
+      <p>한국재료부식학회 침해로 대기업·연구기관 소속자 정보가 유출됐다는 주장과, 국내 금융·중고차 금융 관련 대규모 데이터 판매 주장이 다크웹에 게시됐다. 공개 게시물만으로 피해 기업·원출처·규모가 검증된 것은 아니므로 <strong>확정 사고가 아닌 관찰 항목</strong>으로 분리한다.</p>
+      <div class="actions"><div><b>문제</b>연구자·고객 명단을 활용한 표적 피싱 가능</div><div><b>조치</b>공식 통지·수사·KISA 발표 여부를 계속 추적</div><div><b>확인</b>사내 임직원 도메인·기관명이 샘플에 포함되는지 확인</div></div>
+      <p class="note"><a href="https://www.boannews.com/news/articleView.html?idxno=146014">한국재료부식학회 관련 보도</a> · <a href="https://www.dailysecu.com/news/articleView.html?idxno=208590">금융 데이터 주장 보도</a></p>
+    </article>
+  </section>
+
+  <section>
+    <h2>🔎 추가 확인할 중요 이슈</h2>
+    <table>
+      <thead><tr><th>이슈</th><th>의미</th><th>우선 확인</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://www.bleepingcomputer.com/news/security/arista-patches-actively-exploited-velocloud-orchestrator-zero-day/">VeloCloud Orchestrator 제로데이</a></td><td>온프레미스 VCO 실제 악용 및 패치 공개</td><td>제품 보유·외부 노출·패치 상태</td></tr>
+        <tr><td><a href="https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html">Chrome-Windows 제로데이 체인</a></td><td>중국 연계 공격자가 가짜 사이트로 악성코드 배포</td><td>브라우저·Windows 최신 업데이트</td></tr>
+        <tr><td><a href="https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html">Ubuntu 컨테이너 탈출 PoC</a></td><td>AF_UNIX use-after-free를 통한 host root 탈출 가능성</td><td>컨테이너 호스트 커널·배포판 공지</td></tr>
+        <tr><td><a href="https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/">GitLab 프로젝트 이메일 노출</a></td><td>이슈·작업 생성용 주소가 공개되면 프로젝트에 콘텐츠 주입 가능</td><td>README·지원문서의 프로젝트 이메일 노출</td></tr>
+        <tr><td><a href="https://thehackernews.com/2026/09/placeholder-third-partycom-referenced.html">문서용 placeholder 도메인 악성화</a></td><td>1,700개 이상 저장소가 참조하던 도메인이 ClickFix 유인에 사용</td><td>문서·코드의 외부 도메인 참조와 링크 검증</td></tr>
+        <tr><td><a href="https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html">Lunex Stealer의 취약 드라이버 악용</a></td><td>AMD 드라이버를 악용해 보안 모니터링을 약화하고 브라우저 자격증명 탈취</td><td>취약 드라이버 차단·EDR 탐지·브라우저 자격증명 보호</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>📌 연휴 복귀 후 우선 확인사항</h2>
+    <ol class="priority">
+      <li><strong>인터넷 경계장비:</strong> Citrix NetScaler, F5 BIG-IP APM, Check Point VPN·관리서버 사용 여부와 패치 상태를 자산 목록에서 확인</li>
+      <li><strong>외부 공개 웹서비스:</strong> WordPress, Roundcube, SharePoint, PeopleSoft, WSO2, Adobe Commerce 영향 버전 대조</li>
+      <li><strong>개발·배포:</strong> TeamCity와 GitHub Actions의 외부 노출, 제3자 Action 고정 방식, 토큰·Secrets 사용 이력 점검</li>
+      <li><strong>클라우드·컨테이너:</strong> Docker TCP 2375 무인증 노출 여부와 Cloudflare Containers·Sandboxes 사용 여부 확인</li>
+      <li><strong>개인정보:</strong> 가비아·하이웍스 사용 임직원에 대한 피싱 주의, 회원·후원·교육 사이트와 연계된 위탁시스템 점검</li>
+      <li><strong>연휴 후 계정 점검:</strong> 연휴 기간 비정상 로그인, 신규 관리자, 웹셸, 빌드·배포 변경, 외부 토큰 사용 흔적을 우선 조회</li>
+    </ol>
+  </section>
+
+  <footer>
+    본 리포트는 2026년 9월 24~28일 공개 보안공지와 기존 일일 리포트를 사건 단위로 재구성했습니다. 다크웹 주장은 검증되지 않은 관찰 정보로 분리했으며, 실제 조치 전에는 제조사·KISA·CISA의 최신 공지를 확인해야 합니다.<br>
+    정리 Danny Kim
+  </footer>
+</main>
+</body>
+</html>
