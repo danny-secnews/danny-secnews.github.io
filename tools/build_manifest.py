@@ -12,7 +12,7 @@ docs/daily, docs/kisa-cert, docs/law 폴더의 *.html에서 제목·날짜·요�
 
 규칙
   - 날짜: <meta name="portal-date" content="YYYY-MM-DD">가 있으면 우선,
-          없으면 파일 이름의 YYYY-MM-DD (법령 분석은 '게시일'로 이름 붙이기 권장)
+          없으면 파일 이름의 YYYY-MM-DD (법령·제도 분석은 '게시일'로 이름 붙이기 권장)
   - 목록에서만 빼기: <head>에 <meta name="portal" content="hide">
   - 상단 바만 빼기:  <head>에 <meta name="portal-nav" content="off">
   - index.html, _로 시작하는 파일, 리다이렉트 안내 페이지는 목록에서 자동 제외

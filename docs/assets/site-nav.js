@@ -1,4 +1,4 @@
-/* 공통 상단 바 — 데일리·KISA 주간·법령 분석 본문 페이지 맨 위에 붙는 바로가기.
+/* 공통 상단 바 — 데일리·KISA 주간·법령·제도 분석 본문 페이지 맨 위에 붙는 바로가기.
    각 페이지 <head>에 아래 한 줄이 있으면 동작 (tools/build_manifest.py가 빠진 페이지에 자동으로 넣음)
      <script src="../assets/site-nav.js" defer data-site-nav></script>
    - Shadow DOM 안에 그려서 페이지 자체 CSS와 서로 간섭하지 않음 (본문 디자인은 그대로)
@@ -12,7 +12,7 @@
   var SECTIONS = [
     ["daily", "데일리"],
     ["kisa-cert", "KISA 주간"],
-    ["law", "법령 분석"]
+    ["law", "법령·제도 분석"]
   ];
 
   var me = document.currentScript;
