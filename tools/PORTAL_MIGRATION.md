@@ -77,7 +77,7 @@ GitHub Actions에서 `Run workflow`를 다시 실행하면 됩니다.
 
 ## 공통 상단 바
 
-데일리·KISA·법령 본문 맨 위에 `보안정보 브리핑 | 데일리 · KISA 주간 · 법령 분석` 바.
+데일리·KISA·법령 본문 맨 위에 `보안정보 브리핑 | 데일리 · KISA 주간 · 법령·제도 분석` 바.
 
 - 본문 CSS는 그대로 — 바는 Shadow DOM 안에서 따로 그림
 - 데일리는 build.py 템플릿에 한 줄 포함, KISA·법령은 업로드하면 portal.yml이 자동으로 한 줄 추가
@@ -86,7 +86,7 @@ GitHub Actions에서 `Run workflow`를 다시 실행하면 됩니다.
 
 ## 이후 운영
 
-- **KISA 주간·법령 분석**: 해당 폴더에 HTML만 올리면 portal.yml이 목록 갱신 + 상단 바 추가
+- **KISA 주간·법령·제도 분석 자료**: 해당 폴더에 HTML만 올리면 portal.yml이 목록 갱신 + 상단 바 추가
   - KISA 주간을 Cowork 등 저장소 밖에서 만든다면 그쪽 저장 위치를 `docs/kisa-cert/`로
 - **파일 이름**: KISA `kisa_weekly_YYYY-MM-DD_….html`(대상 주간 시작일),
   법령 `YYYY-MM-DD-주제.html`(**게시일**). 또는 `<meta name="portal-date" content="YYYY-MM-DD">`

@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  var LABELS = { "daily": "데일리", "kisa-cert": "KISA 주간", "law": "법령 분석" };
+  var LABELS = { "daily": "데일리", "kisa-cert": "KISA 주간", "law": "법령·제도 분석" };
   var DOW = ["일", "월", "화", "수", "목", "금", "토"];
   var root = document.documentElement;
   var ROOT = root.getAttribute("data-root") || "";
