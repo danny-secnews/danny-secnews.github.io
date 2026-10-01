@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>정보통신분야 침해사고 대응 안내서(2026.10.) 요약 및 시사점</title>
+<meta name="description" content="과학기술정보통신부·KISA가 2026년 10월 개정한 정보통신분야 침해사고 대응 안내서의 핵심 내용과 실무 시사점을 정리했다.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="정보통신분야 침해사고 대응 안내서(2026.10.) 요약 및 시사점">
+<meta property="og:description" content="침해사고 24시간 신고와 개인정보 유출 72시간 신고·통지, 개정 법령 반영 현황과 실무 시사점 정리">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&amp;family=Noto+Serif+KR:wght@600;700&amp;display=swap">
+<style>
+  :root {
+    --ink: #1c2430;
+    --ink-2: #4e5968;
+    --rule: #d5dbe3;
+    --paper: #ffffff;
+    --wash: #f2f5f8;
+    --track: #dde3ea;
+    --accent: #2d5b8a;
+    --accent-soft: #93aecb;
+    --sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    --serif: "Noto Serif KR", "Nanum Myeongjo", "AppleMyungjo", "Batang", serif;
+  }
+
+  @page { margin: 16mm; }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.25rem 4.5rem; }
+
+  h1, h2 { font-family: var(--serif); font-weight: 700; letter-spacing: -0.015em; }
+  h1 { font-size: clamp(1.625rem, 1.2rem + 2.2vw, 2.25rem); line-height: 1.38; margin: 0 0 1.25rem; }
+  h2 { font-size: 1.5rem; line-height: 1.4; margin: 3.5rem 0 1.25rem; padding-top: 1.25rem; border-top: 2px solid var(--ink); }
+  h3 { font-size: 1.1875rem; font-weight: 600; line-height: 1.5; margin: 2.5rem 0 0.75rem; }
+
+  p { margin: 0 0 1rem; }
+
+  a { color: var(--accent); text-decoration-line: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .masthead { margin-bottom: 2.25rem; }
+  .meta { margin: 0; font-size: 0.9375rem; color: var(--ink-2); }
+  .meta + .meta { margin-top: 0.125rem; }
+
+  .lead { font-size: 1.1875rem; line-height: 1.75; }
+  .note { font-size: 0.9375rem; line-height: 1.65; color: var(--ink-2); }
+
+  /* 인지 시점 기준 기한: 0~72시간을 실제 비율로 그린 막대 */
+  .clock { margin: 2.5rem 0 0; padding: 1.5rem 1.25rem 0.5rem; background: var(--wash); border-radius: 4px; }
+  .clock figcaption { font-weight: 600; margin-bottom: 1rem; }
+  .axis { position: relative; height: 1.375rem; margin-bottom: 0.5rem; font-size: 0.8125rem; line-height: 1.375rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .axis span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
+  .axis span:first-child { transform: none; }
+  .axis span:last-child { transform: translateX(-100%); }
+  .lane { margin: 0 0 1.25rem; }
+  .lane-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 0.625rem; margin-bottom: 0.375rem; }
+  .lane-name { font-weight: 600; }
+  .lane-law { font-size: 0.875rem; color: var(--ink-2); }
+  .track { position: relative; height: 0.625rem; background: var(--track); border-radius: 999px; overflow: hidden; }
+  .track::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      transparent calc(33.333% - 1px), var(--wash) calc(33.333% - 1px),
+      var(--wash) calc(33.333% + 1px), transparent calc(33.333% + 1px),
+      transparent calc(66.667% - 1px), var(--wash) calc(66.667% - 1px),
+      var(--wash) calc(66.667% + 1px), transparent calc(66.667% + 1px));
+  }
+  .bar { position: absolute; top: 0; bottom: 0; left: 0; width: var(--len); background: var(--accent); border-radius: 999px; animation: run var(--dur) linear both; }
+  .bar.soft { background: var(--accent-soft); }
+  @keyframes run { from { width: 0; } }
+  .lane-note { margin: 0.5rem 0 0; font-size: 0.9375rem; line-height: 1.6; color: var(--ink-2); }
+
+  /* 표 */
+  .table-wrap { margin: 1.25rem 0 1rem; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.6; }
+  table.compare { min-width: 42rem; }
+  th, td { padding: 0.625rem 0.75rem; text-align: left; vertical-align: top; }
+  thead th { background: var(--wash); font-weight: 600; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); vertical-align: bottom; }
+  tbody th, tbody td { border-bottom: 1px solid var(--rule); }
+  tbody th { font-weight: 600; }
+  table.compare tbody th { white-space: nowrap; }
+  .stack table { min-width: 36rem; }
+  .roles tbody th { width: 9rem; }
+  .caveats tbody th { width: 5.5rem; white-space: nowrap; }
+
+  /* 시사점 목록 */
+  .implications { list-style: none; counter-reset: imp; margin: 1.5rem 0 0; padding: 0; }
+  .implications > li { counter-increment: imp; position: relative; padding-left: 2.25rem; margin: 0 0 1.5rem; scroll-margin-top: 1.5rem; }
+  .implications > li::before { content: counter(imp); position: absolute; left: 0; top: 0; font-family: var(--serif); font-weight: 700; font-size: 1.25rem; line-height: 1.5; color: var(--accent); }
+  .implications strong { display: block; font-weight: 600; margin-bottom: 0.125rem; }
+
+  .refs { margin: 0 0 1.25rem; padding-left: 1.125rem; font-size: 0.9375rem; line-height: 1.65; }
+  .refs li { margin-bottom: 0.375rem; }
+
+  @media (max-width: 40em) {
+    .page { padding-top: 2.5rem; }
+    .clock { padding: 1.25rem 1rem 0.25rem; }
+    .stack table { min-width: 0; }
+    .stack thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0; white-space: nowrap; }
+    .stack table, .stack tbody, .stack tr { display: block; }
+    .stack tbody { border-top: 2px solid var(--ink); }
+    .stack tr { padding: 0.875rem 0; border-bottom: 1px solid var(--rule); }
+    .stack tbody th, .stack tbody td { display: block; width: auto; padding: 0; border: 0; white-space: normal; }
+    .stack tbody th { font-size: 1rem; }
+    .stack td::before { content: attr(data-label); display: block; margin-top: 0.5rem; font-size: 0.8125rem; font-weight: 500; color: var(--ink-2); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bar { animation: none; }
+  }
+
+  @media print {
+    body { font-size: 10.5pt; }
+    .page { max-width: none; padding: 0; }
+    .bar { animation: none; }
+    .clock { break-inside: avoid; }
+    .table-wrap { overflow: visible; }
+    table.compare, .stack table { min-width: 0; }
+    h2, h3 { break-after: avoid; }
+    tr, .implications > li { break-inside: avoid; }
+    a { color: inherit; }
+  }
+</style>
+<script src="../assets/site-nav.js" defer data-site-nav></script>
+<meta name="portal-date" content="2026-10-01"></head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <h1>정보통신분야 침해사고 대응 안내서(2026.10.)<br>요약 및 시사점</h1>
+    <p class="meta">대상 문서: 과학기술정보통신부·한국인터넷진흥원, <a href="https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000127&amp;pageIndex=1&amp;nttId=72205&amp;menuNo=205021">「정보통신분야 침해사고 대응 안내서(개정본)」</a>(2026.10.)</p>
+    <p class="meta">작성일: <time datetime="2026-10-01">2026년 10월 1일</time></p>
+  </header>
+
+  <p class="lead">과학기술정보통신부·한국인터넷진흥원(KISA)이 2026년 10월 개정한 이 안내서는 침해사고 신고(인지 후 24시간), 개인정보 유출 신고·통지(인지 후 72시간), 사고 유형별 초동 점검·조치 방법을 약 60쪽에 정리한 실무 지침이다.</p>
+
+  <p>안내서가 가장 힘주어 다루는 지점은 신고 기한의 기산점이다. ‘알게 된 때’를 정보보호 담당자 수준의 인지 시점으로 보고, 사고인지시점과 그 증빙을 신고 접수의 필수 요건으로 둔다. 미신고뿐 아니라 지연 신고도 5천만원 이하 과태료 대상이므로, 결재나 원인 확정을 기다리지 않는 1차 신고 체계와 인지·증거 보존 기록 관리가 대응 체계의 출발점이 된다.</p>
+
+  <figure class="clock">
+    <figcaption>인지 시점 기준 신고·통지 기한</figcaption>
+    <div class="axis" aria-hidden="true">
+      <span style="left: 0">인지</span>
+      <span style="left: 33.333%">24시간</span>
+      <span style="left: 66.667%">48시간</span>
+      <span style="left: 100%">72시간</span>
+    </div>
+    <div class="lane">
+      <div class="lane-head"><span class="lane-name">침해사고 신고</span><span class="lane-law">정보통신망법</span></div>
+      <div class="track" aria-hidden="true"><div class="bar" style="--len: 33.333%; --dur: 0.7s"></div></div>
+      <p class="lane-note">24시간 이내 과기정통부·KISA에 신고한다. 추가로 확인된 사실은 확인 후 24시간 이내 보완 신고한다.</p>
+    </div>
+    <div class="lane">
+      <div class="lane-head"><span class="lane-name">개인정보 유출 등 신고·통지</span><span class="lane-law">개인정보 보호법</span></div>
+      <div class="track" aria-hidden="true"><div class="bar soft" style="--len: 100%; --dur: 2.1s"></div></div>
+      <p class="lane-note">72시간 이내 정보주체에게 통지하고, 신고 요건에 해당하면 개인정보위·KISA에 신고한다.</p>
+    </div>
+  </figure>
+
+  <section id="summary">
+    <h2>요약</h2>
+    <p>안내서는 신고·통지 의무(제2장)와 사고 대응·점검 방법(제3장) 두 축으로 구성된다. 제2장의 침해사고 신고 조항은 2026년 3월 국회를 통과한 개정 정보통신망법의 이용자 통지 의무(제48조의3제4항)와 미신고·지연 신고 과태료 상향(3천만원→5천만원)을 반영했다(<a href="https://shinkim.com/kor/media/newsletter/3178">법무법인 세종</a>, <a href="https://byline.network/2026/03/23-576/">바이라인네트워크</a>). 제1장은 초연결 환경(2023년 가구 인터넷 접속률 99.9%)과 공격 고도화를 배경으로 든다.</p>
+
+    <h3>신고·통지 의무(제2장)</h3>
+    <div class="table-wrap">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col">구분</th><th scope="col">침해사고 신고</th><th scope="col">개인정보 유출 등 신고</th><th scope="col">정보주체 통지</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">근거</th><td>정보통신망법 제48조의3, 시행령 제58조의8</td><td>개인정보 보호법 제34조제3항</td><td>개인정보 보호법 제34조제1항</td></tr>
+          <tr><th scope="row">의무자</th><td>정보통신서비스 제공자(국내 영향 시 해외 법인 포함)</td><td>개인정보처리자</td><td>개인정보처리자</td></tr>
+          <tr><th scope="row">요건</th><td>침해사고 발생(해킹·악성코드·DDoS 등, 보호·인증 우회 프로그램·장치 설치 포함)</td><td>1천명 이상, 민감·고유식별정보, 외부 불법 접근에 의한 유출 중 하나</td><td>1명 이상</td></tr>
+          <tr><th scope="row">기한</th><td>인지 후 24시간, 추가 확인 사실은 확인 후 24시간</td><td>인지 후 72시간</td><td>인지 후 72시간</td></tr>
+          <tr><th scope="row">접수처</th><td>과기정통부·KISA(보호나라 온라인, certgen@krcert.or.kr, ☎118, 서면)</td><td>개인정보위·KISA(개인정보 포털 privacy.go.kr)</td><td>서면 등 개별 통지(연락처 불명 시 홈페이지 30일 이상 게시)</td></tr>
+          <tr><th scope="row">위반 시</th><td>5천만원 이하 과태료(미신고·지연 신고)</td><td>3천만원 이하 과태료</td><td>3천만원 이하 과태료</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">※ 개인정보 항목은 안내서 기준이다. 2026년 9월 시행된 개정 개인정보 보호법의 변경 사항은 <a href="#implication-4">시사점 4</a> 참조.</p>
+
+    <p>침해사고는 확인된 사항(발생 일시·원인·피해, 대응 현황, 담당 부서·연락처)부터 신고하고, 추가 사실은 24시간 이내 보완 신고, 잘못된 내용은 정정 신고한다. ‘알게 된 때’는 정보보호 담당자·담당부서장·CISO·대표자 등이 인지한 때다. 조직은 확인·신고·초동대응 절차를 담은 대응체계를 갖추고 그 과정을 기록해야 한다.</p>
+    <p>보호나라 온라인 신고서는 유형(랜섬웨어·디도스·그 밖의 해킹)별로 나뉜다. 사고인지시점과 그 증빙(내부 보고자료, 시스템 로그, 메일 열람 기록)은 필수이며 빠지면 접수되지 않는다. 랜섬웨어는 백업 상태와 암호화 확장자, 디도스는 공격 규모(Mbps·pps)와 협박 여부를 따로 묻고, 기술지원에 동의하면 KISA의 원인분석 보고서와 후속조치 지원을 받는다.</p>
+    <p>개인정보 유출 신고 때는 원인 분석용 자료 보존을 요구한다. PC는 네트워크 분리 후 전원 차단·디스크 분리 보관, 서버는 dd 디스크 백업, 가상서버는 스냅샷, 보안장비는 로그 별도 백업, 악성코드는 암호 압축 격리가 기준이다. 수사가 필요하면 경찰청 사이버범죄 신고시스템(ECRM, ☎182)을 이용한다.</p>
+
+    <h3>사고 대응·점검(제3장)과 부록</h3>
+    <p>침해사고를 악성코드, 서비스 방해, 비인가 서비스 이용, 비인가 네트워크 정보 접근, 비인가 시스템·파일 접근 및 정보유출의 5개 유형으로 나눈다. 대응은 사고 전 준비 → 탐지 → 초기 대응 → 대응 전략 체계화 → 사고 조사 → 보고서 작성 → 해결의 7단계다.</p>
+    <p>기업 점검은 ‘KISA 분석 의뢰 전 악성파일·프로세스를 지우지 말고, 불가피하면 경로·MAC time을 확보하고 파일을 백업하라’는 원칙에서 출발한다. 사고 유형별(웹변조, 악성코드 경유지·유포지, 봇넷 C&amp;C, 해킹 경유지, DDoS) 점검과 공통 점검(계정, 로그, 웹셸, 백도어, 루트킷)을 정리했다.</p>
+    <p>시스템별 조치는 웹서버(전용 호스트, DMZ, 관리 접근 IP 제한, 로그 6개월 이상 별도 보관), 네트워크 장비(원격 접속·SNMP 제한), DB(MySQL·MS-SQL 기본 계정·포트·권한), 웹 애플리케이션(SQL 인젝션, XSS, 파일 업로드·다운로드 등 17개 취약점)으로 나뉜다. KISA 해킹진단도구·내 서버 돌보미·사이버대피소 활용을 안내하고, 개인용으로는 이상 징후 3가지와 정품·패치·백신·백업 등 기본 수칙을 담았다. 부록은 민관합동조사단, C-TAS, ISMS-P 등 침해 관련 용어 약 60개를 정리했다.</p>
+  </section>
+
+  <section id="implications">
+    <h2>시사점</h2>
+    <p>실무 과제는 ‘언제 알았는지’를 입증할 수 있는 신고 체계, 복구보다 보존을 앞세우는 대응 순서, 안내서가 아직 담지 못한 개정 법령의 반영 세 가지로 모인다.</p>
+    <ol class="implications">
+      <li id="implication-1"><strong>24시간 시계는 담당자 인지 시점부터 돈다.</strong> 결재나 원인 확정을 기다리다 기한을 넘기는 구조라면 절차부터 바꿔야 한다. 정보보호 부서에 1차 신고 권한을 미리 위임하고, ‘확인된 사항 우선 신고 → 24시간 내 보완 신고 → 정정 신고’ 흐름을 대응 절차서에 명시한다.</li>
+      <li id="implication-2"><strong>인지 시점은 기록으로 입증해야 한다.</strong> 신고서가 메일 열람 기록까지 증빙으로 예시하므로, 경보를 열람하고도 판단 기록이 없으면 그때가 기산점으로 해석될 수 있다. 경보 수신·의심·확정·내부 보고 시점을 티켓이나 메일로 남기고, 로그 시각을 믿을 수 있게 시간 동기화를 점검한다.</li>
+      <li id="implication-3"><strong>‘설치’만으로도 침해사고가 될 수 있다.</strong> 정의에 보호·인증 우회 프로그램·장치의 설치가 포함되어, 웹셸·백도어를 발견하면 유출·장애가 확인되지 않았어도 신고 여부를 판단해야 한다. ‘발견 즉시 삭제하고 종결’하던 관행은 미신고 리스크가 된다.</li>
+      <li id="implication-4"><strong>개인정보 파트는 개정 법보다 한발 늦다.</strong> 2026년 9월 11일부터 대부분 시행된 개정 개인정보 보호법은 유출 ‘가능성’을 안 때에도 지체 없이 통지하게 하고, 통지·신고 대상을 위조·변조·훼손까지 넓혔다(<a href="https://byline.network/2026/03/23-576/">바이라인네트워크</a>). 안내서 제2장 2절은 개정 전 문구(분실·도난·유출을 알게 되었을 때)로 서술되어 있으므로, 조직의 대응 절차는 개정 법과 시행령 기준으로 맞춘다.</li>
+      <li id="implication-5"><strong>해킹에 의한 개인정보 유출은 사실상 이중 신고다.</strong> 외부 불법 접근에 의한 유출은 규모와 무관하게 신고 대상이고, 통지는 1명부터다. 같은 사고에 24시간(KISA)과 72시간(개인정보위·정보주체) 시계가 함께 돌고 접수 채널도 다르므로, 각각 이행을 기본값으로 두고 하나의 타임라인으로 관리한다.</li>
+      <li id="implication-6"><strong>복구보다 보존이 먼저다.</strong> KISA는 악성파일·프로세스를 지우지 않은 상태의 분석 의뢰를 요구한다. 재설치나 웹셸만 지우는 대응은 원인 규명을 막아 재발 방지와 조사 대응 모두에 불리하므로, 절차를 ‘격리 → 보존 → 분석 → 복구’ 순서로 고정한다. 개정 정보통신망법이 의심 정황만으로 정부 조사를 허용한 만큼 보존 자료의 무게는 더 커졌다.</li>
+      <li id="implication-7"><strong>안내서에 없는 개정 정보통신망법 의무는 시행령으로 확인한다.</strong> 개정 법은 이용자 통지, 침해사고 관리·대응 매뉴얼 작성·제출, 반복 사고 과징금(매출액 3% 이하), 이행강제금 등을 담았지만 안내서는 이용자 통지 조문만 인용한다(<a href="https://shinkim.com/kor/media/newsletter/3178">법무법인 세종</a>). 적용 대상·시기·방법이 시행령에 위임되어 있으므로 해당 여부를 확인해 통지 기준과 문안을 준비한다.</li>
+    </ol>
+
+    <h3 id="by-role">역할별 시사점</h3>
+    <p>솔루션을 공급·운영하는 기업이라면 자사의 신고 의무와 고객사 사고 지원 방식을 함께 점검해야 한다.</p>
+    <div class="table-wrap stack roles">
+      <table>
+        <thead>
+          <tr><th scope="col">역할</th><th scope="col">시사점</th><th scope="col">할 일</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">정보보호·개인정보 담당</th><td data-label="시사점">영리 목적 웹서비스(클라우드·SaaS 포함)를 운영하면 침해사고 신고 의무 대상이 될 수 있다.</td><td data-label="할 일">해당 여부 확인, 대응 절차서에 24·72시간 흐름, 신고 권한 위임, 개정 개인정보 보호법(가능성 통지 등) 반영</td></tr>
+          <tr><th scope="row">유지보수·기술지원</th><td data-label="시사점">고객사 현장에서 악성파일 삭제나 재설치부터 하면 고객의 신고·원인 분석이 막힌다.</td><td data-label="할 일">엔지니어용 ‘보존 우선’ 수칙(격리, 경로·MAC time 기록, 악성파일 암호 압축 보관, 로그 백업) 마련</td></tr>
+          <tr><th scope="row">사업 제안·수행</th><td data-label="시사점">제안요청서(RFP)의 보안사고 대응·보고 요구에 답할 근거가 된다.</td><td data-label="할 일">‘인지 즉시 발주기관 보고 → 증거 보존 → 원인분석 지원’ 흐름 제시, 공공기관 사업은 기관 보안지침·별도 보고 체계와 정합성 확인</td></tr>
+          <tr><th scope="row">제품 개발</th><td data-label="시사점">파일 업로드 웹셸, 관리자 페이지 노출, 디렉터리 리스팅, 오류·헤더 정보 노출은 웹 기반 제품의 점검 항목과 직결된다.</td><td data-label="할 일">제품 보안 점검표에 반영하되 최신 기준(행정안전부 소프트웨어 개발보안 가이드, OWASP 등)으로 보완</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 id="caveats">안내서 활용 시 유의점</h3>
+    <p>제2장 1절(침해사고 신고)은 개정 정보통신망법을 반영했지만, 2절(개인정보)은 개정 전 기준이고 제3장 기술 부분에는 오류와 오래된 권고가 섞여 있다. 교육 자료나 내부 지침에 인용할 때는 아래 사항을 정정·보완해 활용하기를 권한다.</p>
+    <div class="table-wrap stack caveats">
+      <table>
+        <thead>
+          <tr><th scope="col">위치</th><th scope="col">내용</th><th scope="col">권고</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">p.16~18</th><td data-label="내용">개인정보 유출 통지·신고를 개정 전 기준(분실·도난·유출을 알게 된 때)으로 서술</td><td data-label="권고">2026.9.11 시행 개정 개인정보 보호법·시행령 기준 우선</td></tr>
+          <tr><th scope="row">p.4·23</th><td data-label="내용">침해사고 정의가 제2장은 우회 프로그램·장치 설치 포함, 제3장은 종전 문구</td><td data-label="권고">제2장 기준으로 인용</td></tr>
+          <tr><th scope="row">p.11·15</th><td data-label="내용">전화 신고 번호가 02-405-4911~4914, ~4916, 4911~6으로 제각각</td><td data-label="권고">대표번호 ☎118로 안내</td></tr>
+          <tr><th scope="row">p.28</th><td data-label="내용">공통 점검표 ‘웹셸’ 칸에 계정 점검 문구가 잘못 들어감</td><td data-label="권고">웹셸 탐지 기준 별도 보완</td></tr>
+          <tr><th scope="row">p.42</th><td data-label="내용">CSRF를 ‘스크립트 요청 참조’로 표기, 조치도 토큰·SameSite 등 통상 대책과 다름</td><td data-label="권고">현행 대책으로 대체</td></tr>
+          <tr><th scope="row">p.43</th><td data-label="내용">RFI 설명이 SQL 인젝션 설명을 그대로 옮겨 놓음</td><td data-label="권고">원문 정정 필요</td></tr>
+          <tr><th scope="row">p.41·43</th><td data-label="내용">magic_quotes_gpc On 권고(PHP 5.4에서 삭제된 기능), PHP 4·5 기준 설정, 특수문자 필터링 중심 SQL 인젝션 대책</td><td data-label="권고">파라미터화 쿼리 등 현행 기준 적용</td></tr>
+          <tr><th scope="row">p.28·35</th><td data-label="내용">IceSword·GMER·ipchains 등 구형 도구</td><td data-label="권고">현행 OS·도구로 대체</td></tr>
+          <tr><th scope="row">p.34</th><td data-label="내용">웹 로그 보관 ‘최소 6개월’</td><td data-label="권고">개인정보처리시스템 접속기록은 안전성 확보조치 기준(1년 이상, 요건 시 2년 이상) 우선</td></tr>
+          <tr><th scope="row">전반</th><td data-label="내용">그림 번호 중복(그림 2-7~2-9), 오탈자(lsot→lsof, .pho→.php, MOME→MOVE(추정), 웹셜→웹셸 등)</td><td data-label="권고">인용 시 정정</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer id="references">
+    <h2>참고</h2>
+    <ul class="refs">
+      <li>과학기술정보통신부·한국인터넷진흥원, <a href="https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000127&amp;pageIndex=1&amp;nttId=72205&amp;menuNo=205021">「정보통신분야 침해사고 대응 안내서(개정본)」</a>, KISA 보호나라, 2026.10.1 게시</li>
+      <li>법무법인 세종, <a href="https://shinkim.com/kor/media/newsletter/3178">「개정 정보통신망법 시행 및 추가 개정안 관련 동향」</a>, 2026.3.19</li>
+      <li>바이라인네트워크, <a href="https://byline.network/2026/03/23-576/">「침해사고 책임 강화한 보안 규제, 쟁점은?」</a>, 2026.3.23</li>
+      <li>신고 채널: KISA 보호나라 <a href="https://www.boho.or.kr">boho.or.kr</a>, certgen@krcert.or.kr, ☎118 / 개인정보 포털 <a href="https://www.privacy.go.kr">privacy.go.kr</a> / 경찰청 사이버범죄 신고시스템 <a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a>, ☎182</li>
+    </ul>
+    <p class="note">※ 개정 정보통신망법의 정확한 시행일과 시행령 세부 내용(이용자 통지 대상, 매뉴얼 제출 대상 등)은 작성 시점에 확인하지 못했다. 적용 시 관계 법령을 함께 확인하기 바란다.</p>
+    <p class="note">이 글은 공개 자료를 바탕으로 정리한 요약이며 법률 자문이 아니다.</p>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>개인정보보호법·시행령 개정사항 리포트 (2026. 9. 11. 시행)</title>
+<meta name="description" content="2026년 9월 11일 시행된 개정 개인정보 보호법(법률 제21445호)과 시행령(대통령령 제36671호)의 주요 개정사항, 제재·경과조치, 실무 대응 체크리스트를 정리했습니다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="개인정보보호법·시행령 개정사항 리포트 (2026. 9. 11. 시행)">
+<meta property="og:description" content="유출 가능성 통지(72시간), 유출등 범위 확대, 반복·중대 위반 과징금 10%, 투자 감경, CEO 책임과 CPO 이사회 의결·신고 정리">
+<meta property="article:published_time" content="2026-10-01">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&family=Noto+Serif+KR:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#ffffff;
+  --tint:#f2f4f7;
+  --ink:#16243a;
+  --ink-2:#4d5b70;
+  --ink-3:#8b97a8;
+  --rule:#d8dde5;
+  --link:#1c4f93;
+  --amend:#c0302b;
+  --pending:#8f5d00;
+  --pending-bg:#fbf5e8;
+  --font-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR",system-ui,sans-serif;
+  --font-head:"Noto Serif KR","Noto Serif CJK KR","Source Han Serif K","AppleMyungjo","Nanum Myeongjo","Batang",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#101826;
+    --tint:#182334;
+    --ink:#e7ecf3;
+    --ink-2:#a8b4c5;
+    --ink-3:#6e7c90;
+    --rule:#2b3a51;
+    --link:#90b9f0;
+    --amend:#ff8a80;
+    --pending:#e0b14a;
+    --pending-bg:#221c0f;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:1.0625rem;line-height:1.78;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+.page{max-width:46rem;margin:0 auto;padding:4rem 1.25rem 3rem}
+h1,h2,h3{font-family:var(--font-head);color:var(--ink);font-weight:700;line-height:1.38;text-wrap:balance}
+h1{font-size:clamp(1.875rem,1.1rem + 2.8vw,2.625rem);letter-spacing:-.015em;margin:0 0 .6rem}
+h2{font-size:1.5rem;margin:3.75rem 0 1.1rem;padding-top:1.1rem;border-top:2px solid var(--ink);scroll-margin-top:1rem}
+h3{font-size:1.125rem;margin:2.25rem 0 .8rem}
+p{margin:0 0 1rem}
+a{color:var(--link);text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+b,strong{font-weight:600}
+
+/* 머리말 */
+.subtitle{margin:0 0 2rem;color:var(--ink-2);font-size:1rem;line-height:1.65}
+.meta{display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;gap:.9rem 1.5rem;margin:0 0 1.5rem;padding:1rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.meta dt{font-size:.8125rem;line-height:1.5;color:var(--ink-2)}
+.meta dd{margin:.15rem 0 0;font-weight:600;line-height:1.5;font-variant-numeric:tabular-nums}
+.meta .sub{display:block;font-weight:400;font-size:.8125rem;color:var(--ink-2)}
+.toc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.35rem 1.4rem;font-size:.9375rem}
+.lede{font-size:1.1875rem;line-height:1.72}
+.src{margin:1rem 0 0;font-size:.8125rem;line-height:1.65;color:var(--ink-2)}
+.src a{color:inherit}
+
+/* 입법 경과 레일: 실선은 지난 일정, 점선은 앞으로의 일정 */
+.rail{list-style:none;margin:.75rem 0 2.25rem;padding:0}
+.rail li{display:grid;grid-template-columns:7.75rem 1.5rem minmax(0,1fr);column-gap:.75rem;padding-bottom:1.1rem}
+.rail li:last-child{padding-bottom:0}
+.rail time{grid-column:1;text-align:right;white-space:nowrap;font-size:.9375rem;line-height:1.6;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.rail .mark{grid-column:2;position:relative}
+.rail .body{grid-column:3}
+.rail .ev{margin:0;font-weight:600;line-height:1.6}
+.rail .note{margin:.1rem 0 0;font-size:.875rem;line-height:1.55;color:var(--ink-2)}
+.rail .mark::before{content:"";position:absolute;left:calc(50% - 1px);top:0;bottom:-1.1rem;width:2px;background:var(--ink)}
+.rail li:first-child .mark::before{top:.8rem}
+.rail li:last-child .mark::before{bottom:auto;height:.8rem}
+.rail .mark::after{content:"";position:absolute;left:50%;top:.5rem;width:.625rem;height:.625rem;margin-left:-.3125rem;border-radius:50%;background:var(--ink);box-shadow:0 0 0 3px var(--paper)}
+.rail .now time,.rail .now .ev{color:var(--amend)}
+.rail .now time{font-weight:600}
+.rail .now .mark::before{background:linear-gradient(var(--ink),var(--ink)) 0 0/2px .8rem no-repeat,repeating-linear-gradient(to bottom,var(--ink-3) 0 5px,transparent 5px 9px) 0 .8rem/2px calc(100% - .8rem) no-repeat}
+.rail .now .mark::after{top:.42rem;width:.8rem;height:.8rem;margin-left:-.4rem;background:var(--amend);box-shadow:0 0 0 3px var(--paper),0 0 0 5px var(--amend)}
+.rail .next time{color:var(--pending)}
+.rail .next .mark::before{background:repeating-linear-gradient(to bottom,var(--ink-3) 0 5px,transparent 5px 9px)}
+.rail .next .mark::after{background:var(--paper);border:2px solid var(--pending)}
+
+/* 표 */
+.table-wrap{margin:1.25rem 0 1rem;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.9375rem;line-height:1.62}
+caption{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+th,td{padding:.7rem .75rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+thead th{padding-top:.55rem;padding-bottom:.55rem;font-size:.8125rem;font-weight:600;color:var(--ink-2);background:var(--tint);border-bottom:1px solid var(--ink-3);white-space:nowrap}
+tbody th{font-weight:600}
+.art{font-weight:600;font-variant-numeric:tabular-nums}
+.ref{display:block;margin-top:.1rem;font-size:.8125rem;font-weight:400;color:var(--ink-2)}
+.new{color:var(--amend);font-weight:600;letter-spacing:.08em}
+.due{display:inline-block;margin-left:.3rem;padding:0 .4em;font-size:.75rem;line-height:1.55;font-weight:400;color:var(--pending);border:1px solid currentColor;border-radius:3px;white-space:nowrap;vertical-align:.08em}
+.compare{min-width:42rem}
+.compare .grp{width:6.25rem;border-right:1px solid var(--rule)}
+.compare .art{width:8.75rem}
+.compare .old{width:26%;color:var(--ink-2)}
+.kv{min-width:36rem}
+.kv tbody th{width:12rem}
+.kv th .due{display:table;margin:.35rem 0 0}
+.sanction{min-width:36rem}
+.sanction td:nth-child(2){font-weight:600}
+.sanction td:last-child{white-space:nowrap;color:var(--ink-2)}
+.refs{min-width:34rem}
+.refs td:nth-child(2){color:var(--ink-2)}
+.refs td:last-child{white-space:nowrap;color:var(--ink-2);font-variant-numeric:tabular-nums}
+
+/* 입법예고안 기준 항목 */
+.caution{margin:2.25rem 0 0;padding:1.1rem 1.15rem .4rem;background:var(--pending-bg);border-left:3px solid var(--pending)}
+.caution h3{margin:0 0 .5rem}
+.caution thead th{background:transparent}
+.caution th,.caution td{border-bottom-color:color-mix(in srgb,var(--pending) 30%,transparent)}
+
+/* 조문·경과조치 목록 */
+.clauses{list-style:none;margin:.5rem 0 0;padding:0;border-top:1px solid var(--rule)}
+.clauses li{display:grid;grid-template-columns:9.5rem minmax(0,1fr);column-gap:.75rem;padding:.65rem 0;border-bottom:1px solid var(--rule);font-size:.9375rem;line-height:1.65}
+
+/* 체크리스트 */
+.checklist{list-style:none;margin:1rem 0 0;padding:0;border-top:1px solid var(--rule)}
+.checklist li{border-bottom:1px solid var(--rule)}
+.checklist label{display:grid;grid-template-columns:1.6rem minmax(0,1fr);column-gap:.5rem;padding:.7rem 0;cursor:pointer;font-size:.9375rem;line-height:1.65}
+.checklist input{width:1.05rem;height:1.05rem;margin:.3rem 0 0;accent-color:var(--ink);cursor:pointer}
+.checklist b{display:block;font-size:1rem}
+.checklist input:checked + span{color:var(--ink-2)}
+.checklist input:checked + span b{text-decoration:line-through;text-decoration-thickness:1px}
+
+.foot{margin-top:4rem;padding-top:1.1rem;border-top:1px solid var(--rule);font-size:.8125rem;line-height:1.65;color:var(--ink-2)}
+.foot p{margin:0 0 .4rem}
+
+@media (max-width:40rem){
+  body{font-size:1rem}
+  .page{padding-top:2.5rem}
+  .meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+  h2{margin-top:3rem}
+}
+@media (max-width:34rem){
+  .rail li{grid-template-columns:1.25rem minmax(0,1fr);column-gap:.7rem}
+  .rail time{grid-column:2;grid-row:1;text-align:left}
+  .rail .mark{grid-column:1;grid-row:1 / span 2}
+  .rail .body{grid-column:2;grid-row:2}
+  .clauses li{grid-template-columns:1fr}
+}
+@media print{
+  :root{--paper:#fff;--tint:#f2f2f2;--ink:#000;--ink-2:#444;--ink-3:#888;--rule:#bbb;--link:#000;--amend:#b00;--pending:#7a5000;--pending-bg:#fff}
+  body{font-size:10.5pt}
+  .page{max-width:none;padding:0}
+  .toc{display:none}
+  .table-wrap{overflow:visible}
+  .compare,.kv,.sanction,.refs{min-width:0}
+  h2{break-after:avoid}
+  tr,li{break-inside:avoid}
+  a{text-decoration:none}
+}
+
+/* 실무 주의 메모 */
+.note-box{margin:1.25rem 0 0;padding:.9rem 1.1rem;background:var(--tint);border-left:3px solid var(--ink)}
+.note-box p{margin:0;font-size:.9375rem;line-height:1.7}
+.caution > p:last-child{margin-bottom:.7rem}
+
+/* 과징금 산정 단계: 실제 순서가 있는 절차라 번호를 붙인다 */
+.steps{list-style:none;counter-reset:step;margin:.5rem 0 1.25rem;padding:0;border-top:1px solid var(--rule)}
+.steps li{counter-increment:step;display:grid;grid-template-columns:2rem minmax(0,1fr);column-gap:.6rem;padding:.6rem 0;border-bottom:1px solid var(--rule);font-size:.9375rem;line-height:1.65}
+.steps li::before{content:counter(step);display:flex;align-items:center;justify-content:center;width:1.6rem;height:1.6rem;margin-top:.05rem;border:1.5px solid var(--ink);border-radius:50%;font-size:.8125rem;font-weight:600;font-variant-numeric:tabular-nums}
+.steps b{display:block;font-size:1rem}
+.sanction .due{display:table;margin:.3rem 0 .1rem}
+</style>
+<script src="../assets/site-nav.js" defer data-site-nav></script>
+</head>
+<body>
+<main class="page">
+
+<header>
+  <h1>개인정보보호법·시행령 개정사항 리포트</h1>
+  <p class="subtitle">「개인정보 보호법」과 같은 법 시행령·고시 중 2026년 9월 11일 시행분</p>
+  <dl class="meta">
+    <div><dt>시행일</dt><dd><time datetime="2026-09-11">2026. 9. 11.</time></dd></div>
+    <div><dt>법률</dt><dd>제21445호<span class="sub">2026. 3. 10. 공포</span></dd></div>
+    <div><dt>시행령</dt><dd>대통령령 제36671호<span class="sub">2026. 9. 10. 공포</span></dd></div>
+    <div><dt>소관</dt><dd>개인정보보호위원회<span class="sub">고시 3종 동시 시행</span></dd></div>
+  </dl>
+  <nav class="toc" aria-label="목차">
+    <ul>
+      <li><a href="#overview">개요</a></li>
+      <li><a href="#act">법률 주요 개정사항</a></li>
+      <li><a href="#decree">시행령 주요 개정사항</a></li>
+      <li><a href="#sanctions">제재 및 경과조치</a></li>
+      <li><a href="#checklist">실무 대응 체크리스트</a></li>
+      <li><a href="#sources">참고자료</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="overview" aria-labelledby="h-overview">
+  <h2 id="h-overview">개요</h2>
+  <p class="lede">2026년 9월 11일, 개정 개인정보 보호법(법률 제21445호)과 시행령(대통령령 제36671호), 관련 고시 3종이 함께 시행됐다. 핵심은 유출 가능성 통지제 신설과 '유출등' 범위 확대(위조·변조·훼손 포함), 반복·중대 위반 과징금 상한 10%, 투자 연계 과징금 의무 감경, CEO 최종 책임 명시와 CPO 이사회 의결·신고 의무화다.</p>
+
+  <h3>입법 경과와 시행 일정</h3>
+  <ol class="rail">
+    <li class="done"><time datetime="2026-02-12">2026. 2. 12.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">국회 본회의 통과</p></div></li>
+    <li class="done"><time datetime="2026-03-10">2026. 3. 10.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">법률 공포</p><p class="note">법률 제21445호</p></div></li>
+    <li class="done"><time datetime="2026-06-01">2026. 6. 1.·2.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">시행령 개정안 입법예고(2회)</p><p class="note">6. 2. 안은 7. 13.까지 의견 수렴</p></div></li>
+    <li class="done"><time datetime="2026-09-10">2026. 9. 10.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">시행령 공포</p><p class="note">대통령령 제36671호</p></div></li>
+    <li class="now"><time datetime="2026-09-11">2026. 9. 11.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">법·시행령·고시 시행</p><p class="note">과징금 부과기준(제2026-12호), 과태료 부과기준(제2026-14호), CPO 지정·경력 인정(제2026-11호) 고시</p></div></li>
+    <li class="next"><time datetime="2027-03-11">2027. 3. 11.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">기존 CPO 신고 기한</p><p class="note">시행 전 지정된 CPO는 이사회 의결 없이 신고만</p></div></li>
+    <li class="next"><time datetime="2027-07-01">2027. 7. 1.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">ISMS-P 인증 의무화 시행</p><p class="note">의무 대상 기준은 시행령 후속 개정 예정</p></div></li>
+    <li class="next"><time datetime="2027-12-31">2027. 12. 31.</time><span class="mark" aria-hidden="true"></span><div class="body"><p class="ev">CPO 관련 과태료 계도기간 종료</p><p class="note">미지정·자격 미비·이사회 의결 누락·신고 해태</p></div></li>
+  </ol>
+
+  <p>국민 일상과 밀접한 분야에서 대규모 유출사고가 잇따르자 사전 예방과 피해구제를 강화하려는 개정이다. 주요 개인정보처리자의 ISMS-P 인증 의무화도 법에 담겼지만, 예산 확보 기간을 고려해 2027년 7월 1일 시행되고 의무 대상 기준은 아직 정해지지 않았다.</p>
+  <p class="src">출처: <a href="https://www.djournal.co.kr/news/article.html?no=112431">개인정보위 보도자료 전재(외교저널, 2026. 9. 10.)</a>, <a href="https://pieinc.co.kr/guide/personal-info-protection-act-amendment-2026-09">PIEinc 보안지식센터</a>, <a href="https://www.lawtimes.co.kr/news/articleView.html?idxno=226491">법무법인 광장(법률신문, 2026. 9. 17.)</a>, <a href="https://jipyong.com/kr/board/news_view.php?seq=15016">지평 법률정보(2026. 3. 16.)</a>, <a href="https://byline.network/2026/06/2-421/">바이라인네트워크(2026. 6. 2.)</a></p>
+</section>
+
+<section id="act" aria-labelledby="h-act">
+  <h2 id="h-act">법률 주요 개정사항</h2>
+  <p>개정법은 유출 대응을 '확인 후 통지'에서 '가능성 단계 통지'로 앞당기고, 반복·중대 위반의 과징금 상한을 매출 10%까지 올리는 대신 예방 투자에는 감경을 보장했다. 대표자와 CPO의 책임도 조문으로 명시했다.</p>
+  <div class="table-wrap">
+    <table class="compare">
+      <caption>법률 주요 개정사항 신구 비교</caption>
+      <thead><tr><th scope="col">분야</th><th scope="col">조문</th><th scope="col">개정 전</th><th scope="col">개정 후</th></tr></thead>
+      <tbody>
+        <tr><th scope="rowgroup" class="grp">유출 개념</th><td class="art">제23조제2항 등</td><td class="old">분실·도난·유출</td><td>위조·변조·훼손까지 묶어 '유출등'으로 정의. 랜섬웨어 암호화 같은 훼손도 통지·신고 검토 대상</td></tr>
+        <tr><th scope="rowgroup" rowspan="3" class="grp">유출 통지</th><td class="art">제34조제1항</td><td class="old">통지 항목 5개</td><td>손해배상·법정손해배상 청구, 분쟁조정 등 법적 권리와 행사 방법(제6호), 대통령령 사항(제7호) 추가</td></tr>
+        <tr><td class="art">제34조제2항</td><td class="old"><span class="new">〈신설〉</span></td><td>대통령령으로 정하는 유출등 가능성을 알게 되면 가능성 있는 정보주체 모두에게 지체 없이 통지</td></tr>
+        <tr><td class="art">제34조 제3항·제4항</td><td class="old">피해 최소화 조치(제2항), 신고(제3항)</td><td>항 번호가 하나씩 밀려 피해 최소화는 제3항, 신고는 제4항</td></tr>
+        <tr><th scope="rowgroup" rowspan="3" class="grp">거버넌스</th><td class="art">제30조의3</td><td class="old"><span class="new">〈신설〉</span></td><td>사업주·대표자를 최종 책임자로 명시. 전문 인력과 충분한 예산 지원 등 총괄 관리 의무</td></tr>
+        <tr><td class="art">제31조제3항</td><td class="old"><span class="new">〈신설〉</span></td><td>일정 기준 이상 처리자는 CPO 지정·변경·해제 시 이사회 의결(법인) 후 개인정보위에 신고</td></tr>
+        <tr><td class="art">제31조제4항</td><td class="old">CPO 업무 7개(종전 제3항)</td><td>전문 인력 관리·예산 확보(제2호), 대표자·이사회 보고(제3호)를 더해 9개</td></tr>
+        <tr><th scope="rowgroup" rowspan="2" class="grp">과징금</th><td class="art">제64조의2제2항</td><td class="old">상한 전체 매출 3%(매출 산정 곤란 시 20억원)</td><td>특례 상한 10%(곤란 시 50억원)<br>① 처분 후 3년 내 같은 호 반복<br>② 피해 1천만명 이상<br>③ 시정조치 명령 불이행으로 유출<br>①②는 고의·중과실 한정</td></tr>
+        <tr><td class="art">제64조의2제6항</td><td class="old">투자 연계 감경 규정 없음</td><td>예산·인력·설비·장치 투자 등 요건 충족 시 '감경한다'(의무). 고의·중과실 위반은 제외</td></tr>
+        <tr><th scope="rowgroup" class="grp">인증</th><td class="art">제32조의2제1항 단서</td><td class="old">임의 인증</td><td>대통령령 기준 해당 처리자는 ISMS-P 인증 의무<span class="due">2027. 7. 1. 시행</span></td></tr>
+        <tr><th scope="rowgroup" rowspan="2" class="grp">과태료</th><td class="art">제75조제2항 제14호의2~4</td><td class="old">CPO 관련 과태료 없음</td><td>CPO 미지정·자격 미달 지정, 이사회 의결 누락, 신고 누락에 각 3천만원 이하. 수탁자에도 준용</td></tr>
+        <tr><td class="art">제75조제2항 제15호</td><td class="old"><span class="new">〈신설〉</span></td><td>ISMS-P 미인증 과태료<span class="due">2027. 7. 1. 시행</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note-box">
+    <p>항 번호 이동은 실무에서 놓치기 쉽다. 절차서·위수탁 계약서에 '법 제34조제3항에 따른 신고'라고 적어 두었다면 지금은 피해 최소화 조치를 가리키므로 제34조제4항으로 고쳐야 한다. CPO 업무 인용(종전 제31조제3항)도 같은 이유로 점검이 필요하다.</p>
+  </div>
+  <p class="src">출처: <a href="https://pieinc.co.kr/guide/personal-info-protection-act-amendment-2026-09">PIEinc 보안지식센터(법령 원문 수록)</a>, <a href="https://www.djournal.co.kr/news/article.html?no=112431">개인정보위 보도자료 전재(외교저널, 2026. 9. 10.)</a>, <a href="https://jipyong.com/kr/board/news_view.php?seq=15016">지평 법률정보(2026. 3. 16.)</a></p>
+</section>
+
+<section id="decree" aria-labelledby="h-decree">
+  <h2 id="h-decree">시행령 주요 개정사항</h2>
+  <p>시행령(대통령령 제36671호)은 CPO 신고 대상과 기한, 유출 가능성 통지 요건, 과징금 산정·투자감경 기준, 과태료 부과기준을 정했다. 입법예고안과 달리 CPO 신고 기한은 1개월에서 6개월로 늘었고, ISMS-P 의무 대상 기준은 최종안에서 빠졌다.</p>
+  <div class="table-wrap">
+    <table class="kv">
+      <caption>시행령 주요 개정 내용</caption>
+      <thead><tr><th scope="col">항목</th><th scope="col">시행령 주요 내용</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">CPO 이사회 의결·신고 대상<span class="ref">제32조제3항</span></th><td>연간 매출액등 1,800억원 초과이면서 민감·고유식별정보 5만명 이상 또는 개인정보 100만명 이상 처리자, 재학생 2만명 이상 대학, 상급종합병원, 공공시스템운영기관. 기존 전문 CPO 지정 의무 대상과 같음</td></tr>
+        <tr><th scope="row">CPO 신고 기한·방법<span class="ref">제32조제4항, 부칙 제2조</span></th><td>사유 발생일부터 6개월 이내 신고서 제출, 부득이한 사유 시 1년 범위 연장. 시행 전 지정된 CPO는 2027. 3. 11.까지 신고. 개인정보 포털 'CPO 신고' 메뉴 이용</td></tr>
+        <tr><th scope="row">유출등 범위</th><td>분실·도난·유출에 위조·변조·훼손 추가</td></tr>
+        <tr><th scope="row">가능성 통지 대상<span class="ref">제39조의2제1항</span></th><td>① 시스템·취급자 기기에 불법 접근이 있어 유출이 의심되나 정보주체를 특정하기 어려운 경우: 불법 접근을 안 때부터<br>② 불법 거래 등으로 일부 유출이 확인돼 다른 정보주체도 유출됐을 수 있는 경우: 그 사실을 안 때부터</td></tr>
+        <tr><th scope="row">가능성 통지 시기·항목<span class="ref">제39조의2제2항, 제39조의3</span></th><td>72시간 이내 서면등으로 통지. 항목은 해당 개인정보 항목, 의심 시점·경위, 피해 최소화 방법·대응조치·담당부서, 확정 시 추가 통지 예정 사실. 지연은 천재지변 등 부득이한 사유만 인정(긴급조치는 지연 사유 아님)</td></tr>
+        <tr><th scope="row">가능성 통지 후속 조치<span class="ref">제39조의3</span></th><td>기한 내 유출이 확정되면 확정 통지로 갈음. 유출이 없었다고 확인되면 즉시 다시 통지. 연락처를 모르면 홈페이지에 30일 이상 게시</td></tr>
+        <tr><th scope="row">유출 신고<span class="ref">제40조제1항</span></th><td>1천명 이상, 민감·고유식별정보, 외부 불법 접근 중 하나면 72시간 이내 신고(유지). 경로 확인 후 회수·삭제로 권익 침해 가능성이 현저히 낮아지면 신고하지 않을 수 있음 <span class="new">〈신설〉</span></td></tr>
+        <tr><th scope="row">과징금 기준 매출액<span class="ref">제60조의2제1항·제3항</span></th><td>직전 사업연도 매출과 직전 3개 사업연도 연평균 중 큰 금액. 개인정보 처리와 관련 없는 매출은 제외</td></tr>
+        <tr><th scope="row">부과기준율<span class="ref">별표 1의5</span></th><td>매우 중대 2.1~2.7%, 중대 1.5~2.1%, 보통 0.9~1.5%, 약한 0.03~0.9%. 10% 특례는 부과기준율×가중비율 8.91% 이하(매출 산정 곤란 시 기준금액 45억원 이하)</td></tr>
+        <tr><th scope="row">투자감경<span class="ref">제60조의2제5항</span></th><td>기준금액의 40% 범위. 투자 규모·비율·지속성, 대표자 책임 이행, CPO 조직·인력 등 보호체계 수준, 추가 안전조치 노력 고려</td></tr>
+        <tr><th scope="row">과태료<span class="ref">별표 2</span></th><td>3천만원 이하 구간 대부분을 1회 900만원, 2회 1,800만원, 3회 이상 3,000만원으로 상향. 경미 위반으로 면제·경고한 이력도 위반 횟수에 반영</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>과징금 산정 단계</h3>
+  <p>과징금은 별표 1의5에 따라 다음 순서로 산정한다.</p>
+  <ol class="steps">
+    <li><span><b>기준금액</b>관련 매출 × 부과기준율(위반 중대성 4단계)</span></li>
+    <li><span><b>투자감경</b>기준금액의 40% 범위</span></li>
+    <li><span><b>1차 조정</b>위반 기간·횟수, 취득 이익, 업무 형태·규모로 90% 범위 가감</span></li>
+    <li><span><b>2차 조정</b>시정 협조, 피해 회복, 인증·자율 보호 활동, 자진신고 등으로 50% 범위 가감</span></li>
+    <li><span><b>부과과징금 결정</b>현실적 부담능력 등을 고려해 90% 범위 감경</span></li>
+  </ol>
+  <p>'매우 중대한 위반행위'는 1·2차 조정의 감경을 일부 또는 전부 배제할 수 있다. 개인정보위는 고시 개정으로 신고·통지 기한을 어기고 확산 방지도 하지 않으면 최대 30% 가중하고, 사고 대응 체계를 갖추고 신속히 신고·통지한 경우 최대 40% 감경한다고 밝혔다. 다만 투자감경 세부 기준 고시는 9월 중순까지 개정이 확인되지 않았다는 로펌 분석도 있어, 고시 원문을 확인해야 한다.</p>
+  <p class="src">출처: <a href="https://pieinc.co.kr/guide/personal-info-protection-act-amendment-2026-09">PIEinc 보안지식센터(시행령 원문 수록)</a>, <a href="https://www.djournal.co.kr/news/article.html?no=112431">개인정보위 보도자료 전재(외교저널, 2026. 9. 10.)</a>, <a href="https://www.lawtimes.co.kr/news/articleView.html?idxno=226491">법무법인 광장(법률신문, 2026. 9. 17.)</a></p>
+</section>
+
+<section id="sanctions" aria-labelledby="h-sanctions">
+  <h2 id="h-sanctions">제재 및 경과조치</h2>
+  <p>과징금은 3% 원칙 위에 10% 특례가 얹힌 구조이고, 과태료는 CPO 관련 항목이 새로 생기며 전반적으로 올랐다. 특례 중 '대규모 피해' 요건은 시행 당시 끝나지 않은 위반에도 적용되므로 진행 중인 위반 상태부터 정리해야 한다.</p>
+  <div class="table-wrap">
+    <table class="sanction">
+      <caption>위반행위별 제재</caption>
+      <thead><tr><th scope="col">위반행위</th><th scope="col">제재</th><th scope="col">근거</th></tr></thead>
+      <tbody>
+        <tr><td>동의 없는 처리, 유출등 등 과징금 대상 위반(9개 유형)</td><td>전체 매출 3% 이하<span class="ref">산정 곤란 시 20억원</span></td><td>제64조의2제1항</td></tr>
+        <tr><td>처분 후 3년 내 같은 호 반복(고의·중과실)</td><td>전체 매출 10% 이하<span class="ref">산정 곤란 시 50억원</span></td><td>제64조의2제2항제1호</td></tr>
+        <tr><td>고의·중과실 위반으로 피해 1천만명 이상</td><td>전체 매출 10% 이하</td><td>제64조의2제2항제2호</td></tr>
+        <tr><td>시정조치 명령 불이행으로 유출등 발생</td><td>전체 매출 10% 이하</td><td>제64조의2제2항제3호</td></tr>
+        <tr><td>과징금 미납</td><td>연 6% 가산금<span class="ref">최대 60개월</span></td><td>제64조의2제9항</td></tr>
+        <tr><td>CPO 미지정·자격 미달 지정, 이사회 의결 누락, 신고 누락</td><td>각 3천만원 이하 과태료<span class="ref">1회 900만원</span></td><td>제75조제2항제14호의2~4</td></tr>
+        <tr><td>유출등 통지 또는 가능성 통지 누락</td><td>3천만원 이하 과태료<span class="ref">1회 900만원</span></td><td>제75조제2항제17호</td></tr>
+        <tr><td>유출등 신고 누락</td><td>3천만원 이하 과태료<span class="ref">1회 900만원</span></td><td>제75조제2항제18호</td></tr>
+        <tr><td>안전성 확보 조치 미이행</td><td>3천만원 이하 과태료<span class="ref">1회 900만원</span></td><td>제75조제2항제5호</td></tr>
+        <tr><td>ISMS-P 인증 미취득</td><td>3천만원 이하 과태료<span class="due">2027. 7. 1. 시행</span><span class="ref">부과기준 미정</span></td><td>제75조제2항제15호</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>적용례·경과조치</h3>
+  <ul class="clauses">
+    <li><b>반복 위반 특례<span class="ref">법 부칙 제3조제1항</span></b><span>시행 이후 발생한 위반으로 과징금 처분을 받은 뒤 다시 같은 호를 위반한 경우부터 적용한다. 시행 전 처분 이력은 반복 산정에 들어가지 않는다.</span></li>
+    <li><b>대규모 피해 특례<span class="ref">법 부칙 제3조제2항</span></b><span>시행 당시 종료되지 않은 위반행위에도 적용한다.</span></li>
+    <li><b>시정명령 불이행 특례<span class="ref">법 부칙 제3조제3항</span></b><span>시행 이후 시정조치 명령을 받은 경우부터 적용한다.</span></li>
+    <li><b>기존 CPO 신고<span class="ref">시행령 부칙 제2조</span></b><span>시행 전 지정된 CPO는 이사회 의결 없이 <time datetime="2027-03-11">2027. 3. 11.</time>까지 신고하면 된다.</span></li>
+    <li><b>CPO 과태료 계도기간<span class="ref">개인정보위 발표</span></b><span>개인정보위는 <time datetime="2027-12-31">2027. 12. 31.</time>까지 CPO 미지정, 자격 미비, 이사회 의결 위반, 신고 해태에 과태료를 부과하지 않겠다고 밝혔다.</span></li>
+    <li><b>ISMS-P 의무화<span class="ref">법 부칙 제1조 단서</span></b><span>의무 규정과 미인증 과태료는 <time datetime="2027-07-01">2027. 7. 1.</time>부터 시행한다. 의무 대상 기준은 시행령 후속 개정으로 정해진다.</span></li>
+  </ul>
+
+  <div class="caution">
+    <h3>입법예고안의 ISMS-P 의무 대상 기준(미확정)</h3>
+    <p>입법예고안에서 제시됐다가 빠진 ISMS-P 의무 대상 기준은 공공시스템운영기관 중 고시 기관, 이동통신사업자, 본인확인기관, 그리고 매출 1조원·정보통신서비스 매출 100억원·일평균 국내 정보주체 3천만명 이상인 사업자였고 인증 기한은 2028. 12. 31.이었다. 확정된 기준이 아니므로 참고로만 봐야 한다.</p>
+  </div>
+
+  <p style="margin-top:1.25rem">10월 1일 시행된 개정 정보통신망법은 개인정보 유출에 해당하는 침해사고에 망법 과징금을 적용하지 않도록 해, 유출 사고의 과징금은 이 법으로 처리된다.</p>
+  <p class="src">출처: <a href="https://pieinc.co.kr/guide/personal-info-protection-act-amendment-2026-09">PIEinc 보안지식센터(부칙 원문 수록)</a>, <a href="https://www.djournal.co.kr/news/article.html?no=112431">개인정보위 보도자료 전재(외교저널, 2026. 9. 10.)</a>, <a href="https://byline.network/2026/06/2-421/">바이라인네트워크(2026. 6. 2.)</a>, <a href="https://www.e-focus.co.kr/news/articleView.html?idxno=3002962">이포커스(2026. 10. 1.)</a></p>
+</section>
+
+<section id="checklist" aria-labelledby="h-checklist">
+  <h2 id="h-checklist">실무 대응 체크리스트</h2>
+  <p>가장 급한 일은 사고 대응 문서를 새 개념(유출등, 가능성 통지)과 바뀐 조문 번호에 맞추는 것이다. 기한이 정해진 항목은 기존 CPO 신고(<time datetime="2027-03-11">2027. 3. 11.</time>)와 ISMS-P 의무화 대비(<time datetime="2027-07-01">2027. 7. 1.</time>)다.</p>
+  <ul class="checklist">
+    <li><label><input type="checkbox"><span><b>용어·조문 정비</b>절차서·처리방침·위수탁 계약서의 '유출'을 '유출등'으로, '법 제34조제3항(신고)' 인용을 제34조제4항으로, CPO 업무 인용을 제31조제4항으로 수정</span></label></li>
+    <li><label><input type="checkbox"><span><b>가능성 통지 트리거 정의</b>불법 접근을 '알게 된 때'의 판단 기준과 기록 방법, 72시간 기산점을 절차에 명시</span></label></li>
+    <li><label><input type="checkbox"><span><b>통지문 템플릿 3종</b>가능성 통지, 확정 통지(손해배상·분쟁조정 안내 포함), 유출 없음 확인 통지</span></label></li>
+    <li><label><input type="checkbox"><span><b>대응·통지 인력 분리</b>가능성 통지는 긴급조치를 이유로 늦출 수 없으므로 사고 대응과 통지 담당을 나눠 72시간 체계 운영</span></label></li>
+    <li><label><input type="checkbox"><span><b>랜섬웨어 시나리오 반영</b>암호화·훼손만 발생한 경우의 통지·신고 판단 기준과 회수·삭제 증빙 절차 마련</span></label></li>
+    <li><label><input type="checkbox"><span><b>CPO 대상 판정</b>연간 매출액등 1,800억원 초과와 5만명·100만명 요건 등 이사회 의결·신고 대상 여부 확인</span></label></li>
+    <li><label><input type="checkbox"><span><b>기존 CPO 신고</b>대상이면 기한 안에 개인정보 포털 'CPO 신고' 메뉴로 신고</span></label></li>
+    <li><label><input type="checkbox"><span><b>이사회 의결 절차 규정화</b>CPO 지정·변경·해제 시 이사회 의결과 6개월 내 신고를 사내 규정에 반영</span></label></li>
+    <li><label><input type="checkbox"><span><b>CPO 권한 문서화</b>예산 확보 권한과 대표자·이사회 보고 주기·경로를 확정하고 CISO의 이사회 보고 체계와 겹치지 않게 조율</span></label></li>
+    <li><label><input type="checkbox"><span><b>과징금 대비 자료</b>개인정보 보호 투자를 연도별 계정으로 분리해 지속성을 입증하고, 대표자 보고·승인 기록과 사업부문별 매출 구분 자료 정비</span></label></li>
+    <li><label><input type="checkbox"><span><b>진행 중인 위반 해소</b>시행 당시 계속 중인 위반에도 대규모 피해 특례가 적용되므로 안전조치 미흡 등 위반 상태를 즉시 시정</span></label></li>
+    <li><label><input type="checkbox"><span><b>수탁자 점검</b>수탁자도 CPO·통지 관련 과태료 규정을 준용받으므로 위탁계약과 수탁자 점검 항목에 반영</span></label></li>
+    <li><label><input type="checkbox"><span><b>ISMS-P 대비</b>의무 대상 기준이 정해지기 전이라도 대상 가능성이 있으면 사전 진단 착수</span></label></li>
+  </ul>
+</section>
+
+<section id="sources" aria-labelledby="h-sources">
+  <h2 id="h-sources">참고자료</h2>
+  <p>조문 원문은 <a href="https://www.law.go.kr">국가법령정보센터</a>에서 「개인정보 보호법」(법률 제21445호)과 같은 법 시행령(대통령령 제36671호)을 검색해 확인할 수 있다. 개인정보위가 함께 낸 'CPO 지정·신고 실무 매뉴얼', '과징금 투자 감경제도 안내서', 개정 '개인정보 유출등 대응 안내서'도 실무에 참고할 만하다. 아래는 이 리포트 작성에 직접 확인한 자료다.</p>
+  <div class="table-wrap">
+    <table class="refs">
+      <caption>참고자료 목록</caption>
+      <thead><tr><th scope="col">자료</th><th scope="col">발행</th><th scope="col">일자</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://www.e-focus.co.kr/news/articleView.html?idxno=3002962">과기정통부, 반복 침해사고 과징금 시행…KT 상한 5628억</a></td><td>이포커스</td><td>2026. 10. 1.</td></tr>
+        <tr><td><a href="https://www.lawtimes.co.kr/news/articleView.html?idxno=226491">2026. 9. 11. 「개인정보 보호법」 개정법 시행</a></td><td>법무법인 광장(법률신문)</td><td>2026. 9. 17.</td></tr>
+        <tr><td><a href="https://pieinc.co.kr/guide/personal-info-protection-act-amendment-2026-09">2026년 개인정보 보호법·시행령 개정 완전정리</a></td><td>PIEinc 보안지식센터</td><td>2026. 9. 16. 기준</td></tr>
+        <tr><td><a href="https://www.djournal.co.kr/news/article.html?no=112431">개인정보위, 개인정보 유출 사전예방·피해구제 강화를 위한 개인정보 보호법·시행령·고시 9월 11일부터 시행</a></td><td>개인정보위 보도자료(외교저널 전재)</td><td>2026. 9. 10.</td></tr>
+        <tr><td><a href="https://jipyong.com/kr/board/news_view.php?seq=15016">개인정보보호법·정보통신망법·전기통신사업법 개정 주요 내용 및 시사점</a></td><td>법무법인 지평</td><td>2026. 3. 16.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="foot">
+  <p>2026. 10. 1. 기준으로 개인정보위 보도자료, 법령 원문 정리 자료, 법무법인 분석을 정리한 문서이며 법률 자문이 아닙니다.</p>
+  <p>시행령 세부 조문과 고시는 국가법령정보센터 원문으로 확인하세요.</p>
+</footer>
+
+</main>
+
+</body>
+</html>

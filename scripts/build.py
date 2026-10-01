@@ -13,6 +13,9 @@ from collect import KST, collect  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, "docs")
+# 포털 개편: 데일리 최신호(index.html)와 개별 호는 docs/daily/에 쓴다.
+# docs/index.html은 포털 페이지라 여기서 건드리지 않는다. (개편 전: docs/index.html + docs/posts/)
+DAILY_DIR = os.path.join(DOCS, "daily")
 E = html.escape
 
 
@@ -86,6 +89,7 @@ PAGE = """<!doctype html>
 <link rel="canonical" href="{url}">
 <link rel="alternate" type="application/rss+xml" title="{site_title}" href="{base}/rss.xml">
 <link rel="stylesheet" href="{assets}/style.css">
+<script src="{assets}/site-nav.js" defer data-site-nav></script>
 </head>
 <body>
 <div class="wrap">
@@ -135,7 +139,10 @@ def build_rss(archive: list[dict], site: dict, base: str) -> None:
     now = datetime.now(KST)
     items = []
     for entry in archive[:40]:
-        url = f'{base}/posts/{entry["date"]}.html'
+        url = f'{base}/daily/{entry["date"]}.html'
+        # guid는 예전 주소 형식 그대로 둔다. 값이 바뀌면 구독자 RSS 리더에 지난 호가 새 글로 다시 뜬다.
+        # 저장소를 옮겨 base가 바뀌면 guid도 바뀌므로, 그때는 base 대신 옛 주소 문자열로 고정할 것.
+        guid = f'{base}/posts/{entry["date"]}.html'
         try:
             pub = datetime.strptime(entry["date"], "%Y-%m-%d").replace(hour=9, tzinfo=KST)
         except Exception:  # noqa: BLE001
@@ -143,7 +150,7 @@ def build_rss(archive: list[dict], site: dict, base: str) -> None:
         items.append(
             "<item>"
             f'<title>{E(site["title"])} — {E(kdate(entry["date"]))}</title>'
-            f"<link>{E(url)}</link><guid isPermaLink=\"true\">{E(url)}</guid>"
+            f"<link>{E(url)}</link><guid isPermaLink=\"false\">{E(guid)}</guid>"
             f'<description>{E(entry.get("headline", ""))}</description>'
             f"<pubDate>{format_datetime(pub)}</pubDate>"
             "</item>"
@@ -151,7 +158,7 @@ def build_rss(archive: list[dict], site: dict, base: str) -> None:
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0"><channel>'
-        f'<title>{E(site["title"])}</title><link>{E(base)}/</link>'
+        f'<title>{E(site["title"])}</title><link>{E(base)}/daily/</link>'
         f'<description>{E(site["subtitle"])}</description>'
         "<language>ko</language>"
         f"<lastBuildDate>{format_datetime(now)}</lastBuildDate>"
@@ -163,7 +170,7 @@ def build_rss(archive: list[dict], site: dict, base: str) -> None:
 
 def main() -> int:
     # git does not track empty folders, so create output dirs every run.
-    for sub in ("data", "posts", "assets"):
+    for sub in ("data", "daily", "assets"):
         os.makedirs(os.path.join(DOCS, sub), exist_ok=True)
 
     with open(os.path.join(ROOT, "feeds.json"), encoding="utf-8") as fp:
@@ -218,17 +225,17 @@ def main() -> int:
         headline = data["categories"][0]["items"][0]["title"]
     desc = f"{kdate(date)} · 총 {data['total']}건 · {headline}"[:180]
 
-    post_url = f"{base}/posts/{date}.html"
+    post_url = f"{base}/daily/{date}.html"
     body = render_body(data, site, post_url)
     meta = f"{kdate(date)} · 자동 생성 {datetime.fromisoformat(data['generated_at']):%H:%M} KST"
 
     write_page(
-        os.path.join(DOCS, "posts", f"{date}.html"),
+        os.path.join(DAILY_DIR, f"{date}.html"),
         title=f"{site['title']} — {kdate(date)}",
         og_title=f"{site['title']} — {kdate(date)}",
         desc=desc, url=post_url, base=base, assets="../assets",
         site_title=site["title"], heading=kdate(date), meta=meta,
-        nav=f'<p class="nav"><a href="../index.html">← 전체 목록</a></p>',
+        nav='<p class="nav"><a href="./">← 전체 목록</a></p>',
         body=body, extra="", author=site["author"],
     )
 
@@ -239,16 +246,16 @@ def main() -> int:
         json.dump(archive, fp, ensure_ascii=False, indent=2)
 
     rows = "".join(
-        f'<li><a href="posts/{a["date"]}.html">{kdate(a["date"])}</a>'
+        f'<li><a href="{a["date"]}.html">{kdate(a["date"])}</a>'
         f'<span class="n">{a["total"]}건</span></li>'
         for a in archive[1:31]
     )
     extra = f'<div class="archive"><h2>지난 발행</h2><ul>{rows}</ul></div>' if rows else ""
 
     write_page(
-        os.path.join(DOCS, "index.html"),
+        os.path.join(DAILY_DIR, "index.html"),
         title=f"{site['title']} — {kdate(date)}",
-        og_title=site["title"], desc=desc, url=f"{base}/", base=base, assets="assets",
+        og_title=site["title"], desc=desc, url=f"{base}/daily/", base=base, assets="../assets",
         site_title=site["title"], heading=kdate(date), meta=meta, nav="",
         body=body, extra=extra, author=site["author"],
     )
