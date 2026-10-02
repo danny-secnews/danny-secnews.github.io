@@ -9,7 +9,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from collect import KST, collect  # noqa: E402
+from collect import KST, collect, strip_internal  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, "docs")
@@ -45,12 +45,12 @@ def render_items(items: list[dict]) -> str:
         for cve in it.get("cves", []):
             badges.append(f'<span class="badge">{E(cve)}</span>')
         badge_html = f'<div class="badges">{"".join(badges)}</div>' if badges else ""
-        desc = f'<p class="desc">{E(it["summary"])}</p>' if it.get("summary") else ""
+        # 기사 요약·본문 발췌(RSS summary)는 게시하지 않는다: 제목·출처·링크·CVE만 싣는다.
         rows.append(
             f'<li class="{"hot" if it.get("highlight") else ""}">'
             f'<a class="t" href="{E(it["link"])}" target="_blank" rel="noopener noreferrer">{E(it["title"])}</a>'
             f'<div class="sub">{E(it["source"])} · {fmt_time(it.get("published"))}</div>'
-            f"{desc}{badge_html}</li>"
+            f"{badge_html}</li>"
         )
     return f'<ul class="items">{"".join(rows)}</ul>'
 
@@ -203,6 +203,9 @@ def main() -> int:
     else:
         print(f"[1/3] 피드 수집 ({now:%Y-%m-%d %H:%M} KST)")
         data = collect(config, now=now)
+
+    # 게시 경계: mock 등 어느 경로로 들어온 데이터든 JSON·HTML로 쓰기 전에 내부 전용 필드를 뺀다.
+    strip_internal(data)
 
     date = data["date"]
     if data["total"] == 0 and "--allow-empty" not in sys.argv:

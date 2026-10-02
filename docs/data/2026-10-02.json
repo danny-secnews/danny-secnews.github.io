@@ -10,7 +10,6 @@
         {
           "title": "Cisco 제품 보안 업데이트 권고",
           "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72206",
-          "summary": "",
           "source": "KISA 보안공지",
           "published": "2026-10-01T23:59:00+09:00",
           "highlight": false,
@@ -26,7 +25,6 @@
         {
           "title": "파르나스 호텔 리워즈 회원정보 유출, 예약정보 악용한 사칭 결제 주의",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208688",
-          "summary": "파르나스호텔앤리조트의 통합 멤버십 ‘파르나스 리워즈’에서 회원 개인정보 유출 사고가 발생했다. 회사는 회원들에게 사과하고 관계 당국과 사고 경위 및 피해 범위를 조사하고 있다고 밝혔다. 예약정보를 제시하며 추가 결제를 요구하는 호텔 사칭 메시지에도 주의를 당부했다.파르나스호텔이 공개한 ‘개인정보 유출 안내 및 사과문’에 따르면, 지난 9월 24일부터 25일까지 권한이 없는 외부 제3자가 불법…",
           "source": "데일리시큐",
           "published": "2026-10-01T16:35:30+09:00",
           "highlight": true,
@@ -35,7 +33,6 @@
         {
           "title": "신한은행 고객 2만5000명 대출 관련 정보 유출... “전액 보상하겠다”",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146150",
-          "summary": "신한은행에서 고객 2만5000명의 개인정보가 유출되는 사고가 발생했다.신한은행은 최근 외부 비인가자가 비정상적인 방법으로 일부 서비스에서 고객정보를 유출한 사실을 확인했다고 1일 밝혔다. 유출 항목은 고객명, 전화번호, CI(연계정보), 연소득, 산출한도 등 대출신청 관련 개인 신용 정보다. 현재 약 2만5000여명의 고객정보가 유출된 것으로 확인됐다. 고객 주민등록번호 66건과 CI 97건…",
           "source": "보안뉴스",
           "published": "2026-10-01T11:41:57+09:00",
           "highlight": true,
@@ -44,7 +41,6 @@
         {
           "title": "개인정보위, AI 시대 개인정보보호 ‘사후 대응→사전 예방’ 전환 본격화",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208666",
-          "summary": "인공지능(AI) 확산으로 데이터 활용이 급증하는 가운데 정부가 개인정보 보호정책의 무게중심을 사고 발생 이후 제재와 대응에서 위험을 사전에 찾아 줄이는 예방 중심 체계로 옮긴다. AI 개발과 서비스에 필요한 데이터 활용 기반을 넓히는 동시에 기업과 기관의 개인정보 보호 책임을 강화해 신뢰를 기반으로 한 AI 혁신을 추진한다는 방향이다.개인정보보호위원회는 9월 30일 서울 엘타워 그레이스홀에서…",
           "source": "데일리시큐",
           "published": "2026-10-01T11:32:57+09:00",
           "highlight": true,
@@ -53,7 +49,6 @@
         {
           "title": "공공기관 정보유출 터지면 기관장도 책임 묻는다…보안 징계기준 대폭 강화",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208664",
-          "summary": "정부가 공공부문에서 중대한 정보유출 사고가 발생할 경우 실무자뿐 아니라 기관장 등 감독자에게도 책임을 묻도록 징계 기준을 강화한다. 초기 비밀번호를 변경하지 않거나 확인된 보안 취약점을 장기간 방치하는 등 기본적인 보안수칙 위반도 명확한 징계 대상에 포함할 방침이다.행정안전부와 국가정보원, 인사혁신처, 개인정보보호위원회 등 관계부처는 10월 1일 이 같은 내용을 담은 ‘공공부문 사이버보안 책…",
           "source": "데일리시큐",
           "published": "2026-10-01T11:24:40+09:00",
           "highlight": true,
@@ -62,7 +57,6 @@
         {
           "title": "사이버보안, 이제 공공기관 경영평가 ‘핵심 지표’",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146133",
-          "summary": "앞으로 초기 비밀번호를 변경하지 않는 등 기본적 정보보호 수칙 위반도 징계 대상이 된다. 정부가 공공 분야에서 발생하는 사이버보안 사고에 대한 징계 기준을 대폭 상향하고 기관장의 책임을 엄중히 묻는다.행정안전부와 국가정보원, 인사혁신처, 개인정보보호위원회 등 관계부처는 1일 이 같은 내용을 담은 ‘공공부문 사이버보안 책임성 강화 방안’을 합동으로 발표했다. 정부는 최근 모두의 창업 정보 유출…",
           "source": "보안뉴스 공공·정책",
           "published": "2026-10-01T09:46:48+09:00",
           "highlight": true,
@@ -71,7 +65,6 @@
         {
           "title": "개인정보위, 해양수도 부산에서 개인정보 제도 혁신 방안 밑그림 그려 N",
           "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12551",
-          "summary": "",
           "source": "개인정보보호위원회 보도자료",
           "published": "2026-10-01T23:59:00+09:00",
           "highlight": false,
@@ -80,7 +73,6 @@
         {
           "title": "인공지능(AI) 시대 안전한 개인정보 보호·활용 방안, 국민 의견 모은다 N",
           "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12550",
-          "summary": "",
           "source": "개인정보보호위원회 보도자료",
           "published": "2026-10-01T23:59:00+09:00",
           "highlight": false,
@@ -89,7 +81,6 @@
         {
           "title": "개인정보위, 영국 개인정보 보호 수준 동등성 인정 검토 착수 N",
           "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12549",
-          "summary": "",
           "source": "개인정보보호위원회 보도자료",
           "published": "2026-10-01T23:59:00+09:00",
           "highlight": false,
@@ -98,7 +89,6 @@
         {
           "title": "공공부문 사이버보안 징계기준 강화, 기관장 엄중 책임 N",
           "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12548",
-          "summary": "",
           "source": "개인정보보호위원회 보도자료",
           "published": "2026-10-01T23:59:00+09:00",
           "highlight": false,
@@ -107,7 +97,6 @@
         {
           "title": "엘세븐시큐리티, 개인정보보호위원장상 수상",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208685",
-          "summary": "엘세븐시큐리티가 개인정보보호위원회가 연 '제6회 개인정보 보호의 날' 기념식에서 '개인정보 보호·활용 기술 대상'을 수상해 개인정보보호위원장상을 받았다. 수상 제품은 자체 개발 광학문자인식(OCR) 엔진을 탑재한 'ImageOCR & OCR Filtering V3.0'이다.공공기관 홈페이지 민원 게시판에는 신분증이나 주민등록등초본 같은 사본이 이미지나 스캔 파일로 자주 올라온다. 기존 텍스트…",
           "source": "데일리시큐",
           "published": "2026-10-01T14:42:31+09:00",
           "highlight": false,
@@ -116,7 +105,6 @@
         {
           "title": "안전한 데이터 융합 성과... NIA, 가명정보 경진대회서 우수 사례 휩쓸어",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146151",
-          "summary": "한국지능정보사회진흥원(NIA)이 가명정보 결합 전문 지원을 통해 공공과 민간 데이터 융합의 실질적 성과를 입증했다.NIA는 지난 9월 30일 열린 '2026년 가명정보 활용 경진대회'에서 대상 1점, 최우수상 5점 등 총 6점의 우수 사례를 창출했다고 1일 밝혔다. 이번 대회는 총 20점의 우수사례를 시상했다. NIA는 지원한 우수사례 부문 대상 4점 중 1점, 최우수상 10점 중 5점을 휩…",
           "source": "보안뉴스 공공·정책",
           "published": "2026-10-01T11:49:37+09:00",
           "highlight": false,
@@ -125,7 +113,6 @@
         {
           "title": "‘영상정보관리사’ 국가공인 이끈 양홍모 차장, 개인정보위 위원장 표창",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146149",
-          "summary": "한국정보통신자격협회(ICQA, 이사장 한복수)는 협회 양홍모 차장이 지난 9월 30일 서울 양재 엘타워 그레이스홀에서 열린 ‘제6회 개인정보 보호의 날 기념식’에서 보호·활용(신기술 발전) 분야 개인정보보호위원회 위원장 표창을 받았다고 밝혔다. 이번 표창은 AI 기반 영상정보처리기기 등 신기술 환경에서 개인영상정보를 안전하게 보호하고 활용할 수 있는 전문인력 양성 기반을 마련하는 데 기여한…",
           "source": "보안뉴스",
           "published": "2026-10-01T11:45:36+09:00",
           "highlight": false,
@@ -141,7 +128,6 @@
         {
           "title": "[CPS 보안 워크숍] 스패로우 “SBOM, 개발 코드만 안전하다고 SW 전체가 안전한 것 아냐”…SW 공급망 보안 대응 전략 제시",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208695",
-          "summary": "소프트웨어(SW) 공급망 공격이 확대되면서 기업의 보안 대응도 단순 취약점 점검에서 벗어나, 소프트웨어 구성요소를 지속적으로 식별하고 SBOM(Software Bill of Materials)을 관리·공유하는 체계로 전환해야 한다는 지적이 나왔다.여구용 스패로우 본부장은 ‘제19회 CPS 보안 워크숍’에서 ‘SW 공급망 보안을 위한 SBOM 관리 및 대응 전략’을 주제로 발표하며, SW 공급…",
           "source": "데일리시큐",
           "published": "2026-10-01T20:00:00+09:00",
           "highlight": true,
@@ -150,7 +136,6 @@
         {
           "title": "신한은행 인증 우회로 2만5천여 명 정보유출 확인…슈퍼SOL·땡겨요와는 무관",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208680",
-          "summary": "신한은행에서 고객 약 2만5천여 명의 개인·신용정보가 유출돼 금융당국이 현장조사에 나섰다. 은행은 관련 서비스 중단과 외부 IP 차단 등 긴급조치를 완료했으며, 사고 경위와 피해 범위를 조사하고 있다.신한은행은 외부에서 인증을 우회하는 비정상적인 방법으로 일부 서비스에 접근해 고객정보를 유출한 사실을 확인했다고 밝혔다. 유출 정보는 고객명, 전화번호, 연소득, 산출한도 등 대출신청 관련 정보…",
           "source": "데일리시큐",
           "published": "2026-10-01T13:35:10+09:00",
           "highlight": true,
@@ -159,7 +144,6 @@
         {
           "title": "메일함 대신 서버 노렸다... 짐브라 취약점 악용 공격, 인증 비밀값까지 털어",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146135",
-          "summary": "이메일·협업 솔루션 짐브라의 취약점(CVE-2026-73570)을 뚫은 공격자들이 메일 서버에 웹셸을 여러 개 심고 서버 전체의 인증 비밀값까지 빼냈다고 마이크로소프트가 밝혔다.마이크로소프트 보안 연구팀의 분석으로는 피해 조직이 여러 지역과 업종에 걸쳐 있고, 모든 서버에서 공격 단계가 다 나타나지는 않았다. 공격 주체는 밝혀지지 않았다.이 결함은 로그인 없이 운영체제 명령을 끼워 넣을 수…",
           "source": "보안뉴스 사건·사고",
           "published": "2026-10-01T13:11:03+09:00",
           "highlight": true,
@@ -170,7 +154,6 @@
         {
           "title": "신한은행 고객정보 일부 유출…금감원 긴급 현장조사 착수",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208667",
-          "summary": "신한은행에서 대출 모집과 관련한 일부 고객정보가 외부로 유출된 사실이 확인돼 금융감독원이 긴급 현장조사에 착수했다. 현재 정확한 유출 규모와 공격 경로, 유출된 정보의 범위 등에 대한 조사가 진행 중이다.10월 1일 금융당국과 금융권에 따르면 신한은행은 전날 대출 모집 관련 고객정보 일부가 외부로 유출된 사실을 확인했다. 금융감독원은 현장조사를 통해 사고 발생 경위와 정보유출 범위를 파악하고…",
           "source": "데일리시큐",
           "published": "2026-10-01T11:56:44+09:00",
           "highlight": true,
@@ -179,7 +162,6 @@
         {
           "title": "비트겟, 탈취 25일 전 이미 뚫려 있었다... 통로는 보안 장비 제로데이에서 시작",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146128",
-          "summary": "암호화폐 거래소 비트겟에서 3억8750만달러가 빠져나간 사건은 비트겟이 쓰던 외부 업체 보안 제품의 제로데이 취약점에서 시작됐다. 공격자의 첫 흔적은 탈취 25일 전부터 남아 있었다.비트겟은 블록체인 보안 기업 슬로우미스트(SlowMist)와 구글클라우드 산하 맨디언트의 조사 결과를 공개했다. 두 조사 모두 공격자가 외부 보안 장비 두 대를 장악해 비트겟 지갑 환경에 들어왔다고 판단했다.회사…",
           "source": "보안뉴스 사건·사고",
           "published": "2026-10-01T10:07:45+09:00",
           "highlight": true,
@@ -188,7 +170,6 @@
         {
           "title": "[CPS 보안 워크숍] “방화벽 안 뚫어도 PLC 장악한다”…유창훈 센스톤 대표 “OT 보안, 설비 앞단 인증이 핵심”",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208697",
-          "summary": "1일 제주에서 열린 제19회 CPS 보안 워크숍에서 유창훈 센스톤 대표는 ‘美 12개 주 수처리 공격 해부, 드러난 ‘OT 보안의 마지막 공백’을 메우다’를 주제로 강연하고, 최근 산업제어시스템을 노린 공격이 기존 방화벽이나 경계보안 체계를 직접 뚫는 방식에서 벗어나 정상적인 원격접속 경로를 이용해 PLC 등 현장 제어설비에 직접 접근하는 형태로 진화하고 있다고 설명했다.유 대표는 최근 미국…",
           "source": "데일리시큐",
           "published": "2026-10-01T20:50:00+09:00",
           "highlight": false,
@@ -197,7 +178,6 @@
         {
           "title": "[CPS 보안 워크숍] 앤앤에스피 “OT 보안, 공격 탐지 넘어 네트워크 품질까지 봐야 한다”",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208696",
-          "summary": "앤앤에스피(NNSP) 김기현 부사장·본부장은 1일 열린 제19회 CPS 보안 워크숍에서 ‘L1에서 NMS까지, 산업용 네트워크 품질 진단과 통합 모니터링 기술’을 주제로 발표하고, 스마트공장의 안정적인 운영을 위해서는 기존 보안 중심의 OT 모니터링을 넘어 네트워크 통신 품질까지 함께 살펴야 한다고 강조했다. 김 부사장은 산업 현장에서 PLC, 센서, 로봇, HMI·SCADA 등 다양한 장비…",
           "source": "데일리시큐",
           "published": "2026-10-01T20:30:00+09:00",
           "highlight": false,
@@ -206,7 +186,6 @@
         {
           "title": "[CPS 보안 워크숍] 김충효 한전 전력연구원 책임 “GPS 교란, 전력시스템 오동작으로 이어질 수 있어”",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208694",
-          "summary": "전력계통의 정밀 감시를 위해 사용하는 GPS 시각정보가 교란될 경우 전력설비의 계측값이 왜곡되고, 조건에 따라 보호계전 시스템의 오동작으로 이어질 가능성이 있다는 연구결과가 공개됐다. 한국전력 전력연구원은 GPS 스푸핑 공격이 실제 상용 전력시스템에 미치는 영향을 분석하고, 이를 탐지·완화하기 위한 기술과 GPS 의존도를 낮추는 네트워크 기반 시각동기 체계를 연구하고 있다.김충효 한국전력 전…",
           "source": "데일리시큐",
           "published": "2026-10-01T19:40:00+09:00",
           "highlight": false,
@@ -215,7 +194,6 @@
         {
           "title": "“韓 AI, 성장 속도 늦출 수 없어... ‘통제·복원력’ 속도 맞춰야”",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146162",
-          "summary": "AI ‘속도조절론’이 대두되는 가운데, 한국은 AI 개발 속도를 늦추기보다 ‘통제·복원력·검증’의 시계를 더 빨리 돌려야 한다는 목소리가 나왔다. 한국이 글로벌 다자간 수용할 수 있는 공통 기준을 설계해 제시하자는 제안도 나왔다. 대통령직속 국가AI전략위원회 보안특별위원회 이원태 위원장은 1일 서울 중구 서울스퀘어 국가AI전략위에서 열린 ‘AI 개발 속도조절론 관련 세미나’에서 이 같이 제언…",
           "source": "보안뉴스",
           "published": "2026-10-01T18:41:00+09:00",
           "highlight": false,
@@ -224,7 +202,6 @@
         {
           "title": "[CPS 보안 워크숍] 이중희 교수 “피지컬 AI 시대, AI 판단보다 ‘물리적 행동 통제’가 더 중요”",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208693",
-          "summary": "\"인공지능이 사이버 공간을 넘어 발전소, 공장, 로봇 등 물리 시스템을 직접 제어하는 ‘피지컬 AI’ 시대로 접어들면서 산업제어시스템(ICS) 보안 체계도 기존 네트워크·제어기 보호 중심에서 AI의 판단과 실제 행동까지 검증·통제하는 방향으로 바뀌어야 한다.\" 고려대학교 정보보호대학원 이중희 교수는 제19회 CPS 보안 워크숍에서 ‘피지컬 AI 시대의 산업제어시스템(ICS) 보안 체계’를 주…",
           "source": "데일리시큐",
           "published": "2026-10-01T18:24:08+09:00",
           "highlight": false,
@@ -233,7 +210,6 @@
         {
           "title": "[CPS 보안 워크숍] 김대한 한전 전력연구원장 “AI 판단이 곧 전력설비 제어로 이어지는 시대…‘행동 전 검증’이 핵심”",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208692",
-          "summary": "제19회 CPS보안워크숍이 10월 1일부터 2일까지 제주 메종글래드호텔 컨벤션홀에서 열렸다. 한국정보보호학회 CPS보안연구회가 주관하고 한전KDN, 한국서부발전, 한국남동발전, 한국중부발전, 전력거래소 등이 주최한 이번 행사에서는 산업제어시스템과 전력·에너지 분야 사이버보안, 피지컬 AI, OT 보안, 양자내성암호 등 사이버물리시스템(CPS)을 둘러싼 주요 보안 현안이 논의됐다. 김대한 한국…",
           "source": "데일리시큐",
           "published": "2026-10-01T17:58:40+09:00",
           "highlight": false,
@@ -242,7 +218,6 @@
         {
           "title": "제19회 CPS보안워크숍 개최…피지컬 AI 시대 산업·에너지 보안 해법 집중 논의",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208691",
-          "summary": "한국정보보호학회 CPS보안연구회가 주관하는 ‘제19회 CPS보안워크숍’이 10월 1일부터 2일까지 제주 메종글래드호텔 컨벤션홀에서 온·오프라인 병행 방식으로 개최됐다. 이번 행사에는 유·무료 등록자를 포함해 약 450명이 참여했으며, 현장에는 약 300명이 참석해 산업제어시스템과 에너지, 로봇, 인공지능(AI), 위성통신 등 사이버물리시스템(CPS) 보안 현안을 공유했다.특히 올해 프로그램은…",
           "source": "데일리시큐",
           "published": "2026-10-01T17:50:39+09:00",
           "highlight": false,
@@ -258,7 +233,6 @@
         {
           "title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
           "link": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-          "summary": "Fortinet is warning customers of a critical FortiMail vulnerability, tracked as CVE-2026-104286, that is being actively exploited in zero-day attacks to execute unauthorized code or commands on vulnerable devices. [...]",
           "source": "BleepingComputer",
           "published": "2026-10-02T07:42:49+09:00",
           "highlight": true,
@@ -269,7 +243,6 @@
         {
           "title": "Police Arrest 16-Year-Old Suspected of Running KillSec, Seize Ransomware Leak Site and Servers",
           "link": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-          "summary": "Police in Spain have arrested a 16-year-old whom investigators suspect of running the KillSec ransomware group. KillSec is accused of stealing data from organizations and threatening to publish it on its leak site unless…",
           "source": "The Hacker News",
           "published": "2026-10-02T01:55:57+09:00",
           "highlight": true,
@@ -278,7 +251,6 @@
         {
           "title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
           "link": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-          "summary": "This week, the useful words are boring ones: inspect, cache, compile, store, trust. Each sounds harmless. Each can become an attack path when a system does a little more than people expect. A model check can run code. A…",
           "source": "The Hacker News",
           "published": "2026-10-02T01:45:38+09:00",
           "highlight": true,
@@ -287,7 +259,6 @@
         {
           "title": "Police dismantle KillSec ransomware gang allegedly led by 16-year-old",
           "link": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
-          "summary": "An international law enforcement operation dubbed \"Operation KillSwitch\" seized the KillSec ransomware gang's data leak site and servers, led to three arrests, and identified a 16-year-old as the group's alleged administ…",
           "source": "BleepingComputer",
           "published": "2026-10-01T23:25:14+09:00",
           "highlight": true,
@@ -296,7 +267,6 @@
         {
           "title": "How Financial Services Companies Can Modernize Their Software Supply Chain",
           "link": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
-          "summary": "Every security leader at a bank, insurer, or asset manager has had a version of this conversation: Security wants to eliminate a class of vulnerabilities. Engineering explains what it would take to upgrade the platform w…",
           "source": "The Hacker News",
           "published": "2026-10-01T20:45:00+09:00",
           "highlight": true,
@@ -305,7 +275,6 @@
         {
           "title": "Hackers stole Pentagon personnel records of over 3 million people",
           "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
-          "summary": "The Pentagon's Defense Manpower Data Center (DMDC) is notifying millions of military service members that hackers stole their data after breaching the Pentagon's human resources management system in October 2025. [...]",
           "source": "BleepingComputer",
           "published": "2026-10-01T18:44:28+09:00",
           "highlight": true,
@@ -314,7 +283,6 @@
         {
           "title": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
           "link": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-          "summary": "Security researchers have published the first public proof-of-concept for CVE-2026-86950, an Apple CoreGraphics flaw Apple says may have been used in attacks against specific targeted individuals. The trigger is a malici…",
           "source": "The Hacker News",
           "published": "2026-10-01T14:54:41+09:00",
           "highlight": true,
@@ -325,7 +293,6 @@
         {
           "title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
           "link": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-          "summary": "Cryptocurrency exchange Bitget on Wednesday confirmed that attackers who stole $387.5 million last week exploited a zero-day flaw in third-party security products, citing ongoing investigation findings from SlowMist. \"Th…",
           "source": "The Hacker News",
           "published": "2026-10-01T14:21:10+09:00",
           "highlight": true,
@@ -334,7 +301,6 @@
         {
           "title": "DIVD says Zammad zero-days enabled AI-driven network breach",
           "link": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
-          "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) says that the breach of its network was possible by exploiting a chain of two zero-day vulnerabilities in the open-source Zammad ticketing system. [...]",
           "source": "BleepingComputer",
           "published": "2026-10-01T04:49:15+09:00",
           "highlight": true,
@@ -343,7 +309,6 @@
         {
           "title": "Autonomous AI agents tried to hack US, Canadian government websites",
           "link": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-          "summary": "Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. [...]",
           "source": "BleepingComputer",
           "published": "2026-10-02T05:52:50+09:00",
           "highlight": false,
@@ -352,7 +317,6 @@
         {
           "title": "Microsoft says threat actors are ahead in the early AI race",
           "link": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
-          "summary": "Microsoft says cyberattackers are currently benefiting from artificial intelligence faster than defenders, allowing threat actors to speed up vulnerability discovery, malware development, and post-compromise activity whi…",
           "source": "BleepingComputer",
           "published": "2026-10-02T04:32:47+09:00",
           "highlight": false,
@@ -361,7 +325,6 @@
         {
           "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
           "link": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-          "summary": "Cybersecurity researchers have shed light on a WordPress compromise in which threat actors deployed multiple persistence mechanisms to ensure that the final payload kept returning without having to infect the site again.…",
           "source": "The Hacker News",
           "published": "2026-10-01T23:37:35+09:00",
           "highlight": false,

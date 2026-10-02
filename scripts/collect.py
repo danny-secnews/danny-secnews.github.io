@@ -251,6 +251,20 @@ def extract_cves(*texts: str) -> list[str]:
     return found[:6]
 
 
+# RSS 요약문(summary)은 주제 필터·주요 표시·CVE 추출 같은 내부 판별에만 쓴다.
+# 기사 본문 발췌라 게시용 JSON·HTML에는 싣지 않는다. 내부 전용 필드를 늘리면 여기에 추가.
+INTERNAL_FIELDS = ("summary",)
+
+
+def strip_internal(data: dict) -> dict:
+    """게시 직전에 내부 판별용 필드를 기사 항목에서 제거한다 (제자리 수정 후 반환)."""
+    for category in data.get("categories", []):
+        for item in category.get("items", []):
+            for field in INTERNAL_FIELDS:
+                item.pop(field, None)
+    return data
+
+
 def collect(config: dict, now: datetime | None = None) -> dict:
     now = now or datetime.now(KST)
     site = config["site"]
@@ -311,7 +325,7 @@ def collect(config: dict, now: datetime | None = None) -> dict:
         print(f"    -> {len(items)}건")
 
     result["total"] = sum(len(c["items"]) for c in result["categories"])
-    return result
+    return strip_internal(result)
 
 
 if __name__ == "__main__":

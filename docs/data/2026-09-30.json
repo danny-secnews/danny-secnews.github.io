@@ -10,7 +10,6 @@
         {
           "title": "공공기관 사칭 해킹메일을 통한 사기 시도 사례 보고",
           "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72202",
-          "summary": "",
           "source": "KISA 보안공지",
           "published": "2026-09-29T23:59:00+09:00",
           "highlight": false,
@@ -19,7 +18,6 @@
         {
           "title": "Citrix 제품 보안 업데이트 권고",
           "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72201",
-          "summary": "",
           "source": "KISA 보안공지",
           "published": "2026-09-29T23:59:00+09:00",
           "highlight": false,
@@ -28,7 +26,6 @@
         {
           "title": "Adobe 제품 보안 업데이트 권고",
           "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72200",
-          "summary": "",
           "source": "KISA 보안공지",
           "published": "2026-09-29T23:59:00+09:00",
           "highlight": false,
@@ -44,7 +41,6 @@
         {
           "title": "정부24 해킹…어린이포털 취약 페이지 통해 공격, 메모리 덤프파일 유출",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208642",
-          "summary": "정부의 대표 온라인 민원서비스인 정부24가 지난 8월 외부 공격을 받아 서버 메모리 정보와 일부 개인정보가 유출된 것으로 나타났다. 사고 발생 이후 한 달 이상 지났지만 정확한 개인정보 유출 규모와 전체 침해 범위는 아직 조사 중이다.29일 국회 행정안전위원회 정춘생 의원이 행정안전부에서 제출받은 자료와 관련 보도를 종합하면, 공격은 지난 8월 17일 오후 5시29분께 정부24 내 ‘어린이포…",
           "source": "데일리시큐",
           "published": "2026-09-30T08:04:14+09:00",
           "highlight": true,
@@ -53,7 +49,6 @@
         {
           "title": "파수AI, 중소기업 맞춤형 '보안 케어 서비스' 출시",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208627",
-          "summary": "주식회사 파수AI가 인력과 예산 제약으로 보안에 어려움을 겪는 기업을 위해 '보안 케어 서비스'를 선보였다.최근 사이버 공격 범위와 빈도가 넓어지고 개인정보보호법 등 규제가 강화되면서 모든 기업이 보안 위협에 노출됐다. 하지만 중소기업은 인력과 예산, 실행 노하우가 부족해 체계를 갖추기 어렵다.파수AI는 이런 기업들이 취약점을 보완하고 상황에 맞춰 실용적으로 보안을 강화할 수 있도록 이번 서…",
           "source": "데일리시큐",
           "published": "2026-09-29T12:21:56+09:00",
           "highlight": true,
@@ -62,7 +57,6 @@
         {
           "title": "파수 AI, 중소기업에 ‘보안 케어’ 서비스... 단계적 보안 체계 구축 지원",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146076",
-          "summary": "파수 AI가 인력과 예산 제약으로 보안 체계 구축에 어려움을 겪는 중소기업을 위해 ‘보안 케어 서비스’를 출시했다고 29일 밝혔다.AI 발전으로 사이버 공격의 범위와 빈도가 급증하면서 기업 규모와 관계없이 보안 위협 노출이 심화하고 있다. 개인정보보호법 등 규제 강화가 맞물리며 보안 사고는 경제적 손실을 넘어 경영진의 법적 책임으로 이어지는 경영 리스크로 작용한다. 보안 케어 서비스는 파수…",
           "source": "보안뉴스",
           "published": "2026-09-29T11:31:10+09:00",
           "highlight": true,
@@ -71,7 +65,6 @@
         {
           "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제45화 '개인정보보호팀은 왜 따로 노나'",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208640",
-          "summary": "데일리시큐는 7월부터 장삼봉 작가(필명)의 정보보안 소설《로그아웃되지 않는 밤》을 매주 4편씩 연재한다. 화려한 디지털 서비스 뒤에서 보이지 않는 위협과 맞서는 보안 담당자들의 현실과 고뇌, 성장을 생생하게 담았다. 수많은 오탐 속에 숨은 단 하나의 진짜 공격을 추적하는 이들의 잠들지 못하는 밤이 시작된다. -도장 찍는 팀-신작 이벤트 회의에 정책팀이 불려 간 건 사업부의 요청 때문이었다.…",
           "source": "데일리시큐",
           "published": "2026-09-30T07:39:24+09:00",
           "highlight": false,
@@ -80,7 +73,6 @@
         {
           "title": "개인정보위원장 “연내 에이전틱 AI 가이드라인 발간”... ‘권한관리’ 강조",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146084",
-          "summary": "“AI가 에이전트로 진화함에 따라 프라이버시의 핵심도 ‘얼마나 많은 정보와 권한을 위임할 것인가’로 변화하고 있습니다. 프라이버시를 설계 단계부터 내재화 하도록한 에이전틱 AI 가이드라인을 연내 발간하겠습니다.”송경희 개인정보보호위원회 위원장은 29일 서울 양재동 엘타워에서 개인정보위가 개최한 ‘글로벌 AI 프라이버시 포럼 2026’에서 이같이 밝혔다.“얼마나 많은 권한을 위임할 것인가가 핵…",
           "source": "보안뉴스 공공·정책",
           "published": "2026-09-29T14:53:11+09:00",
           "highlight": false,
@@ -96,7 +88,6 @@
         {
           "title": "“랜섬웨어 피해 막는다” 에브리존-명정보기술, 화이트디펜더 사업 ‘맞손’",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146082",
-          "summary": "에브리존과 명정보기술이 안티랜섬웨어 솔루션 ‘화이트디펜더’(WhiteDefender)를 중심으로 랜섬웨어 대응과 사업 협력 강화를 위한 전략적 업무협약을 체결했다고 29일 밝혔다.이번 협약은 데이터 복구 현장에서 확인한 랜섬웨어 피해를 줄이고 고객의 중요 데이터를 보호하자는 양사 공감대에서 추진됐다. 데이터 복구 서비스를 주력으로 하는 명정보기술은 파일이 암호화돼 업무가 중단되거나 자료를 사…",
           "source": "보안뉴스",
           "published": "2026-09-29T14:04:50+09:00",
           "highlight": true,
@@ -105,7 +96,6 @@
         {
           "title": "애플, 아이폰·맥 긴급 보안 업데이트…표적 공격에 악용된 취약점 패치",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208631",
-          "summary": "애플이 아이폰과 아이패드, 맥 운영체제에서 악성 파일을 이용해 임의 코드를 실행할 수 있는 보안 취약점을 수정했다. 애플은 해당 취약점이 특정 개인을 겨냥한 정교한 사이버 공격에 이미 악용됐을 가능성이 있다고 밝혔다.취약점은 CVE-2026-86950으로, 애플 운영체제에서 그래픽 콘텐츠 처리를 담당하는 코어그래픽스(CoreGraphics) 구성요소에서 발생하는 범위 밖 쓰기(out-of-b…",
           "source": "데일리시큐",
           "published": "2026-09-29T14:04:47+09:00",
           "highlight": true,
@@ -116,7 +106,6 @@
         {
           "title": "에브리존-명정보기술, 랜섬웨어 대응 협력 위한 업무협약 체결",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208629",
-          "summary": "에브리존과 명정보기술이 랜섬웨어 대응 강화를 위해 손을 잡았다. 양사는 안티랜섬웨어 솔루션 '화이트디펜더'를 중심으로 한 전략적 업무협약을 체결하고 데이터 보호 협력에 나선다.이번 협약은 데이터 복구 현장에서 확인한 랜섬웨어 피해를 줄이고 고객의 중요 데이터를 지키기 위해 추진됐다. 데이터 복구 전문기업인 명정보기술은 파일 암호화로 업무가 중단되는 피해 사례를 접하며 신속한 탐지와 차단 기술…",
           "source": "데일리시큐",
           "published": "2026-09-29T12:47:49+09:00",
           "highlight": true,
@@ -125,7 +114,6 @@
         {
           "title": "인스피언, 자동차 공급망 특화 EDI 솔루션 'Auto-X' 출시",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208628",
-          "summary": "인스피언이 자동차 산업의 완성차 업체(OEM) 및 부품사 공급망 업무에 맞춘 기업 간 데이터 연계(EDI) 솔루션 'Auto-X'를 공식 출시했다.Auto-X는 자동차 부품사가 신규 OEM 거래를 시작하거나 해외 거래처를 확대할 때 필요한 EDI 연동 업무를 웹 환경에서 처리할 수 있도록 개발됐다. 완성차 업체와 부품사, 하위 협력사 간 생산계획과 주문, 출하 정보가 단계적으로 연결되는 자동…",
           "source": "데일리시큐",
           "published": "2026-09-29T12:41:45+09:00",
           "highlight": true,
@@ -134,7 +122,6 @@
         {
           "title": "에스투더블유, 온톨로지 기반 ‘SAIP’ 고도화…기업 데이터와 전문가 지식 연결",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208644",
-          "summary": "기업들이 생성형 AI를 실제 업무에 적용하는 과정에서 분산된 데이터와 현업 전문가의 경험을 어떻게 연결할 것인지가 주요 과제로 떠오르고 있다. 에스투더블유(S2W, 대표 서상덕)가 이를 해결하기 위해 온톨로지와 지식그래프를 기반으로 기업 데이터를 구조화하고 의사결정을 지원하는 플랫폼 ‘SAIP’를 고도화했다.S2W는 온톨로지 기반 의사결정 운영체제(OS) SAIP의 주요 기능을 고도화하고 제…",
           "source": "데일리시큐",
           "published": "2026-09-30T08:21:54+09:00",
           "highlight": false,
@@ -143,7 +130,6 @@
         {
           "title": "티오리 ‘진트’, 美 DARPA 연구 투입…AI로 국방 통신 앱 취약점 찾는다",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208643",
-          "summary": "오펜시브 사이버보안 기업 티오리(Theori, 대표 박세준)의 AI 기반 자율형 모의해킹 플랫폼 ‘진트(Xint)’가 미국 국방고등연구계획국(DARPA)의 애플리케이션 보안 연구에 투입된다.티오리는 진트를 통해 DARPA의 ‘자율 AI 애플리케이션 보안’ 연구를 수행한다고 밝혔다. 연구에서는 미 국방부에서 사용하는 자체 개발 및 오픈소스 메신저 애플리케이션의 취약점을 분석하고, 바이너리 분석…",
           "source": "데일리시큐",
           "published": "2026-09-30T08:18:12+09:00",
           "highlight": false,
@@ -152,7 +138,6 @@
         {
           "title": "지니언스, ‘대한민국 일자리 으뜸기업’ 선정…AI 자동화 기반 주 4.5일제 도입",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208641",
-          "summary": "사이버보안 기업 지니언스(대표 이동범)가 고용노동부가 선정하는 ‘2026 대한민국 일자리 으뜸기업’에 이름을 올렸다. 이와 함께 AI와 업무 자동화를 기반으로 주 4.5일제 시범 운영에도 들어갔다.고용노동부는 일자리 창출과 일·생활 균형 등 일자리 질 개선에 노력한 기업을 대상으로 매년 ‘대한민국 일자리 으뜸기업’을 선정하고 있다. 올해는 100개 기업이 선정됐다.지니언스는 청년 및 전문인력…",
           "source": "데일리시큐",
           "published": "2026-09-30T07:50:33+09:00",
           "highlight": false,
@@ -161,7 +146,6 @@
         {
           "title": "티피링크코리아, 메타버스코리아와 조달 총판 계약... 공공 네트워크 시장 공략",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146091",
-          "summary": "티피링크코리아(지사장 레븐 장)는 메타버스코리아와 조달청 다수공급자계약 사업 협력을 위한 조달총판 계약을 체결하고, 서울 여의도 티피링크코리아 사옥에서 계약 체결식을 진행했다고 29일 밝혔다.이번 계약에 따라 티피링크코리아는 네트워크 스위치와 무선 액세스 포인트(AP) 등 제품 공급을 담당하며, 메타버스코리아는 조달 사업의 유통·판매 파트너로 참여한다. 양사는 제품 공급과 조달 사업 운영 과…",
           "source": "보안뉴스",
           "published": "2026-09-29T16:46:42+09:00",
           "highlight": false,
@@ -170,7 +154,6 @@
         {
           "title": "쿠도커뮤니케이션, 부천시서 AI 에이전트 기반 물리보안 통합관제 구축 나선다",
           "link": "https://www.boannews.com/news/articleView.html?idxno=146090",
-          "summary": "쿠도커뮤니케이션(대표 김용식)이 자체 AI CITY 플랫폼 ‘CUVIA’​를 기반으로 AI 에이전트와 물리보안 통합관제 기술을 결합한 국내 최초 AI 에이전트 기반 AI CITY 선도 모델 구축에 본격 나선다.쿠도커뮤니케이션은 29일 경기도 부천시청에서 열린 ‘AI 기반 물리보안 통합관제 개발 협력 업무협약식’에 참석해 관련 기관들과 업무협약을 체결했다​고 밝혔다.이번 협약은 과학기술정보통신…",
           "source": "보안뉴스",
           "published": "2026-09-29T16:44:31+09:00",
           "highlight": false,
@@ -179,7 +162,6 @@
         {
           "title": "AWS, NATO 전 회원국서 'NATO RESTRICTED' 정보 처리 승인",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208639",
-          "summary": "아마존웹서비스(AWS)가 북대서양조약기구(NATO) 전 회원국에서 'NATO RESTRICTED(이하 NR)' 등급 정보를 처리할 수 있는 클라우드 서비스를 승인받았다. 이번 승인으로 NATO와 방산 파트너, 모든 회원국은 NATO 회원국 내에 위치한 AWS 리전에서 승인된 서비스를 활용해 NR 워크로드를 처리할 수 있게 됐다. 회원국은 사전 평가를 마친 공통 보안 기준을 활용함으로써 보안…",
           "source": "데일리시큐",
           "published": "2026-09-29T15:36:04+09:00",
           "highlight": false,
@@ -188,7 +170,6 @@
         {
           "title": "KISA, 부천시 등 8개 기관과 손잡고 AI 에이전트 기반 실종자 탐색 체계 구축",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208638",
-          "summary": "한국인터넷진흥원(KISA)은 부천시청에서 AI 에이전트 기반 실종자 탐색 체계 구축을 위한 다자간 업무협약을 체결했다고 29일 밝혔다. 이번 협약에는 KISA를 비롯해 부천시, 부천도시공사, 관내 경찰서 3곳, 중앙대학교, 쿠도커뮤니케이션, 한국과학기술원 등 8개 기관이 참여했다.KISA는 지난 3월 과학기술정보통신부와 함께 AI 기반 차세대 보안제품 상용화 지원사업을 공모하고, 선정된 쿠도…",
           "source": "데일리시큐",
           "published": "2026-09-29T15:33:11+09:00",
           "highlight": false,
@@ -197,7 +178,6 @@
         {
           "title": "쿠도커뮤니케이션, 자체 플랫폼 CUVIA 기반 AI 물리보안 통합관제 구축 나선다",
           "link": "https://www.dailysecu.com/news/articleView.html?idxno=208637",
-          "summary": "쿠도커뮤니케이션이 자체 AI CITY 플랫폼 CUVIA를 기반으로 AI 에이전트와 물리보안 통합관제 기술을 결합하는 사업에 본격 나선다.쿠도커뮤니케이션은 지난 29일 부천시청에서 열린 AI 기반 물리보안 통합관제 개발 협력 업무협약식에 참석해 관련 기관들과 협약을 체결했다고 밝혔다.이번 협약은 과학기술정보통신부 AXsprint 과제인 AI 기반 물리보안 통합관제 시스템 개발의 원활한 추진과…",
           "source": "데일리시큐",
           "published": "2026-09-29T15:26:39+09:00",
           "highlight": false,
@@ -213,7 +193,6 @@
         {
           "title": "Hackers exploit Citrix NetScaler zero-day to deploy web shells",
           "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/",
-          "summary": "Cybersecurity firms say attackers exploited the Citrix NetScaler CVE-2026-88772 zero-day to deploy custom web shells and tunneling malware, gain root access, steal credentials, and spread into internal networks. [...]",
           "source": "BleepingComputer",
           "published": "2026-09-30T03:37:12+09:00",
           "highlight": true,
@@ -224,7 +203,6 @@
         {
           "title": "Automated AI agent used to breach cybersecurity nonprofit DIVD",
           "link": "https://www.bleepingcomputer.com/news/security/automated-ai-agent-used-to-breach-cybersecurity-nonprofit-divd/",
-          "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) suffered an AI-driven cyberattack that the organization described as \"loud and very, very messy.\" [...]",
           "source": "BleepingComputer",
           "published": "2026-09-30T00:39:19+09:00",
           "highlight": true,
@@ -233,7 +211,6 @@
         {
           "title": "Apple patches CoreGraphics zero-day flaw exploited in attacks",
           "link": "https://www.bleepingcomputer.com/news/security/apple-patches-coregraphics-zero-day-flaw-exploited-in-attacks/",
-          "summary": "Apple released security updates to fix a zero-day vulnerability exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
           "source": "BleepingComputer",
           "published": "2026-09-29T16:33:12+09:00",
           "highlight": true,
@@ -242,7 +219,6 @@
         {
           "title": "Japan's Keio confirms ransomware attack disrupted business systems",
           "link": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/",
-          "summary": "Keio Corporation (Keio), a major private railway operator in Japan, said its network was hit by a ransomware attack over the weekend, disrupting some of its business systems. [...]",
           "source": "BleepingComputer",
           "published": "2026-09-29T05:56:47+09:00",
           "highlight": true,
@@ -251,7 +227,6 @@
         {
           "title": "Times Car confirms data breach affecting 6.6 million user accounts",
           "link": "https://www.bleepingcomputer.com/news/security/times-car-confirms-data-breach-affecting-66-million-user-accounts/",
-          "summary": "Japanese car-sharing service Times Car has confirmed that approximately 6.6 million user accounts were compromised in a cyberattack disclosed late last week. [...]",
           "source": "BleepingComputer",
           "published": "2026-09-29T05:31:16+09:00",
           "highlight": true,
@@ -260,7 +235,6 @@
         {
           "title": "Apple Patches CoreGraphics Flaw Possibly Exploited in Targeted Attacks",
           "link": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html",
-          "summary": "Apple has released security updates to address a vulnerability in older versions of iOS, iPadOS, and macOS that it said may have been exploited in targeted attacks. The vulnerability, tracked as CVE-2026-86950, refers to…",
           "source": "The Hacker News",
           "published": "2026-09-29T04:18:01+09:00",
           "highlight": true,
@@ -271,7 +245,6 @@
         {
           "title": "Hackers Use NeedyMantis to Maintain Long-Term Access in Breached Networks",
           "link": "https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html",
-          "summary": "Hackers have used a malware family called NeedyMantis to maintain long-term access to networks they had already breached, Microsoft said in a technical analysis. The malware has been seen in a small number of targeted in…",
           "source": "The Hacker News",
           "published": "2026-09-29T03:35:42+09:00",
           "highlight": true,
@@ -280,7 +253,6 @@
         {
           "title": "Signal adds encypted local backup support to iOS, desktop apps",
           "link": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps/",
-          "summary": "Signal, the secure messaging app, released version 8.30, completing the rollout of its secure backups feature across all supported operating systems (Android, iOS, Linux, macOS, and Windows). [...]",
           "source": "BleepingComputer",
           "published": "2026-09-30T06:30:08+09:00",
           "highlight": false,
@@ -289,7 +261,6 @@
         {
           "title": "Custom ChatGPTs push ClickFix attacks to deploy RAT malware",
           "link": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
-          "summary": "Custom variants of OpenAI's ChatGPT promoted in sponsored Google results are directing unsuspecting users to malicious sites that use ClickFix attacks to deliver malware. [...]",
           "source": "BleepingComputer",
           "published": "2026-09-30T05:59:39+09:00",
           "highlight": false,
@@ -298,7 +269,6 @@
         {
           "title": "FBI tells ShinyHunters members to turn themselves in after recent arrest",
           "link": "https://www.bleepingcomputer.com/news/security/fbi-tells-shinyhunters-members-to-turn-themselves-in-after-recent-arrest/",
-          "summary": "The FBI is warning members of the ShinyHunters extortion group to turn themselves in after Dutch police arrested a man the bureau described as one of the group's alleged leaders. [...]",
           "source": "BleepingComputer",
           "published": "2026-09-30T05:09:55+09:00",
           "highlight": false,
@@ -307,7 +277,6 @@
         {
           "title": "Former US Air Force members sent to prison over BEC attacks",
           "link": "https://www.bleepingcomputer.com/news/security/former-us-air-force-members-sent-to-prison-over-bec-attacks/",
-          "summary": "Two former members of the United States Air Force were sentenced to a combined 189 months in federal prison for their roles in a multi-year series of business email compromise (BEC) scams and phishing campaigns. [...]",
           "source": "BleepingComputer",
           "published": "2026-09-30T03:09:39+09:00",
           "highlight": false,
@@ -316,7 +285,6 @@
         {
           "title": "French Tax Data Theft Using Stolen Staff Passwords Went Undetected for Seven Weeks",
           "link": "https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html",
-          "summary": "An attacker used stolen passwords of staff at France's tax administration to take tax data on hundreds of thousands of taxpayers and businesses in June and July. Neither the tax administration nor France's national cyber…",
           "source": "The Hacker News",
           "published": "2026-09-30T02:47:01+09:00",
           "highlight": false,
