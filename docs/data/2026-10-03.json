@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-10-03T08:48:38.210373+09:00",
+  "date": "2026-10-03",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "개인정보 유출·침해사고, 더 빠르게 더 공정하게 더 투명하게 조사 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12555",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-02T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[은행이 뚫린다] BNK부산은행에선 외주 직원 개인정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146183",
+          "source": "보안뉴스",
+          "published": "2026-10-02T18:14:41+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국-영국 개인정보 이전 장벽 낮아지나…동등성 인정 절차 본격화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208717",
+          "source": "데일리시큐",
+          "published": "2026-10-02T16:03:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, 유출·침해사고 조사 속도 높인다…중요사건 12개월 내 처리 원칙",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208715",
+          "source": "데일리시큐",
+          "published": "2026-10-02T15:38:46+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "정보통신망법·시행령 시행, 10월부터 기업 보안책임 확 바뀐다…CISO 임원화·직권조사·3% 과징금",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208710",
+          "source": "데일리시큐",
+          "published": "2026-10-02T15:19:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "제5차 인공지능책임관(CAIO) 협의회 개최 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12556",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-02T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, 부산서 AI 시대 개인정보 제도 혁신 논의",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208713",
+          "source": "데일리시큐",
+          "published": "2026-10-02T15:26:02+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "앱 없어도 충전기 꽂으면 바로 충전... 아우토크립트, 전기차 ‘차량 인증’ 충전 국가 인증망 구축",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146171",
+          "source": "보안뉴스",
+          "published": "2026-10-02T11:09:57+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[은행이 뚫린다] 이틀 새 세번째... 하나은행 89명 고객 정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146182",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-02T17:55:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"랜선 뽑고 금고에 넣었는데 1000억 증발?\"… 하드웨어 월렛 뚫은 '펌웨어 백도어'의 실체",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146181",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-02T17:20:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이슈 진단] ARTEX로 금융권 광범위 공격, 무신사·강남언니·신한은행까지…AI가 파고든 ‘API 권한검증’ 허점",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208718",
+          "source": "데일리시큐",
+          "published": "2026-10-02T16:53:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[은행이 뚫린다] “AI 혁신 전 기본기부터”... 초보적 공격에 신한은행 고객 정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146174",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-02T16:14:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[박나룡 보안칼럼] 의료기관 정보보호는 왜 어려울까?",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208708",
+          "source": "데일리시큐",
+          "published": "2026-10-02T15:06:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[은행이 뚫린다] 국민은행도 고객 정보 100여건 유출... 직원용 모바일 업무 지원 시스템에 외부 접근",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146175",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-02T12:49:47+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[은행이 뚫린다] AI 해킹 가시화... 오픈소스 ‘보안도구’ 악용 정황 “판도라 열렸다”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146184",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-02T19:21:02+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "중국 연계 해킹조직 TA419, 앤트로픽 직원 사칭해 AI 정책전문가 노려",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146168",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-02T18:23:27+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "한국전력, 변전소 ‘AI 감시 시스템’ 국산 NPU로 전환",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146180",
+          "source": "보안뉴스",
+          "published": "2026-10-02T16:23:54+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "로민, 클라우드 서비스 보안인증(CSAP) SaaS 표준등급 획득",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208716",
+          "source": "데일리시큐",
+          "published": "2026-10-02T15:41:52+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "퀀텀에이아이, GEM과 업무협약 체결...동남아 AI 시장 공략",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208714",
+          "source": "데일리시큐",
+          "published": "2026-10-02T15:36:42+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "구글, '구글 AI 프로' 캠페인 10월 31일까지 진행",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208712",
+          "source": "데일리시큐",
+          "published": "2026-10-02T15:31:17+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Frontline Education breach exposes school district employee data",
+          "link": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
+          "source": "BleepingComputer",
+          "published": "2026-10-03T04:01:40+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Warlock ransomware breach SharePoint in water, telecom operator attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-03T03:33:01+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
+          "link": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+          "source": "The Hacker News",
+          "published": "2026-10-02T14:49:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-02T07:42:49+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-104286"
+          ]
+        },
+        {
+          "title": "GitLab Patches Critical 9.9 AI Gateway Flaw Allowing Command Execution on Self-Hosted Servers",
+          "link": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+          "source": "The Hacker News",
+          "published": "2026-10-03T02:33:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign",
+          "link": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+          "source": "The Hacker News",
+          "published": "2026-10-03T02:33:16+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+          "link": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+          "source": "The Hacker News",
+          "published": "2026-10-03T02:02:12+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "GitLab warns of critical RCE vulnerability in AI Gateway service",
+          "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/",
+          "source": "BleepingComputer",
+          "published": "2026-10-03T01:20:05+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "US sanctions Tren de Aragua gang members in ATM hacks crackdown",
+          "link": "https://www.bleepingcomputer.com/news/security/us-sanctions-tren-de-aragua-members-in-atm-jackpotting-crackdown/",
+          "source": "BleepingComputer",
+          "published": "2026-10-03T00:20:53+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
+          "link": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/",
+          "source": "BleepingComputer",
+          "published": "2026-10-02T23:00:10+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Dell asks admins to patch max severity CSM flaws as soon as possible",
+          "link": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
+          "source": "BleepingComputer",
+          "published": "2026-10-02T21:37:40+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
+          "link": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
+          "source": "The Hacker News",
+          "published": "2026-10-02T21:23:15+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 32
+}
