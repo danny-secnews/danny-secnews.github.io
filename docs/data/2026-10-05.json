@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-10-05T08:49:46.049091+09:00",
+  "date": "2026-10-05",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "돈 바닥날 때까지 쏟아낸 ATM... 미 재무부, 잭팟팅 악성코드 설계자 ‘프로메테우스’ 제재",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146167",
+          "source": "보안뉴스",
+          "published": "2026-10-05T08:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이슈 분석] 금융권 공격서 포착된 ‘ARTEX AI’… 분석 결과 14개 국가·지역서 ARTEX 관련 고유 IP 359개 발견돼",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208724",
+          "source": "데일리시큐",
+          "published": "2026-10-04T13:37:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국전력 직원 2만4000명 개인정보 노출 사고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146191",
+          "source": "보안뉴스",
+          "published": "2026-10-04T17:38:32+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[은행이 뚫린다] 과기정통부-KISA도 긴급 대응 체계... 피해 확산 방지 총력",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146192",
+          "source": "보안뉴스",
+          "published": "2026-10-04T21:22:46+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[은행이 뚫린다] 금융위원장, “AI 활용 해킹 공격 배제 못해... AI 보안체계 전환 서둘러야”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146190",
+          "source": "보안뉴스",
+          "published": "2026-10-04T17:24:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[긴급] 금융당국, 잇단 금융권 침해사고에 긴급회의…“대응 소홀로 재발하면 엄중 책임”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208726",
+          "source": "데일리시큐",
+          "published": "2026-10-04T17:17:01+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[은행이 뚫린다] 금융권 연쇄 침해에... 과기정통부 내부 점검 회의, KISA는 기업에 보안 강화 권고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146189",
+          "source": "보안뉴스",
+          "published": "2026-10-04T13:39:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "일본 이케가미 사이버공격…회사 보유 추정 정보 다크웹 공개 확인",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208723",
+          "source": "데일리시큐",
+          "published": "2026-10-04T12:01:01+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "미국 빅스버그시 랜섬웨어 공격…전산망 중단·공공요금 결제 장애",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208722",
+          "source": "데일리시큐",
+          "published": "2026-10-04T11:57:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "중국 연계 워록, 셰어포인트 뚫고 수도·통신 핵심인프라에 랜섬웨어 공격",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208721",
+          "source": "데일리시큐",
+          "published": "2026-10-04T11:53:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "자마드 제로데이 2종 실제 공격 악용…RCE에서 루트 권한까지 장악",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208719",
+          "source": "데일리시큐",
+          "published": "2026-10-04T11:45:25+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-102489",
+            "CVE-2026-102490"
+          ]
+        },
+        {
+          "title": "랜섬웨어 ‘킬섹’ 해체, 16세 청소년 운영자로 지목",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146165",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-04T10:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "중국계 랜섬웨어 ‘워록’, 스페인어권 수도·통신 공략",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146164",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-04T08:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[해킹 뉴노멀-7] “지체할 시간없다, 협업하자”... 박세준 티오리 대표",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146126",
+          "source": "보안뉴스",
+          "published": "2026-10-05T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-05T06:58:01+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-88779"
+          ]
+        },
+        {
+          "title": "Anthropic asks Claude users to share voice data for AI model training",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+          "source": "BleepingComputer",
+          "published": "2026-10-04T19:53:21+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
+          "link": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+          "source": "The Hacker News",
+          "published": "2026-10-04T16:22:05+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+          "link": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+          "source": "The Hacker News",
+          "published": "2026-10-04T16:20:32+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Google Gemini could soon get full access to your Mac’s files, apps and the web",
+          "link": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+          "source": "BleepingComputer",
+          "published": "2026-10-04T08:12:34+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "ShinyHunters hacker reportedly detained in Jordan, aiding FBI",
+          "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
+          "source": "BleepingComputer",
+          "published": "2026-10-04T04:09:38+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 20
+}
