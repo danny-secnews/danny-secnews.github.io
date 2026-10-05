@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-10-06T08:48:19.182740+09:00",
+  "date": "2026-10-06",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "서울사이버대, 학생과 교직원은 물론 졸업생까지 개인정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146196",
+          "source": "보안뉴스",
+          "published": "2026-10-05T23:11:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 다크웹에 “서울사이버대학교 학생·교직원 개인정보 판매\" 게시글 올라와",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208727",
+          "source": "데일리시큐",
+          "published": "2026-10-05T10:53:18+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "2021년 이후 주민등록번호 505만건, CI 278만건 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146193",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-05T09:11:40+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "돈 바닥날 때까지 쏟아낸 ATM... 미 재무부, 잭팟팅 악성코드 설계자 ‘프로메테우스’ 제재",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146167",
+          "source": "보안뉴스",
+          "published": "2026-10-05T08:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[단독] 법무법인 현 이메일 DB 유출, 다크웹 게시글 올라와…공격자 “247GB 유출” 주장",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208733",
+          "source": "데일리시큐",
+          "published": "2026-10-05T15:31:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제47화 '협력사라는 뒷문'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208732",
+          "source": "데일리시큐",
+          "published": "2026-10-05T15:14:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[배종찬의 보안 빅데이터] AI 해킹으로 무너진 금융권 보안",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146195",
+          "source": "보안뉴스",
+          "published": "2026-10-05T15:13:17+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[이혁중 CISO 칼럼] IoT/OT 보안4-센서가 사람을 기록하는 시대, OT 보안은 누가 책임질 것인가",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208731",
+          "source": "데일리시큐",
+          "published": "2026-10-05T15:04:02+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[김승주 교수 칼럼] AI 에이전트 시대의 사이버보안, 새로운 답보다 밀린 숙제부터",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208728",
+          "source": "데일리시큐",
+          "published": "2026-10-05T13:58:47+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[해킹 뉴노멀-7] “지체할 시간없다, 협업하자”... 박세준 티오리 대표",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146126",
+          "source": "보안뉴스",
+          "published": "2026-10-05T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Rejetto HFS servers now actively scanned for critical RCE flaw",
+          "link": "https://www.bleepingcomputer.com/news/security/rejetto-hfs-servers-now-actively-scanned-for-critical-rce-flaw/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T05:20:05+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-61500"
+          ]
+        },
+        {
+          "title": "Denmark population registry data breach affects 8.8 million people",
+          "link": "https://www.bleepingcomputer.com/news/security/denmark-population-registry-data-breach-affects-88-million-people/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T00:21:10+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "South Korea probes bank breaches amid suspected AI-powered attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-05T23:22:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests",
+          "link": "https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html",
+          "source": "The Hacker News",
+          "published": "2026-10-05T23:20:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+          "link": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
+          "source": "The Hacker News",
+          "published": "2026-10-05T17:09:23+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-61500"
+          ]
+        },
+        {
+          "title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
+          "link": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
+          "source": "The Hacker News",
+          "published": "2026-10-05T15:40:19+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-88779"
+          ]
+        },
+        {
+          "title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-05T06:58:01+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-88779"
+          ]
+        },
+        {
+          "title": "OpenAI is adding invisible watermarks to ChatGPT and Codex text in the EU",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T07:46:33+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "IQVIA fined $7.8 million for failing to properly anonymize health data",
+          "link": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T02:19:53+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft Exchange Flaw Lets Authenticated Attackers Read Other Users' Mailboxes",
+          "link": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
+          "source": "The Hacker News",
+          "published": "2026-10-06T01:21:52+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "New Dell System Update flaw lets hackers gain root privileges",
+          "link": "https://www.bleepingcomputer.com/news/security/new-dell-system-update-flaw-lets-hackers-gain-root-privileges/",
+          "source": "BleepingComputer",
+          "published": "2026-10-05T23:53:06+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "tenfold CE: Our free Identity Governance tool just got 2 new features",
+          "link": "https://www.bleepingcomputer.com/news/security/tenfold-ce-our-free-identity-governance-tool-just-got-2-new-features/",
+          "source": "BleepingComputer",
+          "published": "2026-10-05T22:33:42+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 22
+}
