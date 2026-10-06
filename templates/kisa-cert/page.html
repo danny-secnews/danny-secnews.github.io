@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="portal-date" content="$published_date"><title>$title</title>
+<!-- tools/kisa/render.py가 $source_path 데이터로 만든 파일입니다. 이 파일을 직접 고치지 말고 데이터를 고친 뒤 다시 렌더링하세요. -->
+<style>
+@media only screen and (max-width:480px){
+  td.sec{padding-left:13px!important;padding-right:13px!important;}
+  td.hd{padding-left:15px!important;padding-right:15px!important;}
+  table.grid td,table.grid th{word-break:break-word!important;padding:4px!important;font-size:11.7px!important;}
+  table.kv td{padding:4px!important;}
+  table.kv td.lbl{width:58px!important;font-size:11.5px!important;}
+}
+@media only screen and (max-width:390px){
+  td.sec{padding-left:6px!important;padding-right:6px!important;}
+  td.hd{padding-left:10px!important;padding-right:10px!important;}
+  table.grid td,table.grid th{font-size:11px!important;padding:3px!important;}
+  table.kv td.lbl{width:56px!important;word-break:break-word!important;}
+  table.kv td{font-size:12.3px!important;word-break:break-word!important;}
+  td.sec p,td.sec div,td.sec h2,td.sec h3{word-break:break-word!important;}
+}
+@media only screen and (max-width:345px){
+  div.gw{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  div.gw table.grid{min-width:300px;}
+}
+</style>$nav_tag
+</head>
+<body style="margin:0;padding:0;background:#F5F5F4;font-family:'Apple SD Gothic Neo','Malgun Gothic','맑은 고딕',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">$preheader</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F5F5F4;"><tr><td align="center" style="padding:18px 2px;">
+<table role="presentation" width="760" cellpadding="0" cellspacing="0" style="max-width:760px;width:100%;background:#FFFFFF;border:1px solid #D1D5DB;">
+
+<tr><td class="hd" style="background:#1E3A5F;color:#FFFFFF;padding:22px 26px;">
+  <div style="font-size:12px;letter-spacing:.5px;opacity:.86;">정보보호 참고자료 · 주간 배포용</div>
+  <div style="font-size:21px;font-weight:700;margin-top:7px;">KISA 보호나라 보안공지 주간 리포트</div>
+  <div style="font-size:13px;margin-top:8px;opacity:.92;line-height:1.65;">대상 기간: $period  <span style="color:#9CA3AF;">|</span>  발행: $published_label</div>
+</td></tr>
+
+<tr><td class="sec" style="padding:22px 26px 4px;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">1. 한눈에 보기</h2>
+$overview
+</td></tr>
+
+<tr><td class="sec" style="padding:14px 26px 4px;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">2. 우선순위</h2>
+  <div class="gw"><table role="presentation" class="grid" width="100%" cellpadding="7" cellspacing="0" style="border-collapse:collapse;font-size:12.5px;color:#1F2937;">
+    <tr style="background:#F3F4F6;">
+      <th style="border:1px solid #D1D5DB;text-align:left;">대상</th>
+      <th style="border:1px solid #D1D5DB;text-align:left;">핵심 취약점 · 영향 대상</th>
+      <th style="border:1px solid #D1D5DB;text-align:center;">위험도 · 악용</th>
+      <th style="border:1px solid #D1D5DB;text-align:center;">기한</th>
+    </tr>
+$priority_rows
+  </table></div>
+  <p style="margin:10px 0 0;font-size:12px;line-height:1.7;color:#6B7280;word-break:keep-all;">
+    ※ 권고 기한은 우선순위 예시입니다. 실제 일정은 자산 중요도·인터넷 노출 여부·변경관리 정책에 따라 조정하십시오.
+    악용 여부는 벤더 공지와 CISA KEV 등재를 근거로 하며 각 항목의 출처를 상세에 적었습니다.
+    KEV 기한은 미국 연방기관 기준으로, 사내 기한이 아니라 우선순위 참고값입니다.
+    악용 상태는 <b>악용 확인 / 보고 없음 / [미확인]</b> 세 가지만 사용합니다.
+  </p>
+</td></tr>
+
+<tr><td class="sec" style="padding:16px 26px 4px;">
+  <h2 style="margin:0 0 4px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">3. 공지별 조치 방법과 조치 확인 방법</h2>
+</td></tr>
+$items$tracking
+<tr><td class="sec" style="padding:16px 26px 4px;border-top:1px solid #E5E7EB;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">4. 대상별 이번 주 권고 조치</h2>
+  <div class="gw"><table role="presentation" class="grid" width="100%" cellpadding="6" cellspacing="0" style="border-collapse:collapse;font-size:12.8px;color:#1F2937;">
+    <tr style="background:#F3F4F6;"><th style="border:1px solid #D1D5DB;text-align:left;">대상</th><th style="border:1px solid #D1D5DB;text-align:left;">할 일</th><th style="border:1px solid #D1D5DB;text-align:center;">기한</th></tr>
+$audience_rows
+  </table></div>
+</td></tr>
+
+<tr><td class="sec" style="padding:16px 26px 4px;border-top:1px solid #E5E7EB;">
+  <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">5. 집계 기준과 참고 사항</h2>
+
+$notes$unverified
+</td></tr>
+
+<tr><td class="sec" style="padding:16px 26px 20px;background:#F3F4F6;border-top:1px solid #D1D5DB;">
+  <p style="margin:0 0 8px;font-size:12px;line-height:1.75;color:#6B7280;word-break:break-word;">
+    <b>이번 호 출처</b> — $footer_sources
+  </p>
+  <p style="margin:0;font-size:12px;line-height:1.75;color:#6B7280;word-break:keep-all;">
+    본 리포트는 보호나라 공지와 CISA 악용 확인 목록을 기준으로 조치·확인 방법을 보강한 참고자료입니다.
+    실제 적용 전 벤더 공식 문서와 각 조직의 변경관리 절차를 따르십시오.<br>
+    문의: KISA 사이버민원센터 국번없이 118
+  </p>
+</td></tr>
+
+</table>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,132 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "tools/kisa/schema.json",
+ "title": "KISA 보안공지 주간 리포트 호별 데이터",
+ "description": "content/kisa-cert/<week_start>.json 의 형식. tools/kisa/render.py 가 이 데이터를 templates/kisa-cert/page.html 에 넣어 HTML을 만든다. 본문 글자(rich)는 **굵게**, `코드`, [미확인], 줄바꿈(\\n)만 해석하고 나머지는 모두 그대로 보인다. HTML 태그를 쓰지 않는다.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["schema_version", "id", "week_start", "published_date", "generated_at", "provenance",
+              "preheader", "overview", "priority", "items", "audience", "notes", "footer_sources"],
+ "properties": {
+  "schema_version": {"const": 1},
+  "id": {"type": "string", "pattern": "^kisa-weekly-\\d{4}-\\d{2}-\\d{2}$", "description": "kisa-weekly-<week_start>. 코드가 정한다."},
+  "week_start": {"$ref": "#/$defs/date", "description": "대상 주간 시작일(월요일, KST). 파일 이름에 쓴다. 코드가 정한다."},
+  "published_date": {"$ref": "#/$defs/date", "description": "이 리포트의 발행일. 화면 발행일·portal-date·목록 정렬에 쓴다. 처음 생성할 때 코드가 정하고 다시 계산하지 않는다(이전된 호는 게시본 머리말에서 추출)."},
+  "generated_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\+09:00$", "description": "자동화(또는 이전 작업) 실행 시각, KST. HTML에는 넣지 않는다."},
+  "provenance": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["type"],
+   "description": "이 데이터가 어떻게 만들어졌는지. migrated = 기존 게시본 HTML을 옮겨 적은 호. 검사 면제 여부는 이 칸만 믿지 않고 tools/kisa 의 고정 목록으로도 확인한다.",
+   "properties": {
+    "type": {"enum": ["migrated", "generated"]},
+    "source_html": {"type": "string", "description": "migrated 일 때 원본 HTML 경로"},
+    "source_commit": {"type": "string", "description": "migrated 일 때 원본을 읽은 커밋"}
+   }
+  },
+  "preheader": {"$ref": "#/$defs/rich", "description": "숨김 미리보기 한 줄 요약"},
+  "overview": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/rich"}, "description": "1. 한눈에 보기 문단들"},
+  "overview_note": {"$ref": "#/$defs/rich", "description": "1. 한눈에 보기 끝의 회색 ※ 문단(선택)"},
+  "priority": {
+   "type": "array", "minItems": 1, "description": "2. 우선순위 표의 행",
+   "items": {
+    "type": "object", "additionalProperties": false,
+    "required": ["target", "vuln", "severity", "cvss", "exploitation", "deadline"],
+    "properties": {
+     "target": {"$ref": "#/$defs/rich", "description": "대상(굵게)"},
+     "target_note": {"$ref": "#/$defs/rich", "description": "대상 아래 회색 줄(KISA #·KEV 등재일 등)"},
+     "vuln": {"$ref": "#/$defs/rich", "description": "핵심 취약점 첫 줄"},
+     "vuln_details": {"type": "array", "items": {"$ref": "#/$defs/rich"}, "description": "핵심 취약점 아래 회색 줄들"},
+     "severity": {"$ref": "#/$defs/severity"},
+     "cvss": {"$ref": "#/$defs/rich", "description": "위험도 칸의 회색 줄(CVSS 등)"},
+     "exploitation": {"$ref": "#/$defs/rich", "description": "악용 상태(굵게)"},
+     "exploitation_notes": {"type": "array", "items": {"$ref": "#/$defs/rich"}},
+     "deadline": {"$ref": "#/$defs/rich", "description": "권고 기한(굵게)"},
+     "deadline_note": {"$ref": "#/$defs/rich"}
+    }
+   }
+  },
+  "items": {
+   "type": "array", "minItems": 1, "description": "3. 공지별 조치 방법과 조치 확인 방법. 번호(3-1, 3-2 …)는 순서대로 코드가 붙인다.",
+   "items": {
+    "type": "object", "additionalProperties": false,
+    "required": ["title", "severity", "meta", "meta_refs", "situation", "remediation", "verification", "compromise_check", "sources"],
+    "properties": {
+     "title": {"$ref": "#/$defs/rich", "description": "항목 제목(줄바꿈 허용)"},
+     "severity": {"$ref": "#/$defs/severity"},
+     "meta": {"$ref": "#/$defs/rich", "description": "제목 아래 줄의 앞부분(CVSS · 악용 상태)"},
+     "meta_refs": {"$ref": "#/$defs/rich", "description": "제목 아래 줄의 뒷부분(KISA 공지·게시일·KEV 등재일)"},
+     "situation": {"$ref": "#/$defs/lines", "description": "상황"},
+     "remediation": {"$ref": "#/$defs/lines", "description": "조치"},
+     "verification": {"$ref": "#/$defs/lines", "description": "조치 적용 확인"},
+     "compromise_check": {"$ref": "#/$defs/lines", "description": "침해 흔적 확인"},
+     "sources": {
+      "type": "array", "minItems": 1, "description": "출처. 화면에는 label 을 ' · '로 이어 보여 준다.",
+      "items": {
+       "type": "object", "additionalProperties": false, "required": ["label", "url"],
+       "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "pattern": "^(https://\\S+)?$", "description": "새로 만드는 호는 필수. 이전된 호는 원본에 URL이 없으면 빈 칸."}
+       }
+      }
+     }
+    }
+   }
+  },
+  "tracking": {
+   "type": "array", "description": "3-마지막. 지난 호 수록분 — 조치 현황 추적(없으면 구획 생략)",
+   "items": {
+    "type": "object", "additionalProperties": false, "required": ["target", "update"],
+    "properties": {
+     "target": {"$ref": "#/$defs/rich"},
+     "target_note": {"$ref": "#/$defs/rich"},
+     "update": {"$ref": "#/$defs/rich", "description": "이번 주 확인된 신규 사실"}
+    }
+   }
+  },
+  "audience": {
+   "type": "array", "minItems": 1, "description": "4. 대상별 이번 주 권고 조치",
+   "items": {
+    "type": "object", "additionalProperties": false, "required": ["audience", "actions", "deadline"],
+    "properties": {
+     "audience": {"$ref": "#/$defs/rich"},
+     "actions": {"$ref": "#/$defs/rich"},
+     "deadline": {"$ref": "#/$defs/rich"}
+    }
+   }
+  },
+  "notes": {
+   "type": "array", "minItems": 1, "description": "5. 집계 기준과 참고 사항의 문단. 글자 또는 {\"box\": 글자}(회색 상자)",
+   "items": {"oneOf": [
+    {"$ref": "#/$defs/rich"},
+    {"type": "object", "additionalProperties": false, "required": ["box"], "properties": {"box": {"$ref": "#/$defs/rich"}}}
+   ]}
+  },
+  "unverified_table": {
+   "type": "array", "description": "남아 있는 [미확인] 항목 표(없으면 생략)",
+   "items": {
+    "type": "object", "additionalProperties": false, "required": ["target", "content", "how"],
+    "properties": {
+     "target": {"$ref": "#/$defs/rich"},
+     "target_note": {"$ref": "#/$defs/rich", "description": "대상 옆 회색 괄호(예: (2주 이월))"},
+     "content": {"$ref": "#/$defs/rich"},
+     "how": {"$ref": "#/$defs/rich", "description": "확인 경로"}
+    }
+   }
+  },
+  "unverified_footnote": {"$ref": "#/$defs/rich", "description": "[미확인] 표 아래 회색 ※ 문단(선택)"},
+  "footer_sources": {"$ref": "#/$defs/rich", "description": "바닥글 '이번 호 출처 —' 뒤의 글"}
+ },
+ "$defs": {
+  "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "severity": {"enum": ["긴급", "높음", "보통", "낮음"]},
+  "rich": {"type": "string", "minLength": 1, "description": "본문 글자. **굵게**, `코드`, [미확인], 줄바꿈만 해석."},
+  "lines": {
+   "type": "array", "minItems": 1, "description": "칸 안의 줄 목록(<br>로 이어짐). 각 줄은 글자 또는 {\"note\": 글자}(작은 회색 ※ 주석).",
+   "items": {"oneOf": [
+    {"$ref": "#/$defs/rich"},
+    {"type": "object", "additionalProperties": false, "required": ["note"], "properties": {"note": {"$ref": "#/$defs/rich"}}}
+   ]}
+  }
+ }
+}
