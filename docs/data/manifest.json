@@ -12,6 +12,12 @@
    "major": 12
   },
   {
+   "cat": "kisa-cert",
+   "date": "2026-10-05",
+   "title": "KISA 보호나라 보안공지 주간 리포트 (2026.09.28 ~ 10.04)",
+   "url": "kisa-cert/kisa_weekly_2026-09-28_public.html"
+  },
+  {
    "cat": "daily",
    "date": "2026-10-05",
    "title": "2026년 10월 5일 (월)",
@@ -98,8 +104,8 @@
   {
    "cat": "kisa-cert",
    "date": "2026-09-28",
-   "title": "KISA 보호나라 보안공지 주간 리포트 (2026.09.28 ~ 10.04)",
-   "url": "kisa-cert/kisa_weekly_2026-09-28_public.html"
+   "title": "KISA 보호나라 보안공지 주간 리포트 (2026.09.21 ~ 09.27)",
+   "url": "kisa-cert/kisa_weekly_2026-09-21_public.html"
   },
   {
    "cat": "daily",
@@ -174,8 +180,8 @@
   {
    "cat": "kisa-cert",
    "date": "2026-09-21",
-   "title": "KISA 보호나라 보안공지 주간 리포트 (2026.09.21 ~ 09.27)",
-   "url": "kisa-cert/kisa_weekly_2026-09-21_public.html"
+   "title": "KISA 보호나라 보안공지 주간 리포트 (2026.09.14 ~ 09.20)",
+   "url": "kisa-cert/kisa_weekly_2026-09-14_public.html"
   },
   {
    "cat": "daily",
@@ -250,12 +256,6 @@
   {
    "cat": "kisa-cert",
    "date": "2026-09-14",
-   "title": "KISA 보호나라 보안공지 주간 리포트 (2026.09.14 ~ 09.20)",
-   "url": "kisa-cert/kisa_weekly_2026-09-14_public.html"
-  },
-  {
-   "cat": "kisa-cert",
-   "date": "2026-09-07",
    "title": "KISA 보안공지 주간 리포트 (2026.09.07 ~ 09.13)",
    "url": "kisa-cert/kisa_weekly_2026-09-07_public_final.html"
   }
