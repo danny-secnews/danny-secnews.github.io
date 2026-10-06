@@ -90,6 +90,9 @@ GitHub Actions에서 `Run workflow`를 다시 실행하면 됩니다.
   - KISA 주간을 Cowork 등 저장소 밖에서 만든다면 그쪽 저장 위치를 `docs/kisa-cert/`로
 - **파일 이름**: KISA `kisa_weekly_YYYY-MM-DD_….html`(대상 주간 시작일),
   법령 `YYYY-MM-DD-주제.html`(**게시일**). 또는 `<meta name="portal-date" content="YYYY-MM-DD">`
+- **KISA 목록 날짜**: 본문 머리말 `대상 기간: … | 발행: YYYY.MM.DD`의 **발행일** (portal-date 메타가 있으면 그게 우선)
+  - 그 줄을 못 읽거나 발행일이 대상 기간 시작일~31일 뒤 범위 밖이면 경고 후 파일 이름 날짜를 씀
+  - 파일 이름은 지금처럼 대상 주간 시작일로 짓는다 (같은 주차 중복 확인도 이 기준)
 - **목록에서 빼기**: `<meta name="portal" content="hide">` (주소로는 계속 열림)
 - **제목·요약**: 각 파일의 `<title>`, `<meta name="description">`
 - **사이트 이름 변경**: docs/index.html, kisa-cert/index.html, law/index.html, site-nav.js의 `SITE_NAME`
