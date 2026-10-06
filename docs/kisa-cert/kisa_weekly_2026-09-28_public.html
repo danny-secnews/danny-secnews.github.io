@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KISA 보호나라 보안공지 주간 리포트 (2026.09.28 ~ 10.04)</title><style>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="portal-date" content="2026-10-05"><title>KISA 보호나라 보안공지 주간 리포트 (2026.09.28 ~ 10.04)</title>
+<!-- tools/kisa/render.py가 content/kisa-cert/2026-09-28.json 데이터로 만든 파일입니다. 이 파일을 직접 고치지 말고 데이터를 고친 뒤 다시 렌더링하세요. -->
+<style>
 @media only screen and (max-width:480px){
   td.sec{padding-left:13px!important;padding-right:13px!important;}
   td.hd{padding-left:15px!important;padding-right:15px!important;}
@@ -35,31 +37,19 @@
 <tr><td class="sec" style="padding:22px 26px 4px;">
   <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">1. 한눈에 보기</h2>
   <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
-    대상 기간에 보호나라 보안공지 <b>7건(#2549~#2555)</b>이 게시됐고, 조회한 CISA 악용 확인 목록(KEV) 판본 기준으로 같은 기간 신규 등재 <b>3건</b>이 확인됐습니다.
-    이 가운데 특정 제품·버전·CVE를 지정하지 않은 <b>일반 공지 2건은 제외</b>했고, Cisco 1건은 두 수집원에 중복돼 한 건으로 묶었습니다.
-    결과적으로 이번 호 점검 대상은 <b>7건</b>이며 <b>이 중 5건은 실제 악용이 확인</b>됐습니다.
+    대상 기간에 보호나라 보안공지 <b>7건(#2549~#2555)</b>이 게시됐고, 조회한 CISA 악용 확인 목록(KEV) 판본 기준으로 같은 기간 신규 등재 <b>3건</b>이 확인됐습니다. 이 가운데 특정 제품·버전·CVE를 지정하지 않은 <b>일반 공지 2건은 제외</b>했고, Cisco 1건은 두 수집원에 중복돼 한 건으로 묶었습니다. 결과적으로 이번 호 점검 대상은 <b>7건</b>이며 <b>이 중 5건은 실제 악용이 확인</b>됐습니다.
   </p>
   <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
-    <b>경계 구간 장비 세 계열이 동시에 터졌습니다.</b>
-    <b>Citrix NetScaler</b>(CVE-2026-88771, CVSS 9.5)는 추가 기능 설정 없이 <b>기본 구성 전체가 영향</b>을 받고 인증 없이 명령 실행이 가능합니다.
-    <b>Cisco Catalyst SD-WAN Manager</b>(CVE-2026-76504, CVSS 9.8)는 인증 없이 <b>admin 권한으로 접근</b>되고,
-    <b>Fortinet FortiMail</b>(CVE-2026-104286, CVSS 9.8)은 IBE 기능이 켜져 있으면 인증 없이 파일을 쓸 수 있습니다.
-    세 건 모두 벤더가 실제 악용을 확인했고 <b>KEV 연방기관 기한(9/30 · 10/3 · 10/4)은 모두 지났습니다.</b>
+    <b>경계 구간 장비 세 계열이 동시에 터졌습니다.</b> <b>Citrix NetScaler</b>(CVE-2026-88771, CVSS 9.5)는 추가 기능 설정 없이 <b>기본 구성 전체가 영향</b>을 받고 인증 없이 명령 실행이 가능합니다. <b>Cisco Catalyst SD-WAN Manager</b>(CVE-2026-76504, CVSS 9.8)는 인증 없이 <b>admin 권한으로 접근</b>되고, <b>Fortinet FortiMail</b>(CVE-2026-104286, CVSS 9.8)은 IBE 기능이 켜져 있으면 인증 없이 파일을 쓸 수 있습니다. 세 건 모두 벤더가 실제 악용을 확인했고 <b>KEV 연방기관 기한(9/30 · 10/3 · 10/4)은 모두 지났습니다.</b>
   </p>
   <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
-    <b>국내 장비 침해 사례가 공지됐습니다.</b>
-    파이오링크가 <b>PAS-K 구버전 취약점으로 원격 명령이 실행되고 채굴 악성코드가 설치된 사례를 확인</b>했다고 밝혔습니다(KISA #2553 · 벤더 공지 2026-09-29).
-    CVE 번호가 부여되지 않은 건이어서 KEV에는 나타나지 않습니다. 공공사업 환경에 L4/L7 스위치로 도입된 경우가 많아 <b>사용 여부 확인이 먼저</b> 필요합니다.
+    <b>국내 장비 침해 사례가 공지됐습니다.</b> 파이오링크가 <b>PAS-K 구버전 취약점으로 원격 명령이 실행되고 채굴 악성코드가 설치된 사례를 확인</b>했다고 밝혔습니다(KISA #2553 · 벤더 공지 2026-09-29). CVE 번호가 부여되지 않은 건이어서 KEV에는 나타나지 않습니다. 공공사업 환경에 L4/L7 스위치로 도입된 경우가 많아 <b>사용 여부 확인이 먼저</b> 필요합니다.
   </p>
   <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
-    <b>지난 호 미확정 항목 하나가 확정됐습니다.</b>
-    지난 호에서 "KEV 신규 등재로 보고되나 조회한 판본(9/25자)에 없음 — 등재일 미확정"으로 남겼던
-    <b>Citrix CVE-2026-88771 · CVE-2026-88772</b>의 KEV 등재일이 <b>2026-09-27</b>로 확인됐습니다(기한 9/30, 이미 경과).
-    이번 주 보호나라 #2550이 같은 계열 8건을 함께 공지해, 이번 호에서 처음 상세히 다룹니다.
+    <b>지난 호 미확정 항목 하나가 확정됐습니다.</b> 지난 호에서 "KEV 신규 등재로 보고되나 조회한 판본(9/25자)에 없음 — 등재일 미확정"으로 남겼던 <b>Citrix CVE-2026-88771 · CVE-2026-88772</b>의 KEV 등재일이 <b>2026-09-27</b>로 확인됐습니다(기한 9/30, 이미 경과). 이번 주 보호나라 #2550이 같은 계열 8건을 함께 공지해, 이번 호에서 처음 상세히 다룹니다.
   </p>
   <p style="margin:0 0 4px;font-size:13px;line-height:1.75;color:#6B7280;word-break:keep-all;">
-    ※ 조회한 KEV 판본은 <b>2026-10-01자</b>입니다. 대상 기간 마지막 사흘(10/02~10/04)은 이 판본 이후 구간이라 <b>이번 호에서 확인하지 않았습니다.</b>
-    위 "신규 3건"은 10/01까지 확인된 수치이며 대상 기간 전체의 확정 건수가 아닙니다. 자세한 내용은 5항에 적었습니다.
+    ※ 조회한 KEV 판본은 <b>2026-10-01자</b>입니다. 대상 기간 마지막 사흘(10/02~10/04)은 이 판본 이후 구간이라 <b>이번 호에서 확인하지 않았습니다.</b> 위 "신규 3건"은 10/01까지 확인된 수치이며 대상 기간 전체의 확정 건수가 아닙니다. 자세한 내용은 5항에 적었습니다.
   </p>
 </td></tr>
 
@@ -93,13 +83,13 @@
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>파이오링크 PAS-K</b><br><span style="color:#6B7280;">KISA #2553</span></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;">CVE <span style="color:#6B7280;">[미확인]</span><br><span style="color:#6B7280;">구버전 취약점 → 원격 명령 실행 · 채굴 악성코드 설치</span><br><span style="color:#6B7280;">▸ PLOS 1.8.12.0.0 ~ 1.8.26.0.5 구간</span></td>
-      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS [미확인]</span><br><b>● 악용 확인</b><br><span style="color:#6B7280;">벤더 침해 사례 확인</span></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS <span style="color:#6B7280;">[미확인]</span></span><br><b>● 악용 확인</b><br><span style="color:#6B7280;">벤더 침해 사례 확인</span></td>
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>즉시</b><br><span style="color:#6B7280;">해당 시</span></td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Apple iOS · iPadOS · macOS</b><br><span style="color:#6B7280;">KEV 9/29</span></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-86950</b><br><span style="color:#6B7280;">CoreGraphics 범위 초과 쓰기 → 악성 파일 처리 시 임의 코드 실행</span><br><span style="color:#6B7280;">▸ 업무용 iPhone · iPad · Mac</span></td>
-      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS [미확인]</span><br><b>● 악용 확인 · KEV 9/29</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS <span style="color:#6B7280;">[미확인]</span></span><br><b>● 악용 확인 · KEV 9/29</b></td>
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>이번 주</b><br><span style="color:#6B7280;">KEV 기한 10/2 경과</span></td>
     </tr>
     <tr>
@@ -111,7 +101,7 @@
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Apache Tomcat</b><br><span style="color:#6B7280;">KISA #2552</span></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-86350</b> 외<br><span style="color:#6B7280;">요청 헤더 혼용 · WebSocket 보안제약 우회 · AJP DoS 등</span><br><span style="color:#6B7280;">▸ Tomcat 9.0 / 10.1 / 11.0 계열</span></td>
-      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">Important 4건</span><br><b>◌ [미확인]</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">Important 4건</span><br><b>◌ <span style="color:#6B7280;">[미확인]</span></b></td>
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>2주</b><br><span style="color:#6B7280;">정기 창</span></td>
     </tr>
   </table></div>
@@ -126,21 +116,17 @@
 <tr><td class="sec" style="padding:16px 26px 4px;">
   <h2 style="margin:0 0 4px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">3. 공지별 조치 방법과 조치 확인 방법</h2>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
-  <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-1. Citrix NetScaler ADC · Gateway 8건<br>CVE-2026-88771 외 7건</h3>
+  <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-1. Citrix NetScaler ADC · Gateway 8건<br>
+CVE-2026-88771 외 7건</h3>
   <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.5(v4.0) · 악용 확인  <span style="color:#9CA3AF;">|</span>  KISA #2550(9/29 게시) · KEV 등재 9/27(기한 9/30)</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
       Citrix가 NetScaler ADC·Gateway 취약점 8건을 한 번에 공지했습니다. 이 중 두 건이 KEV에 등재된 악용 확인 건입니다.<br>
-      · <b>CVE-2026-88771</b>(CVSS 9.5) — 입력값 검증 미흡으로 <b>인증 없는 공격자가 임의 명령을 실행</b>합니다.
-      벤더가 밝힌 전제 조건은 <b>"모든 NetScaler ADC·Gateway 배포 (기본 구성 / 추가 기능 불필요)"</b>입니다.
-      <b>추가 설정 없이 해당된다</b>는 뜻이므로 이 계열을 운영 중이면 예외를 기대하기 어렵습니다.<br>
-      · <b>CVE-2026-88772</b>(CVSS 9.5) — 메모리 오버플로로 원격 코드 실행 또는 서비스 거부.
-      전제는 <b>DTLS 설정 활성화</b>이며, 벤더는 <b>"VPN vServer에서는 기본 활성"</b>이라고 적었습니다.<br>
+      · <b>CVE-2026-88771</b>(CVSS 9.5) — 입력값 검증 미흡으로 <b>인증 없는 공격자가 임의 명령을 실행</b>합니다. 벤더가 밝힌 전제 조건은 <b>"모든 NetScaler ADC·Gateway 배포 (기본 구성 / 추가 기능 불필요)"</b>입니다. <b>추가 설정 없이 해당된다</b>는 뜻이므로 이 계열을 운영 중이면 예외를 기대하기 어렵습니다.<br>
+      · <b>CVE-2026-88772</b>(CVSS 9.5) — 메모리 오버플로로 원격 코드 실행 또는 서비스 거부. 전제는 <b>DTLS 설정 활성화</b>이며, 벤더는 <b>"VPN vServer에서는 기본 활성"</b>이라고 적었습니다.<br>
       벤더 진술 — <b>"Exploits of CVE-2026-88771 and CVE-2026-88772 on unmitigated NetScaler deployments have been observed."</b><br>
-      나머지 6건은 전제 조건이 구성에 따라 갈립니다 — 88773(HTTP/SSL 가상 서버), 88774(HTTP URL 기반 정책 표현식), 88775(Gateway 또는 AAA 가상 서버),
-      88776(Oracle 유형 LB 가상 서버), 88777(비HTTP L7 기능), 88778(Enhanced ISN Generation 비활성 상태의 TCP 구성).<br>
+      나머지 6건은 전제 조건이 구성에 따라 갈립니다 — 88773(HTTP/SSL 가상 서버), 88774(HTTP URL 기반 정책 표현식), 88775(Gateway 또는 AAA 가상 서버), 88776(Oracle 유형 LB 가상 서버), 88777(비HTTP L7 기능), 88778(Enhanced ISN Generation 비활성 상태의 TCP 구성).<br>
       CVSS는 88773이 9.3, 88775~88778이 8.8, 88774가 7.0입니다(전부 v4.0, 벤더 값).
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치</td><td style="word-break:keep-all;">
@@ -150,32 +136,28 @@
       · NetScaler ADC FIPS <b>14.1-73.37 FIPS</b> 이상<br>
       · NetScaler ADC FIPS · NDcPP <b>13.1-37.279</b> 이상<br>
       벤더 문구 — "Cloud Software Group strongly urges affected customers of NetScaler ADC and NetScaler Gateway to install the relevant updated versions as soon as possible."<br>
-      · <b>CVE-2026-88778은 버전 상향만으로 끝나지 않습니다.</b> 벤더는 해당 구성에 <b>Enhanced ISN Generation 관련 TCP 설정 변경</b>을 함께 적용하라고 안내합니다.
-      정확한 설정 절차는 벤더 문서를 확인하십시오 — 설정 키 이름은 <span style="color:#6B7280;">[미확인]</span>으로 두었습니다.<br>
+      · <b>CVE-2026-88778은 버전 상향만으로 끝나지 않습니다.</b> 벤더는 해당 구성에 <b>Enhanced ISN Generation 관련 TCP 설정 변경</b>을 함께 적용하라고 안내합니다. 정확한 설정 절차는 벤더 문서를 확인하십시오 — 설정 키 이름은 <span style="color:#6B7280;">[미확인]</span>으로 두었습니다.<br>
       · 버전 상향 외의 공식 우회책은 벤더 공지에 기재되어 있지 않습니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치 적용 확인</td><td style="word-break:keep-all;">
-      ① <b>구성 전제를 먼저 분리합니다</b> — 88771은 기본 구성 전체 해당이므로 운영 중이면 무조건 대상입니다.
-      88772는 DTLS 활성 여부(VPN vServer는 기본 활성), 88775는 Gateway·AAA 가상 서버 존재 여부, 88776은 Oracle 유형 LB 존재 여부를 각각 확인합니다.<br>
+      ① <b>구성 전제를 먼저 분리합니다</b> — 88771은 기본 구성 전체 해당이므로 운영 중이면 무조건 대상입니다. 88772는 DTLS 활성 여부(VPN vServer는 기본 활성), 88775는 Gateway·AAA 가상 서버 존재 여부, 88776은 Oracle 유형 LB 존재 여부를 각각 확인합니다.<br>
       ② 실행 중인 빌드 문자열이 위 값 이상인지 확인합니다. <b>설치 패키지가 아니라 동작 중인 빌드</b> 기준입니다.<br>
       ③ <b>HA 쌍이면 양쪽 노드 모두</b> 확인합니다. 클러스터 구성이면 전 노드를 개별 확인합니다.<br>
       ④ FIPS·NDcPP 장비는 <b>일반 빌드와 수정 버전이 다릅니다.</b> 장비 유형을 먼저 확인한 뒤 해당 계열 값과 비교하십시오.<br>
-      ⑤ <span style="color:#6B7280;">[미확인]</span> 빌드 확인용 정확한 CLI·콘솔 경로, 그리고 업그레이드 후 기존 세션 종료가 필요한지를 벤더 공지에서 확인하지 못해 싣지 않습니다.
-      악용 확인 건이므로 <b>세션·자격증명 후처리 필요 여부를 Citrix 지원에 확인</b>하실 것을 권합니다.
+      ⑤ <span style="color:#6B7280;">[미확인]</span> 빌드 확인용 정확한 CLI·콘솔 경로, 그리고 업그레이드 후 기존 세션 종료가 필요한지를 벤더 공지에서 확인하지 못해 싣지 않습니다. 악용 확인 건이므로 <b>세션·자격증명 후처리 필요 여부를 Citrix 지원에 확인</b>하실 것을 권합니다.
     </td></tr>
     <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">침해 흔적 확인</td><td style="word-break:keep-all;">
-      <b>[미확인]</b> — 확보한 벤더 공지(CTX697096)에 침해 지표나 탐지 절차가 기재되어 있지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
-      이미 악용이 관측된 건이므로, 패치 전 기간에 대해 <b>관리·인증 가상 서버 접근 기록, 신규 생성 계정·세션, 장비발 외부 통신</b>을 함께 확인하시기 바랍니다
-      (<b>벤더 IoC 아님</b> — 공격 유형에서 도출한 점검 착안점입니다). 벤더가 로그 문자열이나 명령을 제공하지 않아 구체적인 명령은 싣지 않습니다.
+      <b><span style="color:#6B7280;">[미확인]</span></b> — 확보한 벤더 공지(CTX697096)에 침해 지표나 탐지 절차가 기재되어 있지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      이미 악용이 관측된 건이므로, 패치 전 기간에 대해 <b>관리·인증 가상 서버 접근 기록, 신규 생성 계정·세션, 장비발 외부 통신</b>을 함께 확인하시기 바랍니다 (<b>벤더 IoC 아님</b> — 공격 유형에서 도출한 점검 착안점입니다). 벤더가 로그 문자열이나 명령을 제공하지 않아 구체적인 명령은 싣지 않습니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
       Citrix 보안 공지 CTX697096 · KISA 보호나라 보안공지 #2550(2026-09-29) · CISA KEV(dateAdded 2026-09-27, CVE-2026-88771 · CVE-2026-88772)
     </td></tr>
   </table>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
-  <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-2. Cisco Catalyst SD-WAN Manager<br>CVE-2026-76504</h3>
+  <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-2. Cisco Catalyst SD-WAN Manager<br>
+CVE-2026-76504</h3>
   <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.8 · 악용 확인  <span style="color:#9CA3AF;">|</span>  KISA #2554(10/1 게시) · KEV 등재 9/30(기한 10/3)</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
@@ -190,12 +172,10 @@
       · 20.9 → <b>20.9.10.1</b> &nbsp;·&nbsp; 20.12 → <b>20.12.8.2</b> &nbsp;·&nbsp; 20.15 → <b>20.15.6.1</b><br>
       · 20.18 → <b>20.18.4.1</b> &nbsp;·&nbsp; 26.1 → <b>26.1.2.1</b> &nbsp;·&nbsp; 26.2 → <b>26.2.1</b><br>
       · <b>20.9 미만은 개별 패치가 없습니다.</b> 벤더와 KISA 모두 "해결 버전으로 마이그레이션"으로 안내합니다.<br>
-      <b>우회책은 없습니다.</b> 벤더 문구 — "There are no workarounds that address this vulnerability."
-      다만 On-Prem 배포 환경의 완화책으로 <b>"인터넷 등 비보안 네트워크로부터의 시스템 접근을 제한"</b>하라고 안내합니다. 완화책은 패치를 대체하지 않습니다.
+      <b>우회책은 없습니다.</b> 벤더 문구 — "There are no workarounds that address this vulnerability." 다만 On-Prem 배포 환경의 완화책으로 <b>"인터넷 등 비보안 네트워크로부터의 시스템 접근을 제한"</b>하라고 안내합니다. 완화책은 패치를 대체하지 않습니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치 적용 확인</td><td style="word-break:keep-all;">
-      ① 실행 중인 Catalyst SD-WAN Manager 릴리스가 해당 계열의 First Fixed Release 이상인지 확인합니다.
-      <b>계열(20.9 / 20.12 / 20.15 / 20.18 / 26.1 / 26.2)별로 기준값이 다릅니다.</b> 다른 계열의 값과 비교하지 않도록 주의하십시오.<br>
+      ① 실행 중인 Catalyst SD-WAN Manager 릴리스가 해당 계열의 First Fixed Release 이상인지 확인합니다. <b>계열(20.9 / 20.12 / 20.15 / 20.18 / 26.1 / 26.2)별로 기준값이 다릅니다.</b> 다른 계열의 값과 비교하지 않도록 주의하십시오.<br>
       ② <b>클러스터 배포면 전 노드를 개별 확인</b>합니다. 일부 노드만 상향되면 경로가 남습니다.<br>
       ③ On-Prem이면 관리 인터페이스가 <b>실제로 외부에서 도달 가능한지</b>를 외부에서 확인합니다. 설정값만 보지 말고 도달 여부를 확인하십시오.<br>
       ④ <span style="color:#6B7280;">[미확인]</span> 실행 버전 확인용 정확한 명령이나 콘솔 경로를 공식 문서로 확인하지 못해 싣지 않습니다.
@@ -212,14 +192,12 @@
     </td></tr>
   </table>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
   <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-3. Fortinet FortiMail — CVE-2026-104286</h3>
   <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS 9.8 · 악용 확인  <span style="color:#9CA3AF;">|</span>  KEV 등재 10/1(기한 10/4) · 보호나라 공지 대상 아님</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
-      경로 조작과 NULL 바이트 처리 결함이 겹쳐, <b>인증 없는 공격자가 조작된 HTTP/HTTPS 요청으로 시스템에 임의 파일을 쓸 수</b> 있습니다.
-      공격 표면은 <b>IBE(Identity Based Encryption) 기능</b>입니다.<br>
+      경로 조작과 NULL 바이트 처리 결함이 겹쳐, <b>인증 없는 공격자가 조작된 HTTP/HTTPS 요청으로 시스템에 임의 파일을 쓸 수</b> 있습니다. 공격 표면은 <b>IBE(Identity Based Encryption) 기능</b>입니다.<br>
       CVSS <b>9.8</b>(AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H). 벤더 벡터에 <b>E:P</b>(악용 코드 존재)와 <b>RC:C</b>(확인됨)가 포함돼 있습니다.<br>
       벤더 진술 — <b>"This has been reported to be exploited in the wild, customers are urged to apply the workaround below."</b><br>
       <b>중요 — IBE를 쓰지 않으면 해당하지 않을 수 있습니다.</b> 다만 구성 여부를 실제로 확인해야 판단할 수 있습니다.
@@ -230,9 +208,7 @@
       · FortiMail 7.6 (영향 7.6.0~7.6.6) → <b>7.6.7</b> 이상<br>
       · FortiMail 7.4 (영향 7.4.0~7.4.8) → <b>7.4.9</b> 이상<br>
       · FortiMail 7.2 (영향 7.2.0~7.2.9) → 해당 계열 개별 패치가 아니라 <b>7.4 이상 브랜치로 업그레이드</b>를 안내합니다.<br>
-      <b>벤더가 우회책을 제공합니다</b> — ① GUI 또는 CLI에서 <b>IBE 기능 비활성화</b> ② 웹메일 접근 제한
-      ③ <code style="word-break:break-all;">/ibe</code> 경로로 가는 요청 중 <code style="word-break:break-all;">../</code> 를 포함한 POST 차단.
-      우회책은 패치를 대체하지 않습니다. 정확한 CLI 구문은 <span style="color:#6B7280;">[미확인]</span>으로 두었으니 벤더 문서에서 확인하십시오.
+      <b>벤더가 우회책을 제공합니다</b> — ① GUI 또는 CLI에서 <b>IBE 기능 비활성화</b> ② 웹메일 접근 제한 ③ <code style="word-break:break-all;">/ibe</code> 경로로 가는 요청 중 <code style="word-break:break-all;">../</code> 를 포함한 POST 차단. 우회책은 패치를 대체하지 않습니다. 정확한 CLI 구문은 <span style="color:#6B7280;">[미확인]</span>으로 두었으니 벤더 문서에서 확인하십시오.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치 적용 확인</td><td style="word-break:keep-all;">
       ① <b>먼저 해당 여부부터</b> — IBE 기능이 활성화되어 있는지 확인합니다. 비활성이면 이 건의 공격 경로는 닫혀 있습니다.<br>
@@ -252,72 +228,57 @@
     </td></tr>
   </table>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
   <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-4. 파이오링크 PAS-K — 구버전 취약점 악용 사례</h3>
-  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS [미확인] · 악용 확인  <span style="color:#9CA3AF;">|</span>  KISA #2553(9/30 게시) · 벤더 공지 2026-09-29</div>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b style="color:#9B1C1C;">긴급</b> · CVSS <span style="color:#6B7280;">[미확인]</span> · 악용 확인  <span style="color:#9CA3AF;">|</span>  KISA #2553(9/30 게시) · 벤더 공지 2026-09-29</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
       파이오링크 PAS-K의 <b>구버전 취약점을 이용한 실제 침해 사례</b>가 확인됐습니다.<br>
-      벤더 진술 — <b>"파이오링크 장비의 과거 취약점을 이용해 원격 명령을 실행하고 채굴 악성코드를 설치한 사례가 확인"</b>(벤더 공지 「[보안공지] PAS-K 구버전 취약점 관련 PLOS 업데이트 권고」, 2026-09-29).
-      KISA #2553도 "보안 위협이 될 수 있는 구버전 취약점을 활용한 사례가 발견되어 주의 필요"로 같은 취지를 적었습니다.<br>
+      벤더 진술 — <b>"파이오링크 장비의 과거 취약점을 이용해 원격 명령을 실행하고 채굴 악성코드를 설치한 사례가 확인"</b>(벤더 공지 「[보안공지] PAS-K 구버전 취약점 관련 PLOS 업데이트 권고」, 2026-09-29). KISA #2553도 "보안 위협이 될 수 있는 구버전 취약점을 활용한 사례가 발견되어 주의 필요"로 같은 취지를 적었습니다.<br>
       <b>CVE 번호가 부여되지 않은 건입니다.</b> 따라서 KEV·NVD에는 나타나지 않고, CVE 기반 자동 점검 도구로는 걸러지지 않습니다. CVSS도 <span style="color:#6B7280;">[미확인]</span>입니다.<br>
-      <b>신규 취약점이 아니라 "구버전에 남아 있는 과거 취약점"</b>이라는 점이 핵심입니다. 패치 주기가 긴 L4/L7 스위치에서 장기 미조치 장비가 표적이 됐다는 뜻입니다.
-      공공사업 환경에 도입된 사례가 많은 국산 장비이므로 <b>사내·고객사 모두 사용 여부 확인이 먼저</b> 필요합니다.
+      <b>신규 취약점이 아니라 "구버전에 남아 있는 과거 취약점"</b>이라는 점이 핵심입니다. 패치 주기가 긴 L4/L7 스위치에서 장기 미조치 장비가 표적이 됐다는 뜻입니다. 공공사업 환경에 도입된 사례가 많은 국산 장비이므로 <b>사내·고객사 모두 사용 여부 확인이 먼저</b> 필요합니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치</td><td style="word-break:keep-all;">
       PLOS를 계열별 수정 버전 이상으로 올립니다.<br>
       · 영향 <b>1.8.12.0.0 ~ 1.8.19.0.10</b> → <b>1.8.19.0.11</b><br>
       · 영향 <b>1.8.20.0.0 ~ 1.8.24.0.5</b> → <b>1.8.24.0.6</b><br>
       · 영향 <b>1.8.24.1.3 ~ 1.8.26.0.5</b> → <b>1.8.26.0.6</b><br>
-      <span style="font-size:12px;color:#6B7280;">※ 위 세 줄은 KISA #2553 표와 벤더 공지가 일치합니다.
-      다만 <b>벤더 공지에는 <code style="word-break:break-all;">v2.2.2.1.0</code> 이상도 해결 버전으로 함께 적혀 있고 KISA 표에는 없습니다.</b>
-      어느 쪽이 옳은지는 단정하지 않고 차이가 있었다는 사실만 기록합니다. 2.x 계열 운영 중이면 벤더에 직접 확인하십시오.</span><br>
+      <span style="font-size:12px;color:#6B7280;">※ 위 세 줄은 KISA #2553 표와 벤더 공지가 일치합니다. 다만 <b>벤더 공지에는 <code style="word-break:break-all;">v2.2.2.1.0</code> 이상도 해결 버전으로 함께 적혀 있고 KISA 표에는 없습니다.</b> 어느 쪽이 옳은지는 단정하지 않고 차이가 있었다는 사실만 기록합니다. 2.x 계열 운영 중이면 벤더에 직접 확인하십시오.</span><br>
       · 공식 우회책은 벤더·KISA 공지 어디에도 기재되어 있지 않습니다. 완화책이 없다고 단정하지는 않습니다.<br>
       · 버전 상향이 어려우면 <b>장비 관리 인터페이스의 외부 노출을 먼저 차단</b>하는 것이 노출을 줄입니다. 이는 일반적인 구성 원칙이며 벤더가 제시한 완화책은 아닙니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치 적용 확인</td><td style="word-break:keep-all;">
-      ① <b>먼저 자산 확인</b> — 사내와 고객사 납품 환경에 PAS-K가 있는지, 있다면 PLOS 버전이 무엇인지 목록화합니다.
-      장기 운영 장비일 가능성이 높아 자산 목록에 누락돼 있을 수 있습니다.<br>
+      ① <b>먼저 자산 확인</b> — 사내와 고객사 납품 환경에 PAS-K가 있는지, 있다면 PLOS 버전이 무엇인지 목록화합니다. 장기 운영 장비일 가능성이 높아 자산 목록에 누락돼 있을 수 있습니다.<br>
       ② 실행 중인 PLOS 버전이 해당 계열 수정 버전 이상인지 확인합니다. <b>계열별 기준값이 다릅니다.</b><br>
       ③ 이중화 구성이면 <b>양쪽 장비 모두</b> 확인합니다.<br>
       ④ 유지보수 계약 장비는 <b>유지보수사가 업데이트를 수행했는지</b>를 별도로 확인합니다. 계약만으로 적용됐다고 가정하지 마십시오.<br>
-      ⑤ <span style="color:#6B7280;">[미확인]</span> PLOS 버전 확인용 정확한 명령이나 관리 화면 경로를 공식 문서로 확인하지 못해 싣지 않습니다.
-      벤더 기술지원(1544-9890) 또는 유지보수사에 확인 절차를 요청하십시오.
+      ⑤ <span style="color:#6B7280;">[미확인]</span> PLOS 버전 확인용 정확한 명령이나 관리 화면 경로를 공식 문서로 확인하지 못해 싣지 않습니다. 벤더 기술지원(1544-9890) 또는 유지보수사에 확인 절차를 요청하십시오.
     </td></tr>
     <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">침해 흔적 확인</td><td style="word-break:keep-all;">
-      <b>[미확인]</b> — 벤더와 KISA 공지 모두 침해 지표나 탐지 절차를 제시하지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
-      <b>이 건은 이미 침해 사례가 확인된 건</b>이므로, 미조치 기간이 길었던 장비는 <b>벤더 기술지원에 침해 여부 점검을 직접 요청</b>하시는 것이 가장 확실합니다.
-      벤더가 로그 위치나 지표를 제공하지 않아 이 리포트에 점검 명령이나 지표를 싣지 않습니다.
+      <b><span style="color:#6B7280;">[미확인]</span></b> — 벤더와 KISA 공지 모두 침해 지표나 탐지 절차를 제시하지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      <b>이 건은 이미 침해 사례가 확인된 건</b>이므로, 미조치 기간이 길었던 장비는 <b>벤더 기술지원에 침해 여부 점검을 직접 요청</b>하시는 것이 가장 확실합니다. 벤더가 로그 위치나 지표를 제공하지 않아 이 리포트에 점검 명령이나 지표를 싣지 않습니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
       파이오링크 보안공지 「[보안공지] PAS-K 구버전 취약점 관련 PLOS 업데이트 권고」(2026-09-29) · KISA 보호나라 보안공지 #2553(2026-09-30)
     </td></tr>
   </table>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
   <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-5. Apple iOS · iPadOS · macOS — CVE-2026-86950</h3>
-  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · CVSS [미확인] · 악용 확인  <span style="color:#9CA3AF;">|</span>  KEV 등재 9/29(기한 10/2) · 보호나라 공지 대상 아님</div>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · CVSS <span style="color:#6B7280;">[미확인]</span> · 악용 확인  <span style="color:#9CA3AF;">|</span>  KEV 등재 9/29(기한 10/2) · 보호나라 공지 대상 아님</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
-      CoreGraphics의 범위 초과 쓰기(out-of-bounds write) 결함입니다.
-      벤더 영향 설명 — "Processing a maliciously crafted file may lead to arbitrary code execution."
-      즉 <b>조작된 파일을 열거나 처리하는 것만으로 임의 코드 실행</b>으로 이어질 수 있습니다.<br>
+      CoreGraphics의 범위 초과 쓰기(out-of-bounds write) 결함입니다. 벤더 영향 설명 — "Processing a maliciously crafted file may lead to arbitrary code execution." 즉 <b>조작된 파일을 열거나 처리하는 것만으로 임의 코드 실행</b>으로 이어질 수 있습니다.<br>
       <b>두 출처의 표현 강도가 다릅니다. 그대로 옮깁니다.</b><br>
-      · CISA는 9/29 KEV에 등재했습니다(등재명 "Apple Multiple Products Out-of-Bounds Write Vulnerability", 기한 10/2).
-      KEV 등재는 CISA가 악용을 확인했다는 뜻이므로 이 리포트의 상태값은 <b>악용 확인</b>입니다.<br>
-      · 애플 표현은 더 조심스럽습니다 — <b>"Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 27."</b>
-      <b>표적형 공격</b>이라는 성격과 <b>iOS 27 이전 버전</b>이라는 범위 한정을 함께 적어 두었습니다.<br>
+      · CISA는 9/29 KEV에 등재했습니다(등재명 "Apple Multiple Products Out-of-Bounds Write Vulnerability", 기한 10/2). KEV 등재는 CISA가 악용을 확인했다는 뜻이므로 이 리포트의 상태값은 <b>악용 확인</b>입니다.<br>
+      · 애플 표현은 더 조심스럽습니다 — <b>"Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 27."</b> <b>표적형 공격</b>이라는 성격과 <b>iOS 27 이전 버전</b>이라는 범위 한정을 함께 적어 두었습니다.<br>
       CVSS는 애플이 기재하지 않았고, 조사 시점에 공식 수치를 확인하지 못해 <span style="color:#6B7280;">[미확인]</span>입니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치</td><td style="word-break:keep-all;">
       2026-09-28 공개된 업데이트를 적용합니다.<br>
       · <b>iOS 26.7.1</b> · <b>iPadOS 26.7.1</b> (애플 문서 149226)<br>
       · <b>macOS Tahoe 26.7.1</b> (애플 문서 149228)<br>
-      <span style="font-size:12px;color:#6B7280;">※ KEV의 product 값은 "Multiple Products"이고 애플 권고 노트에는 문서 세 건(149226 · 149228 · 149229)이 연결돼 있습니다.
-      이 리포트는 그중 두 건(iOS·iPadOS, macOS Tahoe)을 직접 확인했습니다. <b>나머지 한 건이 다루는 제품·버전은 <span style="color:#6B7280;">[미확인]</span>입니다.</b>
-      구형 macOS 계열을 운영 중이면 애플 보안 업데이트 목록에서 해당 버전을 직접 확인하십시오.</span><br>
+      <span style="font-size:12px;color:#6B7280;">※ KEV의 product 값은 "Multiple Products"이고 애플 권고 노트에는 문서 세 건(149226 · 149228 · 149229)이 연결돼 있습니다. 이 리포트는 그중 두 건(iOS·iPadOS, macOS Tahoe)을 직접 확인했습니다. <b>나머지 한 건이 다루는 제품·버전은 <span style="color:#6B7280;">[미확인]</span>입니다.</b> 구형 macOS 계열을 운영 중이면 애플 보안 업데이트 목록에서 해당 버전을 직접 확인하십시오.</span><br>
       · 공식 우회책은 애플 문서에 기재되어 있지 않습니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치 적용 확인</td><td style="word-break:keep-all;">
@@ -327,102 +288,76 @@
       ④ <span style="color:#6B7280;">[미확인]</span> 버전 확인용 정확한 설정 메뉴 경로와 MDM 조회 필드명을 공식 문서로 확인하지 못해 싣지 않습니다.
     </td></tr>
     <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">침해 흔적 확인</td><td style="word-break:keep-all;">
-      <b>[미확인]</b> — 애플 보안 문서에 침해 확인 방법이 제시되어 있지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
-      애플이 밝힌 공격 성격이 <b>특정 개인을 겨냥한 고도화된 표적 공격</b>이므로, 임직원 단말 전수를 뒤지는 방식보다
-      <b>고위험 직무 대상자의 단말을 우선 업데이트</b>하는 쪽이 현실적입니다. 이는 애플이 제시한 절차가 아니라 공지 내용에서 도출한 운영 판단입니다(<b>벤더 IoC 아님</b>).
+      <b><span style="color:#6B7280;">[미확인]</span></b> — 애플 보안 문서에 침해 확인 방법이 제시되어 있지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      애플이 밝힌 공격 성격이 <b>특정 개인을 겨냥한 고도화된 표적 공격</b>이므로, 임직원 단말 전수를 뒤지는 방식보다 <b>고위험 직무 대상자의 단말을 우선 업데이트</b>하는 쪽이 현실적입니다. 이는 애플이 제시한 절차가 아니라 공지 내용에서 도출한 운영 판단입니다(<b>벤더 IoC 아님</b>).
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
       Apple 보안 문서 149226(iOS·iPadOS 26.7.1) · 149228(macOS Tahoe 26.7.1), 모두 2026-09-28 공개 · 149229(미열람) · CISA KEV(dateAdded 2026-09-29, CWE-787)
     </td></tr>
   </table>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
   <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-6. Adobe Commerce · Magento — CVE-2026-71362</h3>
   <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · CVSS 9.1 · 보고 없음  <span style="color:#9CA3AF;">|</span>  KISA #2549(9/29 게시) · 벤더 공지 2026-08-11</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
-      권한 검증 오류(Incorrect Authorization)로 <b>인증도 관리자 권한도 없이 권한 상승</b>이 가능합니다.
-      CVSS <b>9.1</b>(CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N), Adobe 등급 Critical,
-      벤더 표에 <b>인증 필요 "No" · 관리자 권한 필요 "No"</b>로 기재돼 있습니다.<br>
-      <b>악용 상태는 "보고 없음"입니다.</b> 근거는 벤더의 명시적 진술입니다 —
-      <b>"Adobe is not aware of any exploits in the wild for any of the issues addressed in these updates."</b>
-      KEV 미등재를 근거로 삼은 것이 아니라 벤더가 악용 보고 없음을 직접 적은 경우입니다.<br>
-      <b>시차를 보셔야 합니다.</b> 벤더 공지 APSB26-92는 <b>2026-08-11</b> 발행이고 보호나라 게시는 <b>9/29</b>입니다.
-      약 7주 간격이므로 <b>8월 정기 업데이트를 이미 적용한 곳은 해소된 상태일 수 있습니다.</b> 반대로 미적용 상태였다면 노출 기간이 두 달에 가깝습니다.<br>
-      같은 공지에 다른 6건(CVE-2026-48411~48416)이 함께 있으나, 보호나라 #2549가 지정한 것은 CVE-2026-71362 한 건입니다.
-      나머지 6건은 모두 인증 또는 관리자 권한을 요구합니다.
+      권한 검증 오류(Incorrect Authorization)로 <b>인증도 관리자 권한도 없이 권한 상승</b>이 가능합니다. CVSS <b>9.1</b>(CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N), Adobe 등급 Critical, 벤더 표에 <b>인증 필요 "No" · 관리자 권한 필요 "No"</b>로 기재돼 있습니다.<br>
+      <b>악용 상태는 "보고 없음"입니다.</b> 근거는 벤더의 명시적 진술입니다 — <b>"Adobe is not aware of any exploits in the wild for any of the issues addressed in these updates."</b> KEV 미등재를 근거로 삼은 것이 아니라 벤더가 악용 보고 없음을 직접 적은 경우입니다.<br>
+      <b>시차를 보셔야 합니다.</b> 벤더 공지 APSB26-92는 <b>2026-08-11</b> 발행이고 보호나라 게시는 <b>9/29</b>입니다. 약 7주 간격이므로 <b>8월 정기 업데이트를 이미 적용한 곳은 해소된 상태일 수 있습니다.</b> 반대로 미적용 상태였다면 노출 기간이 두 달에 가깝습니다.<br>
+      같은 공지에 다른 6건(CVE-2026-48411~48416)이 함께 있으나, 보호나라 #2549가 지정한 것은 CVE-2026-71362 한 건입니다. 나머지 6건은 모두 인증 또는 관리자 권한을 요구합니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치</td><td style="word-break:keep-all;">
       벤더 공지 기준 해결 경로는 <b><code style="word-break:break-all;">-2026-aug</code> 표기 버전으로의 업데이트</b>입니다(예: Adobe Commerce <code style="word-break:break-all;">2.4.9-2026-aug</code>).<br>
       영향 범위(벤더 기준) — Adobe Commerce <b>2.4.4-2026-jul ~ 2.4.9-2026-jul</b> · Adobe Commerce B2B <b>1.3.3-2026-jul ~ 1.5.3-2026-jul</b> · Magento Open Source <b>2.4.6-2026-jul ~ 2.4.9-2026-jul</b>.<br>
-      <span style="font-size:12px;color:#6B7280;">※ <b>KISA #2549는 해결 방안을 "핫픽스 적용"으로 적었고, 벤더 공지 APSB26-92는 <code style="word-break:break-all;">-2026-aug</code> 버전 업데이트로 적었습니다.</b>
-      KISA 공지의 참고 링크에 Adobe 지원 문서(ka-40380)가 포함돼 있어 별도 핫픽스 경로가 존재할 가능성이 있으나, 이 리포트에서 해당 문서를 확인하지 못했습니다.
-      어느 쪽이 옳은지는 단정하지 않고 차이가 있었다는 사실만 기록합니다. 정기 업데이트 창이 멀다면 핫픽스 가용 여부를 Adobe 지원에 확인하십시오.</span><br>
+      <span style="font-size:12px;color:#6B7280;">※ <b>KISA #2549는 해결 방안을 "핫픽스 적용"으로 적었고, 벤더 공지 APSB26-92는 <code style="word-break:break-all;">-2026-aug</code> 버전 업데이트로 적었습니다.</b> KISA 공지의 참고 링크에 Adobe 지원 문서(ka-40380)가 포함돼 있어 별도 핫픽스 경로가 존재할 가능성이 있으나, 이 리포트에서 해당 문서를 확인하지 못했습니다. 어느 쪽이 옳은지는 단정하지 않고 차이가 있었다는 사실만 기록합니다. 정기 업데이트 창이 멀다면 핫픽스 가용 여부를 Adobe 지원에 확인하십시오.</span><br>
       · 불연속 버전 목록은 벤더 표기를 그대로 보존했습니다. 임의로 범위를 합치지 않았습니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치 적용 확인</td><td style="word-break:keep-all;">
-      ① <b>먼저 8월 정기 업데이트 적용 여부를 확인</b>합니다. 이미 적용했다면 이 건은 해소된 상태입니다.
-      적용하지 않았다면 두 달 가까이 노출된 상태이므로 우선순위를 올리십시오.<br>
+      ① <b>먼저 8월 정기 업데이트 적용 여부를 확인</b>합니다. 이미 적용했다면 이 건은 해소된 상태입니다. 적용하지 않았다면 두 달 가까이 노출된 상태이므로 우선순위를 올리십시오.<br>
       ② 실행 중인 버전 표기가 <code style="word-break:break-all;">-2026-aug</code> 이상인지 확인합니다. <b>세 제품(Commerce · B2B · Open Source)의 버전 체계가 다릅니다.</b><br>
       ③ 다수 스토어·멀티사이트를 운영하면 <b>인스턴스별로 개별 확인</b>합니다.<br>
       ④ 핫픽스로 처리한 경우 <b>정기 업데이트 적용 시 핫픽스가 유지되는지</b>를 함께 확인하십시오.<br>
       ⑤ <span style="color:#6B7280;">[미확인]</span> 버전·패치 적용 상태 확인용 정확한 명령이나 관리 화면 경로를 공식 문서로 확인하지 못해 싣지 않습니다.
     </td></tr>
     <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">침해 흔적 확인</td><td style="word-break:keep-all;">
-      <b>[미확인]</b> — 벤더가 공식 침해 확인 방법을 제시하지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
-      다만 벤더가 <b>악용 보고 없음을 명시</b>한 건이라 침해 점검의 긴급도는 위 3-1~3-4보다 낮습니다.
-      미조치 기간이 길었다면 <b>관리자 권한 변경 이력과 신규 관리자 계정 생성 기록</b>을 확인하시기 바랍니다(<b>벤더 IoC 아님</b> — 취약점 영향에서 도출한 착안점입니다).
+      <b><span style="color:#6B7280;">[미확인]</span></b> — 벤더가 공식 침해 확인 방법을 제시하지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      다만 벤더가 <b>악용 보고 없음을 명시</b>한 건이라 침해 점검의 긴급도는 위 3-1~3-4보다 낮습니다. 미조치 기간이 길었다면 <b>관리자 권한 변경 이력과 신규 관리자 계정 생성 기록</b>을 확인하시기 바랍니다(<b>벤더 IoC 아님</b> — 취약점 영향에서 도출한 착안점입니다).
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
       Adobe 보안 공지 APSB26-92(2026-08-11, Priority 2) · KISA 보호나라 보안공지 #2549(2026-09-29) · Adobe 지원 문서 ka-40380(미열람)
     </td></tr>
   </table>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
   <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-7. Apache Tomcat — CVE-2026-86350 외</h3>
-  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · Important 4건 포함 · 악용 [미확인]  <span style="color:#9CA3AF;">|</span>  KISA #2552(9/30 게시)</div>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · Important 4건 포함 · 악용 <span style="color:#6B7280;">[미확인]</span>  <span style="color:#9CA3AF;">|</span>  KISA #2552(9/30 게시)</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
       Apache Tomcat 보안 업데이트로 다수 취약점이 함께 해소됐습니다. <b>단일 치명 취약점이 아니라 묶음 업데이트</b>로 보는 것이 적절합니다.<br>
-      Apache가 <b>Important</b>로 분류한 것은 4건입니다 — <b>CVE-2026-86350</b>(CVE-2026-41293 수정의 회귀로 요청 헤더 혼용 발생, 영향 11.0.22~11.0.25),
-      <b>CVE-2026-76183</b>(WebSocket 엔드포인트 보안 제약 우회), <b>CVE-2026-78383</b>(요청 본문 누락을 이용한 AJP 서비스 거부),
-      <b>CVE-2026-77791</b>(WebSocket 종료 중 busy wait로 인한 서비스 거부).<br>
+      Apache가 <b>Important</b>로 분류한 것은 4건입니다 — <b>CVE-2026-86350</b>(CVE-2026-41293 수정의 회귀로 요청 헤더 혼용 발생, 영향 11.0.22~11.0.25), <b>CVE-2026-76183</b>(WebSocket 엔드포인트 보안 제약 우회), <b>CVE-2026-78383</b>(요청 본문 누락을 이용한 AJP 서비스 거부), <b>CVE-2026-77791</b>(WebSocket 종료 중 busy wait로 인한 서비스 거부).<br>
       요청 헤더 혼용과 보안 제약 우회는 <b>앞단 프록시의 접근 통제를 우회하거나 다른 사용자의 요청과 섞이는</b> 유형이라, 인증·인가를 Tomcat 레벨에서 처리하는 구성일수록 영향이 큽니다.<br>
-      <b>악용 상태는 [미확인]입니다.</b> Apache 보안 페이지에 악용 여부에 관한 진술이 없고, 조회한 KEV 판본에도 등재돼 있지 않습니다.
-      <b>KEV 미등재만으로 "보고 없음"으로 쓰지 않았습니다.</b> 벤더·CNA·국가기관의 명시적 진술을 확인하지 못했으므로 [미확인]입니다.
+      <b>악용 상태는 <span style="color:#6B7280;">[미확인]</span>입니다.</b> Apache 보안 페이지에 악용 여부에 관한 진술이 없고, 조회한 KEV 판본에도 등재돼 있지 않습니다. <b>KEV 미등재만으로 "보고 없음"으로 쓰지 않았습니다.</b> 벤더·CNA·국가기관의 명시적 진술을 확인하지 못했으므로 <span style="color:#6B7280;">[미확인]</span>입니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치</td><td style="word-break:keep-all;">
       계열별 수정 버전 이상으로 올립니다. 수정 버전은 Apache 보안 페이지 기준이며 KISA #2552의 수정 버전과 일치합니다.<br>
       · Tomcat 9.0.x → <b>9.0.122</b> 이상 &nbsp;(영향 상한 <b>9.0.121</b>)<br>
       · Tomcat 10.1.x → <b>10.1.60</b> 이상 &nbsp;(영향 상한 <b>10.1.59</b>)<br>
       · Tomcat 11.0.x → <b>11.0.26</b> 이상 &nbsp;(영향 상한 <b>11.0.25</b>)<br>
-      <span style="font-size:12px;color:#6B7280;">※ <b>영향 범위의 하한은 CVE마다 다릅니다.</b> 같은 계열이라도 일부 CVE는 최근 버전에서만 발생합니다.
-      예를 들어 CVE-2026-86350(Important)은 <b>11.0.22~11.0.25 · 10.1.55~10.1.59 · 9.0.118~9.0.121</b> 구간에만 해당하고,
-      CVE-2026-78437은 <b>11.0.19~11.0.25 · 10.1.53~10.1.59 · 9.0.116~9.0.121</b>입니다.
-      반면 CVE-2026-76183 · 78383 · 79677 · 87022 등은 각 계열의 초기 버전부터 해당합니다
-      (<b>11.0.0-M1 · 10.1.0-M1 · 9.0.0.M1</b> 이후, 일부는 -M5 · -M14 · 9.0.0.M4부터).
-      <b>버전을 상한까지만 보고 "해당 없음"으로 판단하지 마시고, 운영 버전으로 Apache 보안 페이지에서 CVE별 구간을 직접 대조하십시오.</b></span><br>
-      <span style="font-size:12px;color:#6B7280;">※ <b>KISA #2552 표는 각 계열의 영향 버전 상한을 수정 버전과 같은 값(9.0.122 / 10.1.60 / 11.0.26)으로 표기했습니다.</b>
-      Apache 보안 페이지는 영향 상한을 각각 9.0.121 / 10.1.59 / 11.0.25로, 수정 버전을 9.0.122 / 10.1.60 / 11.0.26으로 구분합니다.
-      본문은 <b>벤더 공식 자료를 기준</b>으로 적었으며, 원문에 차이가 있었다는 사실만 기록합니다. 어느 쪽이 옳은지는 단정하지 않습니다.</span><br>
-      <span style="font-size:12px;color:#6B7280;">※ <b>KISA #2552는 CVE 10건을 적었고, Apache 보안 페이지의 해당 릴리스 항목에는 12건이 기재돼 있습니다</b>
-      (추가분 <b>CVE-2026-77756</b> — HTTP/1.0 요청에서 Transfer-Encoding이 처리되는 문제, <b>CVE-2026-73581</b> — 키스토어 사용 시 CRL 미확인).
-      세 계열(9.0.122 · 10.1.60 · 11.0.26) 모두 12건 기재로 일치합니다. 차이가 있었다는 사실만 기록합니다.</span><br>
+      <span style="font-size:12px;color:#6B7280;">※ <b>영향 범위의 하한은 CVE마다 다릅니다.</b> 같은 계열이라도 일부 CVE는 최근 버전에서만 발생합니다. 예를 들어 CVE-2026-86350(Important)은 <b>11.0.22~11.0.25 · 10.1.55~10.1.59 · 9.0.118~9.0.121</b> 구간에만 해당하고, CVE-2026-78437은 <b>11.0.19~11.0.25 · 10.1.53~10.1.59 · 9.0.116~9.0.121</b>입니다. 반면 CVE-2026-76183 · 78383 · 79677 · 87022 등은 각 계열의 초기 버전부터 해당합니다 (<b>11.0.0-M1 · 10.1.0-M1 · 9.0.0.M1</b> 이후, 일부는 -M5 · -M14 · 9.0.0.M4부터). <b>버전을 상한까지만 보고 "해당 없음"으로 판단하지 마시고, 운영 버전으로 Apache 보안 페이지에서 CVE별 구간을 직접 대조하십시오.</b></span><br>
+      <span style="font-size:12px;color:#6B7280;">※ <b>KISA #2552 표는 각 계열의 영향 버전 상한을 수정 버전과 같은 값(9.0.122 / 10.1.60 / 11.0.26)으로 표기했습니다.</b> Apache 보안 페이지는 영향 상한을 각각 9.0.121 / 10.1.59 / 11.0.25로, 수정 버전을 9.0.122 / 10.1.60 / 11.0.26으로 구분합니다. 본문은 <b>벤더 공식 자료를 기준</b>으로 적었으며, 원문에 차이가 있었다는 사실만 기록합니다. 어느 쪽이 옳은지는 단정하지 않습니다.</span><br>
+      <span style="font-size:12px;color:#6B7280;">※ <b>KISA #2552는 CVE 10건을 적었고, Apache 보안 페이지의 해당 릴리스 항목에는 12건이 기재돼 있습니다</b> (추가분 <b>CVE-2026-77756</b> — HTTP/1.0 요청에서 Transfer-Encoding이 처리되는 문제, <b>CVE-2026-73581</b> — 키스토어 사용 시 CRL 미확인). 세 계열(9.0.122 · 10.1.60 · 11.0.26) 모두 12건 기재로 일치합니다. 차이가 있었다는 사실만 기록합니다.</span><br>
       · 공식 우회책은 Apache 보안 페이지에 기재되어 있지 않습니다.<br>
       · <b>패치는 이미 2주 이상 공개된 상태입니다</b> — Apache 릴리스는 <b>2026-09-15</b>, 보호나라 게시는 9/30입니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">조치 적용 확인</td><td style="word-break:keep-all;">
       ① <b>실행 중인 Tomcat 버전</b>을 확인합니다. 배포된 WAR이나 설치 디렉터리 버전이 아니라 <b>동작 중인 프로세스가 올려진 버전</b> 기준입니다.<br>
-      ② <b>재시작이 필요합니다.</b> 라이브러리만 교체하고 재시작하지 않으면 구버전 프로세스가 계속 서비스합니다.
-      컨테이너로 운영하면 <b>새 이미지로 재생성</b>했는지 확인합니다.<br>
+      ② <b>재시작이 필요합니다.</b> 라이브러리만 교체하고 재시작하지 않으면 구버전 프로세스가 계속 서비스합니다. 컨테이너로 운영하면 <b>새 이미지로 재생성</b>했는지 확인합니다.<br>
       ③ <b>다수 인스턴스·클러스터는 전 노드를 개별 확인</b>합니다. 톰캣은 인스턴스 단위로 흩어져 운영되는 경우가 많아 누락이 잦습니다.<br>
       ④ 사내 제품에 <b>번들된 Tomcat</b>이 있는지 함께 확인하십시오. 제품 벤더가 패치 버전을 내놓기 전에는 임의 교체가 지원 범위를 벗어날 수 있습니다.<br>
       ⑤ <span style="color:#6B7280;">[미확인]</span> 버전 확인용 정확한 명령·스크립트 경로를 공식 문서로 확인하지 못해 싣지 않습니다.
     </td></tr>
     <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">침해 흔적 확인</td><td style="word-break:keep-all;">
-      <b>[미확인]</b> — Apache 보안 페이지에 침해 지표나 탐지 절차가 제시되어 있지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
+      <b><span style="color:#6B7280;">[미확인]</span></b> — Apache 보안 페이지에 침해 지표나 탐지 절차가 제시되어 있지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
       악용 보고가 확인되지 않은 건이라 침해 점검보다 <b>패치 적용과 재시작 완료 확인</b>이 우선입니다.
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
@@ -430,7 +365,6 @@
     </td></tr>
   </table>
 </td></tr>
-
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
   <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-8. 지난 호 수록분 — 조치 현황 추적</h3>
   <div style="font-size:12px;color:#6B7280;margin-bottom:9px;">신규 사실만 기재합니다. 상세 내용은 반복하지 않습니다.</div>
@@ -441,23 +375,19 @@
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Citrix NetScaler</b><br><span style="color:#6B7280;">CVE-2026-88771 · 88772</span></td>
-      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>해소됨.</b> 지난 호에 "등재일 미확정"으로 남겼던 KEV 등재일이 <b>2026-09-27</b>로 확인됐습니다(기한 9/30 경과).
-      이번 주 보호나라 #2550이 같은 계열 8건을 공지해 <b>3-1에서 처음 상세히 다룹니다.</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>해소됨.</b> 지난 호에 "등재일 미확정"으로 남겼던 KEV 등재일이 <b>2026-09-27</b>로 확인됐습니다(기한 9/30 경과). 이번 주 보호나라 #2550이 같은 계열 8건을 공지해 <b>3-1에서 처음 상세히 다룹니다.</b></td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>F5 BIG-IP APM</b><br><span style="color:#6B7280;">CVE-2026-94127</span></td>
-      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>미해소 — 2주 연속 이월.</b> 공식 문서 K000162605가 이번에도 자동 조회로 열리지 않았습니다(페이지 로딩 실패).
-      지난 호에 실은 핫픽스 값은 <b>보안업체 분석 자료 기준</b>이며 벤더 확인 완료가 아닙니다. <b>적용 전 F5 지원에 직접 확인이 필요합니다.</b></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>미해소 — 2주 연속 이월.</b> 공식 문서 K000162605가 이번에도 자동 조회로 열리지 않았습니다(페이지 로딩 실패). 지난 호에 실은 핫픽스 값은 <b>보안업체 분석 자료 기준</b>이며 벤더 확인 완료가 아닙니다. <b>적용 전 F5 지원에 직접 확인이 필요합니다.</b></td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Check Point</b><br><span style="color:#6B7280;">CVE-2026-93616 · 85102</span></td>
-      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>미해소 — 2주 연속 이월.</b> 지원 문서 sk1000171이 이번에도 자동 조회로 열리지 않았습니다(robots 차단).
-      R82·R81.20의 수정 Take 값과 설치된 Take 확인 절차는 여전히 <span style="color:#6B7280;">[미확인]</span>입니다.</td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>미해소 — 2주 연속 이월.</b> 지원 문서 sk1000171이 이번에도 자동 조회로 열리지 않았습니다(robots 차단). R82·R81.20의 수정 Take 값과 설치된 Take 확인 절차는 여전히 <span style="color:#6B7280;">[미확인]</span>입니다.</td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>그 외 지난 호 항목</b><br><span style="color:#6B7280;">WordPress · WSO2 · MikroTik · SharePoint · Arista · Zyxel · 리눅스 커널</span></td>
-      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>신규 사실 없음.</b> 조회한 KEV 판본(10/01자) 기준으로 <b>이번 대상 기간에 새로 등재된 지난 호 항목은 없습니다.</b>
-      악용 상태 변화, 벤더 권고 개정, 해결 버전 변경도 확인되지 않았습니다. 지난 호 조치를 그대로 유지하십시오.</td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>신규 사실 없음.</b> 조회한 KEV 판본(10/01자) 기준으로 <b>이번 대상 기간에 새로 등재된 지난 호 항목은 없습니다.</b> 악용 상태 변화, 벤더 권고 개정, 해결 버전 변경도 확인되지 않았습니다. 지난 호 조치를 그대로 유지하십시오.</td>
     </tr>
   </table></div>
 </td></tr>
@@ -479,25 +409,19 @@
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>미들웨어 · WAS 운영</b></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;">
-      <b>Apache Tomcat 전수 점검</b> — 사내·고객사 인스턴스를 목록화하고 계열별 수정 버전(9.0.122 / 10.1.60 / 11.0.26) 이상인지 확인합니다.
-      <b>교체 후 재시작까지 확인</b>해야 하고, 컨테이너는 새 이미지로 재생성했는지 봐야 합니다.
-      <b>사내 제품에 번들된 Tomcat</b>이 있는지도 함께 확인하십시오 — 제품 벤더 패치 전 임의 교체는 지원 범위를 벗어날 수 있습니다.</td>
+      <b>Apache Tomcat 전수 점검</b> — 사내·고객사 인스턴스를 목록화하고 계열별 수정 버전(9.0.122 / 10.1.60 / 11.0.26) 이상인지 확인합니다. <b>교체 후 재시작까지 확인</b>해야 하고, 컨테이너는 새 이미지로 재생성했는지 봐야 합니다. <b>사내 제품에 번들된 Tomcat</b>이 있는지도 함께 확인하십시오 — 제품 벤더 패치 전 임의 교체는 지원 범위를 벗어날 수 있습니다.</td>
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>2주</b></td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>웹 · 전자상거래 운영</b></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;">
-      <b>Adobe Commerce · Magento</b> — <b>8월 정기 업데이트 적용 여부를 먼저 확인.</b> 적용했다면 해소 상태일 수 있고, 미적용이면 두 달 가까이 노출된 상태입니다.
-      버전 표기가 <code style="word-break:break-all;">-2026-aug</code> 이상인지 확인하고, 멀티사이트는 인스턴스별로 봅니다.
-      정기 창이 멀면 핫픽스 가용 여부를 Adobe 지원에 확인하십시오.</td>
+      <b>Adobe Commerce · Magento</b> — <b>8월 정기 업데이트 적용 여부를 먼저 확인.</b> 적용했다면 해소 상태일 수 있고, 미적용이면 두 달 가까이 노출된 상태입니다. 버전 표기가 <code style="word-break:break-all;">-2026-aug</code> 이상인지 확인하고, 멀티사이트는 인스턴스별로 봅니다. 정기 창이 멀면 핫픽스 가용 여부를 Adobe 지원에 확인하십시오.</td>
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>1주</b></td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>단말 · 업무환경 운영</b></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;">
-      <b>Apple 단말</b> — iOS·iPadOS·macOS를 <b>26.7.1 이상</b>으로 올립니다. MDM 운영 중이면 버전 보고값으로 일괄 확인하고 미보고 단말을 추적합니다.
-      애플이 밝힌 공격 성격이 표적형이므로 <b>고위험 직무 대상자 단말을 우선</b>합니다.
-      업무 메일·그룹웨어에 접근하는 개인 단말도 범위에 포함해 안내해 주십시오.</td>
+      <b>Apple 단말</b> — iOS·iPadOS·macOS를 <b>26.7.1 이상</b>으로 올립니다. MDM 운영 중이면 버전 보고값으로 일괄 확인하고 미보고 단말을 추적합니다. 애플이 밝힌 공격 성격이 표적형이므로 <b>고위험 직무 대상자 단말을 우선</b>합니다. 업무 메일·그룹웨어에 접근하는 개인 단말도 범위에 포함해 안내해 주십시오.</td>
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>이번 주</b></td>
     </tr>
     <tr>
@@ -512,8 +436,7 @@
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>전 직원</b></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;">
       ① 업무용 iPhone·iPad·Mac을 <b>26.7.1 이상</b>으로 업데이트해 주십시오. <b>출처가 불분명한 파일·이미지를 여는 것만으로</b> 악용될 수 있는 유형입니다.<br>
-      ② 보호나라가 같은 기간에 <b>공공기관 사칭 해킹메일 사례</b>(#2551)와 <b>기업 보안강화 권고</b>(#2555)를 공지했습니다.
-      특정 제품 조치가 아니어서 본문에서는 제외했으나, <b>발신 주소 확인과 첨부파일 열람 주의</b>는 이번 주에도 유효합니다.</td>
+      ② 보호나라가 같은 기간에 <b>공공기관 사칭 해킹메일 사례</b>(#2551)와 <b>기업 보안강화 권고</b>(#2555)를 공지했습니다. 특정 제품 조치가 아니어서 본문에서는 제외했으나, <b>발신 주소 확인과 첨부파일 열람 주의</b>는 이번 주에도 유효합니다.</td>
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>이번 주</b></td>
     </tr>
   </table></div>
@@ -523,60 +446,43 @@
   <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">5. 집계 기준과 참고 사항</h2>
 
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
-    <b>집계 기준</b> — KISA는 게시판 게시일, CISA KEV는 <code style="word-break:break-all;">dateAdded</code> 기준입니다. 대상 기간은 2026-09-28 00:00 ~ 10-04 24:00(KST)입니다.
-    기간 내 KISA 공지 <b>7건(#2549~#2555)</b>이며, 게시판 총 2,555건·최상단 일반행 #2555와 일치합니다.
-    상단 고정 공지 5건 중 1건(<code style="word-break:break-all;">nttId=72207</code>)은 일반 목록 #2555와 동일 게시물이어서 한 건으로 계수했고, 나머지 4건은 게시일이 2026-07-16 이전으로 기간 밖입니다.
-    페이지 1의 최하단 일반행이 #2546(9/22)으로 기간 시작보다 이르므로, <b>기간 내 게시물은 페이지 1에 전부 포함</b>됩니다.
+    <b>집계 기준</b> — KISA는 게시판 게시일, CISA KEV는 <code style="word-break:break-all;">dateAdded</code> 기준입니다. 대상 기간은 2026-09-28 00:00 ~ 10-04 24:00(KST)입니다. 기간 내 KISA 공지 <b>7건(#2549~#2555)</b>이며, 게시판 총 2,555건·최상단 일반행 #2555와 일치합니다. 상단 고정 공지 5건 중 1건(<code style="word-break:break-all;">nttId=72207</code>)은 일반 목록 #2555와 동일 게시물이어서 한 건으로 계수했고, 나머지 4건은 게시일이 2026-07-16 이전으로 기간 밖입니다. 페이지 1의 최하단 일반행이 #2546(9/22)으로 기간 시작보다 이르므로, <b>기간 내 게시물은 페이지 1에 전부 포함</b>됩니다.
   </p>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
-    조회한 KEV 판본 기준 기간 내 신규 등재는 <b>3건</b>이며, CVE 중복 1건(CVE-2026-76504 — KISA #2554 ↔ KEV)을 하나로 묶어
-    <b>점검 대상 7건</b>을 본문에 실었습니다. 이 중 <b>2건(Apple · Fortinet)은 KEV에서만 확인</b>된 항목으로, 보호나라만 봤다면 놓쳤을 건입니다.
+    조회한 KEV 판본 기준 기간 내 신규 등재는 <b>3건</b>이며, CVE 중복 1건(CVE-2026-76504 — KISA #2554 ↔ KEV)을 하나로 묶어 <b>점검 대상 7건</b>을 본문에 실었습니다. 이 중 <b>2건(Apple · Fortinet)은 KEV에서만 확인</b>된 항목으로, 보호나라만 봤다면 놓쳤을 건입니다.
   </p>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
-    <b>리포트에서 제외한 공지 2건</b> — #2555(10/3, 최근 사이버공격 대비 기업 보안강화 권고), #2551(9/29, 공공기관 사칭 해킹메일을 통한 사기 시도 사례 보고).
-    두 건 모두 <b>특정 제품·버전·CVE·설정 항목을 지정하지 않은 일반 권고·사례 공지</b>여서 기술 조치 항목으로 다루지 않았습니다.
-    #2555는 5개 영역 점검표를 담고 있으나 개별 항목을 검토한 결과 특정 제품이나 버전에 연결되는 기술 항목이 없었습니다. 두 건의 취지는 4항 전 직원 항목에 반영했고, 원문은 보호나라에서 확인하실 수 있습니다.
+    <b>리포트에서 제외한 공지 2건</b> — #2555(10/3, 최근 사이버공격 대비 기업 보안강화 권고), #2551(9/29, 공공기관 사칭 해킹메일을 통한 사기 시도 사례 보고). 두 건 모두 <b>특정 제품·버전·CVE·설정 항목을 지정하지 않은 일반 권고·사례 공지</b>여서 기술 조치 항목으로 다루지 않았습니다. #2555는 5개 영역 점검표를 담고 있으나 개별 항목을 검토한 결과 특정 제품이나 버전에 연결되는 기술 항목이 없었습니다. 두 건의 취지는 4항 전 직원 항목에 반영했고, 원문은 보호나라에서 확인하실 수 있습니다.
   </p>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
     <b>KEV 수집 경로와 판본</b> — 공식 데이터 경로 두 곳의 판본을 비교해 최신본을 선택했습니다.<br>
     · 선택: <code style="word-break:break-all;">cisagov/kev-data</code> <b>main</b> — catalogVersion <b>2026.10.01</b> · dateReleased <b>2026-10-01T19:54:04.9308Z</b> · count <b>1731</b><br>
     · 제외: 같은 저장소 <b>develop</b> — catalogVersion <b>2026.09.18</b> · count <b>1716</b> (17일 지연)<br>
     · CISA 공식 웹 피드(<code style="word-break:break-all;">cisa.gov</code> JSON)는 자동 조회가 403으로 차단돼 사용하지 못했습니다.<br>
-    지난 호 기록(catalogVersion 2026.09.25 · count 1726) 대비 증가분은 <b>5건</b>이며,
-    등재일 내역(9/27 2건 · 9/29 1건 · 9/30 1건 · 10/1 1건)과 정확히 일치합니다. 이 교차 검증으로 9/26~10/01 구간의 누락이 없음을 확인했습니다.
+    지난 호 기록(catalogVersion 2026.09.25 · count 1726) 대비 증가분은 <b>5건</b>이며, 등재일 내역(9/27 2건 · 9/29 1건 · 9/30 1건 · 10/1 1건)과 정확히 일치합니다. 이 교차 검증으로 9/26~10/01 구간의 누락이 없음을 확인했습니다.
   </p>
   <div style="background:#F8F9FA;border:1px solid #D1D5DB;padding:11px 13px;margin:0 0 9px;">
     <p style="margin:0;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
       <b>조회 범위 한계 — 10/02 ~ 10/04</b><br>
-      조회한 KEV 판본은 <b>10/01자</b>입니다. 대상 기간 마지막 사흘(10/02~10/04)은 이 판본 이후 구간이므로 <b>이번 호에서 확인하지 않았습니다.</b>
-      본문의 "신규 3건"은 <b>10/01까지 확인된 수치</b>이며 대상 기간 전체의 확정 건수가 아닙니다. <b>해당 구간을 "0건"으로 해석하지 마십시오.</b><br>
-      또한 CISA 공식 알림 목록에 <b>2026-10-02자 「CISA Adds Two Known Exploited Vulnerabilities to Catalog」</b>가 존재합니다.
-      해당 페이지 본문이 자동 조회로 열리지 않아 <b>어떤 CVE 2건인지는 <span style="color:#6B7280;">[미확인]</span></b>이며, 이번 호에 반영되지 않았습니다.
-      10/03~10/04 구간의 등재 유무는 확인하지 못했습니다. <b>다음 호에서 10/02~10/04 구간을 최우선으로 재조회합니다.</b>
+      조회한 KEV 판본은 <b>10/01자</b>입니다. 대상 기간 마지막 사흘(10/02~10/04)은 이 판본 이후 구간이므로 <b>이번 호에서 확인하지 않았습니다.</b> 본문의 "신규 3건"은 <b>10/01까지 확인된 수치</b>이며 대상 기간 전체의 확정 건수가 아닙니다. <b>해당 구간을 "0건"으로 해석하지 마십시오.</b><br>
+      또한 CISA 공식 알림 목록에 <b>2026-10-02자 「CISA Adds Two Known Exploited Vulnerabilities to Catalog」</b>가 존재합니다. 해당 페이지 본문이 자동 조회로 열리지 않아 <b>어떤 CVE 2건인지는 <span style="color:#6B7280;">[미확인]</span></b>이며, 이번 호에 반영되지 않았습니다. 10/03~10/04 구간의 등재 유무는 확인하지 못했습니다. <b>다음 호에서 10/02~10/04 구간을 최우선으로 재조회합니다.</b>
     </p>
   </div>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
-    <b>지난 호 대비 변경</b> — 지난 호 미확인 항목이던 Citrix <b>CVE-2026-88771 · CVE-2026-88772</b>의 KEV 등재일이 <b>2026-09-27</b>로 확정됐습니다(기한 9/30, 경과).
-    지난 호 기재("등재 보고되나 조회 판본에 없음 — 등재일 미확정")는 그 시점 판본 기준으로는 정확했습니다.
-    그 외 지난 호 수록 항목 중 이번 대상 기간에 새로 KEV에 등재된 건은 없습니다.
+    <b>지난 호 대비 변경</b> — 지난 호 미확인 항목이던 Citrix <b>CVE-2026-88771 · CVE-2026-88772</b>의 KEV 등재일이 <b>2026-09-27</b>로 확정됐습니다(기한 9/30, 경과). 지난 호 기재("등재 보고되나 조회 판본에 없음 — 등재일 미확정")는 그 시점 판본 기준으로는 정확했습니다. 그 외 지난 호 수록 항목 중 이번 대상 기간에 새로 KEV에 등재된 건은 없습니다.
   </p>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
     <b>원문 표기 차이</b> — 네 건을 기록합니다. 어느 쪽이 옳은지는 단정하지 않고 차이가 있었다는 사실만 남깁니다.<br>
     ① <b>Cisco CVE-2026-76504 명칭</b> — KEV 등재명은 "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability", 벤더 권고 제목은 "Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability"입니다. 본문은 벤더 설명(API 세션 인증 관리 결함)을 기준으로 적었습니다.<br>
-    ② <b>Apache</b> — ㉠ CVE 건수: KISA #2552는 10건, Apache 보안 페이지는 12건(CVE-2026-77756 · CVE-2026-73581 추가)입니다.
-    ㉡ 영향 버전 상한: KISA 표는 수정 버전과 같은 값(9.0.122 / 10.1.60 / 11.0.26)으로 적었고, Apache는 9.0.121 / 10.1.59 / 11.0.25로 구분합니다. 본문은 Apache 기준입니다.<br>
+    ② <b>Apache</b> — ㉠ CVE 건수: KISA #2552는 10건, Apache 보안 페이지는 12건(CVE-2026-77756 · CVE-2026-73581 추가)입니다. ㉡ 영향 버전 상한: KISA 표는 수정 버전과 같은 값(9.0.122 / 10.1.60 / 11.0.26)으로 적었고, Apache는 9.0.121 / 10.1.59 / 11.0.25로 구분합니다. 본문은 Apache 기준입니다.<br>
     ③ <b>Adobe 해결 경로</b> — KISA #2549는 "핫픽스 적용", 벤더 APSB26-92는 <code style="word-break:break-all;">-2026-aug</code> 버전 업데이트로 적었습니다.<br>
     ④ <b>파이오링크 해결 버전</b> — 벤더 공지에는 <code style="word-break:break-all;">v2.2.2.1.0</code> 이상이 함께 적혀 있고 KISA #2553 표에는 없습니다.
   </p>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
-    <b>출처 등급 표기</b> — 해결 버전·핫픽스·설정값은 <b>벤더 공식 자료</b>에서 확인한 것만 처방 형태로 실었습니다.
-    KISA·CISA·국가 CERT 자료를 근거로 쓴 값은 해당 위치에 출처를 바로 붙였고, 보안업체·언론 자료만 근거인 값은 처방 형태로 싣지 않았습니다.
-    확인하지 못한 값은 <span style="color:#6B7280;">[미확인]</span>으로 두었습니다.
+    <b>출처 등급 표기</b> — 해결 버전·핫픽스·설정값은 <b>벤더 공식 자료</b>에서 확인한 것만 처방 형태로 실었습니다. KISA·CISA·국가 CERT 자료를 근거로 쓴 값은 해당 위치에 출처를 바로 붙였고, 보안업체·언론 자료만 근거인 값은 처방 형태로 싣지 않았습니다. 확인하지 못한 값은 <span style="color:#6B7280;">[미확인]</span>으로 두었습니다.
   </p>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
-    <b>확인하지 못한 벤더 원문</b> — Citrix CTX697096은 열람했으나 침해 지표가 기재돼 있지 않았습니다.
-    F5 K000162605(페이지 로딩 실패), Check Point sk1000171(robots 차단), Apple 보안 문서 149229(미열람), Adobe 지원 문서 ka-40380(미열람)은 이번에도 확인하지 못했습니다.
-    확인하지 못한 버전·명령·침해 지표는 추측해서 싣지 않았고 <span style="color:#6B7280;">[미확인]</span>으로 남겼습니다.
+    <b>확인하지 못한 벤더 원문</b> — Citrix CTX697096은 열람했으나 침해 지표가 기재돼 있지 않았습니다. F5 K000162605(페이지 로딩 실패), Check Point sk1000171(robots 차단), Apple 보안 문서 149229(미열람), Adobe 지원 문서 ka-40380(미열람)은 이번에도 확인하지 못했습니다. 확인하지 못한 버전·명령·침해 지표는 추측해서 싣지 않았고 <span style="color:#6B7280;">[미확인]</span>으로 남겼습니다.
   </p>
 
   <p style="margin:12px 0 7px;font-size:13px;font-weight:700;color:#1F2937;">남아 있는 [미확인] 항목</p>
@@ -594,19 +500,13 @@
     <tr><td style="border:1px solid #D1D5DB;word-break:keep-all;">Check Point <span style="color:#6B7280;">(2주 이월)</span></td><td style="border:1px solid #D1D5DB;word-break:keep-all;">R82·R81.20 수정 Take 값 · 설치된 Take 확인 절차</td><td style="border:1px solid #D1D5DB;word-break:keep-all;">sk1000171 · 지원 포털</td></tr>
   </table></div>
   <p style="margin:11px 0 0;font-size:12.5px;line-height:1.75;color:#6B7280;word-break:keep-all;">
-    ※ 침해 흔적 확인 결과가 비어 있어도 <b>'침해 없음'으로 결론 내리지 않습니다.</b>
-    이번 호 7건 중 벤더 공식 침해 지표를 확보한 것은 <b>2건</b>(Cisco SD-WAN Manager · Fortinet FortiMail)이고, 나머지 5건은 벤더가 제공하지 않아 <span style="color:#6B7280;">[미확인]</span>입니다.
+    ※ 침해 흔적 확인 결과가 비어 있어도 <b>'침해 없음'으로 결론 내리지 않습니다.</b> 이번 호 7건 중 벤더 공식 침해 지표를 확보한 것은 <b>2건</b>(Cisco SD-WAN Manager · Fortinet FortiMail)이고, 나머지 5건은 벤더가 제공하지 않아 <span style="color:#6B7280;">[미확인]</span>입니다.
   </p>
 </td></tr>
 
 <tr><td class="sec" style="padding:16px 26px 20px;background:#F3F4F6;border-top:1px solid #D1D5DB;">
   <p style="margin:0 0 8px;font-size:12px;line-height:1.75;color:#6B7280;word-break:break-word;">
-    <b>이번 호 출처</b> — KISA 보호나라 보안공지 #2549 · #2550 · #2551 · #2552 · #2553 · #2554 · #2555 ·
-    CISA KEV(cisagov/kev-data main, catalogVersion 2026.10.01 · count 1731) ·
-    Citrix 보안 공지 CTX697096 · Cisco 보안권고 cisco-sa-sdwan-webauth-xr8beuuU · Fortinet PSIRT FG-IR-26-175 ·
-    Apple 보안 문서 149226 · 149228(149229 미열람) · Adobe 보안 공지 APSB26-92 ·
-    Apache Tomcat 보안 페이지(security-9 · security-10 · security-11) · 파이오링크 보안공지(2026-09-29) ·
-    F5 K000162605(미열람) · Check Point sk1000171(미열람).
+    <b>이번 호 출처</b> — KISA 보호나라 보안공지 #2549 · #2550 · #2551 · #2552 · #2553 · #2554 · #2555 · CISA KEV(cisagov/kev-data main, catalogVersion 2026.10.01 · count 1731) · Citrix 보안 공지 CTX697096 · Cisco 보안권고 cisco-sa-sdwan-webauth-xr8beuuU · Fortinet PSIRT FG-IR-26-175 · Apple 보안 문서 149226 · 149228(149229 미열람) · Adobe 보안 공지 APSB26-92 · Apache Tomcat 보안 페이지(security-9 · security-10 · security-11) · 파이오링크 보안공지(2026-09-29) · F5 K000162605(미열람) · Check Point sk1000171(미열람).
   </p>
   <p style="margin:0;font-size:12px;line-height:1.75;color:#6B7280;word-break:keep-all;">
     본 리포트는 보호나라 공지와 CISA 악용 확인 목록을 기준으로 조치·확인 방법을 보강한 참고자료입니다.
