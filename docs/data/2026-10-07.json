@@ -1,0 +1,313 @@
+{
+  "generated_at": "2026-10-07T08:50:21.815298+09:00",
+  "date": "2026-10-07",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "금융권 등 개인정보 유출 사고 피해보상금 지급 등 사칭 피싱 주의 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72211",
+          "source": "KISA 보안공지",
+          "published": "2026-10-06T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "보안인증 소프트웨어 취약점 관련 클리닝 서비스 가동 안내",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72210",
+          "source": "KISA 보안공지",
+          "published": "2026-10-06T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Citrix 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72209",
+          "source": "KISA 보안공지",
+          "published": "2026-10-06T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Apache 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72208",
+          "source": "KISA 보안공지",
+          "published": "2026-10-06T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "[긴급] 국내 대형 종교기관 2곳 사이버 공격 확인… ERP·그룹웨어 거쳐 대규모 개인정보 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208758",
+          "source": "데일리시큐",
+          "published": "2026-10-06T21:43:03+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "2003년 이후 거쳐 간 누구나 피해 가능... 덴마크공대, 최대 20만명 정보 노출 우려",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146202",
+          "source": "보안뉴스",
+          "published": "2026-10-06T16:45:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 한국전력 2만4천명 직원 정보 노출 넘어 내부 보안 정보까지 유출 정황...내부 보안 인프라까지 조사 확대해야",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208748",
+          "source": "데일리시큐",
+          "published": "2026-10-06T15:13:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 다크웹에 SK텔레콤 대규모 고객정보 판매글 등장…SKT “허위 정보” 주장",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208736",
+          "source": "데일리시큐",
+          "published": "2026-10-06T10:26:35+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[인터뷰] 엑스트라홉 “AI 보안 솔루션의 한계? 진짜 문제는 지능이 아닌 ‘데이터 품질과 컨텍스트’”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146210",
+          "source": "보안뉴스",
+          "published": "2026-10-06T14:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "에버스핀, 전북대에 웹 보안 솔루션 ‘에버세이프 웹’ 공급...자동화 공격 대응",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208742",
+          "source": "데일리시큐",
+          "published": "2026-10-06T13:56:12+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "“대한민국이 공격당하고 있다”... 국정감사 달군 사이버보안 공백",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146223",
+          "source": "보안뉴스",
+          "published": "2026-10-06T18:43:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[보안 칼럼] 금융권 뚫은 ‘AI 해킹’, 답은 소스코드에 있다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208754",
+          "source": "데일리시큐",
+          "published": "2026-10-06T16:01:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이슈 칼럼] AI가 창을 들었다면, 우리는 방패를 준비했는가?",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146214",
+          "source": "보안뉴스",
+          "published": "2026-10-06T15:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "S2W 서상덕 대표, 제2차 한영고위급포럼 참석...AI 주권 위한 공급망 보안 제안",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208744",
+          "source": "데일리시큐",
+          "published": "2026-10-06T14:06:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "포티넷 포티메일, 인증 우회해 파일 심는 제로데이 악용...5일 긴급 패치",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146197",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-06T14:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-104286"
+          ]
+        },
+        {
+          "title": "모든 차를 기록하는 카메라 ‘플록’ ... 미 연방 판사, 경찰의 영장 없는 조회에 위헌 판결",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146204",
+          "source": "보안뉴스",
+          "published": "2026-10-06T13:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "사이버다임, 문서중앙화 솔루션에 DLP 기능 통합…문서 보안 관리 범위 확대",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146207",
+          "source": "보안뉴스",
+          "published": "2026-10-06T11:54:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“G20서 공급망 보안을 핵심 의제로”... S2W, 영국과 안보 비전 공유",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146203",
+          "source": "보안뉴스",
+          "published": "2026-10-06T11:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융보안원, 금융권 AI 에이전트 보안 평가기준 마련…‘실행 단계’까지 점검",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208760",
+          "source": "데일리시큐",
+          "published": "2026-10-07T08:40:28+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "아태 중소중견기업 10곳 중 9곳 사이버공격 경험…취약점·피싱 집중",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208759",
+          "source": "데일리시큐",
+          "published": "2026-10-07T08:35:05+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "샤이니헌터스 연루 의심 ‘레이’, 요르단서 구금 보도...공범 추적 돕는다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146199",
+          "source": "보안뉴스",
+          "published": "2026-10-06T17:30:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "스팸 차단 장비인 척 숨어든 리눅스 백도어... 한국과 대만 메일 장비 노렸다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146200",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-06T17:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Hackers exploit 32 zero-days on first day of Pwn2Own Ireland",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T04:21:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Atlassian warns of critical file-access flaw in Jira, Confluence",
+          "link": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T02:34:59+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-21589"
+          ]
+        },
+        {
+          "title": "ASOS confirms data breach after “HACKED” in-app notifications",
+          "link": "https://www.bleepingcomputer.com/news/security/asos-confirms-data-breach-after-hacked-in-app-notifications/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T01:33:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Nikkei discloses breaches of employees’ Microsoft, Google email accounts",
+          "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-breaches-of-employees-microsoft-google-email-accounts/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T18:25:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Engineer sentenced for locking over 3,000 devices on employer network",
+          "link": "https://www.bleepingcomputer.com/news/security/engineer-sentenced-for-locking-thousands-of-devices-on-employer-network/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T17:19:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "FBI Removes Accenture Contractor After Patch Failure Led to ShinyHunters Breach",
+          "link": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
+          "source": "The Hacker News",
+          "published": "2026-10-06T15:56:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Rejetto HFS servers now actively scanned for critical RCE flaw",
+          "link": "https://www.bleepingcomputer.com/news/security/rejetto-hfs-servers-now-actively-scanned-for-critical-rce-flaw/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T05:20:05+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-61500"
+          ]
+        },
+        {
+          "title": "Ninja Forms plugin flaw exploited to hack WordPress sites",
+          "link": "https://www.bleepingcomputer.com/news/security/ninja-forms-plugin-flaw-exploited-to-hack-wordpress-sites/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T06:00:27+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
+          "link": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+          "source": "The Hacker News",
+          "published": "2026-10-07T03:38:55+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan",
+          "link": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
+          "source": "The Hacker News",
+          "published": "2026-10-07T03:24:25+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Fake ChatGPT, Gemini Sites steal advertising accounts, MFA codes",
+          "link": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T00:16:44+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "How to secure RMM software: 8 controls MSPs should test",
+          "link": "https://www.bleepingcomputer.com/news/security/how-to-secure-rmm-software-8-controls-msps-should-test/",
+          "source": "BleepingComputer",
+          "published": "2026-10-06T23:00:10+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 34
+}
