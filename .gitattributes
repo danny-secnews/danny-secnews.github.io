@@ -1,0 +1,9 @@
+# KISA 파이프라인 파일은 어느 OS에서 받아도 줄바꿈을 LF로 고정한다.
+# - 렌더 일치 검사(HTML = 데이터 렌더 결과)가 윈도 CRLF 변환 때문에 어긋나지 않게
+# - build_manifest.py --check 가 로컬(윈도)에서 manifest.json을 늘 '갱신 필요'로 보지 않게
+# 범위는 KISA 파이프라인 경로와 목록 파일로 한정한다(데일리·법령 파일은 기존 설정 그대로).
+content/kisa-cert/**      text eol=lf
+templates/kisa-cert/**    text eol=lf
+tools/kisa/**             text eol=lf
+docs/kisa-cert/*.html     text eol=lf
+docs/data/manifest.json   text eol=lf

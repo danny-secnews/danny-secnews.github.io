@@ -1,0 +1,40 @@
+# KISA 주간 리포트 PR 검사 (첫 판)
+# - KISA 관련 경로가 바뀐 PR에서만 실행한다. main push·예약 실행이 없으므로
+#   daily.yml(매일 발행)·portal.yml(목록 갱신)과 실행이 얽히지 않는다.
+# - 읽기 전용 권한, 비밀값 사용 없음. 저장소에 아무것도 쓰지 않는다.
+# - 검사 내용: tools/kisa/validate.py (형식·면제 목록·렌더 일치·HTML 필수 요소·폴더)
+# - 아직은 PR 쪽 검사 코드를 그대로 실행한다. main의 검사 코드로 PR 파일을 검사하는 구조는
+#   STEP 5(자동화 PR이 브랜치에 올리기 전)에 넣는다.
+name: kisa-validate
+
+on:
+  pull_request:
+    paths:
+      - "content/kisa-cert/**"
+      - "docs/kisa-cert/**"
+      - "templates/kisa-cert/**"
+      - "tools/kisa/**"
+      - "tools/build_manifest.py"
+      - ".gitattributes"
+      - ".github/workflows/kisa-validate.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kisa-validate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: KISA 리포트 검사
+        run: python tools/kisa/validate.py

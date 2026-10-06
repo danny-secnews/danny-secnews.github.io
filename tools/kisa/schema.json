@@ -115,7 +115,15 @@
    }
   },
   "unverified_footnote": {"$ref": "#/$defs/rich", "description": "[미확인] 표 아래 회색 ※ 문단(선택)"},
-  "footer_sources": {"$ref": "#/$defs/rich", "description": "바닥글 '이번 호 출처 —' 뒤의 글"}
+  "footer_sources": {"$ref": "#/$defs/rich", "description": "바닥글 '이번 호 출처 —' 뒤의 글"},
+  "boilerplate": {
+   "type": "object", "additionalProperties": false,
+   "description": "고정 안내문을 바꿔 쓰기. 이전된 호(면제 목록)에만 허용 — 과거 호의 원래 문구 보존용. 새 호는 쓰지 않고 표준 문구를 쓴다.",
+   "properties": {
+    "priority_footnote": {"$ref": "#/$defs/rich", "description": "2. 우선순위 표 아래 ※ 안내문"},
+    "footer_notice": {"$ref": "#/$defs/rich", "description": "바닥글 맨 아래 안내문"}
+   }
+  }
  },
  "$defs": {
   "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},

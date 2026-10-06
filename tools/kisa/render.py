@@ -16,6 +16,8 @@ docs/kisa-cert/kisa_weekly_<week_start>_public.html 을 만든다. HTML은 이 �
   - 날짜·제목·파일 이름은 데이터의 week_start, published_date로 코드가 만든다.
   - 출력은 UTF-8, 줄바꿈 LF로 고정(윈도·리눅스 같은 결과).
   - portal-date 메타와 상단 바 줄(build_manifest.NAV_TAG)을 넣어 build_manifest.py가 고칠 게 없게 한다.
+  - 고정 안내문은 표준 문구를 쓴다. 데이터의 boilerplate로 바꿔 쓰는 것은 이전된 호에만 허용(validate.py가 검사).
+  - 데이터 형식 검사는 하지 않는다 — tools/kisa/validate.py 가 schema.json 으로 검사한다.
 """
 from __future__ import annotations
 
@@ -49,6 +51,17 @@ LABEL = 'valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;"
 P_LEAD = 'style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;"'
 P_LEAD_NOTE = 'style="margin:0 0 4px;font-size:13px;line-height:1.75;color:#6B7280;word-break:keep-all;"'
 P_NOTE = 'style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;"'
+# 표준 고정 문구(09-28 기준). 새 호는 언제나 이 문구를 쓰고, 데이터의 boilerplate로 바꿔 쓰는 것은
+# 이전된 호(validate.py의 면제 목록)에만 허용한다 — 과거 호의 원래 문구를 보존하기 위한 장치.
+STANDARD_PRIORITY_FOOTNOTE = (
+    "    ※ 권고 기한은 우선순위 예시입니다. 실제 일정은 자산 중요도·인터넷 노출 여부·변경관리 정책에 따라 조정하십시오.\n"
+    "    악용 여부는 벤더 공지와 CISA KEV 등재를 근거로 하며 각 항목의 출처를 상세에 적었습니다.\n"
+    "    KEV 기한은 미국 연방기관 기준으로, 사내 기한이 아니라 우선순위 참고값입니다.\n"
+    "    악용 상태는 <b>악용 확인 / 보고 없음 / [미확인]</b> 세 가지만 사용합니다.")
+STANDARD_FOOTER_NOTICE = (
+    "    본 리포트는 보호나라 공지와 CISA 악용 확인 목록을 기준으로 조치·확인 방법을 보강한 참고자료입니다.\n"
+    "    실제 적용 전 벤더 공식 문서와 각 조직의 변경관리 절차를 따르십시오.<br>\n"
+    "    문의: KISA 사이버민원센터 국번없이 118")
 GRID = ('<div class="gw"><table role="presentation" class="grid" width="100%" cellpadding="6" '
         'cellspacing="0" style="border-collapse:collapse;font-size:{size}px;color:#1F2937;">')
 TH = '<th style="border:1px solid #D1D5DB;text-align:left;">'
@@ -264,6 +277,9 @@ def render(data: dict, source_path: str = "") -> str:
         items = data["items"]
         page = TEMPLATE.read_text(encoding="utf-8").replace("\r\n", "\n")
         body = "".join(render_item(f"3-{i}", it) for i, it in enumerate(items, 1))
+        custom = data.get("boilerplate") or {}
+        footnote = custom.get("priority_footnote")
+        notice = custom.get("footer_notice")
         return Template(page).substitute(
             title=esc(title_of(start)),
             published_date=published.isoformat(),
@@ -280,6 +296,8 @@ def render(data: dict, source_path: str = "") -> str:
             notes=render_notes(data["notes"]),
             unverified=render_unverified(data),
             footer_sources=inline(data["footer_sources"], "    "),
+            priority_footnote="    " + inline(footnote, "    ") if footnote else STANDARD_PRIORITY_FOOTNOTE,
+            footer_notice="    " + inline(notice, "    ") if notice else STANDARD_FOOTER_NOTICE,
         )
     except KeyError as e:
         raise RenderError(f"필수 칸 없음: {e.args[0]}") from None
