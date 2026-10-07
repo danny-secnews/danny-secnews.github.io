@@ -1,0 +1,310 @@
+{
+  "generated_at": "2026-10-08T08:50:14.499302+09:00",
+  "date": "2026-10-08",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "“코어뱅킹 밖을 노려라”… 해커 먹잇감 된 모집인·영업지원 시스템",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146246",
+          "source": "보안뉴스",
+          "published": "2026-10-07T18:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국인터넷진흥원, 나주 본원 신관 준공...업무 공간 확충으로 대응력 강화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208776",
+          "source": "데일리시큐",
+          "published": "2026-10-07T16:06:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "에이아이딥, 생성형 AI 4대 보안 위협 제시...'DeepGenGuard'로 대응",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208775",
+          "source": "데일리시큐",
+          "published": "2026-10-07T16:00:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KISA, 나주 본원 신관 준공... “분산된 사이버보안 역량 한곳으로 통합”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146242",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-07T15:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "이름·주소·식별번호 한꺼번에... 덴마크 주민등록부 뚫려 880만명 정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146225",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-07T15:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“개인정보 유출 보상금 드립니다” KISA, 금융권 해킹 악용 피싱 주의보",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146240",
+          "source": "보안뉴스",
+          "published": "2026-10-07T13:50:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“사이버 공격에 성역은 없다”… 종교계 겨냥한 해킹 공격 비상",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146227",
+          "source": "보안뉴스",
+          "published": "2026-10-07T13:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "협력사가 누락한 보안 패치 한 건에 FBI 직원 정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146229",
+          "source": "보안뉴스",
+          "published": "2026-10-07T11:05:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "정부인사 발령(개인정보보호위원회) N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12562",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-07T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[인사] 개인정보보호위원회",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146238",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-07T09:56:46+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[이슈 분석] 한국 금융사 공격 서버서 ‘ARTEX·AI 대화 기록’ 발견…해커, 유출정보 판매처도 물었다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208781",
+          "source": "데일리시큐",
+          "published": "2026-10-08T07:06:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "로그인 없이 서버 파일 열람... 아틀라시안 지라·컨플루언스 등 8개 제품서 치명적 결함",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146232",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-07T17:59:41+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-21589"
+          ]
+        },
+        {
+          "title": "[카드뉴스] \"공장 멈춘 주범이 5년 전 공유기?\"… 제조업 랜섬웨어 64% 뚫은 '구형 VPN' 실태",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146245",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-07T16:29:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SGA솔루션즈, 일루미오와 파트너십...마이크로 세그멘테이션 시장 공략",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208774",
+          "source": "데일리시큐",
+          "published": "2026-10-07T15:53:48+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[금융권 연쇄 침해사고 종합분석] “코어뱅킹 아닌 주변 시스템·인증·인가 허점 노렸다”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208773",
+          "source": "데일리시큐",
+          "published": "2026-10-07T15:36:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "사이버다임, 문서중앙화에 DLP 통합...외부 유출 차단 기능 강화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208772",
+          "source": "데일리시큐",
+          "published": "2026-10-07T15:10:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "에버스핀, AI 자동화 공격 도구 'ARTEX' 탐지...웹 보안 역량 입증",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208767",
+          "source": "데일리시큐",
+          "published": "2026-10-07T14:08:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이슈칼럼] 금융권 연쇄 사고, 제로트러스트 방향은?... ‘임금님 투명갑옷’ vs ‘해리포터 투명망토’",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146222",
+          "source": "보안뉴스",
+          "published": "2026-10-07T09:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제49화 '출시 일주일 전'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208782",
+          "source": "데일리시큐",
+          "published": "2026-10-08T08:38:47+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“공격자가 토큰 더 쓰게 만든다”... 에버스핀, AI 자동화 공격 대응 전략 제시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146247",
+          "source": "보안뉴스",
+          "published": "2026-10-07T18:22:36+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "위키미디어 “오픈AI 에이전트, 이더패드 장악 시도”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146233",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-07T18:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "레드햇-IBM, 자바 라이브러리 취약점 400여 건 수정...'라이트웰 클리어링하우스' 정식 출시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208780",
+          "source": "데일리시큐",
+          "published": "2026-10-07T16:56:42+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Ransomware recovery CEO charged over secret ransom payments",
+          "link": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T08:04:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers hijack Google domains after breaching ccTLD registries",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-google-domains-after-breaching-cctld-registries/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T05:50:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Attackers Hijack .gh, .sl, and .as Registries to Obtain Certificates for Google Domains",
+          "link": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html",
+          "source": "The Hacker News",
+          "published": "2026-10-08T03:48:17+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Eight Malicious npm Packages Downloaded 40,767 Times Deliver Overlord RAT and Stealer",
+          "link": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+          "source": "The Hacker News",
+          "published": "2026-10-08T02:43:20+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ransomware has a new target. Is your backup ready?",
+          "link": "https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T23:01:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers exploit critical Atlassian flaw after public PoC release",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-atlassian-flaw-after-public-poc-release/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T21:49:01+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-21589"
+          ]
+        },
+        {
+          "title": "Advantest confirms personal information stolen in ransomware attack",
+          "link": "https://www.bleepingcomputer.com/news/security/advantest-confirms-personal-information-stolen-in-ransomware-attack/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T19:27:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers exploit 32 zero-days on first day of Pwn2Own Ireland",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+          "source": "BleepingComputer",
+          "published": "2026-10-07T04:21:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "FBI: Ongoing FortiBleed attacks lock out FortiGate VPN admins",
+          "link": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T06:28:54+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "SonicWall Patches CVSS 10.0 Pre-Authentication SSRF Flaw in SMA1000 Appliances",
+          "link": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
+          "source": "The Hacker News",
+          "published": "2026-10-08T01:17:44+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft Outlook to block MSIX attachments starting November",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-outlook-to-block-msix-attachments-used-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T00:44:22+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely",
+          "link": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
+          "source": "The Hacker News",
+          "published": "2026-10-08T00:34:53+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 34
+}
