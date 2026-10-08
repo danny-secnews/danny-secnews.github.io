@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -43,7 +44,10 @@ def headline(data: dict, i: int) -> str:
 
 
 def run(*args: str) -> subprocess.CompletedProcess:
-    return subprocess.run([sys.executable, *args], cwd=REPO, capture_output=True)
+    # GitHub Actions 안에서는 validate.py가 실패를 '::error' 형식으로 찍는다. 시험은 출력 줄을 비교하므로
+    # CI·로컬에서 같은 형식이 나오게 이 변수를 빼고 실행한다.
+    env = {k: v for k, v in os.environ.items() if k != "GITHUB_ACTIONS"}
+    return subprocess.run([sys.executable, *args], cwd=REPO, capture_output=True, env=env)
 
 
 class Compatibility(unittest.TestCase):
