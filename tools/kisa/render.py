@@ -17,6 +17,8 @@ docs/kisa-cert/kisa_weekly_<week_start>_public.html 을 만든다. HTML은 이 �
   - 출력은 UTF-8, 줄바꿈 LF로 고정(윈도·리눅스 같은 결과).
   - portal-date 메타와 상단 바 줄(build_manifest.NAV_TAG)을 넣어 build_manifest.py가 고칠 게 없게 한다.
   - 고정 안내문은 표준 문구를 쓴다. 데이터의 boilerplate로 바꿔 쓰는 것은 이전된 호에만 허용(validate.py가 검사).
+  - 항목 머리 줄: 구조화 칸(vulnerabilities·notices)이 있으면 그 값으로 만들고(새 호),
+    없으면 meta·meta_refs 글자를 그대로 쓴다(이전된 호).
   - 데이터 형식 검사는 하지 않는다 — tools/kisa/validate.py 가 schema.json 으로 검사한다.
 """
 from __future__ import annotations
@@ -183,7 +185,83 @@ KV_ROWS = (("situation", "상황", ""), ("remediation", "조치", ""), ("verific
            ("compromise_check", "침해 흔적 확인", ' style="background:#F3F6FA;"'))
 
 
-def render_item(no: str, it: dict) -> str:
+# ── 구조화 머리 줄 (새 호) ─────────────────────────────────────────
+# 항목에 vulnerabilities·notices가 있으면 머리 줄을 이 값들로 만든다. 문구는 여기서만 정한다.
+#   위험도 · CVSS [· 벤더 등급] · 악용  |  KISA · [벤더 공지 ·] KEV
+# 규칙의 검사는 validate.py의 check_new_issue()가 한다.
+
+def md(d: Day, ref: Day) -> str:
+    """M/D. 기준(발행일)과 연도가 다를 때만 연도를 붙인다."""
+    return f"{d.month}/{d.day}" if d.year == ref.year else f"{d.year}/{d.month}/{d.day}"
+
+
+def cvss_text(vulns: list[dict], total: int) -> str:
+    scored = [v["cvss"] for v in vulns if v["cvss"]["state"] == "value"]
+    if not scored:
+        return f"CVSS {UNVERIFIED}"
+    top = max(scored, key=lambda c: c["score"])  # 같은 점수면 앞의 것
+    marks = [f"v{top['version']}"] if not top["version"].startswith("3.") else []
+    marks += {"vendor": [], "nvd": ["NVD"], "cisa-adp": ["CISA-ADP"]}[top["basis"]]
+    # "최대"는 전체를 모두 기록했고 모두 점수가 있을 때만 — 일부만 봤으면 전체의 최댓값이라 단정하지 않는다
+    whole = total >= 2 and len(vulns) == total and len(scored) == total
+    return f"CVSS {'최대 ' if whole else ''}{top['score']:.1f}" + (f"({', '.join(marks)})" if marks else "")
+
+
+def exploitation_text(vulns: list[dict], total: int, published: Day) -> str:
+    states = [v["exploitation"]["state"] for v in vulns]
+    confirmed = states.count("confirmed")
+    if confirmed and confirmed == total:
+        return "악용 확인"
+    if confirmed:
+        return f"{confirmed}건 악용 확인"
+    if all(s == "no_report" for s in states):
+        as_of = md(min(day(v["exploitation"]["as_of"], "as_of") for v in vulns), published)
+        # 일부만 기록했으면 기록한 범위를 밝힌다 — 기록하지 않은 CVE까지 보고 없음이라 단정하지 않는다
+        return f"보고 없음({as_of} 기준)" if len(vulns) == total else f"보고 없음(기록 {len(vulns)}건 · {as_of} 기준)"
+    return f"악용 {UNVERIFIED}"
+
+
+def kev_text(vulns: list[dict], total: int, published: Day) -> str:
+    listed = [(day(v["kev"]["added"], "kev.added"), day(v["kev"]["due"], "kev.due"))
+              for v in vulns if v["kev"]["state"] == "listed"]
+    if listed:
+        if len(set(listed)) == 1:
+            added, due = listed[0]
+            return f"KEV 등재 {md(added, published)}(기한 {md(due, published)})"
+        return f"KEV 등재 {len(listed)}건(가장 이른 기한 {md(min(d for _, d in listed), published)})"
+    cves = {v["cve"]["state"] for v in vulns}
+    if "unknown" in cves:  # CVE를 모르는 취약점이 하나라도 있으면 미등재라고 단정하지 않는다
+        return f"KEV {UNVERIFIED}"
+    if "value" not in cves:
+        return "KEV 해당 없음"
+    # KEV 확인 기록(complete)은 기록한 CVE만 조회했다는 뜻 — 일부만 기록했으면 그 범위를 밝힌다
+    return "KEV 미등재" if len(vulns) == total else f"KEV 미등재(기록 {len(vulns)}건 기준)"
+
+
+def structured_headline(it: dict, published: Day) -> tuple[str, str]:
+    """구조화 칸 → (머리 줄 앞부분, 뒷부분). 본문 표기(rich) 글자로 돌려준다."""
+    vulns = it["vulnerabilities"]
+    total = it.get("cve_total", len(vulns))
+    front = [cvss_text(vulns, total)]
+    if it.get("vendor_rating"):
+        r = it["vendor_rating"]
+        front.append(f"벤더 등급 {r['label']}" + (f" {r['count']}건" if r.get("count") else ""))
+    front.append(exploitation_text(vulns, total, published))
+
+    kisa, vendor = it["notices"]["kisa"], it["notices"]["vendor"]
+    if kisa["state"] == "value":
+        extra = f", {it['addition']}" if it.get("addition") else ""
+        back = [f"KISA #{kisa['no']}({md(day(kisa['posted'], 'kisa.posted'), published)} 게시{extra})"]
+    else:  # 확인한 사실은 "대상 기간 보호나라 게시판에 일치하는 공지가 없었다"는 것
+        back = ["보호나라 대상 기간 공지 없음"]
+    dates = [day(a["date"], "vendor.date") for a in vendor.get("advisories", []) if a.get("date")]
+    if vendor["state"] == "value" and dates:
+        back.append(f"벤더 공지 {md(min(dates), published)}")
+    back.append(kev_text(vulns, total, published))
+    return " · ".join(front), " · ".join(back)
+
+
+def render_item(no: str, it: dict, published: Day) -> str:
     ind = "      "
     rows = []
     for i, (key, label, tr) in enumerate(KV_ROWS):
@@ -193,8 +271,12 @@ def render_item(no: str, it: dict) -> str:
     src = " · ".join(esc(s["label"]) for s in it["sources"])
     rows.append(f"    <tr><td {LABEL}>출처</td><td style=\"font-size:12px;color:#6B7280;word-break:break-word;\">\n"
                 f"{ind}{src}\n    </td></tr>")
-    meta = (f"{severity(it['severity'])} · {inline(it['meta'])}  <span style=\"color:#9CA3AF;\">|</span>  "
-            f"{inline(it['meta_refs'])}")
+    if "vulnerabilities" in it:
+        front, back = structured_headline(it, published)
+    else:
+        front, back = it["meta"], it["meta_refs"]
+    meta = (f"{severity(it['severity'])} · {inline(front)}  <span style=\"color:#9CA3AF;\">|</span>  "
+            f"{inline(back)}")
     return ("<tr><td class=\"sec\" style=\"padding:10px 26px 4px;border-top:1px solid #E5E7EB;\">\n"
             f"  <h3 style=\"margin:0 0 3px;font-size:14.5px;color:#1F2937;\">{no}. {inline(it['title'])}</h3>\n"
             f"  <div style=\"font-size:12px;color:#6B7280;margin-bottom:9px;\">{meta}</div>\n"
@@ -276,7 +358,7 @@ def render(data: dict, source_path: str = "") -> str:
         end = week_end(start)
         items = data["items"]
         page = TEMPLATE.read_text(encoding="utf-8").replace("\r\n", "\n")
-        body = "".join(render_item(f"3-{i}", it) for i, it in enumerate(items, 1))
+        body = "".join(render_item(f"3-{i}", it, published) for i, it in enumerate(items, 1))
         custom = data.get("boilerplate") or {}
         footnote = custom.get("priority_footnote")
         notice = custom.get("footer_notice")

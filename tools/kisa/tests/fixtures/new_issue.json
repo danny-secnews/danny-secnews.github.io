@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "id": "kisa-weekly-2026-10-05",
+ "week_start": "2026-10-05",
+ "published_date": "2026-10-12",
+ "generated_at": "2026-10-12T09:00:00+09:00",
+ "provenance": {
+  "type": "generated"
+ },
+ "preheader": "시험용 가상 데이터 — 실제 취약점·공지와 무관하며 게시하지 않음",
+ "overview": [
+  "시험용 가상 데이터입니다. 벤더·제품 이름, CVE 번호, KISA 공지 번호는 모두 가상이며 실제와 무관합니다."
+ ],
+ "priority": [
+  {
+   "target": "Example Gateway A",
+   "vuln": "**CVE-2026-9990001**",
+   "severity": "긴급",
+   "cvss": "CVSS 9.8",
+   "exploitation": "● 악용 확인",
+   "deadline": "즉시"
+  }
+ ],
+ "items": [
+  {
+   "title": "Example Gateway A — CVE-2026-9990001",
+   "severity": "긴급",
+   "vulnerabilities": [
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990001"},
+     "cvss": {"state": "value", "score": 9.8, "version": "3.1", "basis": "vendor", "src": "vendor-a"},
+     "exploitation": {"state": "confirmed", "src": "kev"},
+     "kev": {"state": "listed", "added": "2026-10-06", "due": "2026-10-09", "src": "kev"}
+    }
+   ],
+   "notices": {
+    "kisa": {"state": "value", "no": 9001, "posted": "2026-10-07", "src": "kisa"},
+    "vendor": {"state": "value", "advisories": [{"id": "EXA-2026-001", "date": "2026-10-05", "src": "vendor-a"}]}
+   },
+   "situation": ["시험용 상황"],
+   "remediation": ["시험용 조치"],
+   "verification": ["시험용 확인"],
+   "compromise_check": ["시험용 침해 확인"],
+   "sources": [
+    {"id": "vendor-a", "kind": "vendor", "viewed": true, "label": "예시 벤더 A 보안 공지 EXA-2026-001", "url": "https://vendor-a.example/advisories/EXA-2026-001"},
+    {"id": "kisa", "kind": "kisa", "viewed": true, "label": "KISA 보호나라 보안공지 #9001(2026-10-07, 가상)", "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=9900001"},
+    {"id": "kev", "kind": "kev", "viewed": true, "label": "CISA KEV(dateAdded 2026-10-06, 가상)", "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"}
+   ]
+  },
+  {
+   "title": "Example Appliance B 8건\nCVE-2026-9990011 외 7건",
+   "severity": "긴급",
+   "vulnerabilities": [
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990011"},
+     "cvss": {"state": "value", "score": 9.5, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "confirmed", "src": "kev"},
+     "kev": {"state": "listed", "added": "2026-10-10", "due": "2026-10-31", "src": "kev"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990012"},
+     "cvss": {"state": "value", "score": 9.5, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "confirmed", "src": "kev"},
+     "kev": {"state": "listed", "added": "2026-10-10", "due": "2026-10-31", "src": "kev"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990013"},
+     "cvss": {"state": "value", "score": 9.3, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990014"},
+     "cvss": {"state": "value", "score": 7.0, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990015"},
+     "cvss": {"state": "value", "score": 8.8, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990016"},
+     "cvss": {"state": "value", "score": 8.8, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990017"},
+     "cvss": {"state": "value", "score": 8.8, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990018"},
+     "cvss": {"state": "value", "score": 8.8, "version": "4.0", "basis": "vendor", "src": "vendor-b"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    }
+   ],
+   "notices": {
+    "kisa": {"state": "value", "no": 9002, "posted": "2026-10-08", "src": "kisa"},
+    "vendor": {"state": "value", "advisories": [{"id": "EXB-2026-01", "date": "2026-10-06", "src": "vendor-b"}]}
+   },
+   "situation": ["시험용 상황"],
+   "remediation": ["시험용 조치"],
+   "verification": ["시험용 확인"],
+   "compromise_check": ["시험용 침해 확인"],
+   "sources": [
+    {"id": "vendor-b", "kind": "vendor", "viewed": true, "label": "예시 벤더 B 보안 공지 EXB-2026-01", "url": "https://vendor-b.example/security/EXB-2026-01"},
+    {"id": "kisa", "kind": "kisa", "viewed": true, "label": "KISA 보호나라 보안공지 #9002(2026-10-08, 가상)", "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=9900002"},
+    {"id": "kev", "kind": "kev", "viewed": true, "label": "CISA KEV(dateAdded 2026-10-10, 가상)", "url": "https://github.com/cisagov/kev-data/blob/main/known_exploited_vulnerabilities.json"}
+   ]
+  },
+  {
+   "title": "Example Product C 6건 — CVE-2026-9990021 외",
+   "severity": "긴급",
+   "cve_total": 6,
+   "vulnerabilities": [
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990021"},
+     "cvss": {"state": "value", "score": 9.8, "version": "3.1", "basis": "nvd", "src": "nvd"},
+     "exploitation": {"state": "confirmed", "src": "vendor-c"},
+     "kev": {"state": "listed", "added": "2026-10-06", "due": "2026-10-27", "src": "kev"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990022"},
+     "cvss": {"state": "value", "score": 9.1, "version": "3.1", "basis": "vendor", "src": "vendor-c"},
+     "exploitation": {"state": "confirmed", "src": "kisa"},
+     "kev": {"state": "listed", "added": "2026-10-08", "due": "2026-10-29", "src": "kev"}
+    }
+   ],
+   "notices": {
+    "kisa": {"state": "value", "no": 9003, "posted": "2026-10-09", "src": "kisa"},
+    "vendor": {"state": "value", "advisories": [{"id": "EXC-77", "date": "2026-10-02", "src": "vendor-c"}]}
+   },
+   "situation": ["시험용 상황"],
+   "remediation": ["시험용 조치"],
+   "verification": ["시험용 확인"],
+   "compromise_check": ["시험용 침해 확인"],
+   "sources": [
+    {"id": "vendor-c", "kind": "vendor", "viewed": true, "label": "예시 벤더 C 보안 공지 EXC-77", "url": "https://vendor-c.example/psirt/EXC-77"},
+    {"id": "nvd", "kind": "nvd", "viewed": true, "label": "NVD CVE-2026-9990021(가상)", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9990021"},
+    {"id": "kisa", "kind": "kisa", "viewed": true, "label": "KISA 보호나라 보안공지 #9003(2026-10-09, 가상)", "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=9900003"},
+    {"id": "kev", "kind": "kev", "viewed": true, "label": "CISA KEV(dateAdded 2026-10-06 · 2026-10-08, 가상)", "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"}
+   ]
+  },
+  {
+   "title": "Example Switch D — 구버전 취약점 악용 사례",
+   "severity": "긴급",
+   "vulnerabilities": [
+    {
+     "cve": {"state": "not_assigned"},
+     "cvss": {"state": "unknown"},
+     "exploitation": {"state": "confirmed", "src": "vendor-d"},
+     "kev": {"state": "not_applicable"}
+    }
+   ],
+   "notices": {
+    "kisa": {"state": "value", "no": 9004, "posted": "2026-10-08", "src": "kisa"},
+    "vendor": {"state": "value", "advisories": [{"id": "예시 벤더 D 구버전 업데이트 권고", "date": "2026-10-07", "src": "vendor-d"}]}
+   },
+   "situation": ["시험용 상황"],
+   "remediation": ["시험용 조치"],
+   "verification": ["시험용 확인"],
+   "compromise_check": ["시험용 침해 확인"],
+   "sources": [
+    {"id": "vendor-d", "kind": "vendor", "viewed": true, "label": "예시 벤더 D 보안공지(2026-10-07)", "url": "https://vendor-d.example/notice/1"},
+    {"id": "kisa", "kind": "kisa", "viewed": true, "label": "KISA 보호나라 보안공지 #9004(2026-10-08, 가상)", "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=9900004"}
+   ]
+  },
+  {
+   "title": "Example Middleware E — CVE-2026-9990031 외",
+   "severity": "높음",
+   "cve_total": 12,
+   "vendor_rating": {"label": "Important", "count": 4, "src": "vendor-e"},
+   "vulnerabilities": [
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990031"},
+     "cvss": {"state": "unknown"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990032"},
+     "cvss": {"state": "unknown"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990033"},
+     "cvss": {"state": "unknown"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    },
+    {
+     "cve": {"state": "value", "id": "CVE-2026-9990034"},
+     "cvss": {"state": "unknown"},
+     "exploitation": {"state": "unknown"},
+     "kev": {"state": "not_listed"}
+    }
+   ],
+   "notices": {
+    "kisa": {"state": "value", "no": 9005, "posted": "2026-10-09", "src": "kisa"},
+    "vendor": {"state": "value", "advisories": [{"id": "EXE-SEC-11", "date": "2026-09-25", "src": "vendor-e"}]}
+   },
+   "situation": ["시험용 상황"],
+   "remediation": ["시험용 조치"],
+   "verification": ["시험용 확인"],
+   "compromise_check": ["시험용 침해 확인"],
+   "sources": [
+    {"id": "vendor-e", "kind": "vendor", "viewed": true, "label": "예시 벤더 E 보안 페이지 EXE-SEC-11", "url": "https://vendor-e.example/security-11.html"},
+    {"id": "kisa", "kind": "kisa", "viewed": true, "label": "KISA 보호나라 보안공지 #9005(2026-10-09, 가상)", "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=9900005"}
+   ]
+  }
+ ],
+ "audience": [
+  {
+   "audience": "시험 대상",
+   "actions": "시험용 할 일",
+   "deadline": "즉시"
+  }
+ ],
+ "notes": [
+  "시험용 가상 데이터입니다. 실제 취약점·공지와 무관합니다."
+ ],
+ "footer_sources": "시험용 가상 출처",
+ "checks": {
+  "kev": {
+   "catalog_version": "2026.10.10",
+   "count": 1740,
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "checked_at": "2026-10-12T08:30:00+09:00",
+   "complete": true
+  },
+  "kisa": {
+   "period_start": "2026-10-05",
+   "period_end": "2026-10-11",
+   "last_no": 9005,
+   "url": "https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&menuNo=205020",
+   "checked_at": "2026-10-12T08:40:00+09:00",
+   "complete": true
+  }
+ }
+}

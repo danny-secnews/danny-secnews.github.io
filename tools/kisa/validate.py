@@ -15,6 +15,9 @@ KISA 주간 리포트 검사기 (첫 판: 구조 검사 + 렌더 일치 검사) 
   5. HTML 필수 요소: portal-date 메타, 상단 바 줄, 구획 제목
   6. 폴더: docs/kisa-cert/의 HTML은 레거시 목록에 있거나 데이터에서 만든 것이어야 한다(같은 주차 중복 금지)
 
+새 호 규칙(구조화 칸): check_new_issue() — 관문이 닫혀 있는 동안은 실행 흐름에서 부르지 않고
+tools/kisa/tests에서만 부른다. 관문을 열 때 3번의 NOT_YET 자리에서 부른다.
+
 종료코드 0 통과 / 1 실패
 """
 from __future__ import annotations
@@ -26,8 +29,9 @@ import re
 import sys
 from datetime import date as Day, datetime, timedelta
 from pathlib import Path
+from urllib.parse import urlsplit
 
-CODE = Path(__file__).resolve().parents[2]       # 검사 코드·스키마·틀이 있는 쪽
+CODE =Path(__file__).resolve().parents[2]       # 검사 코드·스키마·틀이 있는 쪽
 sys.path.insert(0, str(CODE / "tools" / "kisa"))
 import render as R  # noqa: E402
 
@@ -59,12 +63,24 @@ NOT_YET = ("새 호 검사는 아직 지원하지 않음 — 새 호에 필요�
 # ── 스키마 검사 (schema.json에 쓰인 키워드만 해석, 모르는 키워드는 검사기 오류) ──────────
 ANNOTATIONS = {"$schema", "$id", "title", "description", "$defs"}
 KEYWORDS = {"type", "required", "properties", "additionalProperties", "items", "minItems",
-            "minLength", "pattern", "enum", "const", "oneOf", "$ref"}
-TYPES = {"object": dict, "array": list, "string": str}
+            "minLength", "pattern", "enum", "const", "oneOf", "$ref", "minimum", "maximum"}
+TYPES = {"object": dict, "array": list, "string": str, "boolean": bool, "integer": int, "number": (int, float)}
 
 
 class SchemaBug(Exception):
     pass
+
+
+def _tag_match(value, alt: dict, root: dict) -> bool:
+    """oneOf 형식 중 하나가 값의 구분 칸(const·enum으로 정해진 칸, 예: state)과 맞는지."""
+    if "$ref" in alt:
+        alt = root["$defs"][alt["$ref"][8:]]
+    if not isinstance(value, dict):
+        return False
+    for key, sub in alt.get("properties", {}).items():
+        if ("const" in sub and value.get(key) != sub["const"]) or ("enum" in sub and value.get(key) not in sub["enum"]):
+            return False
+    return True
 
 
 def schema_errors(value, schema: dict, root: dict, path: str = "$") -> list[str]:
@@ -76,17 +92,22 @@ def schema_errors(value, schema: dict, root: dict, path: str = "$") -> list[str]
         if not ref.startswith("#/$defs/"):
             raise SchemaBug(f"지원하지 않는 $ref: {ref}")
         return schema_errors(value, root["$defs"][ref[8:]], root, path)
-    if "oneOf" in schema:
-        ok = [alt for alt in schema["oneOf"] if not schema_errors(value, alt, root, path)]
-        return [] if len(ok) == 1 else [f"{path}: 허용된 형식 중 정확히 하나에 맞아야 함({len(ok)}개 일치)"]
     errs: list[str] = []
+    if "oneOf" in schema:  # 같은 자리의 다른 키워드(type·properties 등)도 이어서 검사한다
+        results = [schema_errors(value, alt, root, path) for alt in schema["oneOf"]]
+        matched = sum(not r for r in results)
+        if matched != 1:
+            errs.append(f"{path}: 허용된 형식 중 정확히 하나에 맞아야 함({matched}개 일치)")
+            if not matched:  # 가장 가까운 형식(구분 칸 state 등이 맞는 형식 우선) 기준으로 무엇이 틀렸는지
+                pairs = zip(schema["oneOf"], results)
+                errs += min(pairs, key=lambda p: (not _tag_match(value, p[0], root), len(p[1])))[1]
     if "const" in schema and value != schema["const"]:
         errs.append(f"{path}: {schema['const']!r} 이어야 함")
     if "enum" in schema and value not in schema["enum"]:
         errs.append(f"{path}: {value!r} 는 허용 값({', '.join(map(str, schema['enum']))})이 아님")
     t = schema.get("type")
     if t:
-        if not isinstance(value, TYPES[t]):
+        if not isinstance(value, TYPES[t]) or (t in ("integer", "number") and isinstance(value, bool)):
             return errs + [f"{path}: {t} 이어야 함"]
     if t == "object":
         for key in schema.get("required", []):
@@ -108,6 +129,11 @@ def schema_errors(value, schema: dict, root: dict, path: str = "$") -> list[str]
             errs.append(f"{path}: 비어 있으면 안 됨")
         if "pattern" in schema and not re.search(schema["pattern"], value):
             errs.append(f"{path}: 형식 오류 {value!r}")
+    elif t in ("integer", "number"):
+        if "minimum" in schema and value < schema["minimum"]:
+            errs.append(f"{path}: {schema['minimum']} 이상이어야 함 (지금 {value})")
+        if "maximum" in schema and value > schema["maximum"]:
+            errs.append(f"{path}: {schema['maximum']} 이하여야 함 (지금 {value})")
     return errs
 
 
@@ -157,6 +183,8 @@ def check_issue(root: Path, path: Path, schema: dict) -> list[str]:
             errs.append(f"migrated 표시에는 source_html({expected})과 source_commit이 있어야 함")
     elif exempt:
         errs.append(f"면제 목록의 주차({week})인데 provenance.type이 migrated가 아님")
+    if exempt and uses_structured(data):
+        errs.append("이전된 호에는 구조화 칸(checks·vulnerabilities·notices 등)을 쓰지 않음 — 새 호 규칙을 면제로 우회할 수 없음")
     if not exempt:
         errs.append(NOT_YET)
         # 이전된 호에만 허용되는 것들 — STEP 4·5 이후에도 새 호에서는 계속 실패해야 함
@@ -210,6 +238,245 @@ def check_folder(root: Path, weeks: set[str]) -> list[str]:
     for name in sorted(made & LEGACY_HTML):
         errs.append(f"docs/kisa-cert/{name}: 데이터가 생겼으면 LEGACY_HTML 목록에서 빼야 함")
     return errs
+
+
+# ── 새 호 규칙 (구조화 칸) ───────────────────────────────────────
+# 새 호의 항목 머리 줄은 구조화 칸에서 렌더러가 만든다. 아래 check_new_issue()는 그 칸들의 규칙이다.
+# 아직 관문(check_issue의 NOT_YET)은 닫혀 있어 validate.py 실행에서는 부르지 않는다 —
+# 지금은 tools/kisa/tests에서만 부르고, 관문을 열 때 NOT_YET 자리에서 부른다.
+# 형식(칸 이름·상태 값·필수 칸)은 schema.json이 검사하므로 여기서는 schema를 통과한 데이터를 전제로 한다.
+
+STRUCTURED_KEYS = ("vulnerabilities", "notices", "cve_total", "vendor_rating", "addition")
+LEGACY_KEYS = ("meta", "meta_refs")
+CVE_ID = re.compile(r"CVE-\d{4}-\d{4,}")
+# 출처 종류별 허용 주소. vendor는 "이 네 종류의 주소가 아닐 것"만 본다.
+RESERVED_HOSTS = {
+    "kisa": [("www.boho.or.kr", "")],
+    "kev": [("www.cisa.gov", ""), ("github.com", "/cisagov/kev-data")],
+    "nvd": [("nvd.nist.gov", "")],
+    "cve": [("www.cve.org", ""), ("cveawg.mitre.org", "")],
+}
+CVSS_BASIS_KIND = {"vendor": "vendor", "nvd": "nvd", "cisa-adp": "cve"}  # cisa-adp = CVE 레코드 안의 CISA-ADP 평가
+EXPLOIT_KINDS = {"confirmed": {"kev", "vendor", "kisa"}, "no_report": {"vendor", "kisa"}}
+URGENT = ("긴급", "높음")
+
+
+def reserved_kind(url: str) -> str | None:
+    """주소가 kisa·kev·nvd·cve 허용 주소 중 하나면 그 종류, 아니면 None."""
+    u = urlsplit(url)
+    host, path = (u.hostname or "").lower(), u.path
+    for kind, rules in RESERVED_HOSTS.items():
+        for h, prefix in rules:
+            if host == h and (not prefix or path == prefix or path.startswith(prefix + "/")):
+                return kind
+    return None
+
+
+def uses_structured(data: dict) -> bool:
+    return "checks" in data or any(k in it for it in data["items"] for k in STRUCTURED_KEYS)
+
+
+class _Ctx:
+    """한 호를 검사하는 동안 필요한 날짜·확인 기록·호 안 일관성 기록."""
+
+    def __init__(self, data: dict, errs: list[str]):
+        self.errs = errs
+        self.start = Day.fromisoformat(data["week_start"])
+        self.end = R.week_end(self.start)
+        self.published = Day.fromisoformat(data["published_date"])
+        checks = data.get("checks") or {}
+        self.kev, self.kisa = checks.get("kev"), checks.get("kisa")
+        self.catalog: Day | None = None
+        self.kev_seen: dict[str, tuple] = {}   # CVE → (상태, 등재일, 기한)
+        self.kisa_seen: dict[int, str] = {}    # KISA 번호 → 게시일
+
+    def day(self, value: str, where: str) -> Day | None:
+        try:
+            return Day.fromisoformat(value)
+        except ValueError:
+            self.errs.append(f"{where}: 없는 날짜 {value!r}")
+            return None
+
+    def not_after_published(self, value: str, where: str) -> None:
+        d = self.day(value, where)
+        if d and d > self.published:
+            self.errs.append(f"{where}: {d}는 발행일({self.published})보다 늦을 수 없음")
+
+
+def check_new_issue(data: dict) -> list[str]:
+    """새 호(구조화 칸) 규칙. schema.json 검사를 통과한 데이터를 받는다."""
+    errs: list[str] = []
+    ctx = _Ctx(data, errs)
+    if data["provenance"]["type"] != "generated":
+        errs.append("새 호는 provenance.type이 generated여야 함")
+
+    # 호 단위 확인 기록 — "KEV 미등재"·"보호나라 공지 대상 아님"의 근거
+    if ctx.kev is None:
+        errs.append("checks.kev(호 단위 KEV 확인 기록)가 없음")
+    else:
+        if reserved_kind(ctx.kev["url"]) != "kev":
+            errs.append(f"checks.kev.url은 KEV 허용 주소여야 함: {ctx.kev['url']}")
+        try:
+            ctx.catalog = datetime.strptime(ctx.kev["catalog_version"], "%Y.%m.%d").date()
+        except ValueError:
+            errs.append(f"checks.kev.catalog_version이 없는 날짜: {ctx.kev['catalog_version']!r}")
+        if ctx.catalog and ctx.catalog > ctx.published:
+            errs.append(f"checks.kev: 판 날짜({ctx.catalog})가 발행일({ctx.published})보다 늦음")
+    if ctx.kisa is None:
+        errs.append("checks.kisa(호 단위 보호나라 확인 기록)가 없음")
+    else:
+        if reserved_kind(ctx.kisa["url"]) != "kisa":
+            errs.append(f"checks.kisa.url은 보호나라 허용 주소여야 함: {ctx.kisa['url']}")
+        ps = ctx.day(ctx.kisa["period_start"], "checks.kisa.period_start")
+        pe = ctx.day(ctx.kisa["period_end"], "checks.kisa.period_end")
+        if ps and pe and ps > pe:
+            errs.append("checks.kisa: 확인 기간 시작이 끝보다 늦음")
+
+    for i, it in enumerate(data["items"], 1):
+        errs += [f"3-{i}: {e}" for e in _item_errors(it, data, ctx)]
+    return errs
+
+
+def _item_errors(it: dict, data: dict, ctx: _Ctx) -> list[str]:
+    errs: list[str] = []
+    outer, ctx.errs = ctx.errs, errs  # 날짜 오류를 이 항목 앞에 모으기 위해 잠시 바꿔 씀
+    try:
+        _item_rules(it, data, ctx, errs)
+    finally:
+        ctx.errs = outer
+    return errs
+
+
+def _item_rules(it: dict, data: dict, ctx: _Ctx, errs: list[str]) -> None:
+    has_legacy = any(k in it for k in LEGACY_KEYS)
+    if "vulnerabilities" not in it:
+        errs.append("새 호 항목은 구조화 칸(vulnerabilities·notices)으로 써야 함 — meta·meta_refs 머리 줄은 이전된 호 전용")
+        return
+    if has_legacy:
+        errs.append("구조화 칸과 meta·meta_refs를 한 항목에 함께 쓸 수 없음")
+
+    # 출처 — id·kind·viewed 필수, id 중복 금지, https, 종류별 주소
+    srcs: dict[str, dict] = {}
+    for n, s in enumerate(it["sources"], 1):
+        where = f"출처 {n}({s['label']})"
+        missing = [k for k in ("id", "kind", "viewed") if k not in s]
+        if missing:
+            errs.append(f"{where}: 새 호 출처에는 {', '.join(missing)} 칸이 필요함")
+            continue
+        if s["id"] in srcs:
+            errs.append(f"{where}: 출처 id 중복 {s['id']!r}")
+        srcs[s["id"]] = s
+        u = urlsplit(s["url"])
+        if u.scheme != "https" or not u.hostname:
+            errs.append(f"{where}: 새 호 출처 주소는 https여야 함 ({s['url']!r})")
+            continue
+        rk = reserved_kind(s["url"])
+        if s["kind"] in RESERVED_HOSTS and rk != s["kind"]:
+            errs.append(f"{where}: {s['kind']} 출처인데 주소가 {s['kind']} 허용 주소가 아님 ({u.hostname})")
+        elif s["kind"] == "vendor" and rk:
+            errs.append(f"{where}: vendor 출처인데 주소가 {rk} 주소임 ({u.hostname})")
+
+    def ref(src_id: str, allowed: set[str], what: str) -> None:
+        s = srcs.get(src_id)
+        if s is None:
+            errs.append(f"{what}: 출처 {src_id!r}가 이 항목의 출처 목록에 없음")
+        elif s["viewed"] is not True:
+            errs.append(f"{what}: 출처 {src_id!r}는 미열람(viewed=false)이라 근거로 쓸 수 없음")
+        elif s["kind"] not in allowed:
+            errs.append(f"{what}: 출처 {src_id!r}의 종류 {s['kind']}는 근거로 쓸 수 없음(허용: {', '.join(sorted(allowed))})")
+
+    # 취약점별 칸
+    vulns = it["vulnerabilities"]
+    ids: list[str] = []
+    listed = False
+    for n, v in enumerate(vulns, 1):
+        cve, cvss, ex, kev = v["cve"], v["cvss"], v["exploitation"], v["kev"]
+        name = cve.get("id") or f"취약점 {n}"
+        if cve["state"] == "value":
+            if cve["id"] in ids:
+                errs.append(f"{name}: 같은 항목에 CVE 중복")
+            ids.append(cve["id"])
+            if int(cve["id"][4:8]) > ctx.published.year:
+                errs.append(f"{name}: CVE 연도가 발행 연도({ctx.published.year})보다 늦음")
+
+        if cvss["state"] == "value":
+            score = cvss["score"]
+            if not isinstance(score, float) or round(score, 1) != score:
+                errs.append(f"{name}: CVSS 점수는 소수 한 자리로 적어야 함(예: 9.0) — 지금 {score!r}")
+            kind = CVSS_BASIS_KIND[cvss["basis"]]
+            ref(cvss["src"], {kind}, f"{name} CVSS(평가 주체 {cvss['basis']})")
+
+        if ex["state"] in EXPLOIT_KINDS:
+            ref(ex["src"], EXPLOIT_KINDS[ex["state"]], f"{name} 악용 {ex['state']}")
+        if ex["state"] == "no_report":
+            ctx.not_after_published(ex["as_of"], f"{name} 악용 no_report 기준일(as_of)")
+
+        # KEV — CVE 상태에 따라 허용 상태가 정해진다. "미확인"은 CVE도 미확인일 때만.
+        allowed_kev = {"value": ("listed", "not_listed"), "not_assigned": ("not_applicable",),
+                       "unknown": ("unknown",)}[cve["state"]]
+        if kev["state"] not in allowed_kev:
+            errs.append(f"{name}: CVE 상태가 {cve['state']}이면 KEV 상태는 {' / '.join(allowed_kev)} 중 하나여야 함"
+                        f" (지금 {kev['state']})")
+        # checks.kev.complete=true의 뜻: 그 판본의 전체 KEV 목록을 확보했고, 이 호의 구조화 데이터에 기록된
+        # 모든 CVE를 그 목록에서 조회했다. 기록하지 않은 CVE(cve_total 초과분)까지 조회했다는 뜻은 아니다 —
+        # 그래서 일부만 기록한 항목의 머리 줄은 "KEV 미등재(기록 N건 기준)"으로 범위를 밝힌다(render.py).
+        if kev["state"] == "not_listed" and not (ctx.kev and ctx.kev["complete"] is True):
+            errs.append(f"{name}: KEV 미등재(not_listed)는 호 단위 KEV 확인 기록이 complete=true일 때만 쓸 수 있음")
+        if kev["state"] == "listed":
+            listed = True
+            ref(kev["src"], {"kev"}, f"{name} KEV 등재")
+            if ex["state"] != "confirmed":
+                errs.append(f"{name}: KEV 등재인데 악용 상태가 confirmed가 아님 (지금 {ex['state']})")
+            added = ctx.day(kev["added"], f"{name} KEV 등재일")
+            due = ctx.day(kev["due"], f"{name} KEV 기한")
+            if added and due and due < added:
+                errs.append(f"{name}: KEV 기한({due})이 등재일({added})보다 앞섬")
+            if added and added > ctx.published:
+                errs.append(f"{name}: KEV 등재일({added})이 발행일({ctx.published})보다 늦음")
+            if added and ctx.catalog and ctx.catalog < added:
+                errs.append(f"{name}: KEV 판 날짜({ctx.catalog})가 등재일({added})보다 앞섬")
+        if cve["state"] == "value":
+            seen = (kev["state"], kev.get("added"), kev.get("due"))
+            prev = ctx.kev_seen.setdefault(cve["id"], seen)
+            if prev != seen:
+                errs.append(f"{name}: 같은 호 안에서 KEV 기록이 다름 ({prev} ↔ {seen})")
+
+    for cid in sorted(set(CVE_ID.findall(it["title"])) - set(ids)):
+        errs.append(f"제목의 {cid}가 vulnerabilities 목록에 없음")
+    if "cve_total" in it and it["cve_total"] < len(vulns):
+        errs.append(f"cve_total({it['cve_total']})이 기록한 취약점 수({len(vulns)})보다 작음")
+    if listed and it["severity"] not in URGENT:
+        errs.append(f"KEV 등재 CVE가 있으면 위험도는 긴급·높음만 허용 (지금 {it['severity']})")
+
+    # 공지
+    kisa = it["notices"]["kisa"]
+    if kisa["state"] == "value":
+        ref(kisa["src"], {"kisa"}, f"KISA #{kisa['no']}")
+        ctx.not_after_published(kisa["posted"], f"KISA #{kisa['no']} 게시일")
+        if ctx.kisa and kisa["no"] > ctx.kisa["last_no"]:
+            errs.append(f"KISA #{kisa['no']}가 호 단위 확인 기록의 마지막 번호(#{ctx.kisa['last_no']})보다 큼")
+        prev = ctx.kisa_seen.setdefault(kisa["no"], kisa["posted"])
+        if prev != kisa["posted"]:
+            errs.append(f"KISA #{kisa['no']}: 같은 호 안에서 게시일이 다름 ({prev} ↔ {kisa['posted']})")
+    else:  # not_applicable = 보호나라 공지 대상 아님
+        k = ctx.kisa
+        covers = (k is not None and k["complete"] is True
+                  and k["period_start"] <= ctx.start.isoformat() and k["period_end"] >= ctx.end.isoformat())
+        if not covers:
+            errs.append("보호나라 공지 '해당 없음'은 호 단위 보호나라 확인 기록이 complete=true이고 "
+                        f"대상 기간({ctx.start}~{ctx.end}) 전체를 덮을 때만 쓸 수 있음")
+    vendor = it["notices"]["vendor"]
+    if vendor["state"] == "value":
+        for adv in vendor["advisories"]:
+            ref(adv["src"], {"vendor"}, f"벤더 공지 {adv['id']}")
+            if "date" in adv:
+                ctx.not_after_published(adv["date"], f"벤더 공지 {adv['id']} 공지일")
+    if "vendor_rating" in it:
+        ref(it["vendor_rating"]["src"], {"vendor"}, "벤더 등급")
+    if "addition" in it:
+        posted = kisa.get("posted")
+        if kisa["state"] != "value" or posted <= ctx.end.isoformat():
+            errs.append(f"'{it['addition']}' 표시는 KISA 게시일이 대상 주간 끝({ctx.end}) 이후일 때만 쓸 수 있음")
 
 
 def report(where: str, errs: list[str]) -> None:
