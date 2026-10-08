@@ -6,7 +6,7 @@
  "type": "object",
  "additionalProperties": false,
  "required": ["schema_version", "id", "week_start", "published_date", "generated_at", "provenance",
-              "preheader", "overview", "priority", "items", "audience", "notes", "footer_sources"],
+              "preheader", "overview", "items", "audience", "notes", "footer_sources"],
  "properties": {
   "schema_version": {"const": 1},
   "id": {"type": "string", "pattern": "^kisa-weekly-\\d{4}-\\d{2}-\\d{2}$", "description": "kisa-weekly-<week_start>. 코드가 정한다."},
@@ -28,7 +28,7 @@
   "overview": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/rich"}, "description": "1. 한눈에 보기 문단들"},
   "overview_note": {"$ref": "#/$defs/rich", "description": "1. 한눈에 보기 끝의 회색 ※ 문단(선택)"},
   "priority": {
-   "type": "array", "minItems": 1, "description": "2. 우선순위 표의 행",
+   "type": "array", "minItems": 1, "description": "2. 우선순위 표의 행(글자). 이전된 호 전용이며 이전된 호는 반드시 있어야 한다(validate.py가 검사). 새 호는 쓰지 않고 각 항목의 priority 칸에서 표를 만든다",
    "items": {
     "type": "object", "additionalProperties": false,
     "required": ["target", "vuln", "severity", "cvss", "exploitation", "deadline"],
@@ -54,7 +54,7 @@
     "description": "머리 줄(제목 아래 줄)은 두 방식 중 정확히 하나로 쓴다. 섞으면 실패.",
     "oneOf": [
      {"type": "object", "required": ["meta", "meta_refs"], "description": "글자 머리 줄 — 이전된 호 전용"},
-     {"type": "object", "required": ["vulnerabilities", "notices"], "description": "구조화 칸 — 새 호. 머리 줄은 render.py가 만든다"}
+     {"type": "object", "required": ["vulnerabilities", "notices", "priority"], "description": "구조화 칸 — 새 호. 머리 줄과 우선순위 표 한 줄은 render.py가 만든다"}
     ],
     "properties": {
      "title": {"$ref": "#/$defs/rich", "description": "항목 제목(줄바꿈 허용)"},
@@ -75,6 +75,16 @@
       }
      },
      "addition": {"const": "긴급 추가", "description": "대상 주간이 끝난 뒤 게시된 KISA 공지를 함께 싣는 경우"},
+     "priority": {
+      "type": "object", "additionalProperties": false, "required": ["target", "details", "deadline"],
+      "description": "새 호의 우선순위 표 한 줄 중 사람이 쓰는 부분. KISA 번호·CVE·CVSS·악용·KEV는 구조화 칸에서 자동으로 나온다. 이전된 호에는 쓰지 않는다",
+      "properties": {
+       "target": {"$ref": "#/$defs/rich", "description": "대상 이름(굵게)"},
+       "details": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/rich"}, "description": "핵심 취약점 칸의 설명 줄들(회색)"},
+       "deadline": {"$ref": "#/$defs/rich", "description": "권고 기한(굵게). 예: 즉시, 이번 주, 2주"},
+       "deadline_note": {"$ref": "#/$defs/rich", "description": "기한 아래 짧은 말. 숫자·CVE·KEV·KISA·# 금지, KEV 등재 항목에는 쓸 수 없음(KEV 기한이 자동으로 나옴)"}
+      }
+     },
      "situation": {"$ref": "#/$defs/lines", "description": "상황"},
      "remediation": {"$ref": "#/$defs/lines", "description": "조치"},
      "verification": {"$ref": "#/$defs/lines", "description": "조치 적용 확인"},

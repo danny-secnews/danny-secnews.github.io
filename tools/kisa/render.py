@@ -19,6 +19,8 @@ docs/kisa-cert/kisa_weekly_<week_start>_public.html 을 만든다. HTML은 이 �
   - 고정 안내문은 표준 문구를 쓴다. 데이터의 boilerplate로 바꿔 쓰는 것은 이전된 호에만 허용(validate.py가 검사).
   - 항목 머리 줄: 구조화 칸(vulnerabilities·notices)이 있으면 그 값으로 만들고(새 호),
     없으면 meta·meta_refs 글자를 그대로 쓴다(이전된 호).
+  - 2. 우선순위 표: 최상위 priority[]가 있으면 글자 그대로(이전된 호), 없으면 항목마다 priority 칸과
+    구조화 칸으로 한 줄씩 만든다(새 호).
   - 데이터 형식 검사는 하지 않는다 — tools/kisa/validate.py 가 schema.json 으로 검사한다.
 """
 from __future__ import annotations
@@ -221,9 +223,20 @@ def exploitation_text(vulns: list[dict], total: int, published: Day) -> str:
     return f"악용 {UNVERIFIED}"
 
 
+def kev_listed(vulns: list[dict]) -> list[tuple[Day, Day]]:
+    """KEV 등재된 취약점의 (등재일, 기한). 머리 줄과 우선순위 표가 함께 쓰는 공통 계산."""
+    return [(day(v["kev"]["added"], "kev.added"), day(v["kev"]["due"], "kev.due"))
+            for v in vulns if v["kev"]["state"] == "listed"]
+
+
+def kev_short(listed: list[tuple[Day, Day]], published: Day) -> str:
+    """표의 짧은 KEV 표시. 등재일이 하나면 'KEV M/D', 서로 다르면 'KEV N건'."""
+    added = {a for a, _ in listed}
+    return f"KEV {md(next(iter(added)), published)}" if len(added) == 1 else f"KEV {len(listed)}건"
+
+
 def kev_text(vulns: list[dict], total: int, published: Day) -> str:
-    listed = [(day(v["kev"]["added"], "kev.added"), day(v["kev"]["due"], "kev.due"))
-              for v in vulns if v["kev"]["state"] == "listed"]
+    listed = kev_listed(vulns)
     if listed:
         if len(set(listed)) == 1:
             added, due = listed[0]
@@ -238,14 +251,18 @@ def kev_text(vulns: list[dict], total: int, published: Day) -> str:
     return "KEV 미등재" if len(vulns) == total else f"KEV 미등재(기록 {len(vulns)}건 기준)"
 
 
+def rating_text(it: dict) -> str | None:
+    r = it.get("vendor_rating")
+    return f"벤더 등급 {r['label']}" + (f" {r['count']}건" if r.get("count") else "") if r else None
+
+
 def structured_headline(it: dict, published: Day) -> tuple[str, str]:
     """구조화 칸 → (머리 줄 앞부분, 뒷부분). 본문 표기(rich) 글자로 돌려준다."""
     vulns = it["vulnerabilities"]
     total = it.get("cve_total", len(vulns))
     front = [cvss_text(vulns, total)]
-    if it.get("vendor_rating"):
-        r = it["vendor_rating"]
-        front.append(f"벤더 등급 {r['label']}" + (f" {r['count']}건" if r.get("count") else ""))
+    if rating_text(it):
+        front.append(rating_text(it))
     front.append(exploitation_text(vulns, total, published))
 
     kisa, vendor = it["notices"]["kisa"], it["notices"]["vendor"]
@@ -261,6 +278,65 @@ def structured_headline(it: dict, published: Day) -> tuple[str, str]:
         back.append(f"벤더 공지 {md(min(dates), published)}")
     back.append(kev_text(vulns, total, published))
     return " · ".join(front), " · ".join(back)
+
+
+# ── 구조화 우선순위 표 (새 호) ─────────────────────────────────────
+# 새 호는 최상위 priority[]를 쓰지 않고, 항목마다 한 줄을 items 순서대로 만든다(표와 항목 1:1).
+# 사람이 쓰는 것은 항목의 priority 칸(target·details·deadline·deadline_note)뿐이고,
+# KISA 번호·CVE·CVSS·악용·KEV는 머리 줄과 같은 함수로 구조화 칸에서 만든다.
+# 결과는 이전된 호의 priority[] 행과 같은 모양이라 render_priority()가 그대로 그린다.
+
+EXPLOIT_MARK = {"confirmed": "●", "no_report": "○", "unknown": "◌"}
+CONFIRM_BASIS = {frozenset({"vendor"}): "벤더 확인", frozenset({"kisa"}): "KISA 확인",
+                 frozenset({"vendor", "kisa"}): "벤더·KISA 확인"}
+
+
+def structured_priority_row(it: dict, published: Day) -> dict:
+    vulns, p = it["vulnerabilities"], it["priority"]
+    total = it.get("cve_total", len(vulns))
+    listed = kev_listed(vulns)
+    kisa = it["notices"]["kisa"]
+
+    note = ([f"KISA #{kisa['no']}"] if kisa["state"] == "value" else []) + ([kev_short(listed, published)] if listed else [])
+
+    ids = [v["cve"]["id"] for v in vulns if v["cve"]["state"] == "value"]
+    if ids:
+        first = f"**{ids[0]}**" + (f" 외 {total - 1}건" if total >= 2 else "")
+    elif any(v["cve"]["state"] == "unknown" for v in vulns):
+        first = f"CVE {UNVERIFIED}"
+    else:
+        first = "CVE 미부여"
+
+    states = [v["exploitation"]["state"] for v in vulns]
+    mark = "confirmed" if "confirmed" in states else "no_report" if all(s == "no_report" for s in states) else "unknown"
+    exploitation = f"{EXPLOIT_MARK[mark]} {exploitation_text(vulns, total, published)}"
+    exploitation_notes = []
+    if mark == "confirmed":
+        if listed:
+            exploitation += f" · {kev_short(listed, published)}"
+        else:  # KEV 등재 없이 확인 — 근거 종류를 밝힌다. kev 근거(규칙 위반)는 보정하지 않고 표시도 하지 않는다
+            kinds = {s.get("id"): s.get("kind") for s in it["sources"]}
+            basis = CONFIRM_BASIS.get(frozenset(kinds.get(v["exploitation"]["src"])
+                                                for v in vulns if v["exploitation"]["state"] == "confirmed"))
+            exploitation_notes = [basis] if basis else []
+
+    if listed:
+        due = min(d for _, d in listed)
+        deadline_note = f"KEV 기한 {md(due, published)}" + (" 경과" if due < published else "")
+    else:
+        deadline_note = p.get("deadline_note")
+
+    cvss = " · ".join(t for t in (cvss_text(vulns, total), rating_text(it)) if t)
+    return {"target": p["target"], "target_note": " · ".join(note), "vuln": first, "vuln_details": p["details"],
+            "severity": it["severity"], "cvss": cvss, "exploitation": exploitation,
+            "exploitation_notes": exploitation_notes, "deadline": p["deadline"], "deadline_note": deadline_note}
+
+
+def priority_rows(data: dict, published: Day) -> list[dict]:
+    """이전된 호는 최상위 priority[] 글자 그대로, 새 호는 항목의 구조화 칸에서 만든 행."""
+    if "priority" in data:
+        return data["priority"]
+    return [structured_priority_row(it, published) for it in data["items"]]
 
 
 def render_item(no: str, it: dict, published: Day) -> str:
@@ -373,7 +449,7 @@ def render(data: dict, source_path: str = "") -> str:
             period=f"{dotted(start)} ~ {dotted(end, end.year != start.year)}",
             published_label=dotted(published),
             overview=render_overview(data),
-            priority_rows=render_priority(data["priority"]),
+            priority_rows=render_priority(priority_rows(data, published)),
             items=body,
             tracking=render_tracking(f"3-{len(items) + 1}", data.get("tracking") or []),
             audience_rows=render_audience(data["audience"]),

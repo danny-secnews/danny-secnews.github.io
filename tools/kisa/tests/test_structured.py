@@ -381,5 +381,179 @@ class RuleGaps(unittest.TestCase):
         self.assertEqual(V.schema_errors("abc", {"$ref": "#/$defs/word", "description": "설명"}, root), [])
 
 
+def row(data: dict, i: int) -> dict:
+    return R.structured_priority_row(data["items"][i], date.fromisoformat(data["published_date"]))
+
+
+def cells(r: dict) -> tuple[str, str, str, str]:
+    """표 한 줄을 네 칸의 글자로(회색 줄은 ' / '로 이음)."""
+    target = r["target"] + (f" / {r['target_note']}" if r["target_note"] else "")
+    vuln = " / ".join([r["vuln"]] + r["vuln_details"])
+    risk = " / ".join([r["severity"], r["cvss"], r["exploitation"]] + r["exploitation_notes"])
+    due = r["deadline"] + (f" / {r['deadline_note']}" if r["deadline_note"] else "")
+    return target, vuln, risk, due
+
+
+class PriorityTable(unittest.TestCase):
+    """WP4-B — 새 호의 2. 우선순위 표를 항목의 구조화 칸에서 만든다."""
+
+    assertFails = Rules.assertFails
+
+    # 1. 다섯 유형의 표 한 줄
+    def test_p1_cisco_type(self):
+        self.assertEqual(cells(row(BASE, A)), (
+            "Example Gateway A / KISA #9001 · KEV 10/6",
+            "**CVE-2026-9990001** / 가상 입력값 검증 결함 → 인증 없는 명령 실행 / ▸ Example Gateway A 1.x / 2.x 계열",
+            "긴급 / CVSS 9.8 / ● 악용 확인 · KEV 10/6",
+            "즉시 / KEV 기한 10/9 경과"))
+
+    def test_p1_citrix_type(self):
+        self.assertEqual(cells(row(BASE, B)), (
+            "Example Appliance B / KISA #9002 · KEV 10/10",
+            "**CVE-2026-9990011** 외 7건 / 가상 메모리 결함 → 원격 코드 실행 / ▸ 기본 구성 전체 해당",
+            "긴급 / CVSS 최대 9.5(v4.0) / ● 2건 악용 확인 · KEV 10/10",
+            "즉시 / KEV 기한 10/31"))
+
+    def test_p1_partially_recorded(self):
+        self.assertEqual(cells(row(BASE, C)), (
+            "Example Product C / KISA #9003 · KEV 2건",
+            "**CVE-2026-9990021** 외 5건 / 가상 인증 우회 → 관리자 권한 획득",
+            "긴급 / CVSS 9.8(NVD) / ● 2건 악용 확인 · KEV 2건",
+            "즉시 / KEV 기한 10/27"))
+
+    def test_p1_no_cve_type(self):
+        self.assertEqual(cells(row(BASE, D)), (
+            "Example Switch D / KISA #9004",
+            "CVE 미부여 / 가상 구버전 취약점 → 원격 명령 실행",
+            "긴급 / CVSS [미확인] / ● 악용 확인 / 벤더 확인",
+            "즉시 / 해당 시"))
+
+    def test_p1_vendor_rating_type(self):
+        self.assertEqual(cells(row(BASE, E)), (
+            "Example Middleware E / KISA #9005",
+            "**CVE-2026-9990031** 외 11건 / 가상 요청 처리 결함 묶음 / ▸ Example Middleware E 3.x 계열",
+            "높음 / CVSS [미확인] · 벤더 등급 Important 4건 / ◌ 악용 [미확인]",
+            "2주 / 정기 창"))
+
+    def test_p1_rendered_html_row(self):
+        html = R.render(BASE)
+        self.assertIn('<td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Example Gateway A</b><br>'
+                      '<span style="color:#6B7280;">KISA #9001 · KEV 10/6</span></td>', html)
+        self.assertIn('<b style="color:#9B1C1C;">긴급</b><br><span style="color:#6B7280;">CVSS 9.8</span><br>'
+                      '<b>● 악용 확인 · KEV 10/6</b></td>', html)
+        self.assertIn('<b>즉시</b><br><span style="color:#6B7280;">KEV 기한 10/9 경과</span></td>', html)
+
+    # 2. 머리 줄과 표가 같은 CVSS·악용·KEV 문구
+    def test_p2_headline_and_table_share_wording(self):
+        published = date.fromisoformat(BASE["published_date"])
+        for i, it in enumerate(BASE["items"]):
+            with self.subTest(item=i):
+                front, back = R.structured_headline(it, published)
+                r = row(BASE, i)
+                vulns, total = it["vulnerabilities"], it.get("cve_total", len(it["vulnerabilities"]))
+                cvss, ex = R.cvss_text(vulns, total), R.exploitation_text(vulns, total, published)
+                self.assertTrue(front.startswith(cvss) and r["cvss"].startswith(cvss))
+                self.assertIn(ex, front)
+                self.assertIn(ex, r["exploitation"])
+                listed = R.kev_listed(vulns)
+                if listed:
+                    short = R.kev_short(listed, published)  # "KEV 10/6" 또는 "KEV 2건"
+                    self.assertIn(short.replace("KEV ", "KEV 등재 "), back)
+                    self.assertTrue(r["target_note"].endswith(short) and r["exploitation"].endswith(short))
+
+    # 3. KEV 기한 경과
+    def test_p3_overdue_mark(self):
+        self.assertEqual(row(BASE, A)["deadline_note"], "KEV 기한 10/9 경과")   # 10/9 < 발행 10/12
+        self.assertEqual(row(BASE, B)["deadline_note"], "KEV 기한 10/31")       # 발행일 뒤
+        data = fresh()
+        data["items"][A]["vulnerabilities"][0]["kev"]["due"] = "2026-10-12"    # 발행일 당일은 경과 아님
+        self.assertEqual(row(data, A)["deadline_note"], "KEV 기한 10/12")
+
+    # 4. 악용 확인 + KEV 없음(근거 벤더)
+    def test_p4_vendor_confirmed_without_kev(self):
+        self.assertEqual(row(BASE, D)["exploitation_notes"], ["벤더 확인"])
+
+    # 5. 새 호의 표 구조
+    def test_p5_new_issue_top_level_priority_fails(self):
+        data = fresh()
+        data["priority"] = [{"target": "x", "vuln": "x", "severity": "긴급", "cvss": "x", "exploitation": "x", "deadline": "x"}]
+        self.assertFails(data, "새 호는 최상위 priority[]를 쓰지 않음")
+
+    def test_p5_new_issue_item_without_priority_fails(self):
+        data = fresh()
+        del data["items"][A]["priority"]
+        self.assertFails(data, "$.items[0].priority: 필수 칸 없음")
+
+    # 6. deadline_note
+    def test_p6_deadline_note_with_facts_fails(self):
+        for note in ("2주 내", "KEV 참고", "kisa 공지 후", "#1 우선", "３일"):
+            with self.subTest(note=note):
+                data = fresh()
+                data["items"][E]["priority"]["deadline_note"] = note
+                self.assertFails(data, "priority.deadline_note에는 숫자·CVE·KEV·KISA·#를 쓸 수 없음")
+
+    def test_p6_deadline_note_on_kev_item_fails(self):
+        data = fresh()
+        data["items"][A]["priority"]["deadline_note"] = "해당 시"
+        self.assertFails(data, "KEV 등재 항목에는 priority.deadline_note를 쓸 수 없음")
+
+    # 7. 이전된 호
+    def check_0928(self, change) -> list[str]:
+        data = json.loads((REPO / "content/kisa-cert/2026-09-28.json").read_text(encoding="utf-8"))
+        change(data)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "content/kisa-cert").mkdir(parents=True)
+            (root / "docs/kisa-cert").mkdir(parents=True)
+            path = root / "content/kisa-cert/2026-09-28.json"
+            path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+            html = (REPO / "docs/kisa-cert/kisa_weekly_2026-09-28_public.html").read_bytes()
+            (root / "docs/kisa-cert/kisa_weekly_2026-09-28_public.html").write_bytes(html)
+            return V.check_issue(root, path, SCHEMA)
+
+    def test_p7_migrated_issue_needs_priority(self):
+        self.assertEqual(self.check_0928(lambda d: None), [])
+        errs = self.check_0928(lambda d: d.pop("priority"))
+        self.assertTrue(any("이전된 호는 2. 우선순위 표를 priority[]로 적어야 함" in e for e in errs), errs)
+
+    def test_p7_migrated_item_priority_fails(self):
+        errs = self.check_0928(lambda d: d["items"][0].update(priority={"target": "x", "details": ["x"], "deadline": "x"}))
+        self.assertTrue(any("이전된 호에는 구조화 칸" in e for e in errs), errs)
+
+    # 8. schema를 통과한 데이터에는 예외 없이 실패 목록
+    def test_p8_no_exception_on_schema_valid_oddities(self):
+        data = fresh()  # 글자 머리 줄 + 구조화 칸, priority 없음 → schema는 글자 쪽으로 통과
+        it = data["items"][A]
+        it["meta"], it["meta_refs"] = "CVSS 9.8", "KISA #9001"
+        del it["priority"]
+        self.assertEqual(V.schema_errors(data, SCHEMA, SCHEMA), [])
+        errs = V.check_new_issue(data)
+        self.assertTrue(any("priority(2. 우선순위 표 한 줄" in e for e in errs), errs)
+        data = fresh()  # 글자 머리 줄 + priority만, 구조화 칸 없음
+        it = data["items"][A]
+        it["meta"], it["meta_refs"] = "CVSS 9.8", "KISA #9001"
+        for k in ("vulnerabilities", "notices"):
+            del it[k]
+        self.assertEqual(V.schema_errors(data, SCHEMA, SCHEMA), [])
+        self.assertTrue(V.check_new_issue(data))
+
+    # 9. KEV 여러 건(등재일 다름), 벤더·KISA 근거 섞임
+    def test_p9_kev_multiple_dates_shows_count(self):
+        r = row(BASE, C)
+        self.assertTrue(r["target_note"].endswith("KEV 2건"), r)
+        self.assertTrue(r["exploitation"].endswith("· KEV 2건"), r)
+
+    def test_p9_vendor_and_kisa_basis_without_kev(self):
+        data = fresh()
+        for v in data["items"][C]["vulnerabilities"]:  # 근거: vendor-c(vendor), kisa(kisa)
+            v["kev"] = {"state": "not_listed"}
+        self.assertEqual(errors(data), [])
+        r = row(data, C)
+        self.assertEqual((r["exploitation"], r["exploitation_notes"]), ("● 2건 악용 확인", ["벤더·KISA 확인"]))
+        self.assertEqual(r["target_note"], "KISA #9003")
+        data["items"][C]["vulnerabilities"][0]["exploitation"]["src"] = "kisa"
+        self.assertEqual(row(data, C)["exploitation_notes"], ["KISA 확인"])
+
+
 if __name__ == "__main__":
     unittest.main()
