@@ -252,8 +252,10 @@ def structured_headline(it: dict, published: Day) -> tuple[str, str]:
     if kisa["state"] == "value":
         extra = f", {it['addition']}" if it.get("addition") else ""
         back = [f"KISA #{kisa['no']}({md(day(kisa['posted'], 'kisa.posted'), published)} 게시{extra})"]
-    else:  # 확인한 사실은 "대상 기간 보호나라 게시판에 일치하는 공지가 없었다"는 것
+    elif kisa["state"] == "none_in_period":  # 확인한 대상 기간의 보호나라 게시판에 일치하는 공지가 없었다
         back = ["보호나라 대상 기간 공지 없음"]
+    else:
+        raise RenderError(f"notices.kisa.state를 알 수 없음: {kisa['state']!r}")
     dates = [day(a["date"], "vendor.date") for a in vendor.get("advisories", []) if a.get("date")]
     if vendor["state"] == "value" and dates:
         back.append(f"벤더 공지 {md(min(dates), published)}")

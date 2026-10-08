@@ -128,10 +128,10 @@ class Headlines(unittest.TestCase):
                       "KISA #9001(10/7 게시) · 벤더 공지 10/5 · KEV 등재 10/6(기한 10/9)</div>", html)
         self.assertIn('CVSS <span style="color:#6B7280;">[미확인]</span>', html)  # [미확인]은 회색
 
-    def test_kisa_not_applicable_and_year_suffix(self):
+    def test_kisa_none_in_period_and_year_suffix(self):
         data = fresh()
         it = data["items"][A]
-        it["notices"]["kisa"] = {"state": "not_applicable"}
+        it["notices"]["kisa"] = {"state": "none_in_period"}
         it["notices"]["vendor"]["advisories"][0]["date"] = "2025-12-30"
         it["sources"] = [s for s in it["sources"] if s["id"] != "kisa"]
         self.assertEqual(errors(data), [])
@@ -167,13 +167,13 @@ class Rules(unittest.TestCase):
         data["checks"]["kev"]["complete"] = False
         self.assertFails(data, "KEV 미등재(not_listed)는 호 단위 KEV 확인 기록이 complete=true일 때만")
         data = fresh()
-        data["items"][A]["notices"]["kisa"] = {"state": "not_applicable"}
+        data["items"][A]["notices"]["kisa"] = {"state": "none_in_period"}
         data["checks"]["kisa"]["period_start"] = "2026-10-06"
         self.assertFails(data, "대상 기간(2026-10-05~2026-10-11) 전체를 덮을 때만")
         data = fresh()
-        data["items"][A]["notices"]["kisa"] = {"state": "not_applicable"}
+        data["items"][A]["notices"]["kisa"] = {"state": "none_in_period"}
         data["checks"]["kisa"]["complete"] = False
-        self.assertFails(data, "보호나라 공지 '해당 없음'")
+        self.assertFails(data, "보호나라 대상 기간 공지 없음(none_in_period)")
 
     def test_11_source_restrictions(self):
         data = fresh()
@@ -290,6 +290,95 @@ class Rules(unittest.TestCase):
         data = fresh()
         data["items"][A]["sources"][0]["url"] = ""
         self.assertFails(data, "https여야 함")
+
+
+class RuleGaps(unittest.TestCase):
+    """코드 검토에서 나온 여섯 가지(fix/kisa-rule-gaps)."""
+
+    assertFails = Rules.assertFails
+
+    # 1. checked_at은 실제로 있는 날짜·시각이어야 함
+    def test_gap1_kev_checked_at_impossible(self):
+        data = fresh()
+        data["checks"]["kev"]["checked_at"] = "2026-99-99T88:77:66+09:00"
+        self.assertEqual(V.schema_errors(data, SCHEMA, SCHEMA), [])  # 모양은 맞음
+        self.assertFails(data, "checks.kev.checked_at: 없는 날짜·시각")
+
+    def test_gap1_kisa_checked_at_impossible(self):
+        data = fresh()
+        data["checks"]["kisa"]["checked_at"] = "2026-99-99T88:77:66+09:00"
+        self.assertFails(data, "checks.kisa.checked_at: 없는 날짜·시각")
+
+    # 2. notices.kisa의 "대상 기간 공지 없음"은 none_in_period
+    def test_gap2_none_in_period_passes_with_same_wording(self):
+        data = fresh()
+        data["items"][E]["notices"]["kisa"] = {"state": "none_in_period"}
+        self.assertEqual(errors(data), [])
+        self.assertIn(" | 보호나라 대상 기간 공지 없음 · 벤더 공지 9/25 · ", headline(data, E))
+
+    def test_gap2_old_name_not_applicable_fails(self):
+        data = fresh()
+        data["items"][E]["notices"]["kisa"] = {"state": "not_applicable"}
+        self.assertFails(data, "$.items[4].notices.kisa")
+
+    # 3. KEV 원본 파일 주소(raw.githubusercontent.com/cisagov/kev-data)
+    RAW_KEV = "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json"
+
+    def test_gap3_raw_kev_url_allowed_for_kev(self):
+        data = fresh()
+        data["items"][A]["sources"][2]["url"] = self.RAW_KEV
+        data["checks"]["kev"]["url"] = self.RAW_KEV
+        self.assertEqual(errors(data), [])
+
+    def test_gap3_raw_kev_url_rejected_as_vendor(self):
+        data = fresh()
+        data["items"][A]["sources"][0]["url"] = self.RAW_KEV
+        self.assertFails(data, "vendor 출처인데 주소가 kev 주소임")
+
+    # 4. 악용 확인의 근거가 KEV면 KEV 상태는 listed
+    def test_gap4_kev_based_confirmed_needs_listed(self):
+        data = fresh()
+        data["items"][B]["vulnerabilities"][2]["exploitation"] = {"state": "confirmed", "src": "kev"}  # kev=not_listed
+        self.assertFails(data, "악용 확인의 근거가 KEV인데 KEV 상태가 listed가 아님 (지금 not_listed)")
+
+    def test_gap4_vendor_based_confirmed_with_not_listed_passes(self):
+        data = fresh()
+        data["items"][B]["vulnerabilities"][2]["exploitation"] = {"state": "confirmed", "src": "vendor-b"}
+        self.assertEqual(errors(data), [])
+
+    # 5. schema를 통과한 데이터에는 예외 없이 실패 목록
+    def test_gap5_mixed_item_without_notices_returns_errors(self):
+        data = fresh()
+        it = data["items"][A]
+        it["meta"], it["meta_refs"] = "CVSS 9.8 · 악용 확인", "KISA #9001"
+        del it["notices"]
+        self.assertEqual(V.schema_errors(data, SCHEMA, SCHEMA), [])  # 이 조합은 schema를 통과한다
+        errs = V.check_new_issue(data)  # 예외가 나면 시험 오류
+        self.assertTrue(any("함께 쓸 수 없음" in e for e in errs), errs)
+        self.assertTrue(any("notices(KISA·벤더 공지)가 없음" in e for e in errs), errs)
+
+    def test_gap5_other_schema_valid_oddities_return_errors(self):
+        data = fresh()  # 모양은 맞지만 없는 날짜
+        data["week_start"] = "2026-13-45"
+        self.assertEqual(V.schema_errors(data, SCHEMA, SCHEMA), [])
+        self.assertTrue(V.check_new_issue(data))
+        data = fresh()  # 해석할 수 없는 주소(닫히지 않은 대괄호)
+        data["items"][A]["sources"][0]["url"] = "https://[vendor-a.example/x"
+        data["checks"]["kev"]["url"] = "https://[www.cisa.gov/x"
+        self.assertEqual(V.schema_errors(data, SCHEMA, SCHEMA), [])
+        errs = V.check_new_issue(data)
+        self.assertTrue(any("주소를 해석할 수 없음" in e for e in errs), errs)
+        self.assertTrue(any("checks.kev.url은 KEV 허용 주소여야 함" in e for e in errs), errs)
+
+    # 6. $ref 옆의 검사 키워드는 SchemaBug
+    def test_gap6_ref_with_sibling_keyword_raises(self):
+        root = {"$defs": {"word": {"type": "string"}}}
+        with self.assertRaises(V.SchemaBug):
+            V.schema_errors("abc", {"$ref": "#/$defs/word", "pattern": "^z"}, root)
+
+    def test_gap6_ref_with_description_is_fine(self):
+        root = {"$defs": {"word": {"type": "string"}}}
+        self.assertEqual(V.schema_errors("abc", {"$ref": "#/$defs/word", "description": "설명"}, root), [])
 
 
 if __name__ == "__main__":

@@ -141,14 +141,14 @@
   "footer_sources": {"$ref": "#/$defs/rich", "description": "바닥글 '이번 호 출처 —' 뒤의 글"},
   "checks": {
    "type": "object", "additionalProperties": false, "required": ["kev", "kisa"],
-   "description": "호 단위 확인 기록. 구조화 항목이 있는 호(새 호)는 필수. 'KEV 미등재'·'보호나라 공지 대상 아님'의 근거가 된다",
+   "description": "호 단위 확인 기록. 구조화 항목이 있는 호(새 호)는 필수. 'KEV 미등재'·'보호나라 대상 기간 공지 없음'의 근거가 된다",
    "properties": {
     "kev": {
      "type": "object", "additionalProperties": false, "required": ["catalog_version", "url", "checked_at", "complete"],
      "properties": {
       "catalog_version": {"type": "string", "pattern": "^\\d{4}\\.\\d{2}\\.\\d{2}$", "description": "조회한 KEV 판(catalogVersion). 판 날짜가 대상 기간 끝보다 이른 것은 실패가 아님"},
       "count": {"type": "integer", "minimum": 1, "description": "그 판의 전체 건수"},
-      "url": {"$ref": "#/$defs/https_url", "description": "조회한 KEV 주소(www.cisa.gov 또는 github.com/cisagov/kev-data)"},
+      "url": {"$ref": "#/$defs/https_url", "description": "조회한 KEV 주소(www.cisa.gov, github.com/cisagov/kev-data 또는 raw.githubusercontent.com/cisagov/kev-data)"},
       "checked_at": {"$ref": "#/$defs/kst_datetime"},
       "complete": {"type": "boolean", "description": "그 판본의 전체 KEV 목록을 확보했고, 구조화 데이터에 기록된 모든 CVE를 그 목록에서 조회했는지. 기록하지 않은 CVE(cve_total 초과분)까지 조회했다는 뜻은 아님. true일 때만 kev.state=not_listed 허용"}
      }
@@ -162,7 +162,7 @@
       "last_no": {"type": "integer", "minimum": 1, "description": "확인한 마지막 공지 번호. 이 호의 모든 KISA 번호 이상"},
       "url": {"$ref": "#/$defs/https_url", "description": "확인한 보호나라 목록 주소(www.boho.or.kr)"},
       "checked_at": {"$ref": "#/$defs/kst_datetime"},
-      "complete": {"type": "boolean", "description": "그 기간의 게시물을 빠짐없이 봤는지. true이고 기간이 대상 주간을 덮을 때만 '공지 대상 아님' 허용"}
+      "complete": {"type": "boolean", "description": "그 기간의 게시물을 빠짐없이 봤는지. true이고 기간이 대상 주간을 덮을 때만 notices.kisa.state=none_in_period 허용"}
      }
     }
    }
@@ -223,7 +223,7 @@
       "properties": {"state": {"const": "value"}, "no": {"type": "integer", "minimum": 1},
                      "posted": {"$ref": "#/$defs/date"}, "src": {"$ref": "#/$defs/src_ref"}}},
      {"type": "object", "additionalProperties": false, "required": ["state"],
-      "properties": {"state": {"const": "not_applicable", "description": "보호나라 공지 대상 아님"}}}
+      "properties": {"state": {"const": "none_in_period", "description": "확인한 대상 기간의 보호나라 게시판에 일치하는 공지가 없었다. 화면: '보호나라 대상 기간 공지 없음'"}}}
     ]},
     "vendor": {"oneOf": [
      {"type": "object", "additionalProperties": false, "required": ["state", "advisories"],
