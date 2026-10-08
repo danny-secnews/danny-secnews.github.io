@@ -37,7 +37,7 @@
 <tr><td class="sec" style="padding:22px 26px 4px;">
   <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">1. 한눈에 보기</h2>
   <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
-    대상 기간에 보호나라 보안공지 <b>7건(#2549~#2555)</b>이 게시됐고, 조회한 CISA 악용 확인 목록(KEV) 판본 기준으로 같은 기간 신규 등재 <b>3건</b>이 확인됐습니다. 이 가운데 특정 제품·버전·CVE를 지정하지 않은 <b>일반 공지 2건은 제외</b>했고, Cisco 1건은 두 수집원에 중복돼 한 건으로 묶었습니다. 결과적으로 이번 호 점검 대상은 <b>7건</b>이며 <b>이 중 5건은 실제 악용이 확인</b>됐습니다.
+    대상 기간에 보호나라 보안공지 <b>7건(#2549~#2555)</b>이 게시됐고, 조회한 CISA 악용 확인 목록(KEV) 판본 기준으로 같은 기간 신규 등재 <b>3건</b>이 확인됐습니다. 이 가운데 특정 제품·버전·CVE를 지정하지 않은 <b>일반 공지 2건은 제외</b>했고, Cisco 1건은 두 수집원에 중복돼 한 건으로 묶었습니다. 결과적으로 이번 호 점검 대상은 <b>7건</b>이며 <b>이 중 6건은 실제 악용이 확인</b>됐습니다.
   </p>
   <p style="margin:0 0 11px;font-size:14.5px;line-height:1.78;color:#1F2937;word-break:keep-all;">
     <b>경계 구간 장비 세 계열이 동시에 터졌습니다.</b> <b>Citrix NetScaler</b>(CVE-2026-88771, CVSS 9.5)는 추가 기능 설정 없이 <b>기본 구성 전체가 영향</b>을 받고 인증 없이 명령 실행이 가능합니다. <b>Cisco Catalyst SD-WAN Manager</b>(CVE-2026-76504, CVSS 9.8)는 인증 없이 <b>admin 권한으로 접근</b>되고, <b>Fortinet FortiMail</b>(CVE-2026-104286, CVSS 9.8)은 IBE 기능이 켜져 있으면 인증 없이 파일을 쓸 수 있습니다. 세 건 모두 벤더가 실제 악용을 확인했고 <b>KEV 연방기관 기한(9/30 · 10/3 · 10/4)은 모두 지났습니다.</b>
@@ -93,10 +93,10 @@
       <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>이번 주</b><br><span style="color:#6B7280;">KEV 기한 10/2 경과</span></td>
     </tr>
     <tr>
-      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Adobe Commerce · Magento</b><br><span style="color:#6B7280;">KISA #2549</span></td>
+      <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Adobe Commerce · Magento</b><br><span style="color:#6B7280;">KISA #2549 · KEV 9/24</span></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>CVE-2026-71362</b><br><span style="color:#6B7280;">권한 검증 오류 → 인증·관리자 권한 없이 권한 상승</span><br><span style="color:#6B7280;">▸ Commerce · Commerce B2B · Magento Open Source</span></td>
-      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS 9.1</span><br><b>○ 보고 없음</b><br><span style="color:#6B7280;">벤더 명시</span></td>
-      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>1주</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>높음</b><br><span style="color:#6B7280;">CVSS 9.1</span><br><b>● 악용 확인 · KEV 9/24</b></td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>이번 주</b><br><span style="color:#6B7280;">KEV 기한 9/27 경과</span></td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>Apache Tomcat</b><br><span style="color:#6B7280;">KISA #2552</span></td>
@@ -298,11 +298,13 @@ CVE-2026-76504</h3>
 </td></tr>
 <tr><td class="sec" style="padding:10px 26px 4px;border-top:1px solid #E5E7EB;">
   <h3 style="margin:0 0 3px;font-size:14.5px;color:#1F2937;">3-6. Adobe Commerce · Magento — CVE-2026-71362</h3>
-  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · CVSS 9.1 · 보고 없음  <span style="color:#9CA3AF;">|</span>  KISA #2549(9/29 게시) · 벤더 공지 2026-08-11</div>
+  <div style="font-size:12px;color:#6B7280;margin-bottom:9px;"><b>높음</b> · CVSS 9.1 · 악용 확인  <span style="color:#9CA3AF;">|</span>  KISA #2549(9/29 게시) · 벤더 공지 2026-08-11 · KEV 등재 9/24(기한 9/27)</div>
   <table role="presentation" class="kv" width="100%" cellpadding="6" cellspacing="0" style="font-size:13px;line-height:1.72;color:#1F2937;">
     <tr><td class="lbl" width="88" valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">상황</td><td style="word-break:keep-all;">
+      <span style="font-size:12px;color:#6B7280;">※ <b>정정 2026-10-08</b> — 처음 게시본은 이 항목의 악용 상태를 "보고 없음"으로 적었습니다. CISA KEV 등재(2026-09-24, 기한 9/27)를 반영해 "악용 확인"으로 바로잡았습니다.</span><br>
       권한 검증 오류(Incorrect Authorization)로 <b>인증도 관리자 권한도 없이 권한 상승</b>이 가능합니다. CVSS <b>9.1</b>(CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N), Adobe 등급 Critical, 벤더 표에 <b>인증 필요 "No" · 관리자 권한 필요 "No"</b>로 기재돼 있습니다.<br>
-      <b>악용 상태는 "보고 없음"입니다.</b> 근거는 벤더의 명시적 진술입니다 — <b>"Adobe is not aware of any exploits in the wild for any of the issues addressed in these updates."</b> KEV 미등재를 근거로 삼은 것이 아니라 벤더가 악용 보고 없음을 직접 적은 경우입니다.<br>
+      <b>악용 상태는 "악용 확인"입니다.</b> CISA가 <b>9/24 KEV에 등재</b>했고 연방기관 기한 <b>9/27</b>은 이미 지났습니다. KEV 등재는 CISA가 악용을 확인했다는 뜻이므로 이 리포트의 상태값은 <b>악용 확인</b>입니다.<br>
+      벤더 진술은 <b>공지 시점(2026-08-11) 기준</b>입니다 — <b>"Adobe is not aware of any exploits in the wild for any of the issues addressed in these updates."</b> 8/11 당시의 사실이며, 이후 악용이 확인돼 9/24 KEV에 등재됐습니다.<br>
       <b>시차를 보셔야 합니다.</b> 벤더 공지 APSB26-92는 <b>2026-08-11</b> 발행이고 보호나라 게시는 <b>9/29</b>입니다. 약 7주 간격이므로 <b>8월 정기 업데이트를 이미 적용한 곳은 해소된 상태일 수 있습니다.</b> 반대로 미적용 상태였다면 노출 기간이 두 달에 가깝습니다.<br>
       같은 공지에 다른 6건(CVE-2026-48411~48416)이 함께 있으나, 보호나라 #2549가 지정한 것은 CVE-2026-71362 한 건입니다. 나머지 6건은 모두 인증 또는 관리자 권한을 요구합니다.
     </td></tr>
@@ -321,10 +323,10 @@ CVE-2026-76504</h3>
     </td></tr>
     <tr style="background:#F3F6FA;"><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">침해 흔적 확인</td><td style="word-break:keep-all;">
       <b><span style="color:#6B7280;">[미확인]</span></b> — 벤더가 공식 침해 확인 방법을 제시하지 않습니다. 확인 방법이 없다는 것이 침해가 없다는 뜻은 아닙니다.<br>
-      다만 벤더가 <b>악용 보고 없음을 명시</b>한 건이라 침해 점검의 긴급도는 위 3-1~3-4보다 낮습니다. 미조치 기간이 길었다면 <b>관리자 권한 변경 이력과 신규 관리자 계정 생성 기록</b>을 확인하시기 바랍니다(<b>벤더 IoC 아님</b> — 취약점 영향에서 도출한 착안점입니다).
+      <b>이미 악용이 확인된 건(KEV 9/24 등재)</b>이므로, 패치 전 기간에 대해 <b>관리자 권한 변경 이력과 신규 관리자 계정 생성 기록</b>을 확인하시기 바랍니다(<b>벤더 IoC 아님</b> — 취약점 영향에서 도출한 착안점입니다).
     </td></tr>
     <tr><td valign="top" style="color:#6B7280;font-weight:700;word-break:keep-all;">출처</td><td style="font-size:12px;color:#6B7280;word-break:break-word;">
-      Adobe 보안 공지 APSB26-92(2026-08-11, Priority 2) · KISA 보호나라 보안공지 #2549(2026-09-29) · Adobe 지원 문서 ka-40380(미열람)
+      Adobe 보안 공지 APSB26-92(2026-08-11, Priority 2) · KISA 보호나라 보안공지 #2549(2026-09-29) · CISA KEV(dateAdded 2026-09-24, CWE-863) · Adobe 지원 문서 ka-40380(미열람)
     </td></tr>
   </table>
 </td></tr>
@@ -415,8 +417,8 @@ CVE-2026-76504</h3>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>웹 · 전자상거래 운영</b></td>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;">
-      <b>Adobe Commerce · Magento</b> — <b>8월 정기 업데이트 적용 여부를 먼저 확인.</b> 적용했다면 해소 상태일 수 있고, 미적용이면 두 달 가까이 노출된 상태입니다. 버전 표기가 <code style="word-break:break-all;">-2026-aug</code> 이상인지 확인하고, 멀티사이트는 인스턴스별로 봅니다. 정기 창이 멀면 핫픽스 가용 여부를 Adobe 지원에 확인하십시오.</td>
-      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>1주</b></td>
+      <b>Adobe Commerce · Magento</b> — <b>CISA가 9/24 악용 확인 목록(KEV)에 올린 건입니다(기한 9/27 경과).</b> <b>8월 정기 업데이트 적용 여부를 먼저 확인.</b> 적용했다면 해소 상태일 수 있고, 미적용이면 두 달 가까이 노출된 상태이므로 <b>관리자 권한 변경 이력과 신규 관리자 계정도 함께 확인</b>하십시오. 버전 표기가 <code style="word-break:break-all;">-2026-aug</code> 이상인지 확인하고, 멀티사이트는 인스턴스별로 봅니다. 정기 창이 멀면 핫픽스 가용 여부를 Adobe 지원에 확인하십시오.</td>
+      <td style="border:1px solid #D1D5DB;text-align:center;word-break:keep-all;"><b>이번 주</b></td>
     </tr>
     <tr>
       <td style="border:1px solid #D1D5DB;word-break:keep-all;"><b>단말 · 업무환경 운영</b></td>
@@ -445,6 +447,13 @@ CVE-2026-76504</h3>
 <tr><td class="sec" style="padding:16px 26px 4px;border-top:1px solid #E5E7EB;">
   <h2 style="margin:0 0 12px;font-size:17px;color:#1E3A5F;border-left:4px solid #1E3A5F;padding-left:10px;">5. 집계 기준과 참고 사항</h2>
 
+  <div style="background:#F8F9FA;border:1px solid #D1D5DB;padding:11px 13px;margin:0 0 9px;">
+    <p style="margin:0;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
+      <b>정정 2026-10-08</b><br>
+      3-6 Adobe Commerce · Magento(CVE-2026-71362)의 악용 상태를 "보고 없음"에서 <b>"악용 확인"</b>으로 바로잡았습니다. 이 CVE는 <b>2026-09-24 KEV에 등재</b>(기한 9/27)됐으나 처음 게시본에 반영하지 못했습니다. 지난 호(09-21) 3-8의 "악용 확인 · KEV 등재 9/24" 기재가 맞습니다. 벤더의 "악용 사례를 인지하지 못함" 진술은 8/11 공지 시점의 사실로 본문에 남겼습니다.<br>
+      함께 고친 곳 — 1항 악용 확인 건수(5건 → 6건) · 2항 우선순위 표 · 4항 웹 · 전자상거래 운영.
+    </p>
+  </div>
   <p style="margin:0 0 9px;font-size:13px;line-height:1.75;color:#1F2937;word-break:keep-all;">
     <b>집계 기준</b> — KISA는 게시판 게시일, CISA KEV는 <code style="word-break:break-all;">dateAdded</code> 기준입니다. 대상 기간은 2026-09-28 00:00 ~ 10-04 24:00(KST)입니다. 기간 내 KISA 공지 <b>7건(#2549~#2555)</b>이며, 게시판 총 2,555건·최상단 일반행 #2555와 일치합니다. 상단 고정 공지 5건 중 1건(<code style="word-break:break-all;">nttId=72207</code>)은 일반 목록 #2555와 동일 게시물이어서 한 건으로 계수했고, 나머지 4건은 게시일이 2026-07-16 이전으로 기간 밖입니다. 페이지 1의 최하단 일반행이 #2546(9/22)으로 기간 시작보다 이르므로, <b>기간 내 게시물은 페이지 1에 전부 포함</b>됩니다.
   </p>
