@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-10-09T08:51:26.682965+09:00",
+  "date": "2026-10-09",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "금융권 이어 부킹앱도 뚫렸다... 골프몬, 2년 만에 또 개인정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146281",
+          "source": "보안뉴스",
+          "published": "2026-10-08T16:59:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "씨티아이랩 “금융권 AI 기반 공격, 개인정보 유출 전 이상행위 탐지 가능”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208800",
+          "source": "데일리시큐",
+          "published": "2026-10-08T15:50:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“기본기가 뚫리면 다 뚫린다”... 펜타시큐리티, 금융권 AI 해킹 대응 가이드 발표",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146274",
+          "source": "보안뉴스",
+          "published": "2026-10-08T15:20:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "의료기관 사이버사고 10건 중 9건 랜섬웨어…진료 중단·환자안전 위협 현실화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208793",
+          "source": "데일리시큐",
+          "published": "2026-10-08T13:33:28+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "펜타시큐리티, 금융권 연쇄 침해 대응 보안 가이드 배포",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208791",
+          "source": "데일리시큐",
+          "published": "2026-10-08T13:19:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국민권익위 개인정보 10만여 명 유출…시스템 교체 후 기존 자료 미파기가 원인",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208787",
+          "source": "데일리시큐",
+          "published": "2026-10-08T12:48:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "\"내 대출정보까지 알고 접근\"…금융권 정보유출 악용한 보이스피싱 주의보",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208784",
+          "source": "데일리시큐",
+          "published": "2026-10-08T12:17:27+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "삼성·인텔 납품 업체 어드밴테스트, 랜섬웨어 공격 몇 달 뒤 개인정보 유출 인정",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146251",
+          "source": "보안뉴스",
+          "published": "2026-10-08T09:55:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "탈레스, ‘Trust Sphere Korea 2026’ 10월 29일 개최…AI 데이터 보안부터 양자내성암호까지(보안담당자 초청)",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208799",
+          "source": "데일리시큐",
+          "published": "2026-10-08T15:05:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "인스피언, SAP·웹 통합 개인정보 접속기록 솔루션 조달 등록",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208789",
+          "source": "데일리시큐",
+          "published": "2026-10-08T12:53:28+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "연세대 바른ICT연구소, 제15회 아시아 프라이버시 브리지 포럼 개최",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208788",
+          "source": "데일리시큐",
+          "published": "2026-10-08T12:43:19+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "아틀라시안 취약점 공개 약 2시간 만에 공격 시도…지라·컨플루언스 긴급 패치",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208806",
+          "source": "데일리시큐",
+          "published": "2026-10-08T20:05:44+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-21589"
+          ]
+        },
+        {
+          "title": "9월 패치했어도 다시 업데이트…소닉월 SMA1000 심각한 취약점 4건 수정",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208803",
+          "source": "데일리시큐",
+          "published": "2026-10-08T19:20:45+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-102255"
+          ]
+        },
+        {
+          "title": "[은행이 뚫린다] “IP 차단만으론 못 막는다”... S2W가 분석한 금융권 AI 해킹 기술적 실체",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146287",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-08T18:46:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국가 도메인 운영 업체 뚫리자... 구글 도메인 인증서 무단 발급, 유명 브랜드도 피해",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146250",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-08T18:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "파이오링크, 금융권 해킹 대책으로 ‘CTEM·웹방화벽’ 등 제시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146278",
+          "source": "보안뉴스",
+          "published": "2026-10-08T17:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SK쉴더스, AI 자동화 공격 시대 ‘Shadow IT’ 대응 가이드 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146267",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-08T16:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국가 도메인 운영 인프라 뚫렸다…구글 등 주요 기업 인증서 무단 발급 정황",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208795",
+          "source": "데일리시큐",
+          "published": "2026-10-08T13:45:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "파이오링크, AI 기반 자동화 공격 대응하는 보안 체계 제시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208794",
+          "source": "데일리시큐",
+          "published": "2026-10-08T13:40:27+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "AI 자동화 공격 시대, 섀도우 IT와 API 보안이 핵심이다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208786",
+          "source": "데일리시큐",
+          "published": "2026-10-08T12:29:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[김정덕의 지속가능 보안-10] 보이지 않는 뿌리의 연대: ‘균근’ 보안 생태계",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146263",
+          "source": "보안뉴스",
+          "published": "2026-10-08T11:45:48+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "제주도, 재난 발생 시 CCTV ‘특별관제’ 전환한다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146259",
+          "source": "보안뉴스",
+          "published": "2026-10-08T11:35:38+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이슈 분석] 한국 금융사 공격 서버서 ‘ARTEX·AI 대화 기록’ 발견…해커, 유출정보 판매처도 물었다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208781",
+          "source": "데일리시큐",
+          "published": "2026-10-08T07:06:29+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "FBI disrupts Chinese hacking tools used to breach critical infrastructure",
+          "link": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
+          "source": "BleepingComputer",
+          "published": "2026-10-09T06:42:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ransomware attack disrupts Japan's IDCF Cloud used by govt clients",
+          "link": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
+          "source": "BleepingComputer",
+          "published": "2026-10-09T05:09:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
+          "link": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
+          "source": "The Hacker News",
+          "published": "2026-10-09T02:58:02+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "OAuth grants pile up faster than you can review them. Here's how to keep up.",
+          "link": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T23:00:10+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ASOS links data breach to social engineering attack, credential theft",
+          "link": "https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T20:42:46+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "MonsterCloud Owner Accused of Billing Over $19M While Secretly Paying Ransoms to Decrypt Data",
+          "link": "https://thehackernews.com/2026/10/monstercloud-owner-accused-of-billing.html",
+          "source": "The Hacker News",
+          "published": "2026-10-08T16:41:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland",
+          "link": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T15:32:16+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm",
+          "link": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+          "source": "The Hacker News",
+          "published": "2026-10-08T14:46:20+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ransomware recovery CEO charged over secret ransom payments",
+          "link": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T08:04:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers hijack Google domains after breaching ccTLD registries",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-google-domains-after-breaching-cctld-registries/",
+          "source": "BleepingComputer",
+          "published": "2026-10-08T05:50:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Attackers Hijack .gh, .sl, and .as Registries to Obtain Certificates for Google Domains",
+          "link": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html",
+          "source": "The Hacker News",
+          "published": "2026-10-08T03:48:17+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Low-cost Android phones ship with residential proxy malware",
+          "link": "https://www.bleepingcomputer.com/news/security/low-cost-android-phones-ship-with-residential-proxy-malware/",
+          "source": "BleepingComputer",
+          "published": "2026-10-09T04:20:33+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 35
+}
