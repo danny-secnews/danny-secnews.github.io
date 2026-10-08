@@ -27,7 +27,11 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
 - `render.py`: 데이터 → HTML. UTF-8·LF로 쓰고, `portal-date` 메타와 상단 바 줄을 넣는다.
   본문 글자는 `**굵게**`, `` `코드` ``, `[미확인]`(회색), 줄바꿈만 해석하고 나머지는 모두 이스케이프한다.
 - `validate.py`: 형식(schema.json), 날짜, 이전된 호 면제, 렌더 일치, HTML 필수 요소, 폴더 검사.
-  PR에서는 `.github/workflows/kisa-validate.yml`이 실행한다. 종료코드 0 통과 / 1 실패.
+  종료코드 0 통과 / 1 실패.
+
+**PR 검사** — `.github/workflows/kisa-validate.yml`이 KISA 경로가 바뀐 PR에서 `validate.py`와
+시험 전체(`python -m unittest discover -s tools/kisa/tests -v`)를 실행한다. 둘 중 하나라도 실패하면 PR 검사는 실패다.
+`validate.py`가 실패해도 시험은 이어서 실행되어 두 결과를 함께 볼 수 있다.
 - `compare_html.py`: 옛 HTML과 새 HTML의 화면 글자·토큰(CVE·버전·숫자·[미확인])·문장·꾸밈 비교.
   게시본을 데이터로 옮긴 뒤 정보가 빠지지 않았는지 확인할 때 쓴다. 종료코드 0 같음 / 1 다름.
 
@@ -87,7 +91,7 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
 - 날짜는 M/D(발행 연도와 다르면 연도 포함).
 
 **관문은 아직 닫혀 있다.** `validate.py` 실행에서 목록 밖 새 주차는 지금도 "새 호 검사는 아직 지원하지 않음"으로 실패한다.
-새 규칙은 시험에서만 돈다:
+새 규칙은 시험에서만 돈다(PR 검사도 이 시험을 실행한다):
 
 ```bash
 python -m unittest discover -s tools/kisa/tests -v
