@@ -58,7 +58,8 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
   - `exploitation`: `confirmed` / `no_report`(기준일 `as_of` 필수) / `unknown`
   - `kev`: `listed`(등재일·기한·출처) / `not_listed` / `not_applicable` / `unknown`
 - **`cve_total`** — 공지 전체 CVE 수(일부만 기록할 때). **`vendor_rating`** — 벤더 등급과 건수. **`addition`** — "긴급 추가".
-- **`notices`** — `kisa`(`value`: 번호·게시일 / `not_applicable`: 보호나라 공지 대상 아님), `vendor`(공지 목록 / `unknown` / `not_applicable`).
+- **`notices`** — `kisa`(`value`: 번호·게시일 / `none_in_period`: 확인한 대상 기간의 보호나라 게시판에 일치하는 공지가 없었음),
+  `vendor`(공지 목록 / `unknown` / `not_applicable`).
 - **출처** — `sources`에 `id`·`kind`·`viewed`를 붙이고 사실 칸은 `src`로 그 id를 가리킨다.
 - **`checks`** — 호 단위 확인 기록. `kev`(조회한 판·주소·확인 시각·complete), `kisa`(확인 기간·마지막 번호·주소·확인 시각·complete).
   KEV의 `complete: true`는 "그 판본의 전체 KEV 목록을 확보했고, 구조화 데이터에 **기록된** 모든 CVE를 그 목록에서 조회했다"는 뜻이다.
@@ -69,10 +70,14 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
 - 근거로 쓸 수 있는 출처 종류: CVSS = 평가 주체에 맞는 출처(vendor→vendor, nvd→nvd, cisa-adp→cve),
   악용 확인 = kev·vendor·kisa, 보고 없음 = vendor·kisa, KEV = kev, KISA = kisa, 벤더 공지·등급 = vendor.
   research·news·other와 미열람(`viewed: false`) 출처는 근거로 쓸 수 없다.
-- 출처 주소: kisa = www.boho.or.kr, kev = www.cisa.gov · github.com/cisagov/kev-data, nvd = nvd.nist.gov,
+- 출처 주소: kisa = www.boho.or.kr, kev = www.cisa.gov · github.com/cisagov/kev-data · raw.githubusercontent.com/cisagov/kev-data
+  (출처의 kind=kev와 checks.kev.url 모두), nvd = nvd.nist.gov,
   cve = www.cve.org · cveawg.mitre.org. vendor는 이 네 종류의 주소가 아니어야 한다. 새 호는 모두 https.
 - KEV·KISA는 "미확인"을 쓸 수 없다. CVE가 있으면 KEV는 등재/미등재, CVE 미부여면 해당 없음, CVE 미확인일 때만 미확인.
-  미등재는 KEV 확인 기록이 complete일 때만, "보호나라 공지 대상 아님"은 KISA 확인 기록이 complete이고 대상 주간 전체를 덮을 때만.
+  미등재는 KEV 확인 기록이 complete일 때만, `none_in_period`는 KISA 확인 기록이 complete이고 대상 주간 전체를 덮을 때만.
+- 악용 확인의 근거가 KEV 출처면 그 취약점의 KEV 상태는 listed여야 한다.
+- 확인 기록의 `checked_at`은 실제로 있는 날짜·시각이어야 한다.
+- schema를 통과한 데이터라면 `check_new_issue()`는 예외 없이 실패 메시지 목록을 돌려준다.
 - KEV 등재면 악용 상태는 반드시 confirmed, 위험도는 긴급·높음만.
 - 날짜: KEV 기한 ≥ 등재일, 등재일·KISA 게시일·벤더 공지일·as_of ≤ 발행일(KEV 기한은 발행일 뒤여도 됨),
   KEV 판 날짜 ≤ 발행일이고 모든 등재일 이상, 같은 CVE의 KEV 기록과 같은 KISA 번호의 게시일은 호 안에서 같아야 함.
@@ -85,7 +90,7 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
 - CVSS: 값이 없으면 "CVSS [미확인]"(벤더 등급이 있어도 대체하지 않고 나란히). "CVSS 최대"는 전체를 다 기록했고 모두 점수가 있을 때만.
 - 악용: 전부 확인이면 "악용 확인", 일부면 "N건 악용 확인". 기록한 것이 모두 보고 없음이면 "보고 없음(M/D 기준)",
   일부만 기록했으면 "보고 없음(기록 N건 · M/D 기준)". 그 밖은 "악용 [미확인]".
-- KISA: "KISA #번호(M/D 게시)". 해당 없음이면 "보호나라 대상 기간 공지 없음"(대상 기간 게시판에 일치하는 공지가 없었다는 뜻).
+- KISA: "KISA #번호(M/D 게시)". `none_in_period`이면 "보호나라 대상 기간 공지 없음"(대상 기간 게시판에 일치하는 공지가 없었다는 뜻).
 - KEV: "KEV 등재 M/D(기한 M/D)" 또는 날짜가 다르면 "KEV 등재 N건(가장 이른 기한 M/D)". 등재가 없으면 전부 기록했을 때 "KEV 미등재",
   일부만 기록했으면 "KEV 미등재(기록 N건 기준)". CVE 미부여면 "KEV 해당 없음", CVE 미확인이면 "KEV [미확인]".
 - 날짜는 M/D(발행 연도와 다르면 연도 포함).

@@ -91,6 +91,9 @@ def schema_errors(value, schema: dict, root: dict, path: str = "$") -> list[str]
         ref = schema["$ref"]
         if not ref.startswith("#/$defs/"):
             raise SchemaBug(f"지원하지 않는 $ref: {ref}")
+        beside = set(schema) - {"$ref"} - ANNOTATIONS
+        if beside:  # $ref 자리의 다른 검사 규칙은 해석하지 않으므로 조용히 무시하지 말고 알린다
+            raise SchemaBug(f"$ref 옆의 검사 키워드는 적용되지 않음: {sorted(beside)} ({path}) — $defs 쪽에 넣을 것")
         return schema_errors(value, root["$defs"][ref[8:]], root, path)
     errs: list[str] = []
     if "oneOf" in schema:  # 같은 자리의 다른 키워드(type·properties 등)도 이어서 검사한다
@@ -252,7 +255,7 @@ CVE_ID = re.compile(r"CVE-\d{4}-\d{4,}")
 # 출처 종류별 허용 주소. vendor는 "이 네 종류의 주소가 아닐 것"만 본다.
 RESERVED_HOSTS = {
     "kisa": [("www.boho.or.kr", "")],
-    "kev": [("www.cisa.gov", ""), ("github.com", "/cisagov/kev-data")],
+    "kev": [("www.cisa.gov", ""), ("github.com", "/cisagov/kev-data"), ("raw.githubusercontent.com", "/cisagov/kev-data")],
     "nvd": [("nvd.nist.gov", "")],
     "cve": [("www.cve.org", ""), ("cveawg.mitre.org", "")],
 }
@@ -261,9 +264,21 @@ EXPLOIT_KINDS = {"confirmed": {"kev", "vendor", "kisa"}, "no_report": {"vendor",
 URGENT = ("긴급", "높음")
 
 
+def split_url(url: str):
+    """urlsplit — 해석할 수 없는 주소(예: 닫히지 않은 '[')면 예외 대신 None."""
+    try:
+        u = urlsplit(url)
+        u.hostname  # 대괄호 주소 검사가 여기서 일어날 수 있음
+        return u
+    except ValueError:
+        return None
+
+
 def reserved_kind(url: str) -> str | None:
-    """주소가 kisa·kev·nvd·cve 허용 주소 중 하나면 그 종류, 아니면 None."""
-    u = urlsplit(url)
+    """주소가 kisa·kev·nvd·cve 허용 주소 중 하나면 그 종류, 아니면 None(해석할 수 없는 주소 포함)."""
+    u = split_url(url)
+    if u is None:
+        return None
     host, path = (u.hostname or "").lower(), u.path
     for kind, rules in RESERVED_HOSTS.items():
         for h, prefix in rules:
@@ -303,19 +318,32 @@ class _Ctx:
             self.errs.append(f"{where}: {d}는 발행일({self.published})보다 늦을 수 없음")
 
 
+def _checked_at(value: str, where: str, errs: list[str]) -> None:
+    """확인 시각이 실제로 있는 날짜·시각인지(모양은 schema.json이 본다)."""
+    try:
+        datetime.fromisoformat(value)
+    except ValueError:
+        errs.append(f"{where}: 없는 날짜·시각 {value!r}")
+
+
 def check_new_issue(data: dict) -> list[str]:
-    """새 호(구조화 칸) 규칙. schema.json 검사를 통과한 데이터를 받는다."""
+    """새 호(구조화 칸) 규칙. schema.json 검사를 통과한 데이터를 받는다.
+    schema를 통과한 데이터라면 어떤 경우에도 예외를 내지 않고 실패 메시지 목록을 돌려준다."""
     errs: list[str] = []
-    ctx = _Ctx(data, errs)
+    try:
+        ctx = _Ctx(data, errs)
+    except ValueError as e:  # 모양은 맞지만 없는 날짜(week_start·published_date)
+        return [f"없는 날짜: {e}"]
     if data["provenance"]["type"] != "generated":
         errs.append("새 호는 provenance.type이 generated여야 함")
 
-    # 호 단위 확인 기록 — "KEV 미등재"·"보호나라 공지 대상 아님"의 근거
+    # 호 단위 확인 기록 — "KEV 미등재"·"보호나라 대상 기간 공지 없음"의 근거
     if ctx.kev is None:
         errs.append("checks.kev(호 단위 KEV 확인 기록)가 없음")
     else:
         if reserved_kind(ctx.kev["url"]) != "kev":
             errs.append(f"checks.kev.url은 KEV 허용 주소여야 함: {ctx.kev['url']}")
+        _checked_at(ctx.kev["checked_at"], "checks.kev.checked_at", errs)
         try:
             ctx.catalog = datetime.strptime(ctx.kev["catalog_version"], "%Y.%m.%d").date()
         except ValueError:
@@ -327,6 +355,7 @@ def check_new_issue(data: dict) -> list[str]:
     else:
         if reserved_kind(ctx.kisa["url"]) != "kisa":
             errs.append(f"checks.kisa.url은 보호나라 허용 주소여야 함: {ctx.kisa['url']}")
+        _checked_at(ctx.kisa["checked_at"], "checks.kisa.checked_at", errs)
         ps = ctx.day(ctx.kisa["period_start"], "checks.kisa.period_start")
         pe = ctx.day(ctx.kisa["period_end"], "checks.kisa.period_end")
         if ps and pe and ps > pe:
@@ -354,6 +383,9 @@ def _item_rules(it: dict, data: dict, ctx: _Ctx, errs: list[str]) -> None:
         return
     if has_legacy:
         errs.append("구조화 칸과 meta·meta_refs를 한 항목에 함께 쓸 수 없음")
+    if "notices" not in it:  # meta·meta_refs가 있으면 schema는 통과하므로 여기서 멈춘다(아래는 notices 전제)
+        errs.append("구조화 항목에 notices(KISA·벤더 공지)가 없음")
+        return
 
     # 출처 — id·kind·viewed 필수, id 중복 금지, https, 종류별 주소
     srcs: dict[str, dict] = {}
@@ -366,7 +398,10 @@ def _item_rules(it: dict, data: dict, ctx: _Ctx, errs: list[str]) -> None:
         if s["id"] in srcs:
             errs.append(f"{where}: 출처 id 중복 {s['id']!r}")
         srcs[s["id"]] = s
-        u = urlsplit(s["url"])
+        u = split_url(s["url"])
+        if u is None:
+            errs.append(f"{where}: 주소를 해석할 수 없음 ({s['url']!r})")
+            continue
         if u.scheme != "https" or not u.hostname:
             errs.append(f"{where}: 새 호 출처 주소는 https여야 함 ({s['url']!r})")
             continue
@@ -408,6 +443,8 @@ def _item_rules(it: dict, data: dict, ctx: _Ctx, errs: list[str]) -> None:
 
         if ex["state"] in EXPLOIT_KINDS:
             ref(ex["src"], EXPLOIT_KINDS[ex["state"]], f"{name} 악용 {ex['state']}")
+        if ex["state"] == "confirmed" and srcs.get(ex["src"], {}).get("kind") == "kev" and kev["state"] != "listed":
+            errs.append(f"{name}: 악용 확인의 근거가 KEV인데 KEV 상태가 listed가 아님 (지금 {kev['state']})")
         if ex["state"] == "no_report":
             ctx.not_after_published(ex["as_of"], f"{name} 악용 no_report 기준일(as_of)")
 
@@ -458,12 +495,12 @@ def _item_rules(it: dict, data: dict, ctx: _Ctx, errs: list[str]) -> None:
         prev = ctx.kisa_seen.setdefault(kisa["no"], kisa["posted"])
         if prev != kisa["posted"]:
             errs.append(f"KISA #{kisa['no']}: 같은 호 안에서 게시일이 다름 ({prev} ↔ {kisa['posted']})")
-    else:  # not_applicable = 보호나라 공지 대상 아님
+    elif kisa["state"] == "none_in_period":  # 확인한 대상 기간의 보호나라 게시판에 일치하는 공지가 없었다
         k = ctx.kisa
         covers = (k is not None and k["complete"] is True
                   and k["period_start"] <= ctx.start.isoformat() and k["period_end"] >= ctx.end.isoformat())
         if not covers:
-            errs.append("보호나라 공지 '해당 없음'은 호 단위 보호나라 확인 기록이 complete=true이고 "
+            errs.append("보호나라 대상 기간 공지 없음(none_in_period)은 호 단위 보호나라 확인 기록이 complete=true이고 "
                         f"대상 기간({ctx.start}~{ctx.end}) 전체를 덮을 때만 쓸 수 있음")
     vendor = it["notices"]["vendor"]
     if vendor["state"] == "value":
