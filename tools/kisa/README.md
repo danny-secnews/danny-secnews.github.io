@@ -95,6 +95,23 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
   일부만 기록했으면 "KEV 미등재(기록 N건 기준)". CVE 미부여면 "KEV 해당 없음", CVE 미확인이면 "KEV [미확인]".
 - 날짜는 M/D(발행 연도와 다르면 연도 포함).
 
+**2. 우선순위 표 — 새 호** (`render.py`의 `structured_priority_row()`): 최상위 `priority[]`를 쓰지 않고
+항목마다 한 줄을 items 순서대로 만든다(표와 항목 1:1). 사람이 쓰는 것은 항목의 `priority` 칸뿐이다.
+
+- `priority.target`(대상, 필수), `details`(취약점 설명 줄, 1줄 이상), `deadline`(권고 기한, 필수),
+  `deadline_note`(기한 아래 짧은 말, 선택). `deadline_note`에는 숫자·CVE·KEV·KISA·#를 쓸 수 없고,
+  KEV 등재 항목에는 쓸 수 없다(그 자리에 KEV 기한이 자동으로 나온다).
+- 나머지는 구조화 칸에서 머리 줄과 같은 함수로 만든다.
+  - 대상: target + 회색 "KISA #번호 · KEV M/D"(등재일이 서로 다르면 "KEV N건"). 둘 다 없으면 회색 줄 없음.
+  - 핵심 취약점: 기록한 첫 CVE(굵게) + 전체 수가 2 이상이면 " 외 N건". CVE 미부여면 "CVE 미부여", 미확인이면 "CVE [미확인]".
+    그 아래 details.
+  - 위험도·악용: 위험도 / 회색 CVSS 문구(벤더 등급 포함) / 굵게 기호 + 악용 문구(확인 ●, 보고 없음 ○, 미확인 ◌).
+    악용 확인이고 KEV 등재가 있으면 " · KEV M/D"(또는 "KEV N건"). 등재 없이 확인이면 회색 줄에 근거 종류
+    ("벤더 확인" / "KISA 확인" / "벤더·KISA 확인").
+  - 기한: deadline + 회색 "KEV 기한 M/D"(가장 이른 기한, 발행일보다 앞이면 " 경과"). KEV 등재가 없으면 deadline_note.
+- 이전된 호는 지금처럼 최상위 `priority[]`(글자)를 쓰고 반드시 있어야 한다. 이전된 호 항목에 `priority` 칸이 있으면 실패,
+  새 호에 최상위 `priority[]`가 있으면 실패.
+
 **관문은 아직 닫혀 있다.** `validate.py` 실행에서 목록 밖 새 주차는 지금도 "새 호 검사는 아직 지원하지 않음"으로 실패한다.
 새 규칙은 시험에서만 돈다(PR 검사도 이 시험을 실행한다):
 

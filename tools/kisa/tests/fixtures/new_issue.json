@@ -11,20 +11,15 @@
  "overview": [
   "시험용 가상 데이터입니다. 벤더·제품 이름, CVE 번호, KISA 공지 번호는 모두 가상이며 실제와 무관합니다."
  ],
- "priority": [
-  {
-   "target": "Example Gateway A",
-   "vuln": "**CVE-2026-9990001**",
-   "severity": "긴급",
-   "cvss": "CVSS 9.8",
-   "exploitation": "● 악용 확인",
-   "deadline": "즉시"
-  }
- ],
  "items": [
   {
    "title": "Example Gateway A — CVE-2026-9990001",
    "severity": "긴급",
+   "priority": {
+    "target": "Example Gateway A",
+    "details": ["가상 입력값 검증 결함 → 인증 없는 명령 실행", "▸ Example Gateway A 1.x / 2.x 계열"],
+    "deadline": "즉시"
+   },
    "vulnerabilities": [
     {
      "cve": {"state": "value", "id": "CVE-2026-9990001"},
@@ -50,6 +45,11 @@
   {
    "title": "Example Appliance B 8건\nCVE-2026-9990011 외 7건",
    "severity": "긴급",
+   "priority": {
+    "target": "Example Appliance B",
+    "details": ["가상 메모리 결함 → 원격 코드 실행", "▸ 기본 구성 전체 해당"],
+    "deadline": "즉시"
+   },
    "vulnerabilities": [
     {
      "cve": {"state": "value", "id": "CVE-2026-9990011"},
@@ -118,6 +118,11 @@
    "title": "Example Product C 6건 — CVE-2026-9990021 외",
    "severity": "긴급",
    "cve_total": 6,
+   "priority": {
+    "target": "Example Product C",
+    "details": ["가상 인증 우회 → 관리자 권한 획득"],
+    "deadline": "즉시"
+   },
    "vulnerabilities": [
     {
      "cve": {"state": "value", "id": "CVE-2026-9990021"},
@@ -150,6 +155,12 @@
   {
    "title": "Example Switch D — 구버전 취약점 악용 사례",
    "severity": "긴급",
+   "priority": {
+    "target": "Example Switch D",
+    "details": ["가상 구버전 취약점 → 원격 명령 실행"],
+    "deadline": "즉시",
+    "deadline_note": "해당 시"
+   },
    "vulnerabilities": [
     {
      "cve": {"state": "not_assigned"},
@@ -175,6 +186,12 @@
    "title": "Example Middleware E — CVE-2026-9990031 외",
    "severity": "높음",
    "cve_total": 12,
+   "priority": {
+    "target": "Example Middleware E",
+    "details": ["가상 요청 처리 결함 묶음", "▸ Example Middleware E 3.x 계열"],
+    "deadline": "2주",
+    "deadline_note": "정기 창"
+   },
    "vendor_rating": {"label": "Important", "count": 4, "src": "vendor-e"},
    "vulnerabilities": [
     {

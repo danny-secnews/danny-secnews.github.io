@@ -187,7 +187,9 @@ def check_issue(root: Path, path: Path, schema: dict) -> list[str]:
     elif exempt:
         errs.append(f"면제 목록의 주차({week})인데 provenance.type이 migrated가 아님")
     if exempt and uses_structured(data):
-        errs.append("이전된 호에는 구조화 칸(checks·vulnerabilities·notices 등)을 쓰지 않음 — 새 호 규칙을 면제로 우회할 수 없음")
+        errs.append("이전된 호에는 구조화 칸(checks·vulnerabilities·notices·priority 등)을 쓰지 않음 — 새 호 규칙을 면제로 우회할 수 없음")
+    if exempt and "priority" not in data:  # schema에서 필수를 뺐으므로(새 호는 쓰지 않음) 이전된 호는 여기서 강제
+        errs.append("$.priority: 필수 칸 없음 — 이전된 호는 2. 우선순위 표를 priority[]로 적어야 함")
     if not exempt:
         errs.append(NOT_YET)
         # 이전된 호에만 허용되는 것들 — STEP 4·5 이후에도 새 호에서는 계속 실패해야 함
@@ -249,7 +251,9 @@ def check_folder(root: Path, weeks: set[str]) -> list[str]:
 # 지금은 tools/kisa/tests에서만 부르고, 관문을 열 때 NOT_YET 자리에서 부른다.
 # 형식(칸 이름·상태 값·필수 칸)은 schema.json이 검사하므로 여기서는 schema를 통과한 데이터를 전제로 한다.
 
-STRUCTURED_KEYS = ("vulnerabilities", "notices", "cve_total", "vendor_rating", "addition")
+STRUCTURED_KEYS = ("vulnerabilities", "notices", "cve_total", "vendor_rating", "addition", "priority")
+# 표의 deadline_note에 구조화 칸의 사실(번호·날짜·CVE·KEV·KISA)을 글자로 다시 적지 못하게 한다
+FACT_IN_NOTE = re.compile(r"\d|[#＃]|CVE|KEV|KISA", re.IGNORECASE)
 LEGACY_KEYS = ("meta", "meta_refs")
 CVE_ID = re.compile(r"CVE-\d{4}-\d{4,}")
 # 출처 종류별 허용 주소. vendor는 "이 네 종류의 주소가 아닐 것"만 본다.
@@ -336,6 +340,8 @@ def check_new_issue(data: dict) -> list[str]:
         return [f"없는 날짜: {e}"]
     if data["provenance"]["type"] != "generated":
         errs.append("새 호는 provenance.type이 generated여야 함")
+    if "priority" in data:
+        errs.append("새 호는 최상위 priority[]를 쓰지 않음 — 2. 우선순위 표는 각 항목의 priority 칸과 구조화 칸에서 만든다")
 
     # 호 단위 확인 기록 — "KEV 미등재"·"보호나라 대상 기간 공지 없음"의 근거
     if ctx.kev is None:
@@ -383,6 +389,8 @@ def _item_rules(it: dict, data: dict, ctx: _Ctx, errs: list[str]) -> None:
         return
     if has_legacy:
         errs.append("구조화 칸과 meta·meta_refs를 한 항목에 함께 쓸 수 없음")
+    if "priority" not in it:
+        errs.append("새 호 항목에 priority(2. 우선순위 표 한 줄: target·details·deadline)가 없음")
     if "notices" not in it:  # meta·meta_refs가 있으면 schema는 통과하므로 여기서 멈춘다(아래는 notices 전제)
         errs.append("구조화 항목에 notices(KISA·벤더 공지)가 없음")
         return
@@ -484,6 +492,12 @@ def _item_rules(it: dict, data: dict, ctx: _Ctx, errs: list[str]) -> None:
         errs.append(f"cve_total({it['cve_total']})이 기록한 취약점 수({len(vulns)})보다 작음")
     if listed and it["severity"] not in URGENT:
         errs.append(f"KEV 등재 CVE가 있으면 위험도는 긴급·높음만 허용 (지금 {it['severity']})")
+    note = it.get("priority", {}).get("deadline_note")
+    if note is not None:
+        if FACT_IN_NOTE.search(note):
+            errs.append(f"priority.deadline_note에는 숫자·CVE·KEV·KISA·#를 쓸 수 없음 ({note!r}) — 사실은 구조화 칸에서 자동으로 나온다")
+        if listed:
+            errs.append("KEV 등재 항목에는 priority.deadline_note를 쓸 수 없음 — 그 자리에 KEV 기한이 자동으로 나온다")
 
     # 공지
     kisa = it["notices"]["kisa"]
