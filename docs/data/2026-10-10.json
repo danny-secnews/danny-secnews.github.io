@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-10-10T08:51:31.115106+09:00",
+  "date": "2026-10-10",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "‘골프 예약 앱’까지 줄줄이... 골프몬 이어 카카오 VX, 개인정보 3만 4천명 털렸다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146291",
+          "source": "보안뉴스",
+          "published": "2026-10-09T18:54:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융권 해킹 긴급점검 ‘허점’…3개월만 확인하고도 “이상 없음” 보고",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208810",
+          "source": "데일리시큐",
+          "published": "2026-10-09T17:31:03+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융권, 보안 컨설팅 지출 급감…보험사 6곳 보안 교육비 별도 집계 '0원'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208809",
+          "source": "데일리시큐",
+          "published": "2026-10-09T17:24:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[2026 영상향 SoC·NPU 제품&솔루션 리포트] 더 치열해진 영상보안의 두뇌 싸움",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146286",
+          "source": "보안뉴스",
+          "published": "2026-10-09T18:50:25+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "검은색으로 가렸지만 복사하면 드러났다…국립대병원 3곳 개인정보 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208811",
+          "source": "데일리시큐",
+          "published": "2026-10-09T17:38:29+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "패치 하루 만에 공격 시작... 아틀라시안 지라·컨플루언스 취약점, 허니팟서 악용 시도 포착",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146252",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-09T10:13:02+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-21589"
+          ]
+        },
+        {
+          "title": "은행권 모의해킹 취약점 4,777건 발견, 109건 미조치…보안 투자는 5.9% 감소",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208808",
+          "source": "데일리시큐",
+          "published": "2026-10-09T17:13:29+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[단독] 한국 금융사 해킹 용의자 28개월간 행적 추적...공격대행·해커 커뮤니티 운영 정황 드러나",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208807",
+          "source": "데일리시큐",
+          "published": "2026-10-09T16:01:17+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "쿠팡·쿠팡이츠, 9일 새벽 2시간 ‘먹통’... 심야 음식 배달, 물류 배송 멈췄다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146290",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-09T11:03:45+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] 스크립트 해킹 끝났다… AI API로 실시간 방어망 우회하는 자율 침투의 실체",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146282",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-09T09:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack",
+          "link": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+          "source": "The Hacker News",
+          "published": "2026-10-10T02:45:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "FBI arrests another suspected ShinyHunters hacker after agency breach",
+          "link": "https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/",
+          "source": "BleepingComputer",
+          "published": "2026-10-10T02:02:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Germany arrests alleged core Qilin ransomware member after extradition",
+          "link": "https://www.bleepingcomputer.com/news/security/germany-arrests-alleged-core-qilin-ransomware-member-after-extradition/",
+          "source": "BleepingComputer",
+          "published": "2026-10-10T00:38:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Max severity SonicWall SMA1000 flaw now exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-09T21:32:16+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-102255"
+          ]
+        },
+        {
+          "title": "Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments",
+          "link": "https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html",
+          "source": "The Hacker News",
+          "published": "2026-10-09T17:11:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers get $1,262,000 for 98 zero-days at Pwn2Own Ireland",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
+          "source": "BleepingComputer",
+          "published": "2026-10-09T14:41:04+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "FBI disrupts Chinese hacking tools used to breach critical infrastructure",
+          "link": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
+          "source": "BleepingComputer",
+          "published": "2026-10-09T06:42:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ransomware attack disrupts Japan's IDCF Cloud used by govt clients",
+          "link": "https://www.bleepingcomputer.com/news/security/ransomware-attack-disrupts-japans-idcf-cloud-used-by-govt-clients/",
+          "source": "BleepingComputer",
+          "published": "2026-10-09T05:09:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
+          "link": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
+          "source": "The Hacker News",
+          "published": "2026-10-09T02:58:02+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-10T05:31:37+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
+          "link": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+          "source": "The Hacker News",
+          "published": "2026-10-10T04:14:28+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Unpatched AhsayCBS flaws exploited to deploy webshells, mine crypto",
+          "link": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+          "source": "BleepingComputer",
+          "published": "2026-10-10T02:17:23+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 22
+}
