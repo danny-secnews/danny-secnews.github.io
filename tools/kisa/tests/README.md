@@ -8,6 +8,8 @@ PR 검사(`.github/workflows/kisa-validate.yml`)가 `validate.py`와 이 시험 
 
 - `test_structured.py` — 새 호 구조화 칸의 규칙·머리 줄·우선순위 표, 09-28 렌더 바이트 일치,
   가상 새 호가 실제 `validate.py` 흐름을 통과·실패하는지(관문 개방 후).
+- `test_kev_check.py` — KEV 대조 도구(`kev_check.py`): 대조 판정, 목록 파일 입력검사, 화면 글 범위, 목록 받기(네트워크 없이).
+  `fixtures/kev_catalog.json`은 **7건짜리 가상 KEV 목록**이며 실제 CISA KEV와 무관하다.
 - `test_pr_scope.py` — 새 호 PR 범위 판정(`pr_scope.py`): 허용 범위, 이름 바꾸기, 비정상 경로, JSON 한 줄 입력.
 - `test_negative.py` — 일부러 틀린 데이터·HTML 14가지가 `validate.py`에서 기대대로 실패(또는 통과)하는지.
   09-28 호를 임시 폴더에 복사해 한 곳씩 바꿔 검사한다.

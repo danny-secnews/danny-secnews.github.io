@@ -132,17 +132,52 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
 ### 새 호를 올리는 순서
 
 1. 최신 main에서 브랜치를 만든다.
-2. 데이터를 쓴다: `content/kisa-cert/<week_start>.json` (구조화 칸, 출처, 확인 기록 `checks`).
-3. `python tools/kisa/render.py <week_start>` — `docs/kisa-cert/kisa_weekly_<week_start>_public.html`이 만들어진다. HTML은 직접 고치지 않는다.
-4. `python tools/kisa/validate.py` — 통과해야 한다.
-5. `python -m unittest discover -s tools/kisa/tests -v` — 통과해야 한다.
-6. PR을 올린다. **새 호 PR에는 `content/kisa-cert/<week_start>.json`과 `docs/kisa-cert/<파일>.html` 두 개만 넣는다.**
+2. KEV 목록을 받는다(아래 "KEV 대조 도구"): `python tools/kisa/kev_check.py download --out <저장소 밖>/kev-<판>.json`.
+3. 데이터를 쓴다: `content/kisa-cert/<week_start>.json` (구조화 칸, 출처, 확인 기록 `checks` — `checks.kev`에는 받은 목록의 판·건수).
+4. `python tools/kisa/render.py <week_start>` — `docs/kisa-cert/kisa_weekly_<week_start>_public.html`이 만들어진다. HTML은 직접 고치지 않는다.
+5. `python tools/kisa/validate.py` — 통과해야 한다.
+6. `python tools/kisa/kev_check.py check <week_start> --catalog <받은 목록>` — 일치해야 한다.
+7. `python -m unittest discover -s tools/kisa/tests -v` — 통과해야 한다.
+8. PR을 올린다. **새 호 PR에는 `content/kisa-cert/<week_start>.json`과 `docs/kisa-cert/<파일>.html` 두 개만 넣는다.**
    다른 파일(검사기·렌더러·틀·workflow·목록 등)을 섞으면 kisa-pr-scope가 빨간색이 된다. 그런 변경은 별도 PR로 먼저 올린다.
    목록(manifest)은 병합 후 portal-manifest 워크플로가 갱신하므로 PR에 넣지 않는다.
 
+### KEV 대조 도구 (`kev_check.py`) — PR 검사에는 넣지 않음
+
+호 데이터의 KEV 사실이 실제 CISA KEV 목록과 같은지 확인한다.
+
+```bash
+python tools/kisa/kev_check.py download --out <파일> [--source cisa|mirror]
+python tools/kisa/kev_check.py check <week_start> --catalog <파일> [--root DIR]
+```
+
+- 받는 주소는 두 곳뿐이다. `cisa`(기본) = www.cisa.gov 공식 피드, `mirror` = raw.githubusercontent.com/cisagov/kev-data **main**.
+  공식 주소가 막히면(403 등) 사본으로 저절로 넘어가지 않는다. 브라우저로 공식 주소를 열어 저장한 파일을 `--catalog`로 넘기거나
+  `--source mirror`를 쓴다. **사본은 공식 목록보다 늦을 수 있다**(develop 가지는 쓰지 않는다).
+- 받은 목록 파일은 그 호를 만들 때 쓴 판의 증거다. **판마다 새 이름으로 두고 덮어쓰지 않는다**(같은 이름이 있으면 실패).
+  저장소에는 넣지 않는다. 7일 이상 지난 판이면 경고한다.
+- `check`(새 호): 목록의 판·건수가 `checks.kev`와 같아야 한다(다르면 판정하지 않음, 종료코드 2).
+  기록한 CVE마다 목록에 있으면 listed·등재일·기한이 같아야 하고, 없으면 not_listed여야 한다.
+  화면 글에만 나온 CVE가 목록에 있으면 실패. 대상 주간의 신규 등재 중 호에 없는 것은 안내(실패 아님).
+  판 날짜가 대상 기간 끝보다 이르면 경고한다.
+- `check`(이전된 호): 판정하지 않고, 화면 글의 CVE마다 **지금 받은 판 기준** 등재 여부·등재일·기한을 표로 보여 준다.
+- 종료코드 0 일치(또는 이전된 호 안내) / 1 불일치 / 2 입력 오류.
+- **PR 검사에 넣지 않은 이유:** KEV 목록은 매일 바뀐다. 호에 적힌 판과 같은 목록으로만 비교해야 하므로, 호를 만든 사람이
+  받은 판으로 직접 돌린다.
+- "화면 글"의 범위는 `kev_check.py`의 `screen_texts()`가 정한다(렌더 화면에 표시되는 칸만, 기계용 값은 제외).
+  **`render.py`·틀에 새 화면 칸이 생기면 `screen_texts()`도 함께 고친다.**
+  CVE 번호는 `CVE-YYYY-NNNN…` 전체 모양으로 찾는다.
+- **줄여 쓴 CVE 번호**: 같은 글 안에서 온전한 CVE 뒤에 구분 기호(`·`, 쉼표, `/`)로 이어지는 4자리 이상 숫자
+  (예: "CVE-2026-93616 · 85102" → CVE-2026-85102, 연도는 앞의 CVE를 따른다). `**굵게**` 표시는 허용한다.
+  숫자 바로 뒤에 `-`·`.`·`/`나 영문·한글이 붙으면(날짜·버전·빌드·"1739건" 등) 줄여 쓴 번호로 보지 않고,
+  숫자 사이에 일반 단어가 끼어도 이어 보지 않는다. 그래서 "9990012도"처럼 조사가 붙은 번호, "48411~48416" 같은 범위는 찾지 못한다.
+  - 새 호: 줄여 쓴 번호가 하나라도 있으면 **실패**한다(대조에서 빠질 수 있으므로 온전한 번호로 적는다).
+  - 이전된 호: 복원해 표에 넣고 "줄여 쓴 번호(추정) 위치" 칸에 어디서 어떤 표기로 나왔는지 보여 준다.
+
 ### 검사기가 확인하지 못하는 것 — 사람이 본다
 
-- 값이 실제 KEV·KISA·벤더 공지와 같은지(검사기는 네트워크를 쓰지 않는다. 형식·범위·호 안 일관성까지만 본다).
+- 값이 실제 KISA·벤더 공지와 같은지(검사기는 네트워크를 쓰지 않는다. 형식·범위·호 안 일관성까지만 본다).
+  KEV는 위 대조 도구로 확인한다.
 - 호와 호 사이의 일관성(예: 지난 호와 같은 CVE의 KEV 등재일·악용 상태).
 - 사람이 쓰는 글 — 한눈에 보기, 본문(상황·조치·확인), 대상별 권고, 표의 설명 줄(`details`) — 이 구조화 칸과 맞는지.
 
