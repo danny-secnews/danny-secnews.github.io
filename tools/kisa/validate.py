@@ -10,13 +10,12 @@ KISA 주간 리포트 검사기 (첫 판: 구조 검사 + 렌더 일치 검사) 
   1. 형식: 필수 칸과 형식은 schema.json 한 곳에서만 정의하고 여기서는 그 파일을 읽어 검사한다.
   2. 정체성·날짜: 파일 이름 = week_start = id, week_start는 월요일, published_date는 대상 주간이 끝난 뒤 ~ 시작일+31일
   3. 이전된 호 면제: MIGRATED_WEEKS 고정 목록에 있는 주차만 '이전된 호'로 인정한다(provenance 표시만 믿지 않음).
-     목록 밖 주차는 아직 통과시키지 않는다 — 새 호에 필요한 구조화 칸과 근거 검사는 STEP 4·5에서 구현.
+     목록 밖 주차(새 호)는 새 호 규칙 check_new_issue()(구조화 칸·출처·확인 기록)를 통과해야 한다.
   4. 렌더 일치: HTML = 데이터를 틀에 넣어 다시 만든 결과 (줄바꿈 CRLF/LF 차이만 무시, 나머지는 바이트 단위)
   5. HTML 필수 요소: portal-date 메타, 상단 바 줄, 구획 제목
   6. 폴더: docs/kisa-cert/의 HTML은 레거시 목록에 있거나 데이터에서 만든 것이어야 한다(같은 주차 중복 금지)
 
-새 호 규칙(구조화 칸): check_new_issue() — 관문이 닫혀 있는 동안은 실행 흐름에서 부르지 않고
-tools/kisa/tests에서만 부른다. 관문을 열 때 3번의 NOT_YET 자리에서 부른다.
+새 호 규칙(구조화 칸): check_new_issue() — 3번에서 면제 목록 밖 주차마다 부른다.
 
 종료코드 0 통과 / 1 실패
 """
@@ -56,8 +55,6 @@ LEGACY_HTML = frozenset({
 
 SECTIONS = ("1. 한눈에 보기", "2. 우선순위", "3. 공지별 조치 방법과 조치 확인 방법",
             "4. 대상별 이번 주 권고 조치", "5. 집계 기준과 참고 사항")
-NOT_YET = ("새 호 검사는 아직 지원하지 않음 — 새 호에 필요한 구조화 칸(위험도·CVSS·KISA 번호·게시일·KEV)과 "
-           "근거 검사가 STEP 4·5에서 구현될 때까지 이 데이터는 게시할 수 없습니다")
 
 
 # ── 스키마 검사 (schema.json에 쓰인 키워드만 해석, 모르는 키워드는 검사기 오류) ──────────
@@ -191,8 +188,8 @@ def check_issue(root: Path, path: Path, schema: dict) -> list[str]:
     if exempt and "priority" not in data:  # schema에서 필수를 뺐으므로(새 호는 쓰지 않음) 이전된 호는 여기서 강제
         errs.append("$.priority: 필수 칸 없음 — 이전된 호는 2. 우선순위 표를 priority[]로 적어야 함")
     if not exempt:
-        errs.append(NOT_YET)
-        # 이전된 호에만 허용되는 것들 — STEP 4·5 이후에도 새 호에서는 계속 실패해야 함
+        errs += check_new_issue(data)  # 새 호 규칙(구조화 칸·출처·확인 기록)
+        # 이전된 호에만 허용되는 것들 — 새 호에서는 계속 실패해야 함
         if data.get("boilerplate"):
             errs.append("고정 문구 바꿔 쓰기(boilerplate)는 이전된 호에만 허용")
         if any(not s["url"] for it in data["items"] for s in it["sources"]):
@@ -247,8 +244,7 @@ def check_folder(root: Path, weeks: set[str]) -> list[str]:
 
 # ── 새 호 규칙 (구조화 칸) ───────────────────────────────────────
 # 새 호의 항목 머리 줄은 구조화 칸에서 렌더러가 만든다. 아래 check_new_issue()는 그 칸들의 규칙이다.
-# 아직 관문(check_issue의 NOT_YET)은 닫혀 있어 validate.py 실행에서는 부르지 않는다 —
-# 지금은 tools/kisa/tests에서만 부르고, 관문을 열 때 NOT_YET 자리에서 부른다.
+# check_issue()가 면제 목록 밖 주차(새 호)마다 부른다(tools/kisa/tests도 직접 부른다).
 # 형식(칸 이름·상태 값·필수 칸)은 schema.json이 검사하므로 여기서는 schema를 통과한 데이터를 전제로 한다.
 
 STRUCTURED_KEYS = ("vulnerabilities", "notices", "cve_total", "vendor_rating", "addition", "priority")
