@@ -64,14 +64,16 @@ def to_crlf(path: Path) -> None:
     path.write_bytes(path.read_bytes().replace(b"\n", b"\r\n"))
 
 
-# (이름, 기대, 데이터를 바꾸는 함수). 기대: "통과" / "실패" / "실패(아직 지원하지 않음)"
+# (이름, 기대, 데이터를 바꾸는 함수). 기대: "통과" / "실패" / "실패(새 호 규칙 위반)"
+# 05번은 관문을 열기 전(WP4-C2 이전)에는 "실패(아직 지원하지 않음)"였다. 관문을 연 뒤에도 실패이고,
+# 이유가 새 호 규칙 위반(글자 머리 줄·확인 기록 없음 등)으로 바뀌었다.
 CASES = [
     ("정상 데이터(09-28) 그대로", "통과", lambda r: None),
     ("HTML을 한 글자 직접 고침", "실패", lambda r: edit_html(r, "7건(#2549~#2555)", "8건(#2549~#2555)")),
     ("필수 칸(published_date) 삭제", "실패", lambda r: edit_json(r, lambda d: d.pop("published_date"))),
     ("필수 칸(items[0].remediation) 삭제", "실패", lambda r: edit_json(r, lambda d: d["items"][0].pop("remediation"))),
     ("목록에 없는 주차(2026-10-05)가 migrated 표시", "실패", lambda r: new_week(r, "2026-10-05", "2026-10-12", "migrated")),
-    ("목록에 없는 주차(2026-10-05)의 일반 데이터", "실패(아직 지원하지 않음)",
+    ("목록에 없는 주차(2026-10-05)의 일반 데이터", "실패(새 호 규칙 위반)",
      lambda r: new_week(r, "2026-10-05", "2026-10-12", "generated")),
     ("면제 목록 주차인데 provenance를 generated로 바꿈", "실패",
      lambda r: edit_json(r, lambda d: d.update(provenance={"type": "generated"}))),
@@ -113,8 +115,9 @@ def _make(name: str, expect: str, change):
         code, out = run_case(change)
         self.assertIn(code, (0, 1), out)  # 판정(통과·실패)이어야 하고 검사기 자체 오류면 안 됨
         self.assertEqual("통과" if code == 0 else "실패", expect.split("(")[0], out)
-        if "아직" in expect:
-            self.assertIn("아직 지원하지 않음", out)
+        if "새 호 규칙" in expect:  # 09-28을 복제한 글자 머리 줄 데이터 → 새 호 규칙에서 실패해야 함
+            self.assertIn("새 호 항목은 구조화 칸(vulnerabilities·notices)으로 써야 함", out)
+            self.assertIn("checks.kev(호 단위 KEV 확인 기록)가 없음", out)
     test.__doc__ = f"{name} → {expect}"
     return test
 

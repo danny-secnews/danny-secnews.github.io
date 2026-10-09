@@ -58,9 +58,9 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
   `docs/kisa-cert/`의 HTML은 이 목록에 있거나 데이터에서 만든 것이어야 한다.
   손으로 만든 HTML을 새로 올릴 때 추가하고, 그 호를 데이터로 옮기면 뺀다.
 
-목록에 없는 주차의 새 데이터는 아직 검사기가 지원하지 않아 실패한다(새 호 자동 생성은 준비 중).
+목록에 없는 주차의 데이터는 새 호다. 구조화 칸으로 쓰고 새 호 규칙(`check_new_issue()`)을 통과해야 한다.
 
-## 새 호 머리 줄 — 구조화 칸 (준비 중, 관문은 아직 닫혀 있음)
+## 새 호 — 구조화 칸 (관문 열림)
 
 새 호의 항목 머리 줄(제목 아래 회색 줄)은 글자(`meta`·`meta_refs`)로 쓰지 않고 구조화 칸으로 적는다.
 렌더러가 그 값으로 머리 줄을 만든다. 한 항목에 두 방식을 섞으면 실패한다. 글자 머리 줄은 이전된 호 전용이다.
@@ -125,18 +125,37 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
 - 이전된 호는 지금처럼 최상위 `priority[]`(글자)를 쓰고 반드시 있어야 한다. 이전된 호 항목에 `priority` 칸이 있으면 실패,
   새 호에 최상위 `priority[]`가 있으면 실패.
 
-**관문은 아직 닫혀 있다.** `validate.py` 실행에서 목록 밖 새 주차는 지금도 "새 호 검사는 아직 지원하지 않음"으로 실패한다.
-새 규칙은 시험에서만 돈다(PR 검사도 이 시험을 실행한다):
+**관문이 열렸다.** `validate.py`는 면제 목록 밖 주차(새 호)마다 새 호 규칙을 실행한다.
+형식·파일 이름·날짜·면제 목록 대조·렌더 일치·HTML 필수 요소·폴더 검사도 지금처럼 모두 적용된다.
+이전된 호(면제 목록)에는 구조화 칸을 쓸 수 없다.
+
+### 새 호를 올리는 순서
+
+1. 최신 main에서 브랜치를 만든다.
+2. 데이터를 쓴다: `content/kisa-cert/<week_start>.json` (구조화 칸, 출처, 확인 기록 `checks`).
+3. `python tools/kisa/render.py <week_start>` — `docs/kisa-cert/kisa_weekly_<week_start>_public.html`이 만들어진다. HTML은 직접 고치지 않는다.
+4. `python tools/kisa/validate.py` — 통과해야 한다.
+5. `python -m unittest discover -s tools/kisa/tests -v` — 통과해야 한다.
+6. PR을 올린다. **새 호 PR에는 `content/kisa-cert/<week_start>.json`과 `docs/kisa-cert/<파일>.html` 두 개만 넣는다.**
+   다른 파일(검사기·렌더러·틀·workflow·목록 등)을 섞으면 kisa-pr-scope가 빨간색이 된다. 그런 변경은 별도 PR로 먼저 올린다.
+   목록(manifest)은 병합 후 portal-manifest 워크플로가 갱신하므로 PR에 넣지 않는다.
+
+### 검사기가 확인하지 못하는 것 — 사람이 본다
+
+- 값이 실제 KEV·KISA·벤더 공지와 같은지(검사기는 네트워크를 쓰지 않는다. 형식·범위·호 안 일관성까지만 본다).
+- 호와 호 사이의 일관성(예: 지난 호와 같은 CVE의 KEV 등재일·악용 상태).
+- 사람이 쓰는 글 — 한눈에 보기, 본문(상황·조치·확인), 대상별 권고, 표의 설명 줄(`details`) — 이 구조화 칸과 맞는지.
+
+시험 데이터는 `tools/kisa/tests/fixtures/`의 가상 호다:
 
 ```bash
 python -m unittest discover -s tools/kisa/tests -v
 ```
 
-시험 데이터는 `tools/kisa/tests/fixtures/`의 가상 호다. 이전된 호(면제 목록)에는 구조화 칸을 쓸 수 없다.
+## 과도기 절차 (첫 구조화 호가 성공할 때까지)
 
-## 과도기 절차 (새 호 자동 생성이 준비될 때까지)
-
-주간 리포트는 기존 방식대로 HTML로 만든다. 다만 **웹 업로드로 main에 바로 올리지 않는다.**
+첫 구조화 호가 위 순서로 성공할 때까지는 이 절차도 계속 쓸 수 있다.
+주간 리포트를 기존 방식대로 HTML로 만든다. 다만 **웹 업로드로 main에 바로 올리지 않는다.**
 
 1. 최신 main에서 브랜치를 만든다.
 2. HTML을 `docs/kisa-cert/kisa_weekly_<대상 주간 시작일>_public.html`로 넣는다.

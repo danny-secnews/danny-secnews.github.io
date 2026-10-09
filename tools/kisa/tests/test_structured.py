@@ -11,6 +11,7 @@ from __future__ import annotations
 import copy
 import json
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -50,6 +51,27 @@ def run(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run([sys.executable, *args], cwd=REPO, capture_output=True, env=env)
 
 
+def validate_new_week(data: dict, html_edit=None) -> tuple[int, str]:
+    """새 임시 작업 트리에 data를 2026-10-05 주차로 넣고 렌더한 HTML과 함께 validate.py --root 로 검사한다.
+    html_edit가 있으면 렌더한 HTML 글자에 적용한 뒤 저장한다."""
+    with tempfile.TemporaryDirectory(prefix="kisa-new-") as tmp:
+        root = Path(tmp)
+        (root / "content/kisa-cert").mkdir(parents=True)
+        (root / "docs/kisa-cert").mkdir(parents=True)
+        rel = "content/kisa-cert/2026-10-05.json"
+        (root / rel).write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+        try:
+            html = R.render(data, rel)
+        except R.RenderError:  # 렌더할 수 없는 데이터(예: 글자 머리 줄로 바꾼 새 호) — 원래 가상 호의 HTML을 둔다
+            html = R.render(BASE, rel)
+        if html_edit:
+            html = html_edit(html)
+        with open(root / "docs/kisa-cert" / R.out_name("2026-10-05"), "w", encoding="utf-8", newline="\n") as f:
+            f.write(html)
+        out = run("tools/kisa/validate.py", "--root", tmp)
+    return out.returncode, out.stdout.decode("utf-8")
+
+
 class Compatibility(unittest.TestCase):
     def test_01_0928_render_is_byte_identical(self):
         out = run("tools/kisa/render.py", "2026-09-28", "--stdout")
@@ -57,22 +79,13 @@ class Compatibility(unittest.TestCase):
         published = (REPO / "docs/kisa-cert/kisa_weekly_2026-09-28_public.html").read_bytes()
         self.assertEqual(out.stdout, published)
 
-    def test_02_new_week_still_blocked_in_validate_flow(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
-            (root / "content/kisa-cert").mkdir(parents=True)
-            (root / "docs/kisa-cert").mkdir(parents=True)
-            rel = "content/kisa-cert/2026-10-05.json"
-            (root / rel).write_text(json.dumps(BASE, ensure_ascii=False), encoding="utf-8")
-            with open(root / "docs/kisa-cert" / R.out_name("2026-10-05"), "w", encoding="utf-8", newline="\n") as f:
-                f.write(R.render(BASE, rel))
-            out = run("tools/kisa/validate.py", "--root", tmp)
-        text = out.stdout.decode("utf-8")
-        self.assertEqual(out.returncode, 1, text)
-        self.assertIn("실패: content/kisa-cert/2026-10-05.json", text)
-        fails = [ln for ln in text.splitlines() if ln.startswith("  실패:")]
-        # 형식·렌더 일치·폴더는 모두 통과하고, 막는 것은 관문 한 줄뿐이어야 한다
-        self.assertEqual(fails, [f"  실패: {V.NOT_YET}"], text)
+    def test_02_new_week_passes_in_validate_flow(self):
+        # 관문을 연 뒤(WP4-C2): 가상 새 호가 실제 validate.py 흐름을 끝까지 통과한다.
+        # (관문을 열기 전에는 "새 호 검사는 아직 지원하지 않음" 한 줄로 실패하는 것을 확인하던 시험)
+        code, text = validate_new_week(BASE)
+        self.assertEqual(code, 0, text)
+        self.assertIn("통과: content/kisa-cert/2026-10-05.json", text)
+        self.assertEqual([ln for ln in text.splitlines() if "실패" in ln], [], text)
 
     def test_migrated_issue_cannot_use_structured_fields(self):
         data = json.loads((REPO / "content/kisa-cert/2026-09-28.json").read_text(encoding="utf-8"))
@@ -379,6 +392,73 @@ class RuleGaps(unittest.TestCase):
     def test_gap6_ref_with_description_is_fine(self):
         root = {"$defs": {"word": {"type": "string"}}}
         self.assertEqual(V.schema_errors("abc", {"$ref": "#/$defs/word", "description": "설명"}, root), [])
+
+
+class OpenGate(unittest.TestCase):
+    """WP4-C2 — 관문을 연 뒤 실제 validate.py 흐름(--root)에서 새 호를 검사한다. 끝에서 끝까지 통과는 test_02."""
+
+    def assertFlowFails(self, data: dict, *needles: str, html_edit=None):
+        code, text = validate_new_week(data, html_edit)
+        self.assertEqual(code, 1, text)
+        self.assertIn("실패: content/kisa-cert/2026-10-05.json", text)
+        for n in needles:
+            self.assertIn(n, text)
+
+    def test_g2_html_one_char_edit_fails(self):
+        self.assertFlowFails(BASE, "HTML이 데이터 렌더 결과와 다름",
+                             html_edit=lambda h: h.replace("Example Gateway A", "Example Gateway X", 1))
+
+    def test_g3_rule_violation_fails_in_flow(self):
+        data = fresh()  # KEV 등재인데 악용 no_report — 2026-09-28 호 Adobe 오류 사례
+        data["items"][A]["vulnerabilities"][0]["exploitation"] = {"state": "no_report", "src": "vendor-a", "as_of": "2026-10-05"}
+        self.assertFlowFails(data, "3-1: CVE-2026-9990001: KEV 등재인데 악용 상태가 confirmed가 아님")
+
+    def test_g4_new_issue_marked_migrated_fails(self):
+        data = fresh()
+        data["provenance"] = {"type": "migrated", "source_html": "docs/kisa-cert/kisa_weekly_2026-10-05_public.html",
+                              "source_commit": "0000000"}
+        self.assertFlowFails(data, "면제 목록에 없는 주차(2026-10-05)가 migrated 표시를 달고 있음",
+                             "새 호는 provenance.type이 generated여야 함")
+
+    def test_g4_new_issue_with_text_headline_fails(self):
+        data = fresh()
+        it = data["items"][A]
+        for k in ("vulnerabilities", "notices", "priority"):
+            del it[k]
+        it["meta"], it["meta_refs"] = "CVSS 9.8 · 악용 확인", "KISA #9001(10/7 게시)"
+        self.assertFlowFails(data, "3-1: 새 호 항목은 구조화 칸(vulnerabilities·notices)으로 써야 함")
+
+    def test_g4_new_issue_empty_source_url_fails(self):
+        data = fresh()
+        data["items"][A]["sources"][0]["url"] = ""
+        self.assertFlowFails(data, "출처 URL이 빈 칸 — 이전된 호에만 허용", "새 호 출처 주소는 https여야 함")
+
+    def test_g4_new_issue_boilerplate_fails(self):
+        data = fresh()
+        data["boilerplate"] = {"footer_notice": "바꿔 쓴 안내문"}
+        self.assertFlowFails(data, "고정 문구 바꿔 쓰기(boilerplate)는 이전된 호에만 허용")
+
+    def test_g5_migrated_0928_still_passes(self):
+        out = run("tools/kisa/validate.py", "2026-09-28")
+        text = out.stdout.decode("utf-8")
+        self.assertEqual(out.returncode, 0, text)
+        self.assertIn("통과: content/kisa-cert/2026-09-28.json (이전된 호)", text)
+        # 렌더 바이트 일치는 test_01
+
+    def test_g6_transitional_legacy_html_still_passes(self):
+        # 과도기 절차: 데이터 없이 HTML만 있고 LEGACY_HTML에 등록된 파일은 지금처럼 통과
+        with tempfile.TemporaryDirectory(prefix="kisa-legacy-") as tmp:
+            root = Path(tmp)
+            for sub in ("content/kisa-cert", "docs/kisa-cert"):
+                shutil.copytree(REPO / sub, root / sub)
+            for name in V.LEGACY_HTML:
+                self.assertTrue((root / "docs/kisa-cert" / name).exists(), name)
+            weeks = {p.stem for p in (root / "content/kisa-cert").glob("*.json")}
+            self.assertFalse({R.out_name(w) for w in weeks} & V.LEGACY_HTML)  # 레거시 HTML에는 데이터가 없음
+            out = run("tools/kisa/validate.py", "--root", tmp)
+        text = out.stdout.decode("utf-8")
+        self.assertEqual(out.returncode, 0, text)
+        self.assertIn(f"통과: docs/kisa-cert/ 폴더 (레거시 {len(V.LEGACY_HTML)}건 제외)", text)
 
 
 def row(data: dict, i: int) -> dict:
