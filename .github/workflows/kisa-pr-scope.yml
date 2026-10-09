@@ -1,0 +1,52 @@
+# KISA 새 호 PR 범위 검사 (main 쪽 코드로 실행)
+# - content/kisa-cert/(호 데이터)를 바꾸는 PR은 content/kisa-cert/·docs/kisa-cert/ 파일만 바꿀 수 있다.
+#   새 호 PR이 검사기·렌더러·틀·workflow를 함께 고쳐 자기 검사를 느슨하게 만드는 것을 막는다.
+# - pull_request_target: main에 있는 이 파일과 tools/kisa/pr_scope.py가 돈다.
+#   PR 쪽 코드는 체크아웃하지도 실행하지도 않는다. PR에서 읽는 것은 바뀐 파일 이름 목록(GitHub API)뿐이고,
+#   이름은 JSON 문자열 한 줄씩 표준 입력으로만 넘긴다. 셸 명령에는 PR 번호와 저장소 이름만 env로 쓴다.
+# - 읽기 전용 권한. 필수 검사로 지정하지 않았다(daily.yml·portal.yml이 PR 없이 main에 직접 push하므로).
+#   빨간색이면 병합하지 않는다.
+name: kisa-pr-scope
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  scope:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: PR이 바꾼 파일 목록 받기
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          gh api --paginate "repos/$REPO/pulls/$PR_NUMBER/files" --jq '.[] | .filename | tojson' > "$RUNNER_TEMP/kisa-pr-names.txt"
+          gh api --paginate "repos/$REPO/pulls/$PR_NUMBER/files" --jq '.[] | .previous_filename // empty | tojson' > "$RUNNER_TEMP/kisa-pr-previous.txt"
+          # 파일 목록 API는 PR당 최대 3000개까지만 준다. 받은 수가 PR의 바뀐 파일 수와 다르면 판정하지 않고 실패한다.
+          expected="$(gh api "repos/$REPO/pulls/$PR_NUMBER" --jq '.changed_files')"
+          got="$(wc -l < "$RUNNER_TEMP/kisa-pr-names.txt")"
+          if [ "$((got))" -ne "$((expected))" ]; then
+            echo "파일 목록을 끝까지 받지 못함: 받은 ${got}건, PR의 바뀐 파일 ${expected}건"
+            exit 1
+          fi
+          echo "바뀐 파일 ${got}건"
+      - name: KISA 새 호 PR 범위 검사
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat "$RUNNER_TEMP/kisa-pr-names.txt" "$RUNNER_TEMP/kisa-pr-previous.txt" | python tools/kisa/pr_scope.py
