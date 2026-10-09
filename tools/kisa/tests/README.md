@@ -7,6 +7,7 @@ python -m unittest discover -s tools/kisa/tests -v
 PR 검사(`.github/workflows/kisa-validate.yml`)가 `validate.py`와 이 시험 전체를 실행한다.
 
 - `test_structured.py` — 새 호 구조화 칸의 규칙과 머리 줄, 09-28 렌더 바이트 일치, 새 주차 관문.
+- `test_pr_scope.py` — 새 호 PR 범위 판정(`pr_scope.py`): 허용 범위, 이름 바꾸기, 비정상 경로, JSON 한 줄 입력.
 - `test_negative.py` — 일부러 틀린 데이터·HTML 14가지가 `validate.py`에서 기대대로 실패(또는 통과)하는지.
   09-28 호를 임시 폴더에 복사해 한 곳씩 바꿔 검사한다.
 

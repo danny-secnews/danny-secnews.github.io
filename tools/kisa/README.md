@@ -32,6 +32,19 @@ python tools/kisa/compare_html.py git:origin/main:docs/kisa-cert/X.html docs/kis
 **PR 검사** — `.github/workflows/kisa-validate.yml`이 KISA 경로가 바뀐 PR에서 `validate.py`와
 시험 전체(`python -m unittest discover -s tools/kisa/tests -v`)를 실행한다. 둘 중 하나라도 실패하면 PR 검사는 실패다.
 `validate.py`가 실패해도 시험은 이어서 실행되어 두 결과를 함께 볼 수 있다.
+
+**새 호 PR 범위 검사** — `.github/workflows/kisa-pr-scope.yml`이 모든 PR에서 `tools/kisa/pr_scope.py`로 판정한다.
+
+- 막는 것: 호 데이터(`content/kisa-cert/`)를 바꾸는 PR이 검사기·렌더러·틀·workflow 등을 함께 고쳐
+  자기 검사를 스스로 느슨하게 만드는 것. `content/kisa-cert/`를 하나라도 바꾼(추가·수정·삭제·이름 바꾸기의 옛·새 경로) PR은
+  바꾼 모든 파일이 `content/kisa-cert/` 또는 `docs/kisa-cert/` 아래여야 한다. 비정상 경로(절대 경로, `\`, `.`·`..`)는 실패.
+- **main 쪽 코드로 돈다.** `pull_request_target`이라 main에 있는 workflow와 `pr_scope.py`가 실행되고,
+  PR 쪽 코드는 받지도 실행하지도 않는다. PR에서 읽는 것은 바뀐 파일 이름 목록뿐이다.
+  (`kisa-validate.yml`은 PR 쪽 코드를 실행하므로 같은 PR이 고칠 수 있다 — 그래서 범위 판정은 이쪽에서 한다.)
+- 그래서 **렌더러·틀·검사기를 고치는 PR과 새 호 PR은 나눈다.** 렌더러를 고치고 HTML을 다시 만드는 PR(tools + docs)은 대상이 아니다.
+- **필수 검사로 지정하지 않았다.** main에 필수 검사를 걸면 PR 없이 main에 직접 push하는 `daily.yml`·`portal.yml`이 거절된다.
+  따라서 이 검사가 빨간색이면 병합하지 않는 것은 사람이 지키는 규칙이다.
+- 이 workflow는 main에 병합된 뒤부터 동작한다(`pull_request_target`은 main 쪽 파일을 쓰므로, 이 파일을 추가하는 PR 자체에서는 돌지 않는다).
 - `compare_html.py`: 옛 HTML과 새 HTML의 화면 글자·토큰(CVE·버전·숫자·[미확인])·문장·꾸밈 비교.
   게시본을 데이터로 옮긴 뒤 정보가 빠지지 않았는지 확인할 때 쓴다. 종료코드 0 같음 / 1 다름.
 
