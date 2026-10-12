@@ -1,0 +1,319 @@
+{
+  "generated_at": "2026-10-13T08:53:24.617302+09:00",
+  "date": "2026-10-13",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "Citrix 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72212",
+          "source": "KISA 보안공지",
+          "published": "2026-10-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "심장 박동 감지 센서기업 아이리듬, 6월 공격으로 최소 36만명 유출 신고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146303",
+          "source": "보안뉴스",
+          "published": "2026-10-13T07:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융권 연쇄 해킹, 경찰 43명 투입…초동 수사·중수청 관할 논란",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208831",
+          "source": "데일리시큐",
+          "published": "2026-10-12T12:49:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "조경태 의원 “KT, 해킹 사실 숨기고 보안 안전성 홍보”…신규 가입 금지 등 제재 촉구",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208829",
+          "source": "데일리시큐",
+          "published": "2026-10-12T12:32:04+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "외교부 사이버공격 올해 2만5천건 넘어…대응인력은 3년째 제자리",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208828",
+          "source": "데일리시큐",
+          "published": "2026-10-12T12:26:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "원주시, 과학기술정보통신부 ‘2027년 스마트빌리지’ 공모 선정... 19.5억원 확보",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146319",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-12T15:53:22+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "코리아인스트루먼트, ISO/IEC 27001·27701 동시 획득...보안 내재화 추진",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208838",
+          "source": "데일리시큐",
+          "published": "2026-10-12T14:02:25+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "삼오씨엔에스 ‘파르고스’, 탄소중립포인트 개인정보 취급자 비정상 접속 실시간 차단",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146309",
+          "source": "보안뉴스",
+          "published": "2026-10-12T13:21:37+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "유니뷰, AI SAFEHOME으로 차세대 스마트홈 시장 공략",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146311",
+          "source": "보안뉴스",
+          "published": "2026-10-12T13:18:19+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "인스피언, SAP 보안 진단 솔루션 '비즈인사이더 엑스스캔' 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208834",
+          "source": "데일리시큐",
+          "published": "2026-10-12T13:12:20+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "이준석 의원 “디지털화폐 거래내역 감시 가능성 없나”…신현송 한은 총재 “개인정보는 은행이 관리”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208830",
+          "source": "데일리시큐",
+          "published": "2026-10-12T12:43:51+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[공격분석] 북한 김수키, 국내 보안컨퍼런스 'KCSCON 2026' 사칭해 우크라이나 안보 전문가 해킹 시도",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208844",
+          "source": "데일리시큐",
+          "published": "2026-10-12T18:25:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[한국정보공학기술사 보안을 論하다–49] 랜섬웨어가 병원을 멈추면, 환자의 골든타임도 멈춘다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146321",
+          "source": "보안뉴스",
+          "published": "2026-10-12T16:00:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "에이엠씨랩 “AI로 수십초면 해킹... 마이크로세그멘테이션으로 막는다”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146317",
+          "source": "보안뉴스",
+          "published": "2026-10-12T15:05:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "시트릭스, 넷스케일러 새로운 치명적 결함 패치 촉구",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146300",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-12T15:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-107406"
+          ]
+        },
+        {
+          "title": "엠클라우독, 기업 AI 도입 핵심은 ‘문서중앙화 연계·폐쇄망’",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146316",
+          "source": "보안뉴스",
+          "published": "2026-10-12T14:16:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "에브리존, AI 페스타 2026서 행위 기반 랜섬웨어 차단 솔루션 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208835",
+          "source": "데일리시큐",
+          "published": "2026-10-12T13:30:08+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[기획연재 6] 합법적 권한 뒤에 숨은 '우회 유출'… 앤드포인드 최전방을 봉쇄하라",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208827",
+          "source": "데일리시큐",
+          "published": "2026-10-12T11:32:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[배종찬의 보안 빅데이터] 기도로도 막지 못한 교인 정보 유출 해킹",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146305",
+          "source": "보안뉴스",
+          "published": "2026-10-12T10:32:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[보안칼럼] 금융권 해킹, AI가 문제가 아니라 기본기가 문제였다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208825",
+          "source": "데일리시큐",
+          "published": "2026-10-12T08:51:04+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이혁중 CISO 칼럼] AI가 바꾼 공격의 속도, 보안도 발견의 속도를 높여야 한다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208818",
+          "source": "데일리시큐",
+          "published": "2026-10-12T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[주의] 친러 해킹조직 Z-Pentest Alliance, 국내 사찰 CCTV 장악 주장",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208845",
+          "source": "데일리시큐",
+          "published": "2026-10-13T08:32:59+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "엔키화이트햇, 11월 코스닥 상장 추진…일본·싱가포르 뻗는다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146326",
+          "source": "보안뉴스",
+          "published": "2026-10-12T17:59:41+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Anthropic takes risky AI tests offline after models breach govt sites",
+          "link": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+          "source": "BleepingComputer",
+          "published": "2026-10-13T03:51:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
+          "link": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
+          "source": "The Hacker News",
+          "published": "2026-10-12T19:36:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
+          "link": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+          "source": "The Hacker News",
+          "published": "2026-10-12T18:02:14+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-85097"
+          ]
+        },
+        {
+          "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
+          "link": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+          "source": "BleepingComputer",
+          "published": "2026-10-13T05:13:52+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Yandex confirms service outage as users lose access to cloud files",
+          "link": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+          "source": "BleepingComputer",
+          "published": "2026-10-13T04:23:01+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+          "link": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+          "source": "BleepingComputer",
+          "published": "2026-10-13T01:27:23+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Cyberattack shuts down refrigerators at French supermarkets",
+          "link": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/",
+          "source": "BleepingComputer",
+          "published": "2026-10-13T00:23:34+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
+          "link": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
+          "source": "The Hacker News",
+          "published": "2026-10-13T00:16:26+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption",
+          "link": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
+          "source": "BleepingComputer",
+          "published": "2026-10-12T23:00:10+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Retail giant Ahold Delhaize takes systems offline after cyberattack",
+          "link": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/",
+          "source": "BleepingComputer",
+          "published": "2026-10-12T22:51:07+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "GitLab warns of max severity code execution vulnerability",
+          "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
+          "source": "BleepingComputer",
+          "published": "2026-10-12T22:09:09+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft: Windows 11 23H2 reaches end of support in 30 days",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
+          "source": "BleepingComputer",
+          "published": "2026-10-12T20:58:33+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 35
+}
