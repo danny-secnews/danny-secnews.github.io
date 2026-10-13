@@ -1,0 +1,311 @@
+{
+  "generated_at": "2026-10-14T08:59:09.534332+09:00",
+  "date": "2026-10-14",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "SonicWall 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72213",
+          "source": "KISA 보안공지",
+          "published": "2026-10-13T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "새마을금고 400명대 개인정보 유출... 계좌정보도 포함",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146364",
+          "source": "보안뉴스",
+          "published": "2026-10-13T17:04:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "맑은소프트 개인정보 유출 규모 237만건... 고객사 22곳 불똥",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146361",
+          "source": "보안뉴스",
+          "published": "2026-10-13T16:38:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "박성훈 의원, 개인정보 유출 신고 579건 중 현장조사 33건… “유출 대응 재점검해야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208859",
+          "source": "데일리시큐",
+          "published": "2026-10-13T12:01:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "송경희 개인정보위원장 “금융·공공 유출 엄정 조사”…피해구제 강화 추진",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208857",
+          "source": "데일리시큐",
+          "published": "2026-10-13T11:12:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "노드VPN “여행 관련 개인정보 1억 1,940만 건 다크웹 노출”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208847",
+          "source": "데일리시큐",
+          "published": "2026-10-13T09:33:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "심장 박동 감지 센서기업 아이리듬, 6월 공격으로 최소 36만명 유출 신고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146303",
+          "source": "보안뉴스",
+          "published": "2026-10-13T07:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, 내년 상반기 세종 간다... 44개 기관 9929명 이전",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146366",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-13T17:26:51+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "통제 잃은 섀도 AI... 대화 100번 중 6번은 ‘개인정보·기업 기밀’ 샜다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146353",
+          "source": "보안뉴스",
+          "published": "2026-10-13T14:55:19+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "엠클라우드브리지, 공공·교육·연구기관용 ‘Ai 365 통합 AI 플랫폼’ 발표",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208848",
+          "source": "데일리시큐",
+          "published": "2026-10-13T09:37:45+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "금융보안원, ‘FISCON 2026’ 콘퍼런스 개최... AI로 재편될 미래 금융 대비",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146359",
+          "source": "보안뉴스",
+          "published": "2026-10-13T15:45:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“AI 사용 때 민감 데이터 유출 방지”…파수AI AI 보안 솔루션, ‘세계 1위급’ 평가",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146357",
+          "source": "보안뉴스",
+          "published": "2026-10-13T15:32:03+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“권한 쥔 내부자가 더 무섭다” 병원정보보안협회 ‘의료기관 내부 위협 가이드라인’ 발간",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146348",
+          "source": "보안뉴스",
+          "published": "2026-10-13T14:07:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "방산 협력사 해킹에 기술자료 유출…로그 없어 피해 확인도 어려워",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208861",
+          "source": "데일리시큐",
+          "published": "2026-10-13T13:25:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국세청 해킹 시도 9개월간 7만3,283건…지난해 연간의 7.6배",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208860",
+          "source": "데일리시큐",
+          "published": "2026-10-13T13:09:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "델 테크놀로지스, IBK기업은행 하남데이터센터에 ‘사이버 복원력’ 입혔다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146346",
+          "source": "보안뉴스",
+          "published": "2026-10-13T11:55:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국내 해운·철강사 12곳에 랜섬웨어 공격 주장...“19일까지 협상 안 하면 데이터 공개” 협박",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146345",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-13T11:52:47+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융보안원, 11월 12일 FISCON 2026 개최…AI 시대 금융보안 전략 논의",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208850",
+          "source": "데일리시큐",
+          "published": "2026-10-13T09:48:48+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "병원정보보안협회, 환자정보 무단 열람·유출 막는 내부자 위협 가이드라인 발간",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208849",
+          "source": "데일리시큐",
+          "published": "2026-10-13T09:44:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[김승주 교수 칼럼] 반복되는 사이버보안 종합대책, 이제는 이행 성적표를 공개할 때다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208862",
+          "source": "데일리시큐",
+          "published": "2026-10-14T08:48:13+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "시놀로지 “AI 활용 열쇠는 데이터”, 솔루션 데이 2026서 데이터 관리 전략 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146365",
+          "source": "보안뉴스",
+          "published": "2026-10-13T17:32:18+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "에임인텔리전스, 중동 AI 보안 시장 공략 본격화",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146363",
+          "source": "보안뉴스",
+          "published": "2026-10-13T16:57:15+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Ghostscript flaw lets hackers hijack servers via PDF uploads",
+          "link": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T06:33:26+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-39919"
+          ]
+        },
+        {
+          "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T04:56:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
+          "link": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
+          "source": "The Hacker News",
+          "published": "2026-10-14T02:33:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T00:45:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Docker Hub flaw let attackers impersonate users, tamper with images",
+          "link": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T00:20:20+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-105445"
+          ]
+        },
+        {
+          "title": "OpenAI engineer arrested for allegedly planting spy device in office",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T07:33:02+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Anthropic warns self-replicating AI could spread to your smart devices",
+          "link": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T06:16:34+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft releases Windows 10 KB5126657 extended security update",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T04:47:30+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft: Windows 11 24H2 Home and Pro reached end of support",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-24h2-home-and-pro-reached-end-of-support/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T04:04:38+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
+          "link": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
+          "source": "The Hacker News",
+          "published": "2026-10-14T03:20:57+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "UK Housing Ombudsman Service investigates 'security incident'",
+          "link": "https://www.bleepingcomputer.com/news/security/uk-housing-ombudsman-service-investigates-security-incident/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T03:19:44+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Docker Fixes Critical Two-Year-Old Hub Flaw That Let One User Push Images as Another",
+          "link": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
+          "source": "The Hacker News",
+          "published": "2026-10-14T03:03:18+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 34
+}
