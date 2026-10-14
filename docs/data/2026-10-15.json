@@ -1,0 +1,295 @@
+{
+  "generated_at": "2026-10-15T08:58:16.410440+09:00",
+  "date": "2026-10-15",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "GitLab 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72215",
+          "source": "KISA 보안공지",
+          "published": "2026-10-14T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Ivanti 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72214",
+          "source": "KISA 보안공지",
+          "published": "2026-10-14T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "“정보보호 우수기업 47곳서 개인정보 유출 처분”…김선민 의원, 평가기준 개선 촉구",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208876",
+          "source": "데일리시큐",
+          "published": "2026-10-14T19:08:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "공공기관 개인정보 901만건 유출…10건 중 6건은 업무과실, 징계 권고는 6% 불과",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208873",
+          "source": "데일리시큐",
+          "published": "2026-10-14T18:08:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "농촌진흥청, 농민 개인정보 57만5천건 유출…폐기 확약서 17차례 받고도 관리 부실",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208872",
+          "source": "데일리시큐",
+          "published": "2026-10-14T18:02:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "프랑스 대형마트 500여 곳 사이버공격…냉장고 온도 50도까지 상승, 식품 폐기·화재 피해",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208868",
+          "source": "데일리시큐",
+          "published": "2026-10-14T11:17:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "이훈기 의원, 쿠팡 개인정보 유출 과징금 불복소송 문제 제기",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208867",
+          "source": "데일리시큐",
+          "published": "2026-10-14T11:08:41+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "AI 해킹·공급망 공격 시대…오에스비씨, 외부 ‘반입 파일 검증 체계’ 구축 방안 제시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208866",
+          "source": "데일리시큐",
+          "published": "2026-10-14T10:56:45+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "12개 에이전트 협업... 그룹아이비, 위협 분석 플랫폼 ‘프레빈 AI’ 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146387",
+          "source": "보안뉴스",
+          "published": "2026-10-14T15:10:02+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "옵스왓, N²SF 전환 대응…소프트웨어 개발부터 망간 전송까지 보안 연계",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208870",
+          "source": "데일리시큐",
+          "published": "2026-10-14T14:26:20+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"정부 청사 정문이 왜 열렸나\"… 스캐너 클라우드 털려 뚫린 '위조 신분증' 실태",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146385",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-14T11:22:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[인터뷰] 씨엔시큐리티, 차세대 CTI 플랫폼 'DustEYE' 일본 선출시…한국 및 글로벌 시장 공략 본격화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208875",
+          "source": "데일리시큐",
+          "published": "2026-10-14T18:38:51+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“미토스급 AI 위협 현실화”…팔로알토네트웍스, 10대 대응 전략 제시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146397",
+          "source": "보안뉴스",
+          "published": "2026-10-14T18:37:09+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "국민연금공단 하루 787건 해킹 시도, 보안 전담인력은 기준의 절반 수준",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208874",
+          "source": "데일리시큐",
+          "published": "2026-10-14T18:14:35+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "AI스페라, 싱가포르 ‘거브웨어 2026’서 AITEM 기반 차세대 ASM 방향성 제시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146395",
+          "source": "보안뉴스",
+          "published": "2026-10-14T17:12:36+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "AI로 해킹작전 ‘문서화’해 ‘공유’하는 공격자들... 팔로알토 “기계속도 ‘상시점검’ 필수”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146396",
+          "source": "보안뉴스",
+          "published": "2026-10-14T17:09:32+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "55달러 TV 박스로 AI 구동... 앤트로픽 “스스로 퍼지는 AI 웜, 이르면 몇 달 안에”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146374",
+          "source": "보안뉴스",
+          "published": "2026-10-14T16:45:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "하루 만에 결함 1411개... 마이크로소프트, 역대 최대 규모 10월 정기 패치 배포",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146372",
+          "source": "보안뉴스",
+          "published": "2026-10-14T15:34:11+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "시큐아이, 영문 사명 ‘SECUi’로 변경... 신규 CI 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146393",
+          "source": "보안뉴스",
+          "published": "2026-10-14T15:31:20+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "앤트로픽·오픈AI, 외부 평가 보고서 공개 범위 두고 줄다리기",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146377",
+          "source": "보안뉴스",
+          "published": "2026-10-14T15:29:38+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-15T07:56:47+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-0322"
+          ]
+        },
+        {
+          "title": "Cisco patches new Secure Email Gateway zero-day exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
+          "source": "BleepingComputer",
+          "published": "2026-10-15T02:29:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA warns admins to immediately fix Ivanti flaw exploited as zero-day",
+          "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T21:58:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ghostscript flaw lets hackers hijack servers via PDF uploads",
+          "link": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T06:33:26+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-39919"
+          ]
+        },
+        {
+          "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T04:56:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "FBI raids DPRK IT worker laptop farms in Texas, US nationals arrested",
+          "link": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
+          "source": "BleepingComputer",
+          "published": "2026-10-15T04:41:43+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
+          "link": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+          "source": "The Hacker News",
+          "published": "2026-10-15T03:38:56+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Ledger asks sellers across Asia to halt sales after supply-chain attack",
+          "link": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
+          "source": "BleepingComputer",
+          "published": "2026-10-15T02:46:50+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App",
+          "link": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+          "source": "The Hacker News",
+          "published": "2026-10-15T02:38:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft Disrupts 3 Phishing Kits Linked to Over 1 Billion Scam Messages",
+          "link": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
+          "source": "The Hacker News",
+          "published": "2026-10-15T02:09:15+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
+          "link": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
+          "source": "The Hacker News",
+          "published": "2026-10-15T01:34:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft fixes VPN issues caused by September Windows updates",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
+          "source": "BleepingComputer",
+          "published": "2026-10-14T23:27:01+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 32
+}
