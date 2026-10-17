@@ -1,0 +1,295 @@
+{
+  "generated_at": "2026-10-17T10:31:36.460196+09:00",
+  "date": "2026-10-17",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "코인 탈취를 위한 악성URL 유포에 따른 스미싱 주의",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72219",
+          "source": "KISA 보안공지",
+          "published": "2026-10-16T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Palo Alto Networks 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72218",
+          "source": "KISA 보안공지",
+          "published": "2026-10-16T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "“병원 정보시스템 보안 수준 향상”... 병원정보보안협회-스패로우 ‘맞손’",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146466",
+          "source": "보안뉴스",
+          "published": "2026-10-16T18:16:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "직원 10명에게 보낼 감사자료, 외부 5,857명에…시청자미디어재단 오발송",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208914",
+          "source": "데일리시큐",
+          "published": "2026-10-16T15:54:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“유출 피해 보상해준다”는 연락 주의…빗썸, 2차 금융사기 예방 캠페인",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208899",
+          "source": "데일리시큐",
+          "published": "2026-10-16T09:49:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "(보도참고)외부 설문도구 이용 시 개인정보 처리 준수 사항에 대해 보다 명확히 안내하겠습니다. N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12585",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-16T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "연세대 바른ICT연구소, 아시아 전문가들과 AI 개인정보보호 과제 논의",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208913",
+          "source": "데일리시큐",
+          "published": "2026-10-16T15:41:45+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "아우토크립트, 강릉 ITS 세계총회서 차량 사이버보안 기술 발표",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208910",
+          "source": "데일리시큐",
+          "published": "2026-10-16T15:06:22+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "OK저축은행, 계좌번호 등 고객 268명 정보 추가 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146469",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-17T10:02:03+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“사이버 범죄자끼리 싸웠다”... 샤이니헌터스 vs 클롭 다툼 무슨 일?",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146459",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-16T16:05:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "AI 정보 유출부터 랜섬웨어까지 원스톱... 세이퍼존, 중앙아시아 시장 공략 본격화",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146453",
+          "source": "보안뉴스",
+          "published": "2026-10-16T15:46:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"차 한 번 빌렸을 뿐인데\"… 렌터카 플랫폼 털려 면허증 160만 장 유출된 전말",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146454",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-16T15:09:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "버거킹재팬, 앱 회원 기록 1118만 건 새어 나가",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146434",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-16T13:27:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[배종찬의 보안 빅데이터] 스마트 TV가 해킹당하면 무슨 일이 벌어질까",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146467",
+          "source": "보안뉴스",
+          "published": "2026-10-17T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "양천구, 어린이집 노후 CCTV 교체·유지관리 지원",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146462",
+          "source": "보안뉴스",
+          "published": "2026-10-16T17:33:02+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "미 연방기관 32% ‘기초 자산 목록’조차 없어... 한계 부딪힌 글로벌 OT 보안",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146463",
+          "source": "보안뉴스",
+          "published": "2026-10-16T16:30:47+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "박대출 의원 “우리은행 21.7%·신한은행 10.4% 감액…5대 은행 정보보호 예산 공개“",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208915",
+          "source": "데일리시큐",
+          "published": "2026-10-16T16:13:07+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "인텔리빅스, 13년 연속 흑자 기반 일반상장 추진",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146452",
+          "source": "보안뉴스",
+          "published": "2026-10-16T15:49:29+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "티오리, 앤트로픽 보안 특화 AI 프로그램 참여... ‘진트’ 고도화에 활용",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146457",
+          "source": "보안뉴스",
+          "published": "2026-10-16T15:44:39+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "아우토크립트, ITS 세계총회서 차량 보안 성과 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146455",
+          "source": "보안뉴스",
+          "published": "2026-10-16T15:42:51+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+          "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+          "source": "BleepingComputer",
+          "published": "2026-10-17T05:00:59+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-103849"
+          ]
+        },
+        {
+          "title": "Burger King Japan data breach exposes 11 million customer records",
+          "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
+          "source": "BleepingComputer",
+          "published": "2026-10-16T21:01:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
+          "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+          "source": "The Hacker News",
+          "published": "2026-10-16T15:55:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "BeyondTrust patches zero-day exploited in attacks since August",
+          "link": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
+          "source": "BleepingComputer",
+          "published": "2026-10-16T15:18:08+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+          "source": "BleepingComputer",
+          "published": "2026-10-16T05:25:04+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-110447"
+          ]
+        },
+        {
+          "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
+          "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+          "source": "The Hacker News",
+          "published": "2026-10-17T02:48:45+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+          "source": "BleepingComputer",
+          "published": "2026-10-17T02:20:03+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
+          "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+          "source": "The Hacker News",
+          "published": "2026-10-17T01:43:39+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
+          "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+          "source": "The Hacker News",
+          "published": "2026-10-17T01:16:44+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
+          "link": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
+          "source": "The Hacker News",
+          "published": "2026-10-16T23:03:04+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
+          "link": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
+          "source": "BleepingComputer",
+          "published": "2026-10-16T22:50:59+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "AI Decision Models and Their Impact on AI SOC Platforms",
+          "link": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+          "source": "The Hacker News",
+          "published": "2026-10-16T20:30:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 32
+}
