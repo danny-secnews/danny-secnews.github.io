@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-10-18T10:30:25.831173+09:00",
+  "date": "2026-10-18",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "탈취한 개인정보로 대출한도 조회... DB저축은행, 142명 개인정보 유출 추정",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146470",
+          "source": "보안뉴스",
+          "published": "2026-10-17T13:38:12+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[단독] 에베레스트 랜섬웨어 조직, 국내 네트워크 보안기업 263GB 데이터 탈취 주장…75개 기관·기업 관련 자료 노출 우려",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208916",
+          "source": "데일리시큐",
+          "published": "2026-10-17T13:54:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "OK저축은행, 계좌번호 등 고객 268명 정보 추가 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146469",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-17T10:02:03+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[배종찬의 보안 빅데이터] 스마트 TV가 해킹당하면 무슨 일이 벌어질까",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146467",
+          "source": "보안뉴스",
+          "published": "2026-10-17T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+          "source": "BleepingComputer",
+          "published": "2026-10-18T00:18:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+          "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+          "source": "The Hacker News",
+          "published": "2026-10-17T20:11:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+          "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+          "source": "BleepingComputer",
+          "published": "2026-10-17T05:00:59+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-103849"
+          ]
+        },
+        {
+          "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
+          "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+          "source": "BleepingComputer",
+          "published": "2026-10-17T23:32:48+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+          "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+          "source": "The Hacker News",
+          "published": "2026-10-17T15:16:46+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 9
+}
