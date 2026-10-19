@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-10-19T10:38:26.830264+09:00",
+  "date": "2026-10-19",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "커피전문점 ‘할리스’ 해킹으로 고객 개인정보 유출... 비밀번호까지 포함",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146479",
+          "source": "보안뉴스",
+          "published": "2026-10-18T19:05:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "이광희 의원, 따릉이 462만 명 개인정보 유출 대응 질타",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208921",
+          "source": "데일리시큐",
+          "published": "2026-10-18T14:13:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보 보호, 생활 속 실천과 사전 점검이 중요합니다 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12586",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-19T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "“AI 악용 해킹 위협 ↑”… 개인정보위, 국민·기업이 지켜야 할 보호수칙 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146489",
+          "source": "보안뉴스",
+          "published": "2026-10-19T10:37:17+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[2026 API 보안 솔루션 리포트] 금융권도, 이커머스도 털렸다 “해커는 고객의 얼굴로 들어온다”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146415",
+          "source": "보안뉴스",
+          "published": "2026-10-18T16:26:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금감원, OK저축은행 등 현장점검... 전금법 비대상 업권 보안 강화 논의도",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146474",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-18T12:07:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "9년간 아무도 몰랐다... 리눅스 커널 결함 ‘브이고스트’, 로컬 사용자에 루트 권한",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146403",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-18T09:41:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-74580"
+          ]
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제54화 '전 세계가 터진 날'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208920",
+          "source": "데일리시큐",
+          "published": "2026-10-19T07:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[이혁중 CISO 칼럼] AI 시대에도 아무것도 믿지 말라",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208919",
+          "source": "데일리시큐",
+          "published": "2026-10-19T07:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[김승주 교수 칼럼] ISMS 인증을 받았는데 왜 해킹을 당했을까?",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208918",
+          "source": "데일리시큐",
+          "published": "2026-10-19T07:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "레코디드 퓨처 \"국내 금융권 연쇄 해킹 배후 ‘TAG-217’ 8월부터 공격 준비…AI 활용해 공격 범위 확대\"",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208917",
+          "source": "데일리시큐",
+          "published": "2026-10-19T07:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "5대 은행장, 정무위 국감 출석... “과도한 비난보다 실질적 보안강화 논의되길”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146478",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-18T16:49:47+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[김정덕의 지속가능 보안-11] 보안에게 ‘정의’(Justice)를 묻다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146472",
+          "source": "보안뉴스",
+          "published": "2026-10-18T16:06:15+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "실제 사기로 이어진 보이스피싱, 연 8760건... 두배 증가",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146475",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-18T12:48:24+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "안랩, 싱가포르 ‘거브웨어 2026’서 ‘AI-네이티브 보안’ 선보여",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146473",
+          "source": "보안뉴스",
+          "published": "2026-10-18T11:02:27+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+          "source": "BleepingComputer",
+          "published": "2026-10-18T23:23:16+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
+          "link": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+          "source": "The Hacker News",
+          "published": "2026-10-18T17:23:02+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 17
+}
