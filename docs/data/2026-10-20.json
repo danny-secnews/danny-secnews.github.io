@@ -1,0 +1,284 @@
+{
+  "generated_at": "2026-10-20T11:03:36.961128+09:00",
+  "date": "2026-10-20",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "박상혁 의원, 예가람저축은행 등 태광그룹 계열사 전산 위탁 보안관리 지적",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208934",
+          "source": "데일리시큐",
+          "published": "2026-10-19T18:45:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[K-Security in Japan] 일본 보안 정책의 대전환, 15조 보안시장이 열린다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146482",
+          "source": "보안뉴스",
+          "published": "2026-10-19T11:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“AI 악용 해킹 위협 ↑”… 개인정보위, 국민·기업이 지켜야 할 보호수칙 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146489",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-19T10:37:17+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보 보호, 생활 속 실천과 사전 점검이 중요합니다 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12586",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-19T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "손명수 의원, “은행 고객정보 건당 8,000원에 불법 판매 정황”…금융정보 유통 실태 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208933",
+          "source": "데일리시큐",
+          "published": "2026-10-19T18:38:23+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "후보 목소리 흉내 내는 AI에 가짜 유권자 등록까지... FBI, 미 중간선거 노린 사기 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146490",
+          "source": "보안뉴스",
+          "published": "2026-10-19T15:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "클라우드네트웍스, 국제 개인정보보호 심포지엄서 'AI 통합 거버넌스 프레임워크' 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208924",
+          "source": "데일리시큐",
+          "published": "2026-10-19T13:04:21+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "진명아이앤씨, FIX 2026서 화재감지 카메라·재난방송 시스템 선보인다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146526",
+          "source": "보안뉴스",
+          "published": "2026-10-20T10:03:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국가스기술공사, 관리자 다중인증 미적용에도 긴급 보안점검 ‘취약점 0건’",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208932",
+          "source": "데일리시큐",
+          "published": "2026-10-19T18:28:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "커넥트와이즈 백업 앱 신원 뚫려 고객사 마이크로소프트 365 줄줄이 침해",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146484",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-19T16:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "세이퍼존, ARM 기반 ‘macOS 27’ 통합 DLP 선봬",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146507",
+          "source": "보안뉴스",
+          "published": "2026-10-19T15:26:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "중국 연계 의심 조직, 비욘드트러스트 장비 뚫고 내부망 침투",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146483",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-19T14:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-102764"
+          ]
+        },
+        {
+          "title": "[2026 키 및 인증서 관리 솔루션 리포트] 몰려오는 AI 에이전트 동료, 신뢰 인증 필수 인프라를 깔아라",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146430",
+          "source": "보안뉴스",
+          "published": "2026-10-19T12:38:18+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "시큐리티스코어카드, AI 기반 제3자 위험 관리 플랫폼 ‘타이탄 AI’ 발표",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208922",
+          "source": "데일리시큐",
+          "published": "2026-10-19T11:39:18+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "AI 들이자 오히려 서툴러졌다... 피싱 조직 TA4903, 바이브 코딩 키트에 관리 화면까지 노출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146440",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-20T10:08:12+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "ADT캡스, 출동대원 심폐소생술 교육 확대해 현장 응급 대응 역량 강화",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146524",
+          "source": "보안뉴스",
+          "published": "2026-10-20T10:01:24+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "스틸리언 ‘앱수트’, 인니 금융권 러브콜... 국영·지방은행 모바일 앱 보안 공급",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146521",
+          "source": "보안뉴스",
+          "published": "2026-10-20T09:58:05+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[이슈 칼럼] 결제토큰으로 토큰증권 T+0 앞당길 수 있다.",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146525",
+          "source": "보안뉴스",
+          "published": "2026-10-20T09:53:10+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "78리서치랩, AI 자율 침투테스트 도구 ‘ARTEX’ 수정판 배포...설치·운영 편의성 개선",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208935",
+          "source": "데일리시큐",
+          "published": "2026-10-19T18:53:59+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+          "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+          "source": "BleepingComputer",
+          "published": "2026-10-20T06:49:48+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "OpenCode hack exposes API keys amid AI distillation attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-20T02:27:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+          "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+          "source": "The Hacker News",
+          "published": "2026-10-19T23:14:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+          "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+          "source": "The Hacker News",
+          "published": "2026-10-19T22:05:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+          "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+          "source": "The Hacker News",
+          "published": "2026-10-19T15:07:08+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "WordPress SEO plugin Rank Math compromised to backdoor websites",
+          "link": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+          "source": "BleepingComputer",
+          "published": "2026-10-20T06:24:51+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers hijack AOMEI update servers to secretly spread malware",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/",
+          "source": "BleepingComputer",
+          "published": "2026-10-20T04:40:58+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Bullhorn takes staffing platform offline to contain cyberattack",
+          "link": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
+          "source": "BleepingComputer",
+          "published": "2026-10-20T03:51:13+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+          "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+          "source": "The Hacker News",
+          "published": "2026-10-20T02:32:13+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Popular WordPress SEO Plugin Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
+          "link": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+          "source": "The Hacker News",
+          "published": "2026-10-20T01:28:47+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Microsoft fixes game, app crashes caused by recent Windows update",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
+          "source": "BleepingComputer",
+          "published": "2026-10-19T23:55:23+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Inside the Underground Market for Know Your Client Services",
+          "link": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
+          "source": "BleepingComputer",
+          "published": "2026-10-19T23:00:10+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 31
+}
