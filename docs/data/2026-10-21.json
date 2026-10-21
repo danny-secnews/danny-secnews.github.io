@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-10-21T10:59:40.375191+09:00",
+  "date": "2026-10-21",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "F5 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72224",
+          "source": "KISA 보안공지",
+          "published": "2026-10-20T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Plex 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72223",
+          "source": "KISA 보안공지",
+          "published": "2026-10-20T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Adobe 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72222",
+          "source": "KISA 보안공지",
+          "published": "2026-10-20T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Vercel 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72221",
+          "source": "KISA 보안공지",
+          "published": "2026-10-20T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "사이버이메지네이션 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72220",
+          "source": "KISA 보안공지",
+          "published": "2026-10-20T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "정부, 산업기술 유출 차단 총력…산업부에 특별사법경찰 도입 추진",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208964",
+          "source": "데일리시큐",
+          "published": "2026-10-20T17:00:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한병도 의원 “은행 해킹 피해 입증 책임 고객에게 떠넘겨선 안 돼”…피해자 보호 입법 추진",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208962",
+          "source": "데일리시큐",
+          "published": "2026-10-20T16:43:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "할리스, 비밀번호 포함 멤버십 개인정보 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208936",
+          "source": "데일리시큐",
+          "published": "2026-10-20T11:25:57+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[강릉 ITS 세계총회] 이지트래픽, ‘광역 긴급차량 우선신호’로 골든타임 확보 나서",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146558",
+          "source": "보안뉴스",
+          "published": "2026-10-21T09:44:41+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "그룹아이비, 유로폴 공조로 글로벌 랜섬웨어 ‘킬섹’ 인프라 압류",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146571",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-21T09:40:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“보안 관제부터 사고 보상까지 한 번에” SK쉴더스-DB손보-이노비즈 3자 협력",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146570",
+          "source": "보안뉴스",
+          "published": "2026-10-21T09:29:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제55화 '랜섬웨어 감염'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208969",
+          "source": "데일리시큐",
+          "published": "2026-10-21T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "지멘스 소프트웨어 센터 취약점 실제 공격에 악용, 정상 프로그램으로 악성코드 실행",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208971",
+          "source": "데일리시큐",
+          "published": "2026-10-21T00:08:33+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-110936"
+          ]
+        },
+        {
+          "title": "에브리존, 인도네시아 보안 행사 참가...안티랜섬웨어 ‘화이트디펜더’ 기술 소개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208965",
+          "source": "데일리시큐",
+          "published": "2026-10-20T17:38:18+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국내 해운·철강사 12곳 공격했던 해커, 탈취 데이터 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146549",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-20T16:24:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "인섹시큐리티, 옵스왓 '메타디펜더 이더' v3.3.0 출시...LLM 보안 분석 기능 강화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208956",
+          "source": "데일리시큐",
+          "published": "2026-10-20T15:51:08+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[은행이 뚫린다] 전리품이자 핵심 도구 된 API 키... AI 시대 예상 못한 레거시 시스템 위험 노출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146540",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-20T14:16:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "나루씨큐리티, AI 웹 방어 서비스 '제로티카 라이트 웹' 출시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208945",
+          "source": "데일리시큐",
+          "published": "2026-10-20T14:08:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "전세계 중소중견기업(SMB) 86%, 최근 1년간 최소 한 차례 사이버 사고 경험",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208942",
+          "source": "데일리시큐",
+          "published": "2026-10-20T13:32:08+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "에스투더블유, 글로벌 보안 학술행사 'VB 2026'서 공급망 공격 대응 전략 발표",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208941",
+          "source": "데일리시큐",
+          "published": "2026-10-20T13:07:39+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
+          "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T10:01:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Zeabur shutting down after second security breach in two months",
+          "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T04:33:02+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+          "link": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+          "source": "The Hacker News",
+          "published": "2026-10-21T00:32:27+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-0257"
+          ]
+        },
+        {
+          "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
+          "link": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+          "source": "The Hacker News",
+          "published": "2026-10-20T23:07:17+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+          "link": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+          "source": "The Hacker News",
+          "published": "2026-10-20T20:06:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+          "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+          "source": "The Hacker News",
+          "published": "2026-10-20T16:11:45+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-110936"
+          ]
+        },
+        {
+          "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+          "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+          "source": "BleepingComputer",
+          "published": "2026-10-20T06:49:48+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
+          "link": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T09:46:42+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
+          "link": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T05:56:43+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T03:11:03+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+          "link": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+          "source": "The Hacker News",
+          "published": "2026-10-21T02:09:53+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+          "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+          "source": "The Hacker News",
+          "published": "2026-10-21T00:38:52+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 32
+}
