@@ -1,7 +1,16 @@
 {
  "version": 1,
- "latest": "2026-10-21",
+ "latest": "2026-10-22",
  "items": [
+  {
+   "cat": "daily",
+   "date": "2026-10-22",
+   "title": "2026년 10월 22일 (목)",
+   "url": "daily/2026-10-22.html",
+   "headline": "[PHP2Shell 파장] 서버 장악하고 개인정보 빼간다... 예상 공격 시나리오",
+   "total": 35,
+   "major": 25
+  },
   {
    "cat": "daily",
    "date": "2026-10-21",

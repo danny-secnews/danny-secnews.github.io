@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-10-22T10:49:31.931075+09:00",
+  "date": "2026-10-22",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "PHP 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72227",
+          "source": "KISA 보안공지",
+          "published": "2026-10-21T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Ahsay 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72226",
+          "source": "KISA 보안공지",
+          "published": "2026-10-21T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "[PHP2Shell 파장] 서버 장악하고 개인정보 빼간다... 예상 공격 시나리오",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146628",
+          "source": "보안뉴스",
+          "published": "2026-10-22T10:35:43+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618"
+          ]
+        },
+        {
+          "title": "연세대 포털 서비스 해킹... 재학생 등 1만여명 개인정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146629",
+          "source": "보안뉴스",
+          "published": "2026-10-22T10:16:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "손명수 의원, 롯데케미칼 퇴직자 5,022명 정보 유출 지적…일부 통지도 누락",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208983",
+          "source": "데일리시큐",
+          "published": "2026-10-22T09:03:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "조정훈 의원, 공공기관 개인정보 유출 배상책임 강조…사이버보험 의무화 제안",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208982",
+          "source": "데일리시큐",
+          "published": "2026-10-22T08:49:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "강준현 의원, 개인정보 유출 조사 전 자료 은닉·폐기 ‘제재 공백’ 지적",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208981",
+          "source": "데일리시큐",
+          "published": "2026-10-22T08:40:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보처리방침이 공급망 공격에 쓰인다?... 수탁사 공개 의무 ‘갑론을박’",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146604",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-22T07:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "키즈 플랫폼 ‘놀이의발견’, 관리 시스템 해킹으로 회원 개인정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146600",
+          "source": "보안뉴스",
+          "published": "2026-10-21T16:38:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"수조원 들인 방패인데 테스트는 0회?\"… 유럽 뒤흔든 '종이 보안'의 파멸",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146585",
+          "source": "보안뉴스",
+          "published": "2026-10-21T11:38:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "내 명함이 남의 명함첩에... 리멤버 개인정보 일부 유출에 개보위 조사 착수",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146582",
+          "source": "보안뉴스",
+          "published": "2026-10-21T11:34:30+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[PHP2Shee 파장] 세계 웹사이트 70% 쓰는 PHP, 치명적 보안 결함 발견... 정부·기업 '비상'",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146621",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-22T09:30:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[긴급] PHP2Shell 취약점에 웹서버 보안 비상…긴급 설정 점검과 업데이트 필수",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208979",
+          "source": "데일리시큐",
+          "published": "2026-10-22T08:14:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[K-Security in Japan] 스패로우, ‘공급망 보안’으로 일본 정조준",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146617",
+          "source": "보안뉴스",
+          "published": "2026-10-22T07:11:20+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[긴급] PHP ‘PHP2Shell’ 치명적 취약점 2건…인증 없이 원격 코드 실행 위험",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208978",
+          "source": "데일리시큐",
+          "published": "2026-10-21T23:41:39+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618",
+            "CVE-2026-109619"
+          ]
+        },
+        {
+          "title": "랜섬웨어 조직 킬섹 국제 공조 수사로 서버 차단 및 용의자 검거",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208975",
+          "source": "데일리시큐",
+          "published": "2026-10-21T14:39:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "체크멀, 안티 랜섬웨어 솔루션 AWS 마켓플레이스 등록",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146580",
+          "source": "보안뉴스",
+          "published": "2026-10-21T11:05:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[강릉 ITS 세계총회] 이지트래픽, ‘광역 긴급차량 우선신호’로 골든타임 확보 나서",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146558",
+          "source": "보안뉴스",
+          "published": "2026-10-21T09:44:41+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "그룹아이비, 유로폴 공조로 글로벌 랜섬웨어 ‘킬섹’ 인프라 압류",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146571",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-21T09:40:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“보안 관제부터 사고 보상까지 한 번에” SK쉴더스-DB손보-이노비즈 3자 협력",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146570",
+          "source": "보안뉴스",
+          "published": "2026-10-21T09:29:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제55화 '랜섬웨어 감염'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208969",
+          "source": "데일리시큐",
+          "published": "2026-10-21T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "농협·수협·산림조합 정보보호 예산 집행 부진",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208984",
+          "source": "데일리시큐",
+          "published": "2026-10-22T09:13:38+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[K-Security in Japan] ICTK, 독보적 하드웨어 보안 기술로 일본 시장 진출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146619",
+          "source": "보안뉴스",
+          "published": "2026-10-22T08:04:04+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
+          "link": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
+          "source": "BleepingComputer",
+          "published": "2026-10-22T03:34:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+          "link": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+          "source": "The Hacker News",
+          "published": "2026-10-22T03:01:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T23:07:05+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618",
+            "CVE-2026-109619"
+          ]
+        },
+        {
+          "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
+          "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
+          "source": "The Hacker News",
+          "published": "2026-10-21T18:01:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA: SafePay ransomware hit over 600 critical infrastructure orgs",
+          "link": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T17:36:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
+          "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
+          "source": "BleepingComputer",
+          "published": "2026-10-21T10:01:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
+          "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-22T07:16:26+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
+          "link": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+          "source": "BleepingComputer",
+          "published": "2026-10-22T06:43:27+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Lazarus hackers use post-quantum cryptography for malware delivery",
+          "link": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+          "source": "BleepingComputer",
+          "published": "2026-10-22T05:31:48+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
+          "link": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
+          "source": "The Hacker News",
+          "published": "2026-10-22T03:57:34+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+          "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+          "source": "The Hacker News",
+          "published": "2026-10-22T01:33:47+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI agents disabled safety monitoring, one lied about it",
+          "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+          "source": "BleepingComputer",
+          "published": "2026-10-22T01:26:53+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 35
+}
