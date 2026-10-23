@@ -1,0 +1,355 @@
+{
+  "generated_at": "2026-10-23T10:55:11.410697+09:00",
+  "date": "2026-10-23",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "GitLab 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72232",
+          "source": "KISA 보안공지",
+          "published": "2026-10-22T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Fortinet 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72231",
+          "source": "KISA 보안공지",
+          "published": "2026-10-22T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "PHP 보안취약점(PHP2Shell) 관련 기업 보안 대응 수칙",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72230",
+          "source": "KISA 보안공지",
+          "published": "2026-10-22T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "[단독 후속] 네트워크·보안기업 태광네트웍정보, 해킹·정보유출 공식 인정…해킹조직 263GB 탈취 주장, 공공과 기업 공급망 보안 파장 확산 우려",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209013",
+          "source": "데일리시큐",
+          "published": "2026-10-23T09:51:02+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "연세대, 연세포털서비스 해킹으로 개인정보 유출…학번·연락처·로그인 IP 등 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209012",
+          "source": "데일리시큐",
+          "published": "2026-10-23T09:11:38+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, PHP 보안 취약점 악용한 대규모 개인정보 유출 위험 경고",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209011",
+          "source": "데일리시큐",
+          "published": "2026-10-23T09:04:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, PHP 보안 취약점 관련 개인정보 유출 예방조치 당부 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12588",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-22T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국립항공박물관 회원 1만1,029명 개인정보 유출…교육 안내번호로 스미싱 문자까지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209010",
+          "source": "데일리시큐",
+          "published": "2026-10-22T18:37:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융권 정보보호 인력 9.6% 불과…CISO 4명 중 1명은 다른 업무 겸직",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209009",
+          "source": "데일리시큐",
+          "published": "2026-10-22T18:28:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[PHP2Shell 파장] “개인정보 유출 우려... DB 접근권한 최소화 시급”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146663",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-22T17:01:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“메일 서버 뚫렸다” 한국국제교류재단, 구독자 22만여 건 정보 유출 조사 착수",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146650",
+          "source": "보안뉴스",
+          "published": "2026-10-22T15:03:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "놀유니버스, 시스템 취약점 뚫려 임직원 개인정보 유출 “비정상 접근 차단”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146646",
+          "source": "보안뉴스",
+          "published": "2026-10-22T15:01:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "조달청, 불공정 조달행위 업체 35곳 제재 통해 87억원 부당이득 환수",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146643",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-22T14:14:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "손명수 의원, 롯데케미칼 퇴직자 5,022명 정보 유출 지적…일부 통지도 누락",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208983",
+          "source": "데일리시큐",
+          "published": "2026-10-22T09:03:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "조정훈 의원, 공공기관 개인정보 유출 배상책임 강조…사이버보험 의무화 제안",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208982",
+          "source": "데일리시큐",
+          "published": "2026-10-22T08:49:51+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "파이오링크, PHP 치명적 취약점 ‘PHP2Shell’ 긴급 점검 페이지 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209015",
+          "source": "데일리시큐",
+          "published": "2026-10-23T10:51:46+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-1096"
+          ]
+        },
+        {
+          "title": "엔키화이트햇, PHP2Shell 취약점 무료 진단 스캐너·분석 보고서 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209014",
+          "source": "데일리시큐",
+          "published": "2026-10-23T10:48:48+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618",
+            "CVE-2026-109619"
+          ]
+        },
+        {
+          "title": "PHP 10년 레거시 흔든 ‘PHP2셸’... 엔키화이트햇, 무료 점검 체계 가동",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146686",
+          "source": "보안뉴스",
+          "published": "2026-10-23T10:13:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[K-Security in Japan] 쿤텍, 10여 차례 발품으로 찾은 파트너십… 일본 AI·공급망 보안 정조준",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146677",
+          "source": "보안뉴스",
+          "published": "2026-10-23T01:35:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[K-Security in Japan] 플레인비트, 디지털 포렌식·침해사고 대응 기술로 일본 보안 시장 노린다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146671",
+          "source": "보안뉴스",
+          "published": "2026-10-23T01:29:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[PHP2Shell 파장] 금융권, PHP 취약점 긴급 보안권고... “금융사 웹 API 즉각 점검해야”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146664",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-22T17:29:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“로그인 없이 개발 서버 뚫린다” 깃랩, CVSS 10점 치명적 결함 긴급 패치",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146661",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-22T16:53:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "티오리 “PHP 취약점, 패치가 최선”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146655",
+          "source": "보안뉴스",
+          "published": "2026-10-22T15:43:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[K-Security in Japan] 스틸리언, 모바일 웹 보안 기술력 앞세워 일본 금융·기업 정조준",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146649",
+          "source": "보안뉴스",
+          "published": "2026-10-22T14:59:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "팔로알토 “세계 PHP 인스턴스 2200만 개 노출... AI 기반 선제 방어 시급”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146640",
+          "source": "보안뉴스",
+          "published": "2026-10-22T13:41:56+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618",
+            "CVE-2026-109619"
+          ]
+        },
+        {
+          "title": "플렉스 미디어 서버 취약점 4개 연계 공격 확산…CISA, 실제 악용 경고",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208991",
+          "source": "데일리시큐",
+          "published": "2026-10-22T12:33:30+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "미 CISA·FBI “SafePay 랜섬웨어, 전 세계 600개 이상 조직 공격”…핵심 인프라 보안 비상",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=208990",
+          "source": "데일리시큐",
+          "published": "2026-10-22T12:24:56+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Railway warns devs to rotate secrets after potential breach",
+          "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+          "source": "BleepingComputer",
+          "published": "2026-10-23T06:25:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Capcom confirms data breach affecting 11.7 million accounts",
+          "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+          "source": "BleepingComputer",
+          "published": "2026-10-23T05:22:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+          "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+          "source": "The Hacker News",
+          "published": "2026-10-23T04:05:17+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-23T02:18:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
+          "link": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
+          "source": "BleepingComputer",
+          "published": "2026-10-22T17:27:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+          "link": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+          "source": "The Hacker News",
+          "published": "2026-10-22T13:21:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+          "link": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+          "source": "BleepingComputer",
+          "published": "2026-10-23T04:12:51+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+          "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+          "source": "The Hacker News",
+          "published": "2026-10-23T04:05:35+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
+          "link": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
+          "source": "The Hacker News",
+          "published": "2026-10-23T03:12:43+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
+          "link": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
+          "source": "The Hacker News",
+          "published": "2026-10-23T02:45:44+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
+          "link": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+          "source": "The Hacker News",
+          "published": "2026-10-23T02:01:53+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
+          "link": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
+          "source": "The Hacker News",
+          "published": "2026-10-23T01:12:31+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 39
+}
