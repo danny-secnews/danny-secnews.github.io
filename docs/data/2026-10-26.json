@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-10-26T10:40:29.513192+09:00",
+  "date": "2026-10-26",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "롯데 모바일 상품권 ‘기프티엘’ 털렸다... 1만8359명 계좌번호 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146737",
+          "source": "보안뉴스",
+          "published": "2026-10-26T09:29:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "대한전기학회, 개인정보 유출 사고 후속조치 완료…회원 계좌번호 전량 파기",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209057",
+          "source": "데일리시큐",
+          "published": "2026-10-26T03:09:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "놀유니버스, 외부 해킹으로 임직원 개인정보 유출…시스템 보안 취약점 악용",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209056",
+          "source": "데일리시큐",
+          "published": "2026-10-26T02:47:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국국제교류재단, 홍보메일 시스템 해킹…개인정보 유출 정황 확인",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209055",
+          "source": "데일리시큐",
+          "published": "2026-10-26T02:42:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "티켓베이 해킹으로 회원 1만6천명 개인정보 유출…공연·주문내역까지 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209054",
+          "source": "데일리시큐",
+          "published": "2026-10-26T02:33:47+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 국립 부경대 학생·직원 5,108명 개인정보 유출…공격자 금전 요구로 사고 인지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209051",
+          "source": "데일리시큐",
+          "published": "2026-10-25T16:28:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "더존비즈온, APO 백업서버 해킹 공지…암호화 데이터 외부 반출 정황",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209050",
+          "source": "데일리시큐",
+          "published": "2026-10-25T15:44:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국제예술대학교 홈페이지 해킹…회원 개인정보 유출, 웹셸 악성파일 발견",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209045",
+          "source": "데일리시큐",
+          "published": "2026-10-25T13:03:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "모바일 쿠폰 플랫폼 ‘기프티엘’ 해킹…고객 이름·휴대전화·이메일·환불 계좌번호 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209044",
+          "source": "데일리시큐",
+          "published": "2026-10-25T12:51:49+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제56화 '랜섬웨어 감염'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209041",
+          "source": "데일리시큐",
+          "published": "2026-10-26T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[CISO 보안칼럼] 해킹은 첨단을 달리고 있는데, 문서로 대응하는 금융권 보안",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209040",
+          "source": "데일리시큐",
+          "published": "2026-10-26T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이혁중 CISO 칼럼] AI 에이전트 시대의 확장형 제로 트러스트 전략",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209039",
+          "source": "데일리시큐",
+          "published": "2026-10-26T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "노드.js만 패치하면 끝?…브로틀리 쓰는 파이썬·프록시도 점검 필요",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209049",
+          "source": "데일리시큐",
+          "published": "2026-10-25T15:34:52+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-111497"
+          ]
+        },
+        {
+          "title": "최윤성 경기대 교수 “AI 공급망 보안, 사람의 문서 검증에서 기계 기반 자동 검증으로 전환해야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209046",
+          "source": "데일리시큐",
+          "published": "2026-10-25T14:21:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“공장 멈추는 랜섬웨어 막는다” 안랩, 일본서 IT·OT 통합 CPS 솔루션 제시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146728",
+          "source": "보안뉴스",
+          "published": "2026-10-25T11:45:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "로그프레소, ‘PHP2셸’ 진단 앱 출시... “외부 노출 넘어 내부망까지 전수조사”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146733",
+          "source": "보안뉴스",
+          "published": "2026-10-26T09:32:30+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "에프원시큐리티, ‘PHP2셸’ 차단 검증 완료... 무료 웹 진단 도구 배포",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146735",
+          "source": "보안뉴스",
+          "published": "2026-10-26T09:27:15+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "모두스원, 원격접근제어에 AI 접목한 ‘GATEONE AI V3.0’ 글로벌 출시…기존 접근제어 한계 극복",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209053",
+          "source": "데일리시큐",
+          "published": "2026-10-26T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "“AI 도입에서 AI 보증 시대로”…한국정보보호학회, ‘2026 AI x RMF 워크숍’ 성황리 개최",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209048",
+          "source": "데일리시큐",
+          "published": "2026-10-25T14:41:19+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "최영철 SGA솔루션즈 대표 “한국형 AI 보안체계, 부처별 중복 없애고 공통 통제기준 마련해야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209047",
+          "source": "데일리시큐",
+          "published": "2026-10-25T14:33:21+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "가짜 윈도우 경고 사기, 클라우드플레어 페이지 2만 개 동원",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146444",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-25T11:16:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+          "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+          "source": "The Hacker News",
+          "published": "2026-10-26T02:19:46+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618",
+            "CVE-2026-109619"
+          ]
+        },
+        {
+          "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+          "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+          "source": "The Hacker News",
+          "published": "2026-10-26T02:44:09+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+          "link": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+          "source": "BleepingComputer",
+          "published": "2026-10-26T00:49:38+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+          "link": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+          "source": "The Hacker News",
+          "published": "2026-10-25T15:54:29+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 25
+}
