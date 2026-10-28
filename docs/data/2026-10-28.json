@@ -1,0 +1,340 @@
+{
+  "generated_at": "2026-10-28T11:34:18.481697+09:00",
+  "date": "2026-10-28",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "스타트업 금융 플랫폼 ‘고위드’ 해킹... 고객사 정보 유출 비상",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146826",
+          "source": "보안뉴스",
+          "published": "2026-10-28T11:32:34+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "빗썸 사내 그룹웨어 해킹…임직원 개인정보 유출, 회원정보도 조사",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209105",
+          "source": "데일리시큐",
+          "published": "2026-10-28T11:08:35+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "대신증권 이어 미래에셋자산운용·빗썸서도 침해사고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146818",
+          "source": "보안뉴스",
+          "published": "2026-10-28T10:50:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "대신증권, 개인정보 3만3490명 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146806",
+          "source": "보안뉴스",
+          "published": "2026-10-28T09:21:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융권 AI 해킹 여파... 정부, IDC 등 민간 주요 정보통신 기반시설 보안 취약점 점검",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146804",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-28T08:46:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "브라질 전자상거래 결제 플랫폼 해킹, 고객 카드번호·보안코드 탈취",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209096",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:41:34+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "덴마크 코펜하겐대, 개인정보 52만5천 명 유출 이어 또 해킹…행정시스템 긴급 중단",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209093",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:40:27+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KB국민은행 개인정보 유출 추가 확인…119명→2210명 확산",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146769",
+          "source": "보안뉴스",
+          "published": "2026-10-27T11:51:18+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "(인사발령) 개인정보보호위원회 인사발령('26.10.28.자) N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12596",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-28T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[정보보안 연재소설-로그아웃되지 않는 밤] 제58화 '국경 없는 개인정보'",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209043",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "이지서티, K공사에 임직원 참여형 개인정보 비식별 체계 구축",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209086",
+          "source": "데일리시큐",
+          "published": "2026-10-27T13:18:50+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "이지서티, 공공기관에 ‘사용자 중심’ 개인정보 비식별 체계 구축",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146768",
+          "source": "보안뉴스",
+          "published": "2026-10-27T11:22:37+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "국내 AI·IT·보안 담당자 10명 중 9명 ‘섀도우 AI’ 쓴다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146824",
+          "source": "보안뉴스",
+          "published": "2026-10-28T11:21:03+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "파이오링크, EDR과 MDR 결합한 보안관제 제공",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146823",
+          "source": "보안뉴스",
+          "published": "2026-10-28T11:19:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SGA솔루션즈, ‘PHP2Shell’ 서버 침투 막는 ‘가상패치’ 긴급 지원",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146807",
+          "source": "보안뉴스",
+          "published": "2026-10-28T09:29:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“조작된 HTTP 요청 위협”... 이스트시큐리티, ‘PHP2Shell’ 스캐너 배포",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146805",
+          "source": "보안뉴스",
+          "published": "2026-10-28T09:29:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "하시코프 콘술 접근통제 우회 취약점…서비스 인증서·개인키 노출 위험",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209103",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:54:43+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-105765"
+          ]
+        },
+        {
+          "title": "예스위키 고위험 취약점 공개…내부망·클라우드 인증정보 노출 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209102",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:53:20+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-116827"
+          ]
+        },
+        {
+          "title": "구글 클라우드 AI 연결도구에 치명적 취약점…서버 파일 탈취·변조 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209099",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:48:44+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-93328"
+          ]
+        },
+        {
+          "title": "AI 코딩 에이전트 오픈핸즈에 치명적 취약점…인증 없이 관리자 권한 명령 실행 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209098",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:45:49+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-112346"
+          ]
+        },
+        {
+          "title": "전 세계 99개국 냉장·냉동 제어시스템 약 1만3천 건 인터넷 노출, 식품·의약품 공급망 보안 비상",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209097",
+          "source": "데일리시큐",
+          "published": "2026-10-28T08:44:20+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "오픈패널 고위험 취약점 공개, 로그인 없이 다른 고객의 분석정보 조회 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209100",
+          "source": "데일리시큐",
+          "published": "2026-10-27T19:06:36+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-116818"
+          ]
+        },
+        {
+          "title": "한국인터넷진흥원, 선박 사이버 침해 대응 성능 시험장 공개",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209091",
+          "source": "데일리시큐",
+          "published": "2026-10-27T17:11:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“선박 OT 해킹 사각지대 없앤다”... 한화손보-싸이터, 해양 사이버보험 MOU",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146796",
+          "source": "보안뉴스",
+          "published": "2026-10-27T16:55:51+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+          "link": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+          "source": "BleepingComputer",
+          "published": "2026-10-28T08:35:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "UNM Health ransomware attack disrupts patient care, surgeries",
+          "link": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
+          "source": "BleepingComputer",
+          "published": "2026-10-28T07:07:34+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
+          "link": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+          "source": "BleepingComputer",
+          "published": "2026-10-28T01:15:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+          "link": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+          "source": "The Hacker News",
+          "published": "2026-10-27T22:59:09+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-86950"
+          ]
+        },
+        {
+          "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+          "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+          "source": "CISA Advisories",
+          "published": "2026-10-27T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2023-4863",
+            "CVE-2026-16436",
+            "CVE-2026-16437"
+          ]
+        },
+        {
+          "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "source": "CISA Advisories",
+          "published": "2026-10-27T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-48356"
+          ]
+        },
+        {
+          "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
+          "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+          "source": "BleepingComputer",
+          "published": "2026-10-27T19:36:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Energy giant ENGIE discloses data breach affecting customers",
+          "link": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
+          "source": "BleepingComputer",
+          "published": "2026-10-27T18:25:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-10-27T17:20:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "University of Copenhagen data breach exposes data of 525,000 people",
+          "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+          "source": "BleepingComputer",
+          "published": "2026-10-27T07:20:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
+          "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
+          "source": "BleepingComputer",
+          "published": "2026-10-27T06:08:28+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
+          "source": "BleepingComputer",
+          "published": "2026-10-28T07:43:27+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 36
+}
