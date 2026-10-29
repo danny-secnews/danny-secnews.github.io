@@ -1,0 +1,383 @@
+{
+  "generated_at": "2026-10-29T11:50:15.571412+09:00",
+  "date": "2026-10-29",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "Gunra 랜섬웨어 분석 보고서",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000127&searchWrd=&menuNo=205021&pageIndex=1&categoryCode=&nttId=72242",
+          "source": "KISA 보고서·가이드",
+          "published": "2026-10-28T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Weaxor 랜섬웨어 분석 보고서",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000127&searchWrd=&menuNo=205021&pageIndex=1&categoryCode=&nttId=72241",
+          "source": "KISA 보고서·가이드",
+          "published": "2026-10-28T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "JFrog 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72246",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Splunk 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72245",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Cisco 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72244",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Redis 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72243",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "개인정보위, 안전조치 의무 위반 2개 사업자에 38억 8,500만 원 과징금 부과 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12600",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "마이리얼트립 해킹으로 개인정보 유출…여권번호·암호화된 비밀번호까지 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209150",
+          "source": "데일리시큐",
+          "published": "2026-10-29T08:06:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "호텔스토리 해킹으로 고객 예약정보·카드정보 유출…숙소 계정 탈취 정황",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209143",
+          "source": "데일리시큐",
+          "published": "2026-10-28T19:46:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "인도 최대 국영은행 SBI, 고객정보 3897건 다크웹 유출…해킹 경로 '미궁'",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146620",
+          "source": "보안뉴스",
+          "published": "2026-10-28T17:11:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 슈피겐코리아, 해외 고객관리 시스템 해킹…고객 최대 182명·임직원 264명 정보 조회",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209136",
+          "source": "데일리시큐",
+          "published": "2026-10-28T16:22:10+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "프랑스 에너지 대기업 엔지, 협력사 시스템 해킹으로 고객정보 유출…계약번호까지 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209119",
+          "source": "데일리시큐",
+          "published": "2026-10-28T14:01:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "스타트업 금융 플랫폼 ‘고위드’ 해킹... 고객사 정보 유출 비상",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146826",
+          "source": "보안뉴스",
+          "published": "2026-10-28T11:32:34+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "빗썸 사내 그룹웨어 해킹…임직원 개인정보 유출, 회원정보도 조사",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209105",
+          "source": "데일리시큐",
+          "published": "2026-10-28T11:08:35+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "대신증권 이어 미래에셋자산운용·빗썸서도 침해사고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146818",
+          "source": "보안뉴스",
+          "published": "2026-10-28T10:50:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "대신증권, 개인정보 3만3490명 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146806",
+          "source": "보안뉴스",
+          "published": "2026-10-28T09:21:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융권 AI 해킹 여파... 정부, IDC 등 민간 주요 정보통신 기반시설 보안 취약점 점검",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146804",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-10-28T08:46:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "고객센터 개인정보, 불필요한 조회·이용과 일괄 노출 막도록 보호 강화 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12601",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[김정덕의 지속가능 보안-13] 방패에서 생명체로 진화하는 안티프래질 보안",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146859",
+          "source": "보안뉴스",
+          "published": "2026-10-29T11:40:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[긴급] 주니퍼 네트워크 장비서 치명적 취약점 18건 발견…인증 없이 최고 관리자 권한 탈취 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209152",
+          "source": "데일리시큐",
+          "published": "2026-10-29T11:39:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[보안칼럼] PHP 런타임이 '잘못된 순간'에 메모리를 소진할 때: PHP2Shell 취약점이 남긴 과제",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209149",
+          "source": "데일리시큐",
+          "published": "2026-10-29T07:55:38+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618",
+            "CVE-2026-109619"
+          ]
+        },
+        {
+          "title": "\"북한 해커조직, 개발자 인증정보 탈취 후 악성코드 유포…소프트웨어 공급망 위협\"",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209147",
+          "source": "데일리시큐",
+          "published": "2026-10-28T23:00:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "AI 활용 신종 랜섬웨어 조직 ‘n0n’, 14개국 23개 조직 공격 정황…몸값 요구액 4천억원 육박",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209146",
+          "source": "데일리시큐",
+          "published": "2026-10-28T20:11:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "일본 GMO인터넷, 고객 서버 해킹에 100만 달러 현상금…해커는 80억 엔 요구",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209145",
+          "source": "데일리시큐",
+          "published": "2026-10-28T20:05:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "퓨쳐시스템, PHP 치명적 취약점 공개 하루 만에 긴급 패치 배포",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209139",
+          "source": "데일리시큐",
+          "published": "2026-10-28T18:17:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[금융사 해킹 분석] 은행·증권·보험·가상자산까지, 사고 원인 살펴보니",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209137",
+          "source": "데일리시큐",
+          "published": "2026-10-28T17:54:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"GPT와 음성 대화했을 뿐인데\"… 목소리 톤·억양까지 털리는 '생체 데이터' 유출 주의보",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146836",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-28T14:48:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SGA솔루션즈, PHP 보안 취약점 ‘PHP2Shell’ 대응 가상패치 지원",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209130",
+          "source": "데일리시큐",
+          "published": "2026-10-28T14:48:16+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109618"
+          ]
+        },
+        {
+          "title": "레닥소 웹사이트 관리도구에 치명적 인증 우회 취약점 공개, 비밀번호 없이 관리자 권한 탈취 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209123",
+          "source": "데일리시큐",
+          "published": "2026-10-28T14:14:24+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-117532"
+          ]
+        },
+        {
+          "title": "파이오링크, 멀티 EDR 기반 MDR 서비스로 엔드포인트 보안관제 확대",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209122",
+          "source": "데일리시큐",
+          "published": "2026-10-28T14:12:05+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+          "link": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+          "source": "The Hacker News",
+          "published": "2026-10-29T03:08:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Sony ISP subsidiary data breach exposes 2.5 million customer records",
+          "link": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
+          "source": "BleepingComputer",
+          "published": "2026-10-29T01:45:47+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+          "link": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+          "source": "The Hacker News",
+          "published": "2026-10-29T01:02:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
+          "link": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
+          "source": "BleepingComputer",
+          "published": "2026-10-29T01:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+          "link": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+          "source": "The Hacker News",
+          "published": "2026-10-28T21:48:03+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-101767"
+          ]
+        },
+        {
+          "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "source": "CISA Advisories",
+          "published": "2026-10-28T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-41709",
+            "CVE-2026-46300"
+          ]
+        },
+        {
+          "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
+          "link": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
+          "source": "BleepingComputer",
+          "published": "2026-10-28T18:43:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
+          "link": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
+          "source": "The Hacker News",
+          "published": "2026-10-28T16:13:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
+          "link": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+          "source": "The Hacker News",
+          "published": "2026-10-28T15:04:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+          "link": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+          "source": "The Hacker News",
+          "published": "2026-10-28T14:42:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+          "link": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+          "source": "BleepingComputer",
+          "published": "2026-10-28T08:35:51+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "UNM Health ransomware attack disrupts patient care, surgeries",
+          "link": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
+          "source": "BleepingComputer",
+          "published": "2026-10-28T07:07:34+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 42
+}
