@@ -1,0 +1,415 @@
+{
+  "generated_at": "2026-10-30T11:55:28.947438+09:00",
+  "date": "2026-10-30",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "Palo Alto Networks 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72252",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Synology 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72251",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Samba 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72250",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Juniper Networks 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72249",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Linux 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72248",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Adobe 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72247",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "JFrog 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72246",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Splunk 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72245",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Cisco 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72244",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Redis 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72243",
+          "source": "KISA 보안공지",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "국내외 가상자산거래소 노린 해킹, 금전 피해로 이어졌다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146893",
+          "source": "보안뉴스",
+          "published": "2026-10-30T11:30:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "미 재무부, 북한 IT 인력 위장 취업·가상자산 세탁 조직 제재",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209180",
+          "source": "데일리시큐",
+          "published": "2026-10-30T11:07:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "기프티엘 해킹 여파 롯데잇츠까지…멤버십 쿠폰 이용 차질에 보상 조치",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209176",
+          "source": "데일리시큐",
+          "published": "2026-10-30T07:44:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, 안전조치 의무 위반 2개 사업자에 38억 8,500만 원 과징금 부과 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12600",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-10-29T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "끝없이 이어지는 개인정보 유출... SK플래닛, 고객 환급계좌까지 털렸다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146878",
+          "source": "보안뉴스",
+          "published": "2026-10-29T22:32:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SK플래닛 기프티콘, 개인정보 유출 정황…쿠폰 일련번호·환급계좌도 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209175",
+          "source": "데일리시큐",
+          "published": "2026-10-29T21:16:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "빗썸 해킹, 고객 6,444명·임직원 715명 개인정보 유출…주민번호·신분증 사본 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209174",
+          "source": "데일리시큐",
+          "published": "2026-10-29T20:23:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "진에어, 1454명 개인정보 유출…“비밀번호·결제내역 등은 안전”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146877",
+          "source": "보안뉴스",
+          "published": "2026-10-29T18:55:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국전력공사, 개인정보 추가 유출 확인…퇴직자 65명 이름·전화번호 등 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209173",
+          "source": "데일리시큐",
+          "published": "2026-10-29T18:46:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "진에어, 회원정보 조회 API 공격으로 1,454명 개인정보 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209172",
+          "source": "데일리시큐",
+          "published": "2026-10-29T18:38:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 미트리, 개인정보 유출…주민등록번호·계좌정보까지 유출 가능성",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209171",
+          "source": "데일리시큐",
+          "published": "2026-10-29T17:20:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "대교·영훈의료재단 해킹으로 개인정보 84만여 명 유출…개인정보위, 과징금 총 38억 8,500만 원 부과",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209167",
+          "source": "데일리시큐",
+          "published": "2026-10-29T16:10:50+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "“단말부터 네트워크까지 한 번에”... 세이퍼존, 베트남서 올인원 AI 보안 솔루션 선봬",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146890",
+          "source": "보안뉴스",
+          "published": "2026-10-30T10:56:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "AI 활용 신종 해킹도구 ‘NIK C2’ 발견…탈취정보 실시간 분석에 랜섬웨어 기능까지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209179",
+          "source": "데일리시큐",
+          "published": "2026-10-30T10:41:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[긴급] 팔로알토 방화벽 관리화면 노린 ‘PHP2Shell’ 실제 공격 확인…기업·공공기관 긴급 점검 필요",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209178",
+          "source": "데일리시큐",
+          "published": "2026-10-30T10:33:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "피앤피시큐어, FISCON 2026서 ‘비주얼 해킹’ 막는 페이스락커 공개",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146887",
+          "source": "보안뉴스",
+          "published": "2026-10-30T10:31:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "일본 이메일 발송 서비스 아라라 해킹당해 고객 이메일 주소 301만 건 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209177",
+          "source": "데일리시큐",
+          "published": "2026-10-30T10:29:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"냉장고 문 열었더니 인터넷 털렸다?\"… 스마트 가전 노린 '홈 네트워크 해킹' 실태",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146888",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-30T10:20:06+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 미래에셋생명 유출사고, ‘웹셸’ 업로드 취약점 때문?",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146869",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-30T09:56:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국 기업 노린 해커 ‘hize_hacker’ 정체 드러나…병원·제약사·대부업체 해킹 정황",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209168",
+          "source": "데일리시큐",
+          "published": "2026-10-29T16:31:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "공개 도구 그대로 쓴 셸 탈취 시도... 브로틀리 압축 결함, 실제 공격 시작",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146853",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-29T15:01:27+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-111497"
+          ]
+        },
+        {
+          "title": "금융보안원 “북한 IP 탐지됐지만 북한 해킹 단정 못해”…최근 금융권 침해사고와 연관성 확인 안 돼",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209162",
+          "source": "데일리시큐",
+          "published": "2026-10-29T14:17:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "S2W “데이터 갈취 범죄 조직 ‘하이즈_해커’, SGI서울보증 공격했던 ‘건라’와 제휴 가능성”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146863",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-29T14:01:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "오라클 EBS 치명적 결함, 패치 일주일 만에 공격자 움직임",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146856",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-10-29T13:06:54+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-101767"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Binance probes potential $5.8 billion crypto-theft hack",
+          "link": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+          "source": "BleepingComputer",
+          "published": "2026-10-30T07:45:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Japan Airlines suffers third-party data breach exposing passenger info",
+          "link": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
+          "source": "BleepingComputer",
+          "published": "2026-10-30T07:08:04+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+          "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+          "source": "BleepingComputer",
+          "published": "2026-10-30T06:47:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
+          "source": "BleepingComputer",
+          "published": "2026-10-30T03:38:26+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-20127"
+          ]
+        },
+        {
+          "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+          "link": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+          "source": "The Hacker News",
+          "published": "2026-10-30T00:57:05+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-98432"
+          ]
+        },
+        {
+          "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "source": "CISA Advisories",
+          "published": "2026-10-29T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-97229"
+          ]
+        },
+        {
+          "title": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
+          "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
+          "source": "BleepingComputer",
+          "published": "2026-10-29T20:10:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+          "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+          "source": "The Hacker News",
+          "published": "2026-10-29T19:44:46+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+          "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+          "source": "The Hacker News",
+          "published": "2026-10-29T18:05:39+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-97229"
+          ]
+        },
+        {
+          "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+          "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+          "source": "The Hacker News",
+          "published": "2026-10-29T15:22:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
+          "source": "BleepingComputer",
+          "published": "2026-10-30T08:35:52+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
+          "link": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+          "source": "BleepingComputer",
+          "published": "2026-10-30T07:09:24+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 46
+}
