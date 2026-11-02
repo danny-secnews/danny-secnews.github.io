@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-11-02T11:43:36.523187+09:00",
+  "date": "2026-11-02",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": []
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "G마켓, 고객 개인정보 유출 정황 공식 인정…“피해 금액 전액 선제 보상”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209243",
+          "source": "데일리시큐",
+          "published": "2026-11-02T09:01:27+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "림스연구소 해킹 확인, 회원 개인정보·검사 이용정보 유출 우려",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209242",
+          "source": "데일리시큐",
+          "published": "2026-11-02T02:05:06+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "하이타이 해킹으로 16만3,743명 개인정보 유출, 피해 고객에 2만원 할인쿠폰 보상",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209241",
+          "source": "데일리시큐",
+          "published": "2026-11-02T01:57:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "티앤에스엔지니어링, 더존비즈온 해킹으로 개인정보 유출 가능성 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209240",
+          "source": "데일리시큐",
+          "published": "2026-11-02T01:32:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국킨볼협회, 더존비즈온 해킹 관련 전·현직 직원 개인정보 유출 가능성 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209239",
+          "source": "데일리시큐",
+          "published": "2026-11-02T01:26:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "중부발전서비스도 더존비즈온 해킹 영향…임직원 개인정보 유출 가능성",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209238",
+          "source": "데일리시큐",
+          "published": "2026-11-02T01:19:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "더존비즈온 해킹 여파, 에스티유니타스도 개인정보 유출 우려…주민번호·계좌정보 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209237",
+          "source": "데일리시큐",
+          "published": "2026-11-02T01:14:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국재무설계협회도 더존비즈온 해킹 영향…개인정보 유출 가능성 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209236",
+          "source": "데일리시큐",
+          "published": "2026-11-02T01:02:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "발렉스서비스, 더존비즈온 해킹 여파…거래처 개인정보 유출 가능성 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209235",
+          "source": "데일리시큐",
+          "published": "2026-11-02T00:56:09+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한화엔진, 외부 서버 비인가 접근으로 개인정보 1,903건 유출 가능성…임직원·협력업체 정보 영향 우려",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209226",
+          "source": "데일리시큐",
+          "published": "2026-11-01T16:47:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "해외송금 핀테크 모인 해킹, 고객 신분증·주민등록번호·계좌정보 등 개인정보 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209225",
+          "source": "데일리시큐",
+          "published": "2026-11-01T16:28:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "케이옥션 개인정보 유출 가능성 공지…더존 서비스 해지 6개월 지나도 데이터 남아",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209224",
+          "source": "데일리시큐",
+          "published": "2026-11-01T16:23:37+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[이슈칼럼] AI가 정찰을 끝낼 때, 방어자는 아직 자산을 세고 있다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146928",
+          "source": "보안뉴스",
+          "published": "2026-11-02T11:41:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "오픈소스 코드 저장소 관리 플랫폼 기티아, 관리자 계정 탈취 가능한 취약점 주의",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209247",
+          "source": "데일리시큐",
+          "published": "2026-11-02T10:48:15+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-120263"
+          ]
+        },
+        {
+          "title": "“AI 도입 시 권한 통제 누락되면 기밀 유출” 인젠트, 보안 기반 AX 전략 제시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146924",
+          "source": "보안뉴스",
+          "published": "2026-11-02T10:30:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[보안칼럼] 금융권 연쇄 침해사고가 드러낸 API 보안의 사각지대",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209244",
+          "source": "데일리시큐",
+          "published": "2026-11-02T10:19:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이혁중 CISO 칼럼] AI 보안? 새로운 보안이 아닌 기존 보안의 확장",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209228",
+          "source": "데일리시큐",
+          "published": "2026-11-02T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "바이낸스 탈취 자산, 북한이 털었던 비트겟 탈취 자산과 섞였다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146912",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-01T14:00:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "소프트웨어 공급망 노리는 보안 위협…레드햇 Konflux CI서 고위험 취약점 발견",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209223",
+          "source": "데일리시큐",
+          "published": "2026-11-01T11:53:03+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-114217",
+            "CVE-2026-116964",
+            "CVE-2026-117681"
+          ]
+        },
+        {
+          "title": "워드프레스 심플폼에 치명적 보안 취약점…로그인 없이 악성파일 업로드 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209222",
+          "source": "데일리시큐",
+          "published": "2026-11-01T11:48:04+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-118235"
+          ]
+        },
+        {
+          "title": "워드프레스 쇼핑몰 플러그인에 CVSS 9.8 취약점…국내 쇼핑몰도 긴급 점검 필요",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209221",
+          "source": "데일리시큐",
+          "published": "2026-11-01T11:41:28+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-109220"
+          ]
+        },
+        {
+          "title": "워드프레스 프로젝트 매니저 취약점 공개…원격코드실행 위험에 긴급 업데이트",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209220",
+          "source": "데일리시큐",
+          "published": "2026-11-01T11:31:11+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-116512"
+          ]
+        },
+        {
+          "title": "[한국정보보호학회 칼럼] AI 시대의 금융보안, 망분리에서 제로트러스트로",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146911",
+          "source": "보안뉴스",
+          "published": "2026-11-01T10:41:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "커서 마켓에 변조된 ‘클로드 코드’ 올라와... 최대 5000명 설치",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146915",
+          "source": "보안뉴스",
+          "published": "2026-11-02T11:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+          "link": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+          "source": "BleepingComputer",
+          "published": "2026-11-02T04:57:53+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+          "link": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+          "source": "BleepingComputer",
+          "published": "2026-11-02T00:11:21+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
+          "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+          "source": "BleepingComputer",
+          "published": "2026-11-01T22:53:11+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+          "link": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+          "source": "The Hacker News",
+          "published": "2026-11-01T17:51:31+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+          "link": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+          "source": "The Hacker News",
+          "published": "2026-11-01T16:25:40+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+          "link": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+          "source": "The Hacker News",
+          "published": "2026-11-01T16:03:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+          "link": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+          "source": "The Hacker News",
+          "published": "2026-11-01T16:02:58+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 31
+}
