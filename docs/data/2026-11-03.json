@@ -1,0 +1,351 @@
+{
+  "generated_at": "2026-11-03T13:00:25.902826+09:00",
+  "date": "2026-11-03",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "TeamViewer 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72264",
+          "source": "KISA 보안공지",
+          "published": "2026-11-02T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Ivanti 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72263",
+          "source": "KISA 보안공지",
+          "published": "2026-11-02T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "WordPress 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72262",
+          "source": "KISA 보안공지",
+          "published": "2026-11-02T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "브라질 최대 거래소 메르카도 비트코인 해킹…4,000만 달러 이상 비정상 이동 정황",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209278",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:01:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[신간] 해커 출신 변호사가 해부한 개인정보보호법",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146962",
+          "source": "보안뉴스",
+          "published": "2026-11-03T10:24:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한양증권, 외부 그룹웨어 해킹으로 개인정보 유출…주민번호·계좌번호 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209277",
+          "source": "데일리시큐",
+          "published": "2026-11-03T10:15:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“보안 미루다 진짜 회사가 망했다”... 대만 제이버 폐업이 남긴 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146950",
+          "source": "보안뉴스",
+          "published": "2026-11-03T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "전북문화관광재단, 개인정보 유출 공지…주민번호·급여정보 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209275",
+          "source": "데일리시큐",
+          "published": "2026-11-03T00:35:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "일본 @코스메 해킹, 300만명 개인정보 유출…피부·모발 유형까지 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209273",
+          "source": "데일리시큐",
+          "published": "2026-11-02T23:52:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국공항보안, 더존비즈온 해킹으로 개인정보 유출 가능성…채용 사칭 악성메일도 주의",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209270",
+          "source": "데일리시큐",
+          "published": "2026-11-02T21:31:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국기원, 더존비즈온 해킹으로 개인정보 유출 가능성 공지…주민번호·계좌정보 포함 우려",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209269",
+          "source": "데일리시큐",
+          "published": "2026-11-02T21:25:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "하이브, 전자결재·비용처리시스템 해킹…주민번호·의료정보 등 개인정보 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209268",
+          "source": "데일리시큐",
+          "published": "2026-11-02T21:11:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "백종원 더본코리아, 더존비즈온 해킹으로 임직원 주민번호·고객상담 정보 유출 가능성",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209267",
+          "source": "데일리시큐",
+          "published": "2026-11-02T21:00:40+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[더존비즈온 사태] “계약 끝난 지 11개월 지났는데”…성현회계법인 개인정보 유출 가능성",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146941",
+          "source": "보안뉴스",
+          "published": "2026-11-02T17:02:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[더존비즈온 사태] 급여 계좌부터 가족 주민번호까지... 더존비즈온 해킹이 ‘중대 사고’인 이유",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146948",
+          "source": "보안뉴스",
+          "published": "2026-11-02T17:01:39+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "기업망서 해킹도구 사용 217만건 탐지…코발트 스트라이크 등 상위",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209283",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:52:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "링크시스 E8450 공유기에 최고위험 취약점 주의…인증 없이 원격 공격 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209282",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:43:01+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-120283"
+          ]
+        },
+        {
+          "title": "AI가 내부망 해킹 지휘…도구 설치 3~4일 만에 도메인 관리자 계정 탈취",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209280",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:14:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“IT 지원팀입니다”... 팀즈로 직원 PC 넘겨받고 인증서 허점으로 관리자 권한까지",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146959",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-03T11:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "블록체인 분석 회사가 뚫렸다... 체이널리시스, ‘공격형 에이전트’ 침입에 고객 정보 노출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146913",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-03T07:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "이반티 VPN, 기존 패치 적용했어도 추가 업데이트 필수…제로데이 연쇄 악용 확인",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209274",
+          "source": "데일리시큐",
+          "published": "2026-11-02T23:59:04+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "일본 기업용 이메일 발송 서비스 ‘아라라 메시지', 약 7,700만건 유출로 확대...380개사 피해",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209272",
+          "source": "데일리시큐",
+          "published": "2026-11-02T23:43:04+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“AI 도구와 공급망 결함에 방어 시차 붕괴”... OWASP, 10월 보안사고 톺아봐",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146938",
+          "source": "보안뉴스",
+          "published": "2026-11-02T17:15:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "체크멀, 신성이넥스와 손잡고 데이터센터 안티랜섬웨어 공급 확대",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209256",
+          "source": "데일리시큐",
+          "published": "2026-11-02T15:05:28+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“자연어로 묻고 맥락까지 파악” 시큐아이, AI 위협 인텔리전스 서비스 ‘STIC’",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146933",
+          "source": "보안뉴스",
+          "published": "2026-11-02T14:23:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "그룹아이비, 인터폴 아프리카 사이버 범죄 소탕 작전 지원",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209250",
+          "source": "데일리시큐",
+          "published": "2026-11-02T13:47:16+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "오픈소스 코드 저장소 관리 플랫폼 기티아, 관리자 계정 탈취 가능한 취약점 주의",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209247",
+          "source": "데일리시큐",
+          "published": "2026-11-02T10:48:15+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-120263"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+          "link": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+          "source": "BleepingComputer",
+          "published": "2026-11-03T00:01:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-02T21:47:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Synology warns of C3RB3R ransomware attacks targeting NAS devices",
+          "link": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-02T20:28:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-02T18:33:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+          "link": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+          "source": "BleepingComputer",
+          "published": "2026-11-03T06:40:14+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+          "link": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+          "source": "BleepingComputer",
+          "published": "2026-11-03T04:00:45+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
+          "link": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+          "source": "BleepingComputer",
+          "published": "2026-11-03T03:16:34+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+          "link": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+          "source": "The Hacker News",
+          "published": "2026-11-03T01:57:56+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+          "link": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+          "source": "The Hacker News",
+          "published": "2026-11-03T00:50:26+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+          "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+          "source": "BleepingComputer",
+          "published": "2026-11-03T00:03:07+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+          "link": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+          "source": "The Hacker News",
+          "published": "2026-11-02T23:46:05+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers disrupt refrigeration systems at European supermarkets",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+          "source": "BleepingComputer",
+          "published": "2026-11-02T23:28:39+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 39
+}
