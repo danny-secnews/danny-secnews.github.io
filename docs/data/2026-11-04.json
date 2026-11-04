@@ -1,0 +1,369 @@
+{
+  "generated_at": "2026-11-04T12:13:50.224443+09:00",
+  "date": "2026-11-04",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "Synology NAS 대상 랜섬웨어 공격 주의 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72267",
+          "source": "KISA 보안공지",
+          "published": "2026-11-03T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Apache 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72270",
+          "source": "KISA 보안공지",
+          "published": "2026-11-03T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "지란지교소프트 제품 보안 조치 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72269",
+          "source": "KISA 보안공지",
+          "published": "2026-11-03T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Linux 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72268",
+          "source": "KISA 보안공지",
+          "published": "2026-11-03T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Termix 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72266",
+          "source": "KISA 보안공지",
+          "published": "2026-11-03T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "[더존비즈온 사태] 유출 의심 기업 현황",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146975",
+          "source": "보안뉴스",
+          "published": "2026-11-04T09:36:28+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한국전력 출자기업 켑코이에스, 주민등록번호 등 개인정보 유출 가능성 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209299",
+          "source": "데일리시큐",
+          "published": "2026-11-03T20:43:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "외교부, ‘대통령 개인정보 유출’ 개인정보위에 신고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146981",
+          "source": "보안뉴스",
+          "published": "2026-11-03T17:40:26+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "대통령 개인정보 유출 파문... ‘바이러스 토탈’ 이용 행태 도마 위",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146973",
+          "source": "보안뉴스",
+          "published": "2026-11-03T15:35:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "이 대통령, ‘사이버 보안 차르’ 검토 지시…공군 1호기 168명 개인정보 유출 수사",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209298",
+          "source": "데일리시큐",
+          "published": "2026-11-03T15:31:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한양증권 개인정보 유출…‘다우오피스’ 그룹웨어가 원인",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146970",
+          "source": "보안뉴스",
+          "published": "2026-11-03T14:15:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "하이브, 두 차례 해킹으로 개인정보 유출... 카드번호·여권번호 등 포함",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146968",
+          "source": "보안뉴스",
+          "published": "2026-11-03T14:05:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[전승재의 Law & Privacy] 금융고객 정보유출 분야 행정처분의 현재와 미래",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146957",
+          "source": "보안뉴스",
+          "published": "2026-11-03T13:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "브라질 최대 거래소 메르카도 비트코인 해킹…4,000만 달러 이상 비정상 이동 정황",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209278",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:01:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[신간] 해커 출신 변호사가 해부한 개인정보보호법",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146962",
+          "source": "보안뉴스",
+          "published": "2026-11-03T10:24:29+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한양증권, 외부 그룹웨어 해킹으로 개인정보 유출…주민번호·계좌번호 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209277",
+          "source": "데일리시큐",
+          "published": "2026-11-03T10:15:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“보안 미루다 진짜 회사가 망했다”... 대만 제이버 폐업이 남긴 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146950",
+          "source": "보안뉴스",
+          "published": "2026-11-03T08:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "“웹 침해가 모바일 피싱 뇌관 된다”... 에버스핀, 신종 악성 앱 유포 체인 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146998",
+          "source": "보안뉴스",
+          "published": "2026-11-04T11:11:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“협력사 PC 뚫어 선박 SW 변조”... KISA, 부산서 해운 침해대응 모의훈련",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146985",
+          "source": "보안뉴스",
+          "published": "2026-11-04T09:37:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“어느 나라도 혼자선 못 지켜” KrCERT, 30돌 맞아 아태 20개국 전문가 부산 집결",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146983",
+          "source": "보안뉴스",
+          "published": "2026-11-03T17:59:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“패치했다고 끝 아니다... 공격자 백도어 상정한 침해 조사가 먼저”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146971",
+          "source": "보안뉴스",
+          "published": "2026-11-03T16:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "레드햇, AI 시대 취약점 폭증 속에서도 '책임 있는 조율과 신뢰' 강조",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209295",
+          "source": "데일리시큐",
+          "published": "2026-11-03T15:10:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KISA, 국내 해운사·관계 기관과 선박 사이버 침해사고 합동 모의훈련 실시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209285",
+          "source": "데일리시큐",
+          "published": "2026-11-03T15:05:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“AI가 사이버 공격 경제학 뒤바꿨다…사고 대응 의사결정 체계 전환점”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146972",
+          "source": "보안뉴스",
+          "published": "2026-11-03T15:04:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "해커 조직, 반년 숨어 있다 주말에 러시아 통계청 서버 파괴 주장",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146960",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-03T15:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KISA, KrCERT/CC 설립 30주년 기념 아태·국제 침해사고대응팀 협의회 부산 연례총회 개최",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209291",
+          "source": "데일리시큐",
+          "published": "2026-11-03T14:13:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "기업망서 해킹도구 사용 217만건 탐지…코발트 스트라이크 등 상위",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209283",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:52:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "링크시스 E8450 공유기에 최고위험 취약점 주의…인증 없이 원격 공격 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209282",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:43:01+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-120283"
+          ]
+        },
+        {
+          "title": "AI가 내부망 해킹 지휘…도구 설치 3~4일 만에 도메인 관리자 계정 탈취",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209280",
+          "source": "데일리시큐",
+          "published": "2026-11-03T11:14:54+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+          "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+          "source": "BleepingComputer",
+          "published": "2026-11-04T06:28:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+          "link": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+          "source": "The Hacker News",
+          "published": "2026-11-04T03:16:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "UK school estate hit by 3AM ransomware in suspected AI-assisted attack",
+          "link": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
+          "source": "BleepingComputer",
+          "published": "2026-11-03T23:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "source": "CISA Advisories",
+          "published": "2026-11-03T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-119977"
+          ]
+        },
+        {
+          "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+          "link": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+          "source": "The Hacker News",
+          "published": "2026-11-03T20:18:20+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Harvard University data breach exposed info of 851,000 accounts",
+          "link": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
+          "source": "BleepingComputer",
+          "published": "2026-11-03T19:53:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
+          "link": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
+          "source": "The Hacker News",
+          "published": "2026-11-03T16:43:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+          "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+          "source": "The Hacker News",
+          "published": "2026-11-03T14:34:41+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-58115"
+          ]
+        },
+        {
+          "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+          "link": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+          "source": "The Hacker News",
+          "published": "2026-11-03T14:34:37+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+          "source": "BleepingComputer",
+          "published": "2026-11-04T07:18:50+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+          "link": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+          "source": "BleepingComputer",
+          "published": "2026-11-04T05:05:50+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
+          "link": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
+          "source": "BleepingComputer",
+          "published": "2026-11-04T03:51:04+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 41
+}
