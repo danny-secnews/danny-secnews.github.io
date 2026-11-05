@@ -1,0 +1,330 @@
+{
+  "generated_at": "2026-11-05T12:42:23.238537+09:00",
+  "date": "2026-11-05",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "WordPress 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72278",
+          "source": "KISA 보안공지",
+          "published": "2026-11-04T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "美 CISA 발표 주요 Exploit 정보공유(Update. 2026-11-04)",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72277",
+          "source": "KISA 보안공지",
+          "published": "2026-11-04T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "[더존비즈온 사태] 11월5일 유출 의심 기업 현황... 서울시 육아종합지원센터 유출 가능성",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147019",
+          "source": "보안뉴스",
+          "published": "2026-11-05T10:22:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "‘아마데우스 유출’ NH여행으로 피해 확산... 고객 항공예약번호 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147014",
+          "source": "보안뉴스",
+          "published": "2026-11-05T09:25:42+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "하버드대학교 해킹 피해 85만 건 확인…기부 내역·가족정보까지 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209311",
+          "source": "데일리시큐",
+          "published": "2026-11-04T19:34:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "미국 교육서비스 기업 해킹…130만 명 이상 개인정보 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209310",
+          "source": "데일리시큐",
+          "published": "2026-11-04T19:26:48+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "NH농협여행, 항공예약 개인정보 유출 가능성 공지…아마데우스 시스템 해킹, 최대 3년간 비인가 접근 의혹",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209309",
+          "source": "데일리시큐",
+          "published": "2026-11-04T19:02:03+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "광주여성가족재단, 주민번호·소득정보 유출 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209308",
+          "source": "데일리시큐",
+          "published": "2026-11-04T18:56:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“삭제 안 한 백업 데이터, 해킹에 노출”…서울시육아종합지원센터 유출 가능성 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209307",
+          "source": "데일리시큐",
+          "published": "2026-11-04T18:22:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[더존비즈온 사태] 유출 의심 기업 현황",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146975",
+          "source": "보안뉴스",
+          "published": "2026-11-04T09:36:28+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "기술환경 변화 등을 알기 쉽게 반영한 안전조치 안내서 개정 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12609",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-11-05T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "‘가짜 기지국’ 탐지 사각지대 찾는다... KAIST, ‘데빌레이’ 개발",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147000",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-11-04T12:00:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "‘니케’ 런처 해킹 공식 사과... “게임 외 2차 피해 접수할 것”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147025",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-05T11:43:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "퓨쳐시스템, Node.js 취약점 4건 대응…위가디아 통합관리 제품 업데이트 제공",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209312",
+          "source": "데일리시큐",
+          "published": "2026-11-05T00:32:16+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-111497",
+            "CVE-2026-105482",
+            "CVE-2026-105483",
+            "CVE-2026-106069"
+          ]
+        },
+        {
+          "title": "“게임만 켰을 뿐인데 PC 원격 제어”... 인기 게임 ‘니케’ 런처 해킹 원인은 공급망 공격",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147009",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-04T18:03:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "빗썸·한양증권 해킹, ‘다우오피스’ 제로데이 공격에 당했다... 접근통제 미흡 취약점이 화근",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147008",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-04T16:22:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[카드뉴스] \"20분 만에 63억 달러 증발\"… 바이낸스 턴 배후는 북한? '다중 접점 침투' 실태",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147004",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-04T14:45:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "씨큐비스타, 복호화 없이 C2 통신 잡는 '패킷사이버 EVA' 출시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209305",
+          "source": "데일리시큐",
+          "published": "2026-11-04T14:23:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "위협 탐색부터 브리핑까지 AI 일원화... 모니터랩 ‘AI랩스 v6.0’ 출시",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147002",
+          "source": "보안뉴스",
+          "published": "2026-11-04T14:05:41+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“웹 침해가 모바일 피싱 뇌관 된다”... 에버스핀, 신종 악성 앱 유포 체인 경고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146998",
+          "source": "보안뉴스",
+          "published": "2026-11-04T11:11:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“협력사 PC 뚫어 선박 SW 변조”... KISA, 부산서 해운 침해대응 모의훈련",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146985",
+          "source": "보안뉴스",
+          "published": "2026-11-04T09:37:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금보원, CSP 안전성 대표 평가 고도화한다... 내년부터 적용",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147023",
+          "source": "보안뉴스",
+          "published": "2026-11-05T11:49:22+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[김정덕의 지속가능 보안-14] ‘아름다운 보안’을 찾아서",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147024",
+          "source": "보안뉴스",
+          "published": "2026-11-05T11:33:17+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "협력업체 거쳐 은행 계좌로 직행... 프랑스 아르케아, 1억3300만달러 규모 탈취 인정",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147013",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-05T10:55:07+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+          "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+          "source": "BleepingComputer",
+          "published": "2026-11-05T05:58:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
+          "link": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+          "source": "BleepingComputer",
+          "published": "2026-11-05T04:05:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+          "link": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+          "source": "The Hacker News",
+          "published": "2026-11-04T23:27:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-04T21:11:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+          "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+          "source": "The Hacker News",
+          "published": "2026-11-04T16:46:15+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-58868"
+          ]
+        },
+        {
+          "title": "Vercel rolls out new protection against stolen session cookie attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-05T06:31:18+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Cyberattack disrupts blood storage refrigeration systems in France",
+          "link": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+          "source": "BleepingComputer",
+          "published": "2026-11-05T03:02:56+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+          "link": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+          "source": "The Hacker News",
+          "published": "2026-11-05T02:00:46+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+          "link": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+          "source": "The Hacker News",
+          "published": "2026-11-05T02:00:38+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "NIKKE PC game launcher hacked to spread remote access, data-stealing malware",
+          "link": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
+          "source": "BleepingComputer",
+          "published": "2026-11-05T01:58:46+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+          "link": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+          "source": "The Hacker News",
+          "published": "2026-11-05T01:06:43+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "mSecure password manager hack prompts password reset warnings",
+          "link": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+          "source": "BleepingComputer",
+          "published": "2026-11-05T01:00:18+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 36
+}
