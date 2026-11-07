@@ -1,0 +1,377 @@
+{
+  "generated_at": "2026-11-07T12:11:20.646709+09:00",
+  "date": "2026-11-07",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "인피니트헬스케어 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72289",
+          "source": "KISA 보안공지",
+          "published": "2026-11-07T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenSSH 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72288",
+          "source": "KISA 보안공지",
+          "published": "2026-11-07T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "enspirit 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72287",
+          "source": "KISA 보안공지",
+          "published": "2026-11-06T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Apache 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72286",
+          "source": "KISA 보안공지",
+          "published": "2026-11-06T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "엠투소프트 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72285",
+          "source": "KISA 보안공지",
+          "published": "2026-11-06T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "에스티이지 제품 보안 조치 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72284",
+          "source": "KISA 보안공지",
+          "published": "2026-11-06T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "미래에셋증권도 침해... 고객-임직원 3만9000명 정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147084",
+          "source": "보안뉴스",
+          "published": "2026-11-07T09:44:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 부산외대 평생교육원 업무용 PC 해킹, 주민등록번호·계좌번호 등 개인정보 유출 우려",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209357",
+          "source": "데일리시큐",
+          "published": "2026-11-07T08:36:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "세무·경리 플랫폼 '자비스' 해킹, 기업 대표자 주민번호부터 급여·결제·공동인증서 정보까지 유출 우려",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209356",
+          "source": "데일리시큐",
+          "published": "2026-11-07T08:25:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 회원 11만명 넘는 대한치과위생사협회, 개인정보 유출 사고 발생…회원 대상 비밀번호 변경 긴급 권고",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209355",
+          "source": "데일리시큐",
+          "published": "2026-11-07T08:13:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "전북 콘텐츠융합진흥원, 개인정보 유출 정황…더존비즈온 해킹 영향",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209353",
+          "source": "데일리시큐",
+          "published": "2026-11-07T07:49:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "‘사칭’이라던 자비스, 실제 뚫렸다... 공동인증서·결제 정보 등 유출 확인",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147080",
+          "source": "보안뉴스",
+          "published": "2026-11-07T00:43:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KAC공항서비스, 더존비즈온 해킹으로 개인정보 유출 가능성 안내",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209352",
+          "source": "데일리시큐",
+          "published": "2026-11-07T00:07:10+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 한국공인중개사협회 교육원 서버 해킹 당해…유출 범위 조사중",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209351",
+          "source": "데일리시큐",
+          "published": "2026-11-06T23:57:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "전남정보문화산업진흥원, 개인정보 유출 가능성 공지…더존비즈온 해킹 영향",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209350",
+          "source": "데일리시큐",
+          "published": "2026-11-06T23:28:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "노원문화재단, 주민등록번호·계좌번호 등 개인정보 유출 가능성 공지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209349",
+          "source": "데일리시큐",
+          "published": "2026-11-06T23:13:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 이토마토 해킹으로 회원 개인정보 유출, 뉴스토마토·토마토TV 로그인 취약점 악용",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209348",
+          "source": "데일리시큐",
+          "published": "2026-11-06T22:58:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "'아파트너' 해킹으로 입주민 휴대전화번호 유출…12일 지나서야 사고 인지",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209347",
+          "source": "데일리시큐",
+          "published": "2026-11-06T22:17:36+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[배종찬의 보안 빅데이터] 대통령 전용기를 뒤흔든 보안 명단 유출 사태",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147044",
+          "source": "보안뉴스",
+          "published": "2026-11-07T08:30:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "시큐리티스코어카드, AI 공급망 보안 평가 ‘TPRM 벤치마크’ 출시",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209344",
+          "source": "데일리시큐",
+          "published": "2026-11-06T21:47:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KISA, 대전센터 개소로 전국 16개 지역정보보호지원센터 구축 완료",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209343",
+          "source": "데일리시큐",
+          "published": "2026-11-06T16:17:35+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA, 워드프레스 핵심 결함 실제 악용 공식 확인",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147020",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-06T15:11:05+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-119977"
+          ]
+        },
+        {
+          "title": "에브리존 “화이트디펜더 리눅스서버, 국내 최초 GS인증 1등급 획득”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209340",
+          "source": "데일리시큐",
+          "published": "2026-11-06T14:36:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "AI 때문에 보안 위협 감당 못할 속도로 증가... 탐지에서 대응, 우선순위 설정까지 데이터독 웨비나에서 해법 찾는다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147069",
+          "source": "보안뉴스",
+          "published": "2026-11-06T11:51:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "PC·윈도우 이어 리눅스까지... 에브리존, ‘화이트디펜더’ 전 제품군 GS 1등급",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147062",
+          "source": "보안뉴스",
+          "published": "2026-11-06T10:48:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "‘활동 중’ 신생 랜섬웨어 조직만 59곳 식별... “AI로 급증”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147040",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-06T07:45:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "이후기 건양대 교수, 한국융합보안학회 14대 회장 선출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147083",
+          "source": "보안뉴스",
+          "published": "2026-11-07T00:51:52+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "최정식 한국정보처리학회 신임 회장 내년 1월 임기 시작",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147082",
+          "source": "보안뉴스",
+          "published": "2026-11-07T00:36:07+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "인간 빠진 피지컬 AI 시대, 안전의 정의는?... 한국정보처리학회, 연례 학술행사 ‘ACK 2026’ 개최",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147076",
+          "source": "보안뉴스",
+          "published": "2026-11-07T00:36:02+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "한화비전, 클라우드 서비스 4종 SOC2 Type2 검증 통과",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209346",
+          "source": "데일리시큐",
+          "published": "2026-11-06T21:59:37+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+          "link": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+          "source": "BleepingComputer",
+          "published": "2026-11-07T07:27:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-07T02:04:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+          "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+          "source": "The Hacker News",
+          "published": "2026-11-07T01:08:38+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+          "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+          "source": "The Hacker News",
+          "published": "2026-11-07T00:21:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Chainalysis says breach exposed credentials for all customers",
+          "link": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/",
+          "source": "BleepingComputer",
+          "published": "2026-11-06T23:17:07+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+          "link": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+          "source": "BleepingComputer",
+          "published": "2026-11-06T21:37:22+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+          "link": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+          "source": "The Hacker News",
+          "published": "2026-11-06T21:06:43+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-83844"
+          ]
+        },
+        {
+          "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "source": "CISA Advisories",
+          "published": "2026-11-06T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-19868"
+          ]
+        },
+        {
+          "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+          "link": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+          "source": "The Hacker News",
+          "published": "2026-11-06T17:04:49+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-07T09:00:55+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+          "link": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+          "source": "BleepingComputer",
+          "published": "2026-11-07T05:24:19+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Fake security tools on GitHub push backdoors and infostealers",
+          "link": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+          "source": "BleepingComputer",
+          "published": "2026-11-07T03:46:52+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 42
+}
