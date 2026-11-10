@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-11-10T13:46:30.484032+09:00",
+  "date": "2026-11-10",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "SonicWall 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72290",
+          "source": "KISA 보안공지",
+          "published": "2026-11-09T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "줌줌투어, 해킹·개발 오류로 개인정보 유출…여행 일정·동행자 정보까지 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209422",
+          "source": "데일리시큐",
+          "published": "2026-11-10T06:35:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "김재기 S2W 이사 “AI 공격 예방, 공격자가 보는 외부 접점부터 살펴야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209420",
+          "source": "데일리시큐",
+          "published": "2026-11-10T00:26:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, 민간과 함께 인공지능 침해 위협에 대응하는 보호체계 정착방안 모색 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12629",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-11-09T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위 “선제적 보호 투자, 과징금 최대 40% 감경…고의·중과실은 제외”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209416",
+          "source": "데일리시큐",
+          "published": "2026-11-09T23:36:10+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "임종철 단장 “공공 개인정보보호, 법 준수 점검 넘어 실제 유출 원인 개선해야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209415",
+          "source": "데일리시큐",
+          "published": "2026-11-09T23:05:27+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위 “반복·중대 개인정보 유출 시 매출액 최대 10% 과징금”…CEO·CPO 책임 경영 강화",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209414",
+          "source": "데일리시큐",
+          "published": "2026-11-09T22:54:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“AI 시대 개인정보 보호, CPO·CEO 함께 결정해야”... 개인정보 정책 포럼 개최",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147117",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-11-09T17:27:16+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[기획연재 7] 1억 건 유출부터 매출 10% 과징금까지… 보안 사고가 기업과 CEO에게 청구하는 현실적 계산서",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209407",
+          "source": "데일리시큐",
+          "published": "2026-11-09T16:09:50+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“안경인 줄 알았는데 몰래 촬영” 스마트 글래스 사생활 침해 경보",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147107",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-11-09T11:35:24+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "‘내 개인정보를 지키는 꿀팁’.. 개인정보위, 숏폼 콘텐츠 공모전 개최 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12644",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-11-10T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "[패널토론] AI 해킹 시대 개인정보보호, “기본 통제 강화하고 예방 노력 제대로 평가해야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209421",
+          "source": "데일리시큐",
+          "published": "2026-11-10T00:49:50+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "박찬암 스틸리언 대표 “AI 공격 속도 따라잡으려면 탐지·패치·복구까지 자동화”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209419",
+          "source": "데일리시큐",
+          "published": "2026-11-10T00:15:32+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "파수 AI, '랩소디 에코'에 북미 CMVP 암호 모듈 탑재...K-방산 수출 보안 지원",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209425",
+          "source": "데일리시큐",
+          "published": "2026-11-10T13:08:13+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "파수AI, ‘미국 진출 필수 조건’ CMVP 인증 암호 모듈로 방산 기업 지원",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147136",
+          "source": "보안뉴스",
+          "published": "2026-11-10T12:49:08+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[배종찬의 보안 빅데이터] 금융해킹·정보유출은 과연 누구의 책임인가",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147128",
+          "source": "보안뉴스",
+          "published": "2026-11-10T10:24:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "공개 두 달여 만에 실제 공격... 지멘스 산업용 컴퓨터 속 ‘노드레드’ 결함에 봇·웹셸",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=146992",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-10T10:09:53+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-58115"
+          ]
+        },
+        {
+          "title": "LGU+, 통신사 첫 車 사이버보안 최고 수준 ‘ML3’ 획득",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147121",
+          "source": "보안뉴스",
+          "published": "2026-11-10T09:53:45+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "월패드 서버부터 생활 앱까지... 아파트 일상 파고드는 사이버 위협",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147120",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-09T19:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "출시 2주 앞둔 ‘GTA 6’ 미끼로... 가짜 유출 빌드·PC판·모바일판 사기 사이트 우후죽순",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147061",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-09T17:01:52+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "쿤텍, 공급망 보안 플랫폼 '이지즈 v3.0' GS인증 1등급 획득",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209409",
+          "source": "데일리시큐",
+          "published": "2026-11-09T16:27:41+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "MDS스피어-쿤텍, 소프트웨어 공급망 보안 사업 협력 맞손",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209406",
+          "source": "데일리시큐",
+          "published": "2026-11-09T16:07:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "에이아이딥-액슬레이터, 보안 강화형 AI 전환 솔루션 공동 개발 나선다",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209403",
+          "source": "데일리시큐",
+          "published": "2026-11-09T15:14:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "해커 서버까지 선제 접근... 일본, 100억엔 긴급 사이버 대책에 ‘톱건’팀 11월 말 출범",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147089",
+          "source": "보안뉴스",
+          "published": "2026-11-09T14:14:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[디지털 문단속] #8. 안방 대화가 서버로?... AI 스피커 음성 통제 가이드",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147113",
+          "source": "보안뉴스",
+          "published": "2026-11-09T13:27:03+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+          "link": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T08:52:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
+          "link": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T07:09:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+          "link": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T06:26:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "York University breach exposed personal information dating to 2007",
+          "link": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T06:22:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+          "source": "The Hacker News",
+          "published": "2026-11-10T02:51:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Binance denies data breach after alleged ShinyHunters claims",
+          "link": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T01:12:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T01:04:57+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-123158"
+          ]
+        },
+        {
+          "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "source": "CISA Advisories",
+          "published": "2026-11-09T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-102895",
+            "CVE-2026-116779"
+          ]
+        },
+        {
+          "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+          "link": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T03:32:42+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+          "link": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T02:50:32+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+          "link": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+          "source": "The Hacker News",
+          "published": "2026-11-10T02:36:28+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.",
+          "link": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T00:05:15+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 37
+}
