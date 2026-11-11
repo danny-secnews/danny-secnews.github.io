@@ -1,0 +1,359 @@
+{
+  "generated_at": "2026-11-11T11:59:07.792621+09:00",
+  "date": "2026-11-11",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "SAP 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72295",
+          "source": "KISA 보안공지",
+          "published": "2026-11-10T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "IBM 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72294",
+          "source": "KISA 보안공지",
+          "published": "2026-11-10T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "WordPress 플러그인 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72293",
+          "source": "KISA 보안공지",
+          "published": "2026-11-10T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "SonicWall 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72292",
+          "source": "KISA 보안공지",
+          "published": "2026-11-10T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "OWASP 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72291",
+          "source": "KISA 보안공지",
+          "published": "2026-11-10T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "조달청, 평가위원 189명 얼굴 사진 유출... AI 프로그램 개발 중 챗GPT에 전송",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147168",
+          "source": "보안뉴스 공공·정책",
+          "published": "2026-11-11T10:00:06+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KISA 대민 웹 서비스 7곳 ‘긴급 보안 점검’으로 접속 불가",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147162",
+          "source": "보안뉴스",
+          "published": "2026-11-11T09:59:01+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "조달청, 생성형 AI에 평가위원 189명 사진 유출…직원이 개발·시험 과정서 외부 전송",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209442",
+          "source": "데일리시큐",
+          "published": "2026-11-10T21:45:28+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[김대환 보안칼럼] 패치적용이 이토록 어려운 이유",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209435",
+          "source": "데일리시큐",
+          "published": "2026-11-10T17:04:55+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[더존비즈온 사태] 11월10일 유출 의심 기업 현황... 애자일소다·전남정보문화산업진흥원 유출 가능성",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147151",
+          "source": "보안뉴스",
+          "published": "2026-11-10T16:18:02+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "앤트로픽 ‘클로드’ 국내 기업 계정 100여개 노출 가능성",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147148",
+          "source": "보안뉴스",
+          "published": "2026-11-10T15:38:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "농협은행 AI 자회사 애자일소다, 외부 백업 서버 침해 노출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147145",
+          "source": "보안뉴스",
+          "published": "2026-11-10T15:22:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "줌줌투어, 해킹·개발 오류로 개인정보 유출…여행 일정·동행자 정보까지 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209422",
+          "source": "데일리시큐",
+          "published": "2026-11-10T06:35:32+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "아동·청소년부터 사망자까지, 개인정보 보호체계 개선 논의 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12646",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-11-11T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "‘내 개인정보를 지키는 꿀팁’.. 개인정보위, 숏폼 콘텐츠 공모전 개최 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12644",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-11-10T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "AI스페라, 유럽 정보보안 학술대회서 AI 기반 공격 대응 위협 인텔리전스 공유",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209430",
+          "source": "데일리시큐",
+          "published": "2026-11-10T14:42:14+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "소프트캠프, ‘FISCON’서 AI·공급망 보안 솔루션 선보인다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147174",
+          "source": "보안뉴스",
+          "published": "2026-11-11T11:25:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "피앤피시큐어, 저축은행에 화면 보안 ‘페이스락커’ 구축",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147172",
+          "source": "보안뉴스",
+          "published": "2026-11-11T11:21:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "‘돈 내거나 유출’ 협박 글에 바이낸스 반박... 3억3500만명 정보 판매 주장은 사기 가능성",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147129",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-11T10:55:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금보원 상시평가 해킹 파장... “단순 서식” vs “취약점 지도 노출”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147166",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-11T10:34:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KT텔레캅, AI 돌봄사업 확대... 전국 10만 가구 응급안전 책임진다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147163",
+          "source": "보안뉴스",
+          "published": "2026-11-11T09:54:35+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "넷앤드, SSH CA 기반 ‘SecureKey’로 소스코드에 숨은 접속키 위협 대응",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147108",
+          "source": "보안뉴스",
+          "published": "2026-11-11T09:05:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[이슈] “개편 중이라더니 해킹”…금융보안원 해킹 사고 대응에 금융사 불신",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209444",
+          "source": "데일리시큐",
+          "published": "2026-11-10T23:52:05+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "금융보안원, 해킹으로 정보 유출... 금융위 등 신고",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147156",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-10T20:18:48+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[단독] 금융보안원 상시평가시스템 해킹 정황...금융사 내부정보 유출 기업에 통보 중인 것으로 확인",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209438",
+          "source": "데일리시큐",
+          "published": "2026-11-10T19:48:53+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "한일네트웍스 랜섬웨어 공격받아... “즉시 차단, 유출 피해 없어”",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147152",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-10T16:47:27+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "주차장 앱 사칭 “보상 받으세요” 피싱 알림톡 보내... 외부 대행사 뚫려",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147150",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-10T16:07:14+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "파수 AI, '랩소디 에코'에 북미 CMVP 암호 모듈 탑재...K-방산 수출 보안 지원",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209425",
+          "source": "데일리시큐",
+          "published": "2026-11-10T13:08:13+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+          "link": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+          "source": "BleepingComputer",
+          "published": "2026-11-11T07:20:19+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
+          "source": "BleepingComputer",
+          "published": "2026-11-11T04:31:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+          "link": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+          "source": "The Hacker News",
+          "published": "2026-11-11T04:19:39+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+          "source": "BleepingComputer",
+          "published": "2026-11-11T04:07:36+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+          "source": "The Hacker News",
+          "published": "2026-11-11T03:12:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
+          "link": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+          "source": "BleepingComputer",
+          "published": "2026-11-11T01:17:16+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+          "link": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+          "source": "The Hacker News",
+          "published": "2026-11-11T00:33:59+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Ransomware recovery is now a client retention metric",
+          "link": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
+          "source": "BleepingComputer",
+          "published": "2026-11-11T00:01:11+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "source": "CISA Advisories",
+          "published": "2026-11-10T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-20320"
+          ]
+        },
+        {
+          "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
+          "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T17:51:25+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Fireworks AI discloses new breach after cloud provider hack",
+          "link": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
+          "source": "BleepingComputer",
+          "published": "2026-11-10T16:49:58+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+          "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+          "source": "The Hacker News",
+          "published": "2026-11-10T15:52:54+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-125350"
+          ]
+        }
+      ]
+    }
+  ],
+  "total": 40
+}

@@ -1,7 +1,16 @@
 {
  "version": 1,
- "latest": "2026-11-10",
+ "latest": "2026-11-11",
  "items": [
+  {
+   "cat": "daily",
+   "date": "2026-11-11",
+   "title": "2026년 11월 11일 (수)",
+   "url": "daily/2026-11-11.html",
+   "headline": "조달청, 평가위원 189명 얼굴 사진 유출... AI 프로그램 개발 중 챗GPT에 전송",
+   "total": 40,
+   "major": 32
+  },
   {
    "cat": "daily",
    "date": "2026-11-10",
