@@ -1,0 +1,395 @@
+{
+  "generated_at": "2026-11-13T12:33:51.693391+09:00",
+  "date": "2026-11-13",
+  "categories": [
+    {
+      "id": "kisa",
+      "name": "KISA 보안공지·취약점",
+      "emoji": "🚨",
+      "items": [
+        {
+          "title": "Apache 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72304",
+          "source": "KISA 보안공지",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "WordPress 플러그인 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72303",
+          "source": "KISA 보안공지",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Node.js 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72302",
+          "source": "KISA 보안공지",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Zoom 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72301",
+          "source": "KISA 보안공지",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "Synology 제품 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72300",
+          "source": "KISA 보안공지",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "MS 11월 보안 위협에 따른 정기 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72299",
+          "source": "KISA 보안공지",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        },
+        {
+          "title": "React 서버 컴포넌트 보안 업데이트 권고",
+          "link": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72298",
+          "source": "KISA 보안공지",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "개인정보보호 동향",
+      "emoji": "🛡️",
+      "items": [
+        {
+          "title": "KB캐피탈 해킹으로 개인정보 1,811명 유출, 고객 차량번호·임직원 계정정보 노출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209492",
+          "source": "데일리시큐",
+          "published": "2026-11-13T10:44:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "카카오워크 해킹, 업무 정보 줄줄... ‘종단간 암호화’ 무색",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147242",
+          "source": "보안뉴스",
+          "published": "2026-11-13T10:36:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "KB캐피탈, 외부 공격으로 고객·임직원 개인정보 유출",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147240",
+          "source": "보안뉴스",
+          "published": "2026-11-13T10:24:33+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "‘플라이빗’ 개인정보 40건 유출... 다우기술 그룹웨어 해킹 3번째 피해",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147241",
+          "source": "보안뉴스",
+          "published": "2026-11-13T10:19:40+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "개인정보위, 안전조치 의무 위반한삼양그룹 소속 4개사 제재 N",
+          "link": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12648",
+          "source": "개인정보보호위원회 보도자료",
+          "published": "2026-11-12T23:59:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "삼성SDS 자회사 멀티캠퍼스 해킹, 임직원 개인정보 약 7만명 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209491",
+          "source": "데일리시큐",
+          "published": "2026-11-12T23:29:12+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "가상자산 거래소 플라이빗 해킹, 고객 40명 주민등록번호·납세정보 유출",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209490",
+          "source": "데일리시큐",
+          "published": "2026-11-12T18:14:35+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "삼양그룹 4개사 해킹으로 개인정보 15만명 유출…주민번호 8만여건 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209475",
+          "source": "데일리시큐",
+          "published": "2026-11-12T16:09:15+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "GS건설 아파트 입주민 개인정보 유출…정부 조사에 동의 안 했다가 첫 직권조사 대상",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209460",
+          "source": "데일리시큐",
+          "published": "2026-11-12T13:21:57+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "국내 저축은행, 스마트폰 화면 촬영 유출 막는다...본사 업무 환경에 안면인증 보안 적용",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209457",
+          "source": "데일리시큐",
+          "published": "2026-11-12T12:38:30+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "[금보원 해킹-3] 금융보안원 해킹, 위탁한 금융위원회도 책임 면할 수 없다…상시평가 감독 책임도 따져야",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209455",
+          "source": "데일리시큐",
+          "published": "2026-11-12T11:52:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“개인정보 보안 조치 의무 소홀”... 삼양그룹 4사 5.5억원 과징금 철퇴",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147211",
+          "source": "보안뉴스",
+          "published": "2026-11-12T10:55:46+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "domestic",
+      "name": "국내 보안뉴스",
+      "emoji": "🇰🇷",
+      "items": [
+        {
+          "title": "[카드뉴스] \"우리 회사는 안 털렸는데 월급 명세서가 샜다?\"… 수만 개 기업 덮친 'ERP 백업망'",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147246",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-13T10:46:43+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“선내 OT부터 육상 IT까지” 싸이터·플레인비트, 해양 침해대응 맞손",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147229",
+          "source": "보안뉴스",
+          "published": "2026-11-12T17:40:23+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "“해킹당해도 국가 기능은 지속”... 국가 사이버복원력 범정부 TF 출범",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147225",
+          "source": "보안뉴스",
+          "published": "2026-11-12T15:06:56+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "파이어폭스 160, 보안 취약점 99건 수정…WebGL 격리 우회 결함 포함",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209473",
+          "source": "데일리시큐",
+          "published": "2026-11-12T14:56:32+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-124907"
+          ]
+        },
+        {
+          "title": "이반티 엔드포인트 매니저, 로그인 없이 악용 가능한 SQL 삽입 취약점 수정",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209472",
+          "source": "데일리시큐",
+          "published": "2026-11-12T14:53:34+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-121653"
+          ]
+        },
+        {
+          "title": "시스코 브로드웍스 취약점, 패치 공개 약 석 달 만에 실제 공격에 악용",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209468",
+          "source": "데일리시큐",
+          "published": "2026-11-12T14:46:39+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-20320"
+          ]
+        },
+        {
+          "title": "웹사이트 열기만 해도 감염... 범죄자 손에 넘어간 스마트폰 스파이웨어, 평범한 사람 노린다",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147161",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-12T14:40:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "젠 오케스트라 인증 우회 실제 악용…가상화 호스트까지 장악 가능",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209467",
+          "source": "데일리시큐",
+          "published": "2026-11-12T14:38:44+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "싸이터-플레인비트, 해양 사이버 사고조사·대응 역량 강화 위한 업무협약 체결",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209465",
+          "source": "데일리시큐",
+          "published": "2026-11-12T14:21:54+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "비운 메모리 다시 건드리는 결함... 구글, 올해 8번째 크롬 제로데이 긴급 패치",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147158",
+          "source": "보안뉴스 사건·사고",
+          "published": "2026-11-12T14:21:09+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-125350"
+          ]
+        },
+        {
+          "title": "“텔레그램 대화창 기밀 유출 잡는다” 세이퍼존, DLP 기술 고도화",
+          "link": "https://www.boannews.com/news/articleView.html?idxno=147220",
+          "source": "보안뉴스",
+          "published": "2026-11-12T14:18:38+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "구글 클라우드 “2027년 AI 해킹 가속…에이전트의 권한·판단 이력까지 관리해야”",
+          "link": "https://www.dailysecu.com/news/articleView.html?idxno=209464",
+          "source": "데일리시큐",
+          "published": "2026-11-12T13:59:47+09:00",
+          "highlight": true,
+          "cves": []
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "해외 주요 이슈",
+      "emoji": "🌐",
+      "items": [
+        {
+          "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
+          "link": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+          "source": "BleepingComputer",
+          "published": "2026-11-13T04:51:16+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+          "link": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+          "source": "The Hacker News",
+          "published": "2026-11-13T02:50:27+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
+          "link": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+          "source": "BleepingComputer",
+          "published": "2026-11-13T01:04:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Apify rotates API tokens, prompts 2FA resets after breach",
+          "link": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
+          "source": "BleepingComputer",
+          "published": "2026-11-12T23:36:47+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Siemens Desigo, Gridscale",
+          "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+          "source": "CISA Advisories",
+          "published": "2026-11-12T21:00:00+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Siemens Industrial Edge Management",
+          "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+          "source": "CISA Advisories",
+          "published": "2026-11-12T21:00:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-111497"
+          ]
+        },
+        {
+          "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+          "link": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+          "source": "The Hacker News",
+          "published": "2026-11-12T20:33:15+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-126325"
+          ]
+        },
+        {
+          "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+          "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+          "source": "The Hacker News",
+          "published": "2026-11-12T18:25:00+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-118383"
+          ]
+        },
+        {
+          "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+          "link": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+          "source": "The Hacker News",
+          "published": "2026-11-12T14:12:26+09:00",
+          "highlight": true,
+          "cves": [
+            "CVE-2026-119618"
+          ]
+        },
+        {
+          "title": "Baker Tilly notifies clients of data breach at third-party provider",
+          "link": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+          "source": "BleepingComputer",
+          "published": "2026-11-12T08:01:31+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+          "link": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+          "source": "BleepingComputer",
+          "published": "2026-11-12T07:56:21+09:00",
+          "highlight": true,
+          "cves": []
+        },
+        {
+          "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+          "link": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+          "source": "BleepingComputer",
+          "published": "2026-11-13T07:53:10+09:00",
+          "highlight": false,
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "total": 43
+}
