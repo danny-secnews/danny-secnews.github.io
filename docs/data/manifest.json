@@ -1,7 +1,16 @@
 {
  "version": 1,
- "latest": "2026-11-13",
+ "latest": "2026-11-14",
  "items": [
+  {
+   "cat": "daily",
+   "date": "2026-11-14",
+   "title": "2026년 11월 14일 (토)",
+   "url": "daily/2026-11-14.html",
+   "headline": "모두의 창업 또 개인정보 유출… 이번엔 참여 업체 API 뚫려",
+   "total": 37,
+   "major": 25
+  },
   {
    "cat": "daily",
    "date": "2026-11-13",
